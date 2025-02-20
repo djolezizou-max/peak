@@ -1,5 +1,10 @@
-[redirects]]
+[[redirects]]
   from = "/w/*"
   to = "/.well-known/apple-app-site-association"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
