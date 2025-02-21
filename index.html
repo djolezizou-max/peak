@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta name="apple-itunes-app" content="app-id=6474573340, app-argument=QUERY_STRING">
 <script>
-    // Redirect to app immediately
-    window.location.href = window.location.href.replace('https://', 'peakintervals://');
-</script>
+    // Preserve the full path and query string in the redirect
+    const currentPath = window.location.pathname + window.location.search;
+    window.location.href = `peakintervals://${currentPath}`;
+</script> 
