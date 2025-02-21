@@ -1,21 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="apple-itunes-app" content="app-id=6474573340">
-    <title>Peak Intervals</title>
-</head>
-<body>
-    <script>
-        // Get the full path including the encoded workout data
-        const path = window.location.pathname;
-        // Only redirect if we have a workout path
-        if (path.startsWith('/w/')) {
-            // Try Universal Link first
-            setTimeout(() => {
-                // If app isn't installed, fall back to App Store
-                window.location.href = 'https://apps.apple.com/app/id6474573340';
-            }, 2500);
-        }
-    </script>
-</body>
-</html> 
+<meta name="apple-itunes-app" content="app-id=6474573340, app-argument=QUERY_STRING">
+<script>
+    // Preserve the full path and query string in the redirect
+    const currentPath = window.location.pathname + window.location.search;
+    window.location.href = `peakintervals://${currentPath}`;
+</script> 
