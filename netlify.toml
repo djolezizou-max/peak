@@ -1,29 +1,29 @@
-  [[headers]]
-    for = "/.well-known/apple-app-site-association"
-    [headers.values]
-      Content-Type = "application/json"
-      Access-Control-Allow-Origin = "*"
-  
-  # Ensure apple-app-site-association is served correctly
-  [[redirects]]
-    from = "/.well-known/apple-app-site-association"
-    to = "/.well-known/apple-app-site-association"
-    status = 200
-    force = true
-  
-  [build]
-    publish = "/"
-+ 
-+ # Handle .well-known directory
-+ [[redirects]]
-+   from = "/.well-known/*"
-+   to = "/.well-known/:splat"
-+   status = 200
-+   force = true
-  
-  # Redirect www to non-www
-  [[redirects]]
-    from = "https://www.peakintervalapp.com/*"
-    to = "https://peakintervalapp.com/:splat"
-    status = 301
-    force = true
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
+
+# Ensure apple-app-site-association is served correctly
+[[redirects]]
+  from = "/.well-known/apple-app-site-association"
+  to = "/.well-known/apple-app-site-association"
+  status = 200
+  force = true
+
+[build]
+  publish = "/"
+
+# Handle .well-known directory
+[[redirects]]
+  from = "/.well-known/*"
+  to = "/.well-known/:splat"
+  status = 200
+  force = true
+
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.peakintervalapp.com/*"
+  to = "https://peakintervalapp.com/:splat"
+  status = 301
+  force = true 
