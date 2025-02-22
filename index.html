@@ -42,23 +42,31 @@
             margin: 0 auto;
             padding: 20px;
         }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
         h1 {
             font-size: 28px;
             margin-bottom: 20px;
         }
         .app-store-button {
-            background: #0A84FF;
-            color: white;
+            background: #FF9500;
+            color: black;
             text-decoration: none;
             padding: 15px 30px;
-            border-radius: 25px;
+            border-radius: 12px;
             font-weight: 600;
             margin-top: 20px;
             display: inline-block;
-            transition: background-color 0.2s;
+            transition: all 0.2s;
+            font-size: 18px;
         }
         .app-store-button:hover {
-            background: #007AFF;
+            background: #FFB340;
+            transform: scale(1.02);
         }
         .message {
             margin: 20px 0;
@@ -77,6 +85,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="/app-icon.png" alt="Peak Intervals App Icon" class="app-icon">
         <h1>Opening Peak Intervals...</h1>
         <p class="message">If you have the app installed, click "Allow" when prompted.</p>
         <p class="message">Don't have the app yet?</p>
