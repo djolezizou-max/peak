@@ -20,12 +20,25 @@
     <meta name="twitter:title" content="Peak Intervals Workout">
     <meta name="twitter:description" content="Check out this HIIT workout!">
     <meta name="twitter:image" content="https://peakintervalapp.com/app-icon.png">
+
+    <script>
+        window.onload = function() {
+            // Try to open the app first
+            var appUrl = "peakintervals://" + window.location.pathname + window.location.search;
+            window.location.href = appUrl;
+            
+            // Set a timeout to redirect to App Store if app doesn't open
+            setTimeout(function() {
+                // Redirect to App Store
+                window.location.href = "https://apps.apple.com/app/id6474573340";
+            }, 1000); // Wait 1 second before redirecting
+        }
+    </script>
 </head>
 <body>
-    <script>
-        // Preserve the full path and query string in the redirect
-        const currentPath = window.location.pathname + window.location.search;
-        window.location.href = `peakintervals://${currentPath}`;
-    </script>
+    <div style="text-align: center; padding-top: 50px;">
+        <h1>Opening Peak Intervals...</h1>
+        <p>If you don't have the app installed, you'll be redirected to the App Store.</p>
+    </div>
 </body>
 </html>
