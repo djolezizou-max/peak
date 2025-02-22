@@ -1,7 +1,31 @@
 <!DOCTYPE html>
-<meta name="apple-itunes-app" content="app-id=6474573340, app-argument=QUERY_STRING">
-<script>
-    // Preserve the full path and query string in the redirect
-    const currentPath = window.location.pathname + window.location.search;
-    window.location.href = `peakintervals://${currentPath}`;
-</script> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peak Intervals Workout</title>
+
+    <!-- App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6474573340, app-argument=QUERY_STRING">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Peak Intervals Workout">
+    <meta property="og:description" content="Check out this HIIT workout!">
+    <meta property="og:image" content="https://peakintervalapp.com/app-icon.png">
+    <meta property="og:url" content="https://peakintervalapp.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags (Optional but recommended) -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Peak Intervals Workout">
+    <meta name="twitter:description" content="Check out this HIIT workout!">
+    <meta name="twitter:image" content="https://peakintervalapp.com/app-icon.png">
+</head>
+<body>
+    <script>
+        // Preserve the full path and query string in the redirect
+        const currentPath = window.location.pathname + window.location.search;
+        window.location.href = `peakintervals://${currentPath}`;
+    </script>
+</body>
+</html>
