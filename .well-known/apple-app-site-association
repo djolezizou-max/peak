@@ -3,7 +3,12 @@
         "apps": [],
         "details": [{
             "appID": "U6L56YZB3C.com.roli.Intervals",
-            "paths": ["/w/*"]
+            "paths": ["*"],
+            "components": [{
+                "/": "/w/*",
+                "comment": "Matches workout sharing links",
+                "fallback": "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716"
+            }]
         }]
     }
 }
