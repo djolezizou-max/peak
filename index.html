@@ -22,17 +22,29 @@
     <meta name="twitter:image" content="https://peakintervalapp.com/app-icon.png">
 
     <script>
-        window.onload = function() {
-            // Try to open the app first
-            var appUrl = "peakintervals://" + window.location.pathname + window.location.search;
-            window.location.href = appUrl;
-            
-            // Set a timeout to redirect to App Store if app doesn't open
-            setTimeout(function() {
-                // Redirect to App Store
-                window.location.href = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716";
-            }, 1000); // Wait 1 second before redirecting
+        function openAppStore() {
+            window.location.href = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716";
         }
+
+        function tryOpenApp() {
+            const appUrl = "peakintervals://" + window.location.pathname + window.location.search;
+            
+            // Listen for visibilitychange which happens when app opens
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    // App successfully opened, do nothing
+                } else {
+                    // If we come back to the page, app didn't open
+                    setTimeout(openAppStore, 300);
+                }
+            });
+
+            // Just try to open the app - this will show the Allow/Don't allow prompt
+            window.location.href = appUrl;
+        }
+
+        // Start the process when page loads
+        window.onload = tryOpenApp;
     </script>
 </head>
 <body>
