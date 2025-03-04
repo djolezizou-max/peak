@@ -38,11 +38,6 @@
             "source": "/w/:path*",
             "destination": "/",
             "permanent": false
-        },
-        {
-            "source": "https://www.peakintervalapp.com/:path*",
-            "destination": "https://peakintervalapp.com/:path*",
-            "permanent": true
         }
     ],
     "rewrites": [
