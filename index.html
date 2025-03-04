@@ -92,8 +92,16 @@
 
     <script>
         window.onload = function() {
-            // Try to open the app
-            window.location.href = "peakintervals://" + window.location.pathname + window.location.search;
+            // Check if we have a shared workout in the URL hash
+            if (window.location.hash && window.location.hash.startsWith('#sharedWorkout=')) {
+                // Extract the workout data from the hash
+                const workoutData = window.location.hash.substring('#sharedWorkout='.length);
+                // Use the correct format for deep linking to the app
+                window.location.href = "peakintervals://w/" + workoutData;
+            } else {
+                // Use the original path for deep linking (for direct /w/ URLs)
+                window.location.href = "peakintervals://" + window.location.pathname + window.location.search;
+            }
         }
     </script>
 </head>

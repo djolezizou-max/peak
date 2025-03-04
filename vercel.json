@@ -37,7 +37,14 @@
         {
             "source": "/w/:path*",
             "destination": "/#sharedWorkout=:path*",
-            "permanent": false
+            "permanent": false,
+            "has": [
+                {
+                    "type": "header",
+                    "key": "User-Agent",
+                    "value": "(?!.*PeakIntervals).*"
+                }
+            ]
         }
     ],
     "rewrites": [
