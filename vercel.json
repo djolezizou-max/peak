@@ -36,7 +36,7 @@
     "redirects": [
         {
             "source": "/w/:path*",
-            "destination": "/?workout=:path*",
+            "destination": "/",
             "permanent": false
         }
     ],
