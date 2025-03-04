@@ -18,6 +18,37 @@
                     "value": "1; mode=block"
                 }
             ]
+        },
+        {
+            "source": "/.well-known/apple-app-site-association",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                }
+            ]
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/w/:path*",
+            "destination": "/",
+            "permanent": false
+        },
+        {
+            "source": "https://www.peakintervalapp.com/:path*",
+            "destination": "https://peakintervalapp.com/:path*",
+            "permanent": true
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/.well-known/:path*",
+            "destination": "/.well-known/:path*"
         }
     ]
 } 
