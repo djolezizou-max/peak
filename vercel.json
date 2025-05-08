@@ -1,6 +1,6 @@
 {
-    "cleanUrls": true,
-    "trailingSlash": false,
+    "cleanUrls": false,
+    "trailingSlash": true,
     "headers": [
         {
             "source": "/(.*)",
@@ -63,14 +63,6 @@
         {
             "source": "/.well-known/:path*",
             "destination": "/.well-known/:path*"
-        },
-        {
-            "source": "/blog",
-            "destination": "/blog/"
-        },
-        {
-            "source": "/blog/",
-            "destination": "/blog/index.html"
         }
     ]
 } 
