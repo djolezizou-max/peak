@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Peak Interval</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Read the latest articles about interval training, workout tips, and Peak Interval app updates.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://peakintervalapp.com/blog/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog - Peak Interval">
+    <meta property="og:description" content="Read the latest articles about interval training, workout tips, and Peak Interval app updates.">
+    <meta property="og:image" content="https://peakintervalapp.com/assets/app_icon.png">
+    <meta property="og:url" content="https://peakintervalapp.com/blog/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Peak Interval">
+    <meta name="twitter:description" content="Read the latest articles about interval training, workout tips, and Peak Interval app updates.">
+    <meta name="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #181F3B;
+            color: white;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            background-color: rgba(0,0,0,0.3);
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .nav a:hover {
+            opacity: 1;
+        }
+        
+        .nav a.active {
+            opacity: 1;
+            border-bottom: 2px solid #FF9500;
+        }
+        
+        .blog-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        
+        .blog-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .blog-description {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        .blog-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .blog-post-card {
+            width: calc(50% - 10px);
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .post-link {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .post-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .post-details {
+            padding: 20px;
+        }
+        
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .post-meta {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+        }
+        
+        .post-excerpt {
+            margin-bottom: 20px;
+        }
+        
+        .read-more {
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        
+        .read-more:hover {
+            opacity: 0.7;
+        }
+        
+        .coming-soon {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }
+        
+        .coming-soon h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .coming-soon p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            background: #FF9500;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-weight: 700;
+            display: inline-block;
+            transition: all 0.2s;
+            font-size: 18px;
+            margin: 20px 10px 0;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background: #FFB340;
+            color: #FFFFFF;
+            transform: scale(1.02);
+        }
+        
+        .footer {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            opacity: 0.7;
+            font-size: 14px;
+        }
+        
+        /* Category filter styles */
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-button {
+            background: rgba(0,0,0,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-button:hover {
+            background: rgba(0,0,0,0.3);
+        }
+        
+        .filter-button.active {
+            background: #FF9500;
+            border-color: #FF9500;
+        }
+        
+        /* Hide filtered posts */
+        .blog-post-card.hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-title {
+                font-size: 32px;
+            }
+            
+            .blog-description, .coming-soon p {
+                font-size: 16px;
+            }
+            
+            .coming-soon h2 {
+                font-size: 24px;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .nav a {
+                padding: 5px 10px;
+            }
+            
+            .blog-post-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/app_icon.png" alt="Peak Interval App Icon" class="app-icon">
+            </a>
+            <div class="logo-text">Peak Interval</div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/contact/">Contact</a>
+    </div>
+    
+    <div class="blog-header">
+        <h1 class="blog-title">Peak Interval Blog</h1>
+        <p class="blog-description">
+            Discover tips, techniques, and insights to maximize your interval training workouts and get the most out of the Peak Interval app.
+        </p>
+    </div>
+    
+    <div class="blog-content">
+        <div class="category-filter">
+            <button class="filter-button active" data-category="all">All Posts</button>
+            <button class="filter-button" data-category="hiit-fundamentals">HIIT Fundamentals</button>
+            <button class="filter-button" data-category="workout-guides">Workout Guides</button>
+            <button class="filter-button" data-category="timer-and-app-features">Timer & App Features</button>
+            <button class="filter-button" data-category="specialized-hiit-training">Specialized Training</button>
+            <button class="filter-button" data-category="fitness-and-nutrition">Fitness & Nutrition</button>
+            <button class="filter-button" data-category="hiit-success-stories">Success Stories</button>
+            <button class="filter-button" data-category="advanced-hiit-concepts">Advanced Concepts</button>
+        </div>
+        
+        <div class="blog-posts"><div class="blog-post-card" data-category="specialized-hiit-training">
+                <a href="/blog/posts/hiit-for-weight-loss/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-weight-loss-cover.jpg" alt="Person performing high-intensity exercise for fat loss" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT for Weight Loss: Targeted Protocols to Maximize Fat Burning</h2>
+                        
+                        <div class="post-meta">Published on August 27, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Discover science-backed HIIT protocols specifically designed for maximum fat loss, metabolic boost, and long-term weight management.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="specialized-hiit-training">
+                <a href="/blog/posts/hiit-for-seniors/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-seniors-cover.jpg" alt="Active senior adult performing modified HIIT exercises" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT for Seniors: Safe and Effective Interval Training for Older Adults</h2>
+                        
+                        <div class="post-meta">Published on August 25, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Learn how seniors can safely benefit from modified HIIT workouts that improve strength, mobility, and heart health while respecting age-specific considerations.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="specialized-hiit-training">
+                <a href="/blog/posts/low-impact-hiit-workouts/" class="post-link">
+                    
+                    <img src="/assets/blog/low-impact-hiit-cover.jpg" alt="Person performing a low-impact HIIT exercise with resistance bands" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">Low-Impact HIIT Workouts for Joint Health and Injury Prevention</h2>
+                        
+                        <div class="post-meta">Published on August 23, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Discover effective HIIT workouts that deliver intensity without the impact, perfect for protecting your joints or recovering from injury.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="specialized-hiit-training">
+                <a href="/blog/posts/hiit-for-strength/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-strength-cover.jpg" alt="Person doing kettlebell swings during a HIIT strength workout" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT for Strength: Combining Interval Training with Resistance Work</h2>
+                        
+                        <div class="post-meta">Published on August 21, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Learn how to merge HIIT with strength training to build muscle, boost power, and improve overall fitness in time-efficient workouts.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="specialized-hiit-training">
+                <a href="/blog/posts/hiit-for-runners/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-for-runners-cover.jpg" alt="Runner performing sprint intervals on a track" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT for Runners: Interval Training to Improve Your Speed and Endurance</h2>
+                        
+                        <div class="post-meta">Published on August 19, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Discover how strategic HIIT workouts can transform your running performance, boost your speed, and enhance your endurance capacity.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="workout-guides">
+                <a href="/blog/posts/hiit-circuit-training-guide/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-circuit-cover.jpg" alt="Diagram showing a circuit workout layout" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT Circuit Training: Combining Strength and Cardio for Maximum Results</h2>
+                        
+                        <div class="post-meta">Published on August 17, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Learn how to design effective HIIT circuit workouts that build strength and boost cardiovascular fitness simultaneously.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="workout-guides">
+                <a href="/blog/posts/30-day-hiit-challenge/" class="post-link">
+                    
+                    <img src="/assets/blog/30-day-challenge-cover.jpg" alt="Calendar showing a 30-day workout plan" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">30-Day HIIT Challenge: Transform Your Fitness in One Month</h2>
+                        
+                        <div class="post-meta">Published on August 15, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Ready for a transformation? Follow our structured 30-day HIIT challenge plan to boost your fitness and see real results.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="workout-guides">
+                <a href="/blog/posts/full-body-no-equipment-hiit/" class="post-link">
+                    
+                    <img src="/assets/blog/no-equipment-hiit-cover.jpg" alt="Person doing bodyweight exercises outdoors" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">Full-Body HIIT Workouts You Can Do Anywhere (No Equipment Needed)</h2>
+                        
+                        <div class="post-meta">Published on August 13, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Get a complete workout without any gear. These full-body HIIT routines can be done at home, while travelling, or anywhere you are.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="workout-guides">
+                <a href="/blog/posts/ultimate-tabata-guide/" class="post-link">
+                    
+                    <img src="/assets/blog/tabata-guide-cover.jpg" alt="Stopwatch showing 20 seconds for Tabata interval" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">The Ultimate Tabata Protocol Guide with 5 Workout Variations</h2>
+                        
+                        <div class="post-meta">Published on August 11, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Master the Tabata protocol: Learn the science, structure, and five effective Tabata workout variations you can try today.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="workout-guides">
+                <a href="/blog/posts/10-minute-hiit-workouts/" class="post-link">
+                    
+                    <img src="/assets/blog/10-min-hiit-cover.jpg" alt="Person doing a quick workout at home" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">10-Minute HIIT Workouts for Busy Professionals</h2>
+                        
+                        <div class="post-meta">Published on August 09, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Squeeze in a powerful workout even on your busiest days with these effective 10-minute HIIT routines.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="hiit-fundamentals">
+                <a href="/blog/posts/hiit-terminology/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-terminology-cover.jpg" alt="Woman training with stopwatch and HIIT terminology overlay" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT Terminology: A Complete Glossary of Interval Training Terms</h2>
+                        
+                        <div class="post-meta">Published on July 31, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Learn the essential HIIT terminology and interval training vocabulary with our comprehensive glossary explaining the key terms, protocols, and concepts.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="hiit-fundamentals">
+                <a href="/blog/posts/hiit-mistakes/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-mistakes-cover.jpg" alt="Person correcting form during a HIIT workout" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">Common HIIT Mistakes and How to Avoid Them</h2>
+                        
+                        <div class="post-meta">Published on July 14, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Learn about the most common mistakes people make with HIIT workouts and how to fix them for better results, safety, and long-term success with interval training.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="hiit-fundamentals">
+                <a href="/blog/posts/science-behind-hiit/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-science-cover.jpg" alt="Scientific visualization of HIIT effects on the body" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">The Science Behind HIIT: Why It Works for Fat Loss and Fitness</h2>
+                        
+                        <div class="post-meta">Published on June 30, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Discover the scientific mechanisms that make HIIT so effective for fat loss, metabolism, and overall fitness backed by research and explained in simple terms.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="hiit-fundamentals">
+                <a href="/blog/posts/hiit-vs-steady-state/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-vs-cardio-cover.jpg" alt="Comparison of HIIT and steady-state cardio workouts" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT vs. Steady-State Cardio: Which Is Right for Your Fitness Goals?</h2>
+                        
+                        <div class="post-meta">Published on June 14, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Compare high-intensity interval training (HIIT) and steady-state cardio to determine which cardio method best aligns with your specific fitness goals and lifestyle.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div><div class="blog-post-card" data-category="hiit-fundamentals">
+                <a href="/blog/posts/what-is-hiit/" class="post-link">
+                    
+                    <img src="/assets/blog/hiit-guide-cover.jpg" alt="Person performing high-intensity interval training" class="post-thumbnail">
+                    
+                    <div class="post-details">
+                        <h2 class="post-title">What is HIIT? The Complete Guide to High-Intensity Interval Training</h2>
+                        
+                        <div class="post-meta">Published on May 31, 2024</div>
+                        
+                        <p class="post-excerpt">
+                            Learn what HIIT (high-intensity interval training) is, its science-backed benefits, and how to get started with effective interval workouts using the Peak Interval timer app.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/terms/">Terms & Conditions</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/contact/">Contact Us</a>
+            <a href="/blog/">Blog</a>
+        </div>
+        <div class="copyright">
+            &copy; 2023-2024 Peak Interval. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Firebase Analytics -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAH8e8l2Q7f-1ZXYYeDrMfB4oKGKEwoCxM",
+            authDomain: "peak-interval-site.firebaseapp.com",
+            projectId: "peak-interval-site",
+            storageBucket: "peak-interval-site.firebasestorage.app",
+            messagingSenderId: "199931231891",
+            appId: "1:199931231891:web:97e2dd591118fdcaf29766",
+            measurementId: "G-TGBMET8NFR"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <!-- Category Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all filter buttons and blog post cards
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const blogPostCards = document.querySelectorAll('.blog-post-card');
+            
+            // Add click event listener to each filter button
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove 'active' class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add 'active' class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get the category to filter by
+                    const filterCategory = this.getAttribute('data-category');
+                    
+                    // Track the filter event in Firebase Analytics
+                    const analyticsEvent = window.gtag || (window.firebase && window.firebase.analytics().logEvent);
+                    if (analyticsEvent) {
+                        analyticsEvent('filter_blog_posts', {
+                            category: filterCategory
+                        });
+                    }
+                    
+                    // Show/hide blog post cards based on the selected category
+                    blogPostCards.forEach(card => {
+                        if (filterCategory === 'all' || card.getAttribute('data-category') === filterCategory) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

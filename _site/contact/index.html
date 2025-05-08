@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Peak Interval</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #181F3B;
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            background-color: rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .nav a:hover {
+            opacity: 1;
+        }
+        
+        .nav a.active {
+            opacity: 1;
+            border-bottom: 2px solid #FF9500;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: inherit;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        button {
+            background: #FF9500;
+            color: #000000;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        button:hover {
+            background: #FFB340;
+            transform: scale(1.02);
+        }
+        button:disabled {
+            background: #996633;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .success-message {
+            display: none;
+            background: rgba(39, 174, 96, 0.2);
+            border: 1px solid rgba(39, 174, 96, 0.4);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .error-message {
+            display: none;
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid rgba(231, 76, 60, 0.4);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            opacity: 0.7;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+            opacity: 1;
+        }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+            display: none;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @media (max-width: 768px) {
+            .nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .nav a {
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/app_icon.png" alt="Peak Interval App Icon" class="app-icon">
+            </a>
+            <div class="logo-text">Peak Interval</div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/" class="active">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="form-container">
+            <p>Have a question or feedback about Peak Interval? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <form id="contactForm" action="https://formspree.io/f/xdkaqjvy" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" id="submitButton">
+                    <span id="spinner" class="spinner"></span>
+                    Send Message
+                </button>
+            </form>
+            
+            <div id="successMessage" class="success-message">
+                <h3>Thank you for your message!</h3>
+                <p>We've received your inquiry and will get back to you as soon as possible.</p>
+                <p><a href="/" style="color: #FF9500;">Return to home page</a></p>
+            </div>
+
+            <div id="errorMessage" class="error-message">
+                <h3>Oops! Something went wrong.</h3>
+                <p>We couldn't send your message. Please try again later or contact us directly.</p>
+                <button onclick="document.getElementById('contactForm').style.display='block'; document.getElementById('errorMessage').style.display='none';" style="margin-top: 15px;">Try Again</button>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/blog">Blog</a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            const submitButton = document.getElementById('submitButton');
+            const spinner = document.getElementById('spinner');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                submitButton.disabled = true;
+                spinner.style.display = 'inline-block';
+                
+                // Prepare form data
+                const formData = new FormData(form);
+                
+                // Send form data using fetch API
+                fetch('https://formspree.io/f/xdkaqjvy', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                })
+                .then(data => {
+                    // Hide form and show success message
+                    form.reset();
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                })
+                .catch(error => {
+                    // Show error message
+                    errorMessage.style.display = 'block';
+                    form.style.display = 'none';
+                })
+                .finally(() => {
+                    // Reset loading state
+                    submitButton.disabled = false;
+                    spinner.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

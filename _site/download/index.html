@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peak Intervals Workout</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6741055716">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Peak Intervals Workout">
+    <meta property="og:description" content="Check out this HIIT workout in Peak Intervals!">
+    <meta property="og:image" content="https://peakintervalapp.com/assets/app_icon.png">
+    <meta property="og:url" content="https://peakintervalapp.com/download">
+    <meta property="og:type" content="fitness.course">
+
+    <!-- Twitter Card Meta Tags (Optional but recommended) -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Peak Intervals Workout">
+    <meta name="twitter:description" content="Check out this HIIT workout!">
+    <meta name="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #181F3B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .app-store-button {
+            background: #FF9500;
+            color: black;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+            display: inline-block;
+            transition: all 0.2s;
+            font-size: 18px;
+        }
+        .app-store-button:hover {
+            background: #FFB340;
+            transform: scale(1.02);
+        }
+        .message {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        .footer-links {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+            opacity: 1;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            // Check if we have a shared workout in the URL hash
+            if (window.location.hash && window.location.hash.startsWith('#sharedWorkout=')) {
+                // Extract the workout data from the hash
+                const workoutData = window.location.hash.substring('#sharedWorkout='.length);
+                // Use the correct format for deep linking to the app
+                window.location.href = "peakintervals://w/" + workoutData;
+            } else {
+                // Get the path but remove the /download prefix if it exists
+                let path = window.location.pathname;
+                if (path.startsWith('/download')) {
+                    path = path.substring('/download'.length) || '/';
+                }
+                // Use the path for deep linking
+                window.location.href = "peakintervals://" + path + window.location.search;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="/assets/app_icon.png" alt="Peak Intervals App Icon" class="app-icon">
+        <h1>Opening Peak Intervals...</h1>
+        <p class="message">If you have the app installed, click "Allow" when prompted.</p>
+        <p class="message">Don't have the app yet?</p>
+        <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="app-store-button">
+            Download from App Store
+        </a>
+        <div class="footer-links">
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
