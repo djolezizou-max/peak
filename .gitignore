@@ -13,3 +13,6 @@
 
 # Dependencies
 node_modules/
+
+# Eleventy output directory
+_site/

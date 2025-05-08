@@ -237,6 +237,40 @@
             font-size: 14px;
         }
         
+        /* Category filter styles */
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-button {
+            background: rgba(0,0,0,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-button:hover {
+            background: rgba(0,0,0,0.3);
+        }
+        
+        .filter-button.active {
+            background: #FF9500;
+            border-color: #FF9500;
+        }
+        
+        /* Hide filtered posts */
+        .blog-post-card.hidden {
+            display: none;
+        }
+        
         @media (max-width: 768px) {
             .blog-title {
                 font-size: 32px;
@@ -289,76 +323,40 @@
     </div>
     
     <div class="blog-content">
+        <div class="category-filter">
+            <button class="filter-button active" data-category="all">All Posts</button>
+            <button class="filter-button" data-category="hiit-fundamentals">HIIT Fundamentals</button>
+            <button class="filter-button" data-category="workout-guides">Workout Guides</button>
+            <button class="filter-button" data-category="timer-and-app-features">Timer & App Features</button>
+            <button class="filter-button" data-category="specialized-hiit-training">Specialized Training</button>
+            <button class="filter-button" data-category="fitness-and-nutrition">Fitness & Nutrition</button>
+            <button class="filter-button" data-category="hiit-success-stories">Success Stories</button>
+            <button class="filter-button" data-category="advanced-hiit-concepts">Advanced Concepts</button>
+        </div>
+        
         <div class="blog-posts">
-            <div class="blog-post-card">
-                <a href="/blog/posts/what-is-hiit.html" class="post-link">
-                    <img src="/assets/blog/hiit-guide-cover.jpg" alt="Person performing high-intensity interval training" class="post-thumbnail">
+            {%- assign posts = collections.posts | reverse -%}
+            {%- for post in posts -%}
+            <div class="blog-post-card" data-category="{{ post.data.category | slugify }}">
+                <a href="{{ post.url | url }}" class="post-link">
+                    {% if post.data.featured_image %}
+                    <img src="{{ post.data.featured_image | url }}" alt="{{ post.data.image_alt | default: post.data.title }}" class="post-thumbnail">
+                    {% else %}
+                    <div class="post-thumbnail-placeholder" style="height: 200px; background-color: rgba(255,255,255,0.1);"></div>
+                    {% endif %}
                     <div class="post-details">
-                        <h2 class="post-title">What is HIIT? The Complete Guide to High-Intensity Interval Training</h2>
-                        <div class="post-meta">Published on June 1, 2024 • 12 min read</div>
+                        <h2 class="post-title">{{ post.data.title }}</h2>
+                        {% if post.date %}
+                        <div class="post-meta">Published on {{ post.date | date: "%B %d, %Y" }}</div>
+                        {% endif %}
                         <p class="post-excerpt">
-                            Learn what HIIT (high-intensity interval training) is, its science-backed benefits, and how to get started with effective interval workouts.
+                            {{ post.data.description }}
                         </p>
                         <span class="read-more">Read More →</span>
                     </div>
                 </a>
             </div>
-            
-            <div class="blog-post-card">
-                <a href="/blog/posts/hiit-vs-steady-state.html" class="post-link">
-                    <img src="/assets/blog/hiit-vs-cardio-cover.jpg" alt="Comparison of HIIT and steady-state cardio workouts" class="post-thumbnail">
-                    <div class="post-details">
-                        <h2 class="post-title">HIIT vs. Steady-State Cardio: Which Is Right for Your Fitness Goals?</h2>
-                        <div class="post-meta">Published on June 15, 2024 • 10 min read</div>
-                        <p class="post-excerpt">
-                            Compare high-intensity interval training (HIIT) and steady-state cardio to determine which cardio method best aligns with your specific fitness goals.
-                        </p>
-                        <span class="read-more">Read More →</span>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="blog-post-card">
-                <a href="/blog/posts/science-behind-hiit.html" class="post-link">
-                    <img src="/assets/blog/hiit-science-cover.jpg" alt="Scientific visualization of HIIT effects on the body" class="post-thumbnail">
-                    <div class="post-details">
-                        <h2 class="post-title">The Science Behind HIIT: Why It Works for Fat Loss and Fitness</h2>
-                        <div class="post-meta">Published on July 1, 2024 • 14 min read</div>
-                        <p class="post-excerpt">
-                            Discover the scientific mechanisms that make HIIT so effective for fat loss, metabolism, and overall fitness backed by research.
-                        </p>
-                        <span class="read-more">Read More →</span>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="blog-post-card">
-                <a href="/blog/posts/hiit-mistakes.html" class="post-link">
-                    <img src="/assets/blog/hiit-mistakes-cover.jpg" alt="Person correcting form during a HIIT workout" class="post-thumbnail">
-                    <div class="post-details">
-                        <h2 class="post-title">Common HIIT Mistakes and How to Avoid Them</h2>
-                        <div class="post-meta">Published on July 15, 2024 • 11 min read</div>
-                        <p class="post-excerpt">
-                            Learn about the most common mistakes people make with HIIT workouts and how to fix them for better results, safety, and long-term success.
-                        </p>
-                        <span class="read-more">Read More →</span>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="blog-post-card">
-                <a href="/blog/posts/hiit-terminology.html" class="post-link">
-                    <img src="/assets/blog/hiit-terminology-cover.jpg" alt="Woman training with stopwatch and HIIT terminology overlay" class="post-thumbnail">
-                    <div class="post-details">
-                        <h2 class="post-title">HIIT Terminology: A Complete Glossary of Interval Training Terms</h2>
-                        <div class="post-meta">Published on August 1, 2024 • 13 min read</div>
-                        <p class="post-excerpt">
-                            Learn the essential HIIT terminology and vocabulary with our comprehensive glossary explaining key interval training terms, protocols, and concepts.
-                        </p>
-                        <span class="read-more">Read More →</span>
-                    </div>
-                </a>
-            </div>
+            {%- endfor -%}
         </div>
     </div>
     
@@ -374,5 +372,70 @@
             &copy; 2023-2024 Peak Interval. All rights reserved.
         </div>
     </div>
+
+    <!-- Firebase Analytics -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAH8e8l2Q7f-1ZXYYeDrMfB4oKGKEwoCxM",
+            authDomain: "peak-interval-site.firebaseapp.com",
+            projectId: "peak-interval-site",
+            storageBucket: "peak-interval-site.firebasestorage.app",
+            messagingSenderId: "199931231891",
+            appId: "1:199931231891:web:97e2dd591118fdcaf29766",
+            measurementId: "G-TGBMET8NFR"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <!-- Category Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all filter buttons and blog post cards
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const blogPostCards = document.querySelectorAll('.blog-post-card');
+            
+            // Add click event listener to each filter button
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove 'active' class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add 'active' class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get the category to filter by
+                    const filterCategory = this.getAttribute('data-category');
+                    
+                    // Track the filter event in Firebase Analytics
+                    const analyticsEvent = window.gtag || (window.firebase && window.firebase.analytics().logEvent);
+                    if (analyticsEvent) {
+                        analyticsEvent('filter_blog_posts', {
+                            category: filterCategory
+                        });
+                    }
+                    
+                    // Show/hide blog post cards based on the selected category
+                    blogPostCards.forEach(card => {
+                        if (filterCategory === 'all' || card.getAttribute('data-category') === filterCategory) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
