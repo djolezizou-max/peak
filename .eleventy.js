@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
 
   // Pass through static assets
@@ -12,8 +14,18 @@ module.exports = function(eleventyConfig) {
     return slugify(str, {
       lower: true,
       strict: true,
-      remove: /[*+~.()'"!:@]/g
+      remove: /[*+~.()\'"!:@]/g
     });
+  });
+
+  // Date formatting filter (for sitemap)
+  eleventyConfig.addLiquidFilter("htmlDateString", (dateObj) => {
+    // Check if dateObj is valid and not null
+    if (!dateObj || !(dateObj instanceof Date) || isNaN(dateObj)) {
+      // Return current date or a placeholder if the input date is invalid
+      return DateTime.now().toISODate(); 
+    }
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISODate();
   });
 
   // Set custom directories for input, output, includes, and data
