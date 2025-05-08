@@ -9,11 +9,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 3. The Science Behind HIIT: Why It Works for Fat Loss and Fitness [DONE]
 4. Common HIIT Mistakes and How to Avoid Them [DONE]
 5. HIIT Terminology: A Complete Glossary of Interval Training Terms [DONE]
-6. The History of HIIT: How Interval Training Evolved Into Today's Workouts
-7. HIIT for Beginners: How to Start Safely and Progress Effectively
-8. The Perfect HIIT Work-to-Rest Ratio for Your Fitness Level
-9. Measuring Intensity: How to Know If You're Working Hard Enough in HIIT
-10. Heart Rate Training in HIIT: Zones, Monitoring, and Optimization
+6. The History of HIIT: How Interval Training Evolved Into Today's Workouts [DONE]
+7. HIIT for Beginners: How to Start Safely and Progress Effectively [DONE]
+8. The Perfect HIIT Work-to-Rest Ratio for Your Fitness Level [DONE]
+9. Measuring Intensity: How to Know If You're Working Hard Enough in HIIT [DONE]
+10. Heart Rate Training in HIIT: Zones, Monitoring, and Optimization [DONE]
 11. The HIIT Recovery Window: What Happens In Your Body After Intervals
 12. HIIT Periodization: Structuring Your Training for Optimal Results
 13. HIIT vs. HIIS vs. Tabata vs. SIT: Understanding Different Interval Methods
