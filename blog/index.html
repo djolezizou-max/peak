@@ -109,6 +109,65 @@
             padding: 0 20px 60px;
         }
         
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .blog-post-card {
+            width: calc(50% - 10px);
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .post-link {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .post-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .post-details {
+            padding: 20px;
+        }
+        
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .post-meta {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+        }
+        
+        .post-excerpt {
+            margin-bottom: 20px;
+        }
+        
+        .read-more {
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        
+        .read-more:hover {
+            opacity: 0.7;
+        }
+        
         .coming-soon {
             text-align: center;
             padding: 60px 20px;
@@ -131,19 +190,21 @@
         
         .cta-button {
             background: #FF9500;
-            color: black;
+            color: #FFFFFF;
             text-decoration: none;
             padding: 15px 30px;
             border-radius: 12px;
-            font-weight: 600;
+            font-weight: 700;
             display: inline-block;
             transition: all 0.2s;
             font-size: 18px;
             margin: 20px 10px 0;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
         }
         
         .cta-button:hover {
             background: #FFB340;
+            color: #FFFFFF;
             transform: scale(1.02);
         }
         
@@ -197,6 +258,10 @@
             .nav a {
                 padding: 5px 10px;
             }
+            
+            .blog-post-card {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -224,14 +289,76 @@
     </div>
     
     <div class="blog-content">
-        <div class="coming-soon">
-            <h2>Coming Soon!</h2>
-            <p>
-                We're working on some amazing content for this blog. Check back soon for articles about HIIT workouts, interval training techniques, fitness tips, and updates about the Peak Interval app.
-            </p>
-            <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
-                Download Our App
-            </a>
+        <div class="blog-posts">
+            <div class="blog-post-card">
+                <a href="/blog/posts/what-is-hiit.html" class="post-link">
+                    <img src="/assets/blog/hiit-guide-cover.jpg" alt="Person performing high-intensity interval training" class="post-thumbnail">
+                    <div class="post-details">
+                        <h2 class="post-title">What is HIIT? The Complete Guide to High-Intensity Interval Training</h2>
+                        <div class="post-meta">Published on June 1, 2024 • 12 min read</div>
+                        <p class="post-excerpt">
+                            Learn what HIIT (high-intensity interval training) is, its science-backed benefits, and how to get started with effective interval workouts.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="blog-post-card">
+                <a href="/blog/posts/hiit-vs-steady-state.html" class="post-link">
+                    <img src="/assets/blog/hiit-vs-cardio-cover.jpg" alt="Comparison of HIIT and steady-state cardio workouts" class="post-thumbnail">
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT vs. Steady-State Cardio: Which Is Right for Your Fitness Goals?</h2>
+                        <div class="post-meta">Published on June 15, 2024 • 10 min read</div>
+                        <p class="post-excerpt">
+                            Compare high-intensity interval training (HIIT) and steady-state cardio to determine which cardio method best aligns with your specific fitness goals.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="blog-post-card">
+                <a href="/blog/posts/science-behind-hiit.html" class="post-link">
+                    <img src="/assets/blog/hiit-science-cover.jpg" alt="Scientific visualization of HIIT effects on the body" class="post-thumbnail">
+                    <div class="post-details">
+                        <h2 class="post-title">The Science Behind HIIT: Why It Works for Fat Loss and Fitness</h2>
+                        <div class="post-meta">Published on July 1, 2024 • 14 min read</div>
+                        <p class="post-excerpt">
+                            Discover the scientific mechanisms that make HIIT so effective for fat loss, metabolism, and overall fitness backed by research.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="blog-post-card">
+                <a href="/blog/posts/hiit-mistakes.html" class="post-link">
+                    <img src="/assets/blog/hiit-mistakes-cover.jpg" alt="Person correcting form during a HIIT workout" class="post-thumbnail">
+                    <div class="post-details">
+                        <h2 class="post-title">Common HIIT Mistakes and How to Avoid Them</h2>
+                        <div class="post-meta">Published on July 15, 2024 • 11 min read</div>
+                        <p class="post-excerpt">
+                            Learn about the most common mistakes people make with HIIT workouts and how to fix them for better results, safety, and long-term success.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="blog-post-card">
+                <a href="/blog/posts/hiit-terminology.html" class="post-link">
+                    <img src="/assets/blog/hiit-terminology-cover.jpg" alt="Woman training with stopwatch and HIIT terminology overlay" class="post-thumbnail">
+                    <div class="post-details">
+                        <h2 class="post-title">HIIT Terminology: A Complete Glossary of Interval Training Terms</h2>
+                        <div class="post-meta">Published on August 1, 2024 • 13 min read</div>
+                        <p class="post-excerpt">
+                            Learn the essential HIIT terminology and vocabulary with our comprehensive glossary explaining key interval training terms, protocols, and concepts.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     

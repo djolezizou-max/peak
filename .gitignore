@@ -1,0 +1,15 @@
+# Ignore all Markdown files
+*.md
+
+# Mac OS files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
