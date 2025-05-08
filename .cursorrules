@@ -1,5 +1,5 @@
-# Gemini Capability Note (Added 2025-05-06):
-# Gemini can successfully propose terminal commands (like curl for downloads, mv for moves)
+# You (AI) Capability Note (Added 2025-05-06):
+# You (AI) can successfully propose terminal commands (like curl for downloads, mv for moves)
 # which, upon user approval, will execute in the user's terminal environment.
 # This allows for searching, downloading, and moving files within the workspace,
 # provided the necessary commands are approved by the user. 

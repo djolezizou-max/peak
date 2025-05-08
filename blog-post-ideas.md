@@ -45,11 +45,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 
 ## Timer and App Features (10 posts)
 
-36. How to Design the Perfect HIIT Interval Timer for Your Workout Goals
-37. 5 Ways to Use the Peak Interval App for Different Training Styles
-38. Advanced Timer Features: Using Rest Intervals and Preparation Times Effectively
-39. How to Track Your HIIT Progress: Using Timers for Performance Measurement
-40. Using Sound Cues in HIIT: How Audio Feedback Improves Your Workout
+36. How to Design the Perfect HIIT Interval Timer for Your Workout Goals [DONE]
+37. 5 Ways to Use the Peak Interval App for Different Training Styles [DONE]
+38. Advanced Timer Features: Using Rest Intervals and Preparation Times Effectively [DONE]
+39. How to Track Your HIIT Progress: Using Timers for Performance Measurement [DONE]
+40. Using Sound Cues in HIIT: How Audio Feedback Improves Your Workout [DONE]
 41. Creating and Saving Custom HIIT Workouts in Peak Interval
 42. Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You?
 43. The Psychology of the Countdown: How Timers Affect Your Workout Intensity
@@ -58,11 +58,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 
 ## Specialized HIIT Training (20 posts)
 
-46. HIIT for Runners: Interval Training to Improve Your Speed and Endurance
-47. HIIT for Strength: Combining Interval Training with Resistance Work
-48. Low-Impact HIIT Workouts for Joint Health and Injury Prevention
-49. HIIT for Seniors: Safe and Effective Interval Training for Older Adults
-50. HIIT for Weight Loss: Targeted Protocols to Maximize Fat Burning
+46. HIIT for Runners: Interval Training to Improve Your Speed and Endurance [DONE]
+47. HIIT for Strength: Combining Interval Training with Resistance Work [DONE]
+48. Low-Impact HIIT Workouts for Joint Health and Injury Prevention [DONE]
+49. HIIT for Seniors: Safe and Effective Interval Training for Older Adults [DONE]
+50. HIIT for Weight Loss: Targeted Protocols to Maximize Fat Burning [DONE]
 51. HIIT for Endurance Athletes: Complementing Your Long-Distance Training
 52. HIIT for Powerlifters: Building Power and Conditioning Without Sacrifice
 53. Pregnancy-Safe HIIT: Modifications for Each Trimester
@@ -81,11 +81,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 
 ## Fitness and Nutrition (15 posts)
 
-66. Nutrition Timing Around Your HIIT Workouts: What to Eat and When
-67. HIIT and Recovery: How to Balance Intense Workouts with Proper Rest
-68. HIIT for Mental Health: The Psychological Benefits of Interval Training
-69. Combining HIIT with Other Fitness Disciplines for Optimal Results
-70. Protein Needs for HIIT: Building and Preserving Muscle During Intense Training
+66. Nutrition Timing Around Your HIIT Workouts: What to Eat and When [DONE]
+67. HIIT and Recovery: How to Balance Intense Workouts with Proper Rest [DONE]
+68. HIIT for Mental Health: The Psychological Benefits of Interval Training [DONE]
+69. Combining HIIT with Other Fitness Disciplines for Optimal Results [DONE]
+70. Protein Needs for HIIT: Building and Preserving Muscle During Intense Training [DONE]
 71. Hydration Strategies for HIIT: Before, During, and After
 72. Carb Cycling and HIIT: Matching Your Nutrition to Your Training Intensity
 73. Supplements for HIIT Performance: What Works and What Doesn't
@@ -99,11 +99,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 
 ## HIIT Success Stories and Case Studies (10 posts)
 
-81. Transformation Stories: Real People Who Changed Their Bodies with HIIT
-82. From Couch to HIIT Enthusiast: Beginner Success Stories
-83. Athletes Who Use HIIT: How the Pros Incorporate Interval Training
-84. HIIT for Weight Loss: Case Studies and Success Strategies
-85. The 50+ HIIT Club: Stories of Older Adults Thriving with Interval Training
+81. Transformation Stories: Real People Who Changed Their Bodies with HIIT [DONE]
+82. From Couch to HIIT Enthusiast: Beginner Success Stories [DONE]
+83. Athletes Who Use HIIT: How the Pros Incorporate Interval Training [DONE]
+84. HIIT for Weight Loss: Case Studies and Success Strategies [DONE]
+85. The 50+ HIIT Club: Stories of Older Adults Thriving with Interval Training [DONE]
 86. HIIT After Injury: Comeback Stories and Lessons Learned
 87. Family HIIT: How Couples and Families Train Together
 88. HIIT Trainers Share Their Personal Routines and Tips
@@ -116,7 +116,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 92. Altitude and HIIT: How Elevation Affects Interval Training [DONE]
 93. Polarized Training: Combining HIIT with Very Low Intensity Work [DONE]
 94. HIIT and Muscle Fiber Types: Training for Your Genetic Makeup [DONE]
-95. The Lactate Threshold and HIIT: Training to Push Your Limits [DONE]
+95. The Lactate Threshold and HIIT: Training to Push Your Limits
 96. VO2 Max Improvements Through HIIT: The Research and Application
 97. Concurrent Training: The Science of Combining HIIT and Strength Training
 98. Neuromuscular Adaptations to HIIT: How Your Nervous System Changes
