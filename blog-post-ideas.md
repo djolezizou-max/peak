@@ -112,11 +112,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 
 ## Advanced HIIT Concepts (10 posts)
 
-91. The Science of EPOC: Maximizing the Afterburn Effect
-92. Altitude and HIIT: How Elevation Affects Interval Training
-93. Polarized Training: Combining HIIT with Very Low Intensity Work
-94. HIIT and Muscle Fiber Types: Training for Your Genetic Makeup
-95. The Lactate Threshold and HIIT: Training to Push Your Limits
+91. The Science of EPOC: Maximizing the Afterburn Effect [DONE]
+92. Altitude and HIIT: How Elevation Affects Interval Training [DONE]
+93. Polarized Training: Combining HIIT with Very Low Intensity Work [DONE]
+94. HIIT and Muscle Fiber Types: Training for Your Genetic Makeup [DONE]
+95. The Lactate Threshold and HIIT: Training to Push Your Limits [DONE]
 96. VO2 Max Improvements Through HIIT: The Research and Application
 97. Concurrent Training: The Science of Combining HIIT and Strength Training
 98. Neuromuscular Adaptations to HIIT: How Your Nervous System Changes
