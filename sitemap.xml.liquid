@@ -1,0 +1,24 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}
+  {%- comment -%}
+    Exclude utility pages like the sitemap template itself, 
+    pages explicitly opted out via frontmatter (sitemap_exclude: true),
+    or pages that somehow don't have a URL.
+  {%- endcomment -%}
+  {%- if item.url and item.data.eleventyExcludeFromCollections != true and item.data.sitemap_exclude != true %}
+  <url>
+    <loc>https://peakintervalapp.com{{ item.url | url }}</loc>
+    {%- if item.date %}
+    <lastmod>{{ item.date | htmlDateString }}</lastmod>
+    {%- endif %}
+    <changefreq>{{ item.data.sitemap_changefreq | default: 'weekly' }}</changefreq>
+    <priority>{{ item.data.sitemap_priority | default: 0.7 }}</priority>
+  </url>
+  {%- endif %}
+{%- endfor %}
+</urlset> 
