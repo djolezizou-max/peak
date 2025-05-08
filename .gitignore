@@ -14,4 +14,7 @@
 # Dependencies
 node_modules/
 
+# Optional: Ignore built files only if your deployment process rebuilds them
+# _site/
+
 
