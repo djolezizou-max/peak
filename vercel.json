@@ -36,7 +36,19 @@
     "redirects": [
         {
             "source": "/w/:path*",
-            "destination": "/#sharedWorkout=:path*",
+            "destination": "/download/#sharedWorkout=:path*",
+            "permanent": false,
+            "has": [
+                {
+                    "type": "header",
+                    "key": "User-Agent",
+                    "value": "(?!.*PeakIntervals).*"
+                }
+            ]
+        },
+        {
+            "source": "/download/w/:path*",
+            "destination": "/download/#sharedWorkout=:path*",
             "permanent": false,
             "has": [
                 {

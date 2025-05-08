@@ -3,121 +3,339 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peak Intervals Workout</title>
+    <title>Peak Interval - HIIT Timer App</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Peak Interval is the perfect HIIT timer app for creating, customizing and conquering your interval workouts. Download now for iOS.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://peakintervalapp.com/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- App Banner -->
-    <meta name="apple-itunes-app" content="app-id=6741055716">
-
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Peak Intervals Workout">
-    <meta property="og:description" content="Check out this HIIT workout in Peak Intervals!">
+    <meta property="og:title" content="Peak Interval - HIIT Timer App">
+    <meta property="og:description" content="The perfect HIIT timer app for your interval workouts">
     <meta property="og:image" content="https://peakintervalapp.com/assets/app_icon.png">
     <meta property="og:url" content="https://peakintervalapp.com">
-    <meta property="og:type" content="fitness.course">
+    <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta Tags (Optional but recommended) -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Peak Intervals Workout">
-    <meta name="twitter:description" content="Check out this HIIT workout!">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Peak Interval - HIIT Timer App">
+    <meta name="twitter:description" content="The perfect HIIT timer app for your interval workouts">
     <meta name="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Peak Interval",
+      "description": "The perfect HIIT timer app for your interval workouts",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "25"
+      }
+    }
+    </script>
 
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             background: #181F3B;
             color: white;
-            text-align: center;
-            padding: 20px;
+            padding: 0;
             margin: 0;
             min-height: 100vh;
+        }
+        
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            background-color: rgba(0,0,0,0.3);
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .nav a:hover {
+            opacity: 1;
+        }
+        
+        .nav a.active {
+            opacity: 1;
+            border-bottom: 2px solid #FF9500;
+        }
+        
+        .hero {
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: center;
+            padding: 60px 20px;
+            text-align: center;
         }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 25px;
-            margin-bottom: 20px;
-        }
+        
         h1 {
-            font-size: 28px;
+            font-size: 42px;
             margin-bottom: 20px;
         }
-        .app-store-button {
+        
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
             background: #FF9500;
             color: black;
             text-decoration: none;
             padding: 15px 30px;
             border-radius: 12px;
             font-weight: 600;
-            margin-top: 20px;
             display: inline-block;
             transition: all 0.2s;
             font-size: 18px;
+            margin: 10px;
         }
-        .app-store-button:hover {
+        
+        .cta-button:hover {
             background: #FFB340;
             transform: scale(1.02);
         }
-        .message {
-            margin: 20px 0;
-            font-size: 18px;
+        
+        .secondary-button {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .secondary-button:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .features {
+            padding: 60px 20px;
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-item {
+            padding: 30px;
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            font-size: 16px;
             line-height: 1.5;
-            opacity: 0.9;
+            opacity: 0.8;
         }
+        
+        .footer {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
         .footer-links {
-            margin-top: 40px;
-            font-size: 14px;
-            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
         }
+        
         .footer-links a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            opacity: 0.7;
+            transition: opacity 0.2s;
         }
+        
         .footer-links a:hover {
-            text-decoration: underline;
             opacity: 1;
+            text-decoration: underline;
         }
-    </style>
-
-    <script>
-        window.onload = function() {
-            // Check if we have a shared workout in the URL hash
-            if (window.location.hash && window.location.hash.startsWith('#sharedWorkout=')) {
-                // Extract the workout data from the hash
-                const workoutData = window.location.hash.substring('#sharedWorkout='.length);
-                // Use the correct format for deep linking to the app
-                window.location.href = "peakintervals://w/" + workoutData;
-            } else {
-                // Use the original path for deep linking (for direct /w/ URLs)
-                window.location.href = "peakintervals://" + window.location.pathname + window.location.search;
+        
+        .copyright {
+            opacity: 0.7;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .nav a {
+                padding: 5px 10px;
             }
         }
-    </script>
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="/assets/app_icon.png" alt="Peak Intervals App Icon" class="app-icon">
-        <h1>Opening Peak Intervals...</h1>
-        <p class="message">If you have the app installed, click "Allow" when prompted.</p>
-        <p class="message">Don't have the app yet?</p>
-        <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="app-store-button">
-            Download from App Store
-        </a>
+    <div class="header">
+        <div class="logo">
+            <img src="/assets/app_icon.png" alt="Peak Interval App Icon" class="app-icon">
+            <div class="logo-text">Peak Interval</div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <a href="/" class="active">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+    </div>
+    
+    <div class="hero">
+        <h1>The Ultimate HIIT Timer App</h1>
+        <p class="subtitle">
+            Create, customize, and conquer your interval workouts with our beautifully designed HIIT timer app. 
+            Perfect for all your interval training needs.
+        </p>
+        <div>
+            <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+                Download on App Store
+            </a>
+        </div>
+    </div>
+    
+    <div class="features">
+        <div class="features-container">
+            <h2 class="features-title">App Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">Custom Intervals</h3>
+                    <p class="feature-desc">
+                        Create custom interval sets with flexible work and rest periods to match your training style.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Workout Presets</h3>
+                    <p class="feature-desc">
+                        Save your favorite workouts as presets or choose from our pre-defined workout templates.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔊</div>
+                    <h3 class="feature-title">Audio Cues</h3>
+                    <p class="feature-desc">
+                        Stay focused with customizable audio alerts that keep you on track during your workout.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Track Progress</h3>
+                    <p class="feature-desc">
+                        Monitor your workout history and see your improvement over time.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔗</div>
+                    <h3 class="feature-title">Share Workouts</h3>
+                    <p class="feature-desc">
+                        Share your custom workouts with friends and training partners.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌙</div>
+                    <h3 class="feature-title">Dark Mode</h3>
+                    <p class="feature-desc">
+                        Enjoy a beautiful dark interface that's easy on the eyes during your workouts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
         <div class="footer-links">
             <a href="/terms">Terms & Conditions</a>
             <a href="/privacy">Privacy Policy</a>
             <a href="/contact">Contact Us</a>
+            <a href="/blog">Blog</a>
+        </div>
+        <div class="copyright">
+            &copy; 2023-2024 Peak Interval. All rights reserved.
         </div>
     </div>
 </body>
