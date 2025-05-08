@@ -64,5 +64,8 @@
             "source": "/.well-known/:path*",
             "destination": "/.well-known/:path*"
         }
-    ]
+    ],
+    "buildCommand": "npm run build",
+    "outputDirectory": "_site",
+    "framework": "eleventy"
 } 
