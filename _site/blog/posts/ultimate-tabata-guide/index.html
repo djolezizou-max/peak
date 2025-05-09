@@ -285,6 +285,65 @@
             }
         }
     </style>
+    
+    <script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        // Check if we're in app mode on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const isAppMode = getQueryParam('app') === 'true';
+            
+            if (isAppMode) {
+                // Hide header, nav and footer when in app mode
+                const header = document.querySelector('.header');
+                const nav = document.querySelector('.nav');
+                const footer = document.querySelector('.footer');
+                const backLink = document.querySelector('.back-to-blog-link');
+                
+                if (header) header.style.display = 'none';
+                if (nav) nav.style.display = 'none';
+                if (footer) footer.style.display = 'none';
+                
+                // Hide all app download CTAs
+                const ctaBoxes = document.querySelectorAll('.cta-box');
+                const ctaButtons = document.querySelectorAll('.cta-button');
+                
+                ctaBoxes.forEach(box => {
+                    // Check if the CTA mentions downloading the app
+                    if (box.textContent.toLowerCase().includes('download') || 
+                        box.textContent.toLowerCase().includes('app') ||
+                        box.textContent.toLowerCase().includes('get peak interval')) {
+                        box.style.display = 'none';
+                    }
+                });
+                
+                ctaButtons.forEach(button => {
+                    if (button.textContent.toLowerCase().includes('download') || 
+                        button.textContent.toLowerCase().includes('app') ||
+                        button.textContent.toLowerCase().includes('get peak interval')) {
+                        button.style.display = 'none';
+                    }
+                });
+                
+                // Change back link to point to app blog index
+                if (backLink) {
+                    backLink.href = '/blog/app-index.html?app=true';
+                    backLink.textContent = '← Back to Blog';
+                }
+                
+                // Add more padding to the blog container for app view
+                const blogContainer = document.querySelector('.blog-container');
+                if (blogContainer) {
+                    blogContainer.style.padding = '20px';
+                    blogContainer.style.marginTop = '0';
+                }
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="header">
