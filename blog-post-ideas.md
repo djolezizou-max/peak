@@ -14,11 +14,11 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 8. The Perfect HIIT Work-to-Rest Ratio for Your Fitness Level [DONE]
 9. Measuring Intensity: How to Know If You're Working Hard Enough in HIIT [DONE]
 10. Heart Rate Training in HIIT: Zones, Monitoring, and Optimization [DONE]
-11. The HIIT Recovery Window: What Happens In Your Body After Intervals
-12. HIIT Periodization: Structuring Your Training for Optimal Results
-13. HIIT vs. HIIS vs. Tabata vs. SIT: Understanding Different Interval Methods
-14. The Role of Perceived Exertion in HIIT: Beyond Heart Rate Monitors
-15. Debunking HIIT Myths: Separating Fact from Fiction in Interval Training
+11. The HIIT Recovery Window: What Happens In Your Body After Intervals [DONE]
+12. HIIT Periodization: Structuring Your Training for Optimal Results [DONE]
+13. HIIT vs. HIIS vs. Tabata vs. SIT: Understanding Different Interval Methods [DONE]
+14. The Role of Perceived Exertion in HIIT: Beyond Heart Rate Monitors [DONE]
+15. Debunking HIIT Myths: Separating Fact from Fiction in Interval Training [DONE]
 
 ## Workout Guides (20 posts)
 
@@ -27,17 +27,17 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 18. Full-Body HIIT Workouts You Can Do Anywhere (No Equipment Needed) [DONE]
 19. 30-Day HIIT Challenge: Transform Your Fitness in One Month [DONE]
 20. HIIT Circuit Training: Combining Strength and Cardio for Maximum Results [DONE]
-21. 5 HIIT Ladder Workouts to Progressively Challenge Your Fitness
-22. Partner HIIT Workouts: Exercises to Do with a Friend or Workout Buddy
-23. HIIT Finishers: 5-Minute Routines to End Any Workout with a Bang
-24. HIIT for Small Spaces: Apartment-Friendly Interval Workouts
-25. Dumbbell HIIT Workouts: Total Body Routines with Minimal Equipment
-26. Kettlebell HIIT: Swing Your Way to Better Fitness
-27. Jump Rope HIIT Workouts: Simple Equipment, Maximum Burn
-28. HIIT on the Go: Workouts You Can Do While Traveling
-29. 15 HIIT Core Workouts for a Stronger Midsection
-30. Lower Body HIIT: Building Strong Legs and Glutes
-31. Upper Body HIIT: Sculpt Arms, Shoulders, and Back
+21. 5 HIIT Ladder Workouts to Progressively Challenge Your Fitness [DONE]
+22. Partner HIIT Workouts: Exercises to Do with a Friend or Workout Buddy [DONE]
+23. HIIT Finishers: 5-Minute Routines to End Any Workout with a Bang [DONE]
+24. HIIT for Small Spaces: Apartment-Friendly Interval Workouts [DONE]
+25. Dumbbell HIIT Workouts: Total Body Routines with Minimal Equipment [DONE]
+26. Kettlebell HIIT: Swing Your Way to Better Fitness [DONE]
+27. Jump Rope HIIT Workouts: Simple Equipment, Maximum Burn [DONE]
+28. HIIT on the Go: Workouts You Can Do While Traveling [DONE]
+29. 15 HIIT Core Workouts for a Stronger Midsection [DONE]
+30. Lower Body HIIT: Building Strong Legs and Glutes [DONE]
+31. Upper Body HIIT: Sculpt Arms, Shoulders, and Back [DONE]
 32. AMRAP vs. EMOM vs. Tabata: Different HIIT Formats Compared
 33. Outdoor HIIT Workouts: Taking Your Intervals Into Nature
 34. HIIT for the Track: Sprint Workouts for Speed and Endurance
@@ -50,8 +50,8 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 38. Advanced Timer Features: Using Rest Intervals and Preparation Times Effectively [DONE]
 39. How to Track Your HIIT Progress: Using Timers for Performance Measurement [DONE]
 40. Using Sound Cues in HIIT: How Audio Feedback Improves Your Workout [DONE]
-41. Creating and Saving Custom HIIT Workouts in Peak Interval
-42. Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You?
+41. Creating and Saving Custom HIIT Workouts in Peak Interval [DONE]
+42. Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You? [DONE]
 43. The Psychology of the Countdown: How Timers Affect Your Workout Intensity
 44. Syncing Music with Your HIIT Intervals: The Beat and Your Performance
 45. Using Peak Interval for Group Workouts and Classes
@@ -63,7 +63,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 48. Low-Impact HIIT Workouts for Joint Health and Injury Prevention [DONE]
 49. HIIT for Seniors: Safe and Effective Interval Training for Older Adults [DONE]
 50. HIIT for Weight Loss: Targeted Protocols to Maximize Fat Burning [DONE]
-51. HIIT for Endurance Athletes: Complementing Your Long-Distance Training
+51. HIIT for Endurance Athletes: Complementing Your Long-Distance Training [DONE]
 52. HIIT for Powerlifters: Building Power and Conditioning Without Sacrifice
 53. Pregnancy-Safe HIIT: Modifications for Each Trimester
 54. Postpartum HIIT: Safe Return to Intensity After Childbirth
@@ -86,7 +86,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 68. HIIT for Mental Health: The Psychological Benefits of Interval Training [DONE]
 69. Combining HIIT with Other Fitness Disciplines for Optimal Results [DONE]
 70. Protein Needs for HIIT: Building and Preserving Muscle During Intense Training [DONE]
-71. Hydration Strategies for HIIT: Before, During, and After
+71. Hydration Strategies for HIIT: Before, During, and After [DONE]
 72. Carb Cycling and HIIT: Matching Your Nutrition to Your Training Intensity
 73. Supplements for HIIT Performance: What Works and What Doesn't
 74. HIIT and Sleep: The Crucial Connection Between Rest and Results
@@ -116,7 +116,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 92. Altitude and HIIT: How Elevation Affects Interval Training [DONE]
 93. Polarized Training: Combining HIIT with Very Low Intensity Work [DONE]
 94. HIIT and Muscle Fiber Types: Training for Your Genetic Makeup [DONE]
-95. The Lactate Threshold and HIIT: Training to Push Your Limits
+95. The Lactate Threshold and HIIT: Training to Push Your Limits [DONE]
 96. VO2 Max Improvements Through HIIT: The Research and Application
 97. Concurrent Training: The Science of Combining HIIT and Strength Training
 98. Neuromuscular Adaptations to HIIT: How Your Nervous System Changes

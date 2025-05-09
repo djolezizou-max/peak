@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("app_icon.png");
 
+  // Ignore Markdown files not in blog/posts directory
+  eleventyConfig.ignores.add("**/*.md");
+  eleventyConfig.ignores.add("!blog/posts/**/*.md");
+
   // Add slugify filter
   const slugify = require("slugify");
   eleventyConfig.addFilter("slugify", (str) => {

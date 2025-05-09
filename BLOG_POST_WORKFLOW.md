@@ -66,5 +66,8 @@ This document outlines the steps to create a new blog post now that the site use
     *   Check the blog list for the new post.
     *   Navigate to the full post page and carefully review the content, formatting, images, and links.
 
-6.  **Commit and Push:**
-    *   Once satisfied, commit the new `.md` file and any new image assets to your Git repository. 
+6.  **Update Tracking:**
+    *   Open the `blog-post-ideas.md` file.
+    *   Find the corresponding blog post idea in the list.
+    *   Mark it as completed by adding `[DONE]` at the end of the line.
+    *   This helps track which blog posts have been published and which ideas are still available for future content.
