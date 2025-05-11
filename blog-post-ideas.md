@@ -38,10 +38,10 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 29. 15 HIIT Core Workouts for a Stronger Midsection [DONE]
 30. Lower Body HIIT: Building Strong Legs and Glutes [DONE]
 31. Upper Body HIIT: Sculpt Arms, Shoulders, and Back [DONE]
-32. AMRAP vs. EMOM vs. Tabata: Different HIIT Formats Compared
-33. Outdoor HIIT Workouts: Taking Your Intervals Into Nature
+32. AMRAP vs. EMOM vs. Tabata: Different HIIT Formats Compared [DONE]
+33. Outdoor HIIT Workouts: Taking Your Intervals Into Nature [DONE]
 34. HIIT for the Track: Sprint Workouts for Speed and Endurance
-35. Stair HIIT Workouts: Using Steps for Intense Interval Training
+35. Stair HIIT Workouts: Using Steps for Intense Interval Training [DONE]
 
 ## Timer and App Features (10 posts)
 
