@@ -36,7 +36,7 @@
     "redirects": [
         {
             "source": "/w/:path*",
-            "destination": "/download/#sharedWorkout=:path*",
+            "destination": "/download/w/:path*",
             "permanent": false,
             "has": [
                 {
@@ -47,8 +47,8 @@
             ]
         },
         {
-            "source": "/download/w/:path*",
-            "destination": "/download/#sharedWorkout=:path*",
+            "source": "/w/:path*/",
+            "destination": "/download/w/:path*/",
             "permanent": false,
             "has": [
                 {

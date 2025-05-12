@@ -104,8 +104,17 @@
                 if (path.startsWith('/download')) {
                     path = path.substring('/download'.length) || '/';
                 }
-                // Use the path for deep linking
-                window.location.href = "peakintervals://" + path + window.location.search;
+                
+                // Check if this is a /w/ path for shared workouts
+                if (path.startsWith('/w/')) {
+                    // Extract the workout data from the path
+                    const workoutData = path.substring('/w/'.length);
+                    // Use the correct format for deep linking to the app
+                    window.location.href = "peakintervals://w/" + workoutData;
+                } else {
+                    // Use the path for deep linking
+                    window.location.href = "peakintervals://" + path + window.location.search;
+                }
             }
         }
     </script>

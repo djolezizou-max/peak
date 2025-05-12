@@ -54,6 +54,21 @@ This document outlines the steps to create a new blog post now that the site use
     *   Below the closing `---` of the front matter, write the actual blog post content using standard Markdown syntax.
     *   **Goal:** Create informative, engaging, and SEO-friendly content based on the topic (referencing `blog-post-ideas.md` and `seo-strategy.md`).
     *   **Structure:** Use headings (`##`, `###`), lists (`*`, `1.`), bold/italics, etc., to structure the content logically.
+    *   **Content Flow Best Practices:**
+        * **Narrative paragraphs:** Prioritize well-crafted paragraphs (3-5 sentences) for most content. Develop ideas fully with proper transitions between thoughts.
+        * **Bullet point moderation:** Use bullet points sparingly and strategically for:
+            - Lists that truly need to be itemized
+            - Key points that need visual separation
+            - Technical specifications or quick reference information
+        * **Paragraph-to-bullet ratio:** Aim for at least 3-4 paragraphs between each bullet point list
+        * **Contextual framing:** Always introduce bullet points with a proper explanatory paragraph
+        * **Follow-up explanation:** Consider adding detailed paragraphs after important bullet points to expand on key ideas
+    *   **Content Variety:** Balance your content with:
+        * Narrative paragraphs (primary content structure)
+        * Occasional bullet points (for truly list-worthy content)
+        * Descriptive examples
+        * Short anecdotes or scenarios
+        * Analogies to clarify complex concepts
     *   **Keywords:** Naturally incorporate target keywords identified in the SEO strategy.
     *   **App Integration:** Where relevant, mention how the Peak Interval app can be used in relation to the post's topic (e.g., specific timer settings, features).
     *   **CTAs:** Include relevant Calls to Action, potentially using the styled `cta-box` HTML structure (see below).

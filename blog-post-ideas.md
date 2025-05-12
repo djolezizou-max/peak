@@ -52,8 +52,8 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 40. Using Sound Cues in HIIT: How Audio Feedback Improves Your Workout [DONE]
 41. Creating and Saving Custom HIIT Workouts in Peak Interval [DONE]
 42. Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You? [DONE]
-43. The Psychology of the Countdown: How Timers Affect Your Workout Intensity
-44. Syncing Music with Your HIIT Intervals: The Beat and Your Performance
+43. The Psychology of the Countdown: How Timers Affect Your Workout Intensity [DONE]
+44. Syncing Music with Your HIIT Intervals: The Beat and Your Performance [DONE]
 45. Using Peak Interval for Group Workouts and Classes
 
 ## Specialized HIIT Training (20 posts)
