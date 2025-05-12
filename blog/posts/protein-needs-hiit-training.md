@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-protein-needs.jpg"
 image_alt: "Protein-rich meal beside HIIT workout equipment"
 layout: "post.liquid"
 tags: "posts"
-category: "Fitness and Nutrition"
+category: "Fitness + Nutrition"
 ---
 
 ## Fueling the Fire: Protein's Essential Role in HIIT Success

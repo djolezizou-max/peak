@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-mental-health.jpg"
 image_alt: "Person looking refreshed and happy after completing a HIIT workout"
 layout: "post.liquid"
 tags: "posts"
-category: "Fitness and Nutrition"
+category: "Fitness + Nutrition"
 ---
 
 ## Beyond the Physical: HIIT as Mental Health Medicine

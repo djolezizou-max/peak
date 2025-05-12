@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-fitness-combination.jpg"
 image_alt: "Person performing a combination of HIIT and yoga exercises"
 layout: "post.liquid"
 tags: "posts"
-category: "Fitness and Nutrition"
+category: "Fitness + Nutrition"
 ---
 
 ## The Hybrid Approach: HIIT as Your Fitness Cornerstone

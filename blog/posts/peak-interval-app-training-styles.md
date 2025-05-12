@@ -6,7 +6,7 @@ featured_image: "/assets/blog/peak-interval-versatility.jpg"
 image_alt: "Person using the Peak Interval app for different workout styles"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 ## Beyond Basic HIIT: Unlocking the Full Potential of Your Interval Timer

@@ -6,7 +6,7 @@ featured_image: "/assets/blog/countdown-psychology.jpg"
 image_alt: "Person intently watching a digital countdown timer during a high-intensity workout, focusing with anticipation"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 # The Psychology of the Countdown: How Timers Affect Your Workout Intensity
@@ -168,7 +168,6 @@ The Peak Interval app allows you to customize these audio profiles to match your
 
 Several advanced features in the Peak Interval app are specifically designed based on sports psychology research:
 
-* **Progressive interval display:** Subtly shortens visual representation of rest periods as workouts progress
 * **Effort-based color transitions:** Changes display colors to influence perceived exertion
 * **Random interval variation:** Creates "surprise" intervals that prevent mental complacency
 * **Recovery adequacy indicators:** Visually represents recovery status to optimize rest periods

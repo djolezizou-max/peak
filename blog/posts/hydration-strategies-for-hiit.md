@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hydration-strategies-hiit-cover.jpg"
 image_alt: "Person drinking water during a break in a high-intensity interval training workout"
 layout: "post.liquid"
 tags: "posts"
-category: "Fitness and Nutrition"
+category: "Fitness + Nutrition"
 ---
 
 # Hydration Strategies for HIIT: Before, During, and After

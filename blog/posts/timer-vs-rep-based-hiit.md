@@ -6,7 +6,7 @@ featured_image: "/assets/blog/timer-vs-rep-based-hiit-cover.jpg"
 image_alt: "Person checking a timer while performing a HIIT workout in a gym setting"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 # Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You?

@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-progress-tracking.jpg"
 image_alt: "Person tracking HIIT workout progress on a smartphone timer app"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 ## Beyond the Stopwatch: Strategic Progress Tracking with Your Timer

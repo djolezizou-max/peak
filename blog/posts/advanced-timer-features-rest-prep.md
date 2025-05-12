@@ -6,7 +6,7 @@ featured_image: "/assets/blog/advanced-timer-features.jpg"
 image_alt: "Person using advanced timer features on the Peak Interval app"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 ## The Forgotten Heroes of HIIT: Mastering Rest and Prep Times
@@ -126,13 +126,6 @@ For personalized recovery:
 * Rest until your heart rate drops to a specific target (e.g., 65-70% of max)
 * Use the Peak Interval app's customizable timer to set your own rest periods based on personal recovery rates
 * Adjust rest periods over time as cardiovascular fitness improves
-
-#### RPE-Guided Rest
-
-Allow your perceived recovery to guide rest duration:
-* Begin the next interval when you feel you've recovered to a "6 out of 10" (where 10 is completely fresh)
-* Use the Peak Interval app's manual advance feature to control interval progression
-* Track how your subjective recovery aligns with objective measures over time
 
 ### The Power of Preparation Time: The Most Underutilized Timer Feature
 

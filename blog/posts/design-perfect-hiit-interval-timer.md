@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-timer-customization.jpg"
 image_alt: "Person customizing a HIIT timer app on smartphone during workout"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 ## Precision Timing: The Foundation of Effective HIIT

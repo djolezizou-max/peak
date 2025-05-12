@@ -6,7 +6,7 @@ featured_image: "/assets/blog/custom-hiit-workouts-cover.jpg"
 image_alt: "Person setting up a custom workout timer on a smartphone while in a gym setting"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 # Creating and Saving Custom HIIT Workouts in Peak Interval

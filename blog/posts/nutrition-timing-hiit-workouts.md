@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-nutrition-timing.jpg"
 image_alt: "Healthy meal with a stopwatch representing nutrition timing for workouts"
 layout: "post.liquid"
 tags: "posts"
-category: "Fitness and Nutrition"
+category: "Fitness + Nutrition"
 ---
 
 ## The Strategic Fueling Guide for HIIT Performance

@@ -6,7 +6,7 @@ featured_image: "/assets/blog/music-hiit-rhythm.jpg"
 image_alt: "Person working out intensely with headphones while following a HIIT timer, focused on the rhythm of music during interval training"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 # Syncing Music with Your HIIT Intervals: The Beat and Your Performance

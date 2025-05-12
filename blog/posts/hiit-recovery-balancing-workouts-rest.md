@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-recovery-balance.jpg"
 image_alt: "Person stretching during a recovery session after HIIT workout"
 layout: "post.liquid"
 tags: "posts"
-category: "Fitness and Nutrition"
+category: "Fitness + Nutrition"
 ---
 
 ## Finding the Sweet Spot: Intensity Meets Recovery

@@ -6,7 +6,7 @@ featured_image: "/assets/blog/hiit-audio-cues.jpg"
 image_alt: "Person working out with headphones listening to interval timer audio cues"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 ## The Power of Sound: Optimizing Your HIIT Experience Through Audio
@@ -199,9 +199,7 @@ The Peak Interval app offers several features that make implementing these audio
 
 * **Custom sound selection:** Choose from a library of sounds or import your own
 * **Volume control:** Set different volumes for different workout segments
-* **Audio layering:** Combine background sounds with transition cues
 * **Voice announcement options:** Add verbal guidance to your intervals
-* **Audio profiles:** Save different audio setups for different workout types
 * **Preparation countdown customization:** Fine-tune the timing and style of your prep sounds
 * **Mid-interval markers:** Add audio cues at strategic points within intervals
 

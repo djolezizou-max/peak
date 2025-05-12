@@ -40,7 +40,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 31. Upper Body HIIT: Sculpt Arms, Shoulders, and Back [DONE]
 32. AMRAP vs. EMOM vs. Tabata: Different HIIT Formats Compared [DONE]
 33. Outdoor HIIT Workouts: Taking Your Intervals Into Nature [DONE]
-34. HIIT for the Track: Sprint Workouts for Speed and Endurance
+34. HIIT for the Track: Sprint Workouts for Speed and Endurance [DONE]
 35. Stair HIIT Workouts: Using Steps for Intense Interval Training [DONE]
 
 ## Timer and App Features (10 posts)
@@ -54,7 +54,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 42. Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You? [DONE]
 43. The Psychology of the Countdown: How Timers Affect Your Workout Intensity [DONE]
 44. Syncing Music with Your HIIT Intervals: The Beat and Your Performance [DONE]
-45. Using Peak Interval for Group Workouts and Classes
+45. Using Peak Interval for Group Workouts and Classes [DONE]
 
 ## Specialized HIIT Training (20 posts)
 
@@ -87,8 +87,8 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 69. Combining HIIT with Other Fitness Disciplines for Optimal Results [DONE]
 70. Protein Needs for HIIT: Building and Preserving Muscle During Intense Training [DONE]
 71. Hydration Strategies for HIIT: Before, During, and After [DONE]
-72. Carb Cycling and HIIT: Matching Your Nutrition to Your Training Intensity
-73. Supplements for HIIT Performance: What Works and What Doesn't
+72. Carb Cycling and HIIT: Matching Your Nutrition to Your Training Intensity [DONE]
+73. Supplements for HIIT Performance: What Works and What Doesn't [DONE]
 74. HIIT and Sleep: The Crucial Connection Between Rest and Results
 75. Plant-Based Nutrition for HIIT Athletes: Meeting Your Needs on a Vegan Diet
 76. HIIT and Hormones: How Intense Exercise Affects Your Endocrine System
