@@ -1,6 +1,6 @@
 {
     "cleanUrls": false,
-    "trailingSlash": true,
+    "trailingSlash": false,
     "headers": [
         {
             "source": "/(.*)",
@@ -35,34 +35,19 @@
     ],
     "redirects": [
         {
-            "source": "/w/:path*",
-            "destination": "/download/w/:path*",
-            "permanent": false,
-            "has": [
-                {
-                    "type": "header",
-                    "key": "User-Agent",
-                    "value": "(?!.*PeakIntervals).*"
-                }
-            ]
-        },
-        {
-            "source": "/w/:path*/",
-            "destination": "/download/w/:path*/",
-            "permanent": false,
-            "has": [
-                {
-                    "type": "header",
-                    "key": "User-Agent",
-                    "value": "(?!.*PeakIntervals).*"
-                }
-            ]
+            "source": "/w/:path(.*)",
+            "destination": "/download?workout=:path",
+            "permanent": false
         }
     ],
     "rewrites": [
         {
             "source": "/.well-known/:path*",
             "destination": "/.well-known/:path*"
+        },
+        {
+            "source": "/w/:path(.*)",
+            "destination": "/download?workout=:path"
         }
     ]
 } 

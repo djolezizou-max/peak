@@ -92,30 +92,56 @@
 
     <script>
         window.onload = function() {
+            // Get URL components
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlPath = window.location.pathname;
+            const urlHash = window.location.hash;
+            
             // Check if we have a shared workout in the URL hash
-            if (window.location.hash && window.location.hash.startsWith('#sharedWorkout=')) {
+            if (urlHash && urlHash.startsWith('#sharedWorkout=')) {
                 // Extract the workout data from the hash
-                const workoutData = window.location.hash.substring('#sharedWorkout='.length);
-                // Use the correct format for deep linking to the app
+                const workoutData = urlHash.substring('#sharedWorkout='.length);
                 window.location.href = "peakintervals://w/" + workoutData;
-            } else {
-                // Get the path but remove the /download prefix if it exists
-                let path = window.location.pathname;
-                if (path.startsWith('/download')) {
-                    path = path.substring('/download'.length) || '/';
-                }
-                
-                // Check if this is a /w/ path for shared workouts
-                if (path.startsWith('/w/')) {
-                    // Extract the workout data from the path
-                    const workoutData = path.substring('/w/'.length);
-                    // Use the correct format for deep linking to the app
+                return;
+            }
+            
+            // Check if we have a workout ID in the query string (e.g. ?workout=...)
+            if (urlParams.has('workout')) {
+                const workoutData = urlParams.get('workout');
+                window.location.href = "peakintervals://w/" + workoutData;
+                return;
+            }
+            
+            // Check if URL path has workout data
+            if (urlPath.includes('/w/')) {
+                // Extract the workout data from the path
+                const parts = urlPath.split('/w/');
+                if (parts.length > 1) {
+                    const workoutData = parts[1].replace(/\/$/, ''); // Remove trailing slash if present
                     window.location.href = "peakintervals://w/" + workoutData;
-                } else {
-                    // Use the path for deep linking
-                    window.location.href = "peakintervals://" + path + window.location.search;
+                    return;
                 }
             }
+            
+            // Check if we need to extract the original path from the referrer
+            const referrer = document.referrer;
+            if (referrer && referrer.includes('/w/')) {
+                const parts = referrer.split('/w/');
+                if (parts.length > 1) {
+                    const workoutData = parts[1].replace(/\/$/, ''); // Remove trailing slash if present
+                    window.location.href = "peakintervals://w/" + workoutData;
+                    return;
+                }
+            }
+            
+            // Fallback to regular path handling
+            let path = urlPath;
+            if (path.startsWith('/download')) {
+                path = path.substring('/download'.length) || '/';
+            }
+            
+            // Use the path for deep linking for non-workout links
+            window.location.href = "peakintervals://" + path + window.location.search;
         }
     </script>
 </head>
