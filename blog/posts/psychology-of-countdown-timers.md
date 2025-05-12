@@ -6,7 +6,7 @@ featured_image: "/assets/blog/countdown-psychology.jpg"
 image_alt: "Person intently watching a digital countdown timer during a high-intensity workout, focusing with anticipation"
 layout: "post.liquid"
 tags: "posts"
-category: "Timer and App Features"
+category: "App Features"
 ---
 
 # The Psychology of the Countdown: How Timers Affect Your Workout Intensity
