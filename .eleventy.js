@@ -5,6 +5,9 @@ module.exports = function(eleventyConfig) {
   // Clean the output directory before each build
   eleventyConfig.setUseGitIgnore(false);
   
+  // Ignore all markdown files at the root of the project
+  eleventyConfig.ignores.add("*.md");
+  
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
