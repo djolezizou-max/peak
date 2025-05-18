@@ -1,0 +1,9 @@
+---
+pagination:
+  data: collections.categoryPages
+  size: 1
+  alias: categoryPage
+permalink: /blog/app-{{ categoryPage.slug }}/
+---
+{% assign category = categoryPage.category %}
+{% include "app-category.liquid" %} 

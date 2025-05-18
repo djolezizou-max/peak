@@ -42,304 +42,124 @@ permalink: /blog/app-index.html
             padding: 0 20px 40px;
         }
         
-        .blog-posts {
-            display: flex;
-            flex-wrap: wrap;
+        .category-cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             gap: 20px;
         }
         
-        .blog-post-card {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(0,0,0,0.2);
+        @media (min-width: 576px) {
+            .category-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .category-card {
+            position: relative;
+            height: 180px;
             border-radius: 15px;
             overflow: hidden;
+            background-color: rgba(0,0,0,0.2);
         }
         
-        .post-link {
+        .category-link {
+            display: block;
+            height: 100%;
+            width: 100%;
             text-decoration: none;
             color: white;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
         
-        .post-thumbnail {
+        .category-image {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
         }
         
-        .post-details {
-            padding: 20px;
-        }
-        
-        .post-title {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        .post-meta {
-            font-size: 14px;
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 10px;
-        }
-        
-        .post-excerpt {
-            margin-bottom: 20px;
-        }
-        
-        .read-more {
-            color: #FF9500;
-            text-decoration: none;
-            font-weight: 600;
-            transition: opacity 0.2s;
-        }
-        
-        .read-more:hover {
-            opacity: 0.7;
-        }
-        
-        /* Category filter styles */
-        .category-filter {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-        }
-        
-        .mobile-filter {
-            display: none;
-        }
-        
-        #category-dropdown {
+        .placeholder {
             width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            background-color: rgba(0,0,0,0.2);
-            color: white;
-            border: 1px solid rgba(255,255,255,0.2);
-            font-size: 16px;
-            outline: none;
-            cursor: pointer;
-        }
-        
-        #category-dropdown option {
-            background: #181F3B;
-            padding: 10px;
-        }
-        
-        .filter-button {
-            background: rgba(0,0,0,0.2);
-            color: white;
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 8px;
-            padding: 8px 16px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .filter-button:hover {
-            background: rgba(0,0,0,0.3);
-        }
-        
-        .filter-button.active {
-            background: #FF9500;
-            border-color: #FF9500;
-        }
-        
-        .post-count {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            border-radius: 10px;
-            padding: 2px 8px;
-            margin-left: 5px;
-            font-size: 12px;
-        }
-        
-        /* Hide filtered posts */
-        .blog-post-card.hidden {
-            display: none;
-        }
-        
-        @media (max-width: 768px) {
-            .desktop-filter {
-                display: none;
-            }
-            
-            .mobile-filter {
-                display: block;
-            }
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255,255,255,0.1);
+            font-size: 24px;
+            font-weight: bold;
+            color: rgba(255,255,255,0.5);
         }
     </style>
 </head>
 <body>
     <div class="blog-header">
-        <h1 class="blog-title">Peak Interval Blog</h1>
+        <h1 class="blog-title">Explore</h1>
         <p class="blog-description">
             Discover tips, techniques, and insights to maximize your interval training workouts
         </p>
     </div>
     
     <div class="blog-content">
-        <div class="category-filter desktop-filter">
-            <button class="filter-button active" data-category="all">All Posts <span class="post-count"></span></button>
-            <button class="filter-button" data-category="hiit-fundamentals">HIIT Fundamentals <span class="post-count"></span></button>
-            <button class="filter-button" data-category="workout-guides">Workout Guides <span class="post-count"></span></button>
-            <button class="filter-button" data-category="app-features">App Features <span class="post-count"></span></button>
-            <button class="filter-button" data-category="specialized-hiit-training">Specialized Training <span class="post-count"></span></button>
-            <button class="filter-button" data-category="fitness-nutrition">Nutrition <span class="post-count"></span></button>
-            <button class="filter-button" data-category="hiit-success-stories">Success Stories <span class="post-count"></span></button>
-            <button class="filter-button" data-category="advanced-hiit-concepts">Advanced Concepts <span class="post-count"></span></button>
-        </div>
-        
-        <div class="category-filter mobile-filter">
-            <select id="category-dropdown">
-                <option value="all">All Posts <span class="post-count"></span></option>
-                <option value="hiit-fundamentals">HIIT Fundamentals <span class="post-count"></span></option>
-                <option value="workout-guides">Workout Guides <span class="post-count"></span></option>
-                <option value="app-features">App Features <span class="post-count"></span></option>
-                <option value="specialized-hiit-training">Specialized Training <span class="post-count"></span></option>
-                <option value="fitness-nutrition">Nutrition <span class="post-count"></span></option>
-                <option value="hiit-success-stories">Success Stories <span class="post-count"></span></option>
-                <option value="advanced-hiit-concepts">Advanced Concepts <span class="post-count"></span></option>
-            </select>
-        </div>
-        
-        <div class="blog-posts">
-            {%- assign posts = collections.posts | reverse -%}
-            {%- for post in posts -%}
-            <div class="blog-post-card" data-category="{{ post.data.category | slugify }}">
-                <a href="{{ post.url | url }}?app=true" class="post-link">
-                    {% if post.data.featured_image %}
-                    <img src="{{ post.data.featured_image | url }}" alt="{{ post.data.image_alt | default: post.data.title }}" class="post-thumbnail">
-                    {% else %}
-                    <div class="post-thumbnail-placeholder" style="height: 200px; background-color: rgba(255,255,255,0.1);"></div>
-                    {% endif %}
-                    <div class="post-details">
-                        <h2 class="post-title">{{ post.data.title }}</h2>
-                        {% if post.date %}
-                        <div class="post-meta">Published on {{ post.date | date: "%B %d, %Y" }}</div>
-                        {% endif %}
-                        <p class="post-excerpt">
-                            {{ post.data.description }}
-                        </p>
-                        <span class="read-more">Read More →</span>
-                    </div>
+        <div class="category-cards">
+            <!-- HIIT Fundamentals -->
+            <div class="category-card">
+                <a href="/blog/app-hiit-fundamentals/" class="category-link">
+                    <img src="/assets/blog/hiit-fundamentals-category.jpg" alt="HIIT Fundamentals" class="category-image">
                 </a>
             </div>
-            {%- endfor -%}
+            
+            <!-- Workout Guides -->
+            <div class="category-card">
+                <a href="/blog/app-workout-guides/" class="category-link">
+                    <img src="/assets/blog/workouts-programs-category.jpg" alt="Workouts & Programs" class="category-image">
+                </a>
+            </div>
+            
+            <!-- App Features -->
+            <div class="category-card">
+                <a href="/blog/app-features/" class="category-link">
+                    <img src="/assets/blog/app-features-category.jpg" alt="App Features" class="category-image">
+                </a>
+            </div>
+            
+            <!-- Specialized HIIT Training -->
+            <div class="category-card">
+                <a href="/blog/app-specialized-hiit-training/" class="category-link">
+                    <img src="/assets/blog/specialized-training-category.jpg" alt="Specialized Training" class="category-image">
+                </a>
+            </div>
+            
+            <!-- Fitness + Nutrition -->
+            <div class="category-card">
+                <a href="/blog/app-fitness-nutrition/" class="category-link">
+                    <img src="/assets/blog/fitness-nutrition-category.jpg" alt="Experience Life" class="category-image">
+                </a>
+            </div>
+            
+            <!-- HIIT Success Stories -->
+            <div class="category-card">
+                <a href="/blog/app-hiit-success-stories/" class="category-link">
+                    <img src="/assets/blog/hiit-success-stories-category.jpg" alt="HIIT Success Stories" class="category-image">
+                </a>
+            </div>
+            
+            <!-- Advanced HIIT Concepts -->
+            <div class="category-card">
+                <a href="/blog/app-advanced-hiit-concepts/" class="category-link">
+                    <img src="/assets/blog/advanced-hiit-concepts-category.jpg" alt="Advanced HIIT Concepts" class="category-image">
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Category Filter JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Get all filter buttons, dropdown, and blog post cards
-            const filterButtons = document.querySelectorAll('.filter-button');
-            const categoryDropdown = document.getElementById('category-dropdown');
-            const blogPostCards = document.querySelectorAll('.blog-post-card');
+            // Add click event listener to category cards for better touch response
+            const categoryLinks = document.querySelectorAll('.category-link');
             
-            // Calculate and display post counts for each category
-            const countPosts = () => {
-                // Count total posts
-                const totalPosts = blogPostCards.length;
-                
-                // Set the count for "All Posts" button
-                const allPostsButton = document.querySelector('.filter-button[data-category="all"] .post-count');
-                if (allPostsButton) {
-                    allPostsButton.textContent = `${totalPosts}`;
-                }
-                
-                // Create a map to store counts for each category
-                const categoryCounts = {};
-                
-                // Count posts for each category
-                blogPostCards.forEach(card => {
-                    const category = card.getAttribute('data-category');
-                    if (category) {
-                        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
-                    }
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Native link behavior will handle navigation
                 });
-                
-                // Update the count display for each category button
-                filterButtons.forEach(button => {
-                    const category = button.getAttribute('data-category');
-                    if (category !== 'all') {
-                        const countElement = button.querySelector('.post-count');
-                        if (countElement) {
-                            const count = categoryCounts[category] || 0;
-                            countElement.textContent = `${count}`;
-                        }
-                    }
-                });
-                
-                // Update dropdown options with counts
-                Array.from(categoryDropdown.options).forEach(option => {
-                    const category = option.value;
-                    const count = category === 'all' ? totalPosts : (categoryCounts[category] || 0);
-                    const countElement = option.querySelector('.post-count');
-                    if (countElement) {
-                        countElement.textContent = `${count}`;
-                    } else {
-                        option.text = `${option.text.split(' ')[0]} ${option.text.split(' ')[1] || ''} ${count}`;
-                    }
-                });
-            };
-            
-            // Filter posts based on category
-            const filterPosts = (filterCategory) => {
-                // Show/hide blog post cards based on the selected category
-                blogPostCards.forEach(card => {
-                    if (filterCategory === 'all' || card.getAttribute('data-category') === filterCategory) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            };
-            
-            // Initialize post counts
-            countPosts();
-            
-            // Add click event listener to each filter button
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove 'active' class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    
-                    // Add 'active' class to clicked button
-                    this.classList.add('active');
-                    
-                    // Get the category to filter by
-                    const filterCategory = this.getAttribute('data-category');
-                    
-                    // Update dropdown to match
-                    categoryDropdown.value = filterCategory;
-                    
-                    // Filter posts
-                    filterPosts(filterCategory);
-                });
-            });
-            
-            // Add change event listener to dropdown
-            categoryDropdown.addEventListener('change', function() {
-                const filterCategory = this.value;
-                
-                // Update buttons to match
-                filterButtons.forEach(btn => {
-                    if (btn.getAttribute('data-category') === filterCategory) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-                
-                // Filter posts
-                filterPosts(filterCategory);
             });
         });
     </script>

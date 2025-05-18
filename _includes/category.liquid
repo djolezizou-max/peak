@@ -3,27 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog - Peak Interval</title>
+    <title>{{ category }} - Peak Interval Blog</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Read the latest articles about interval training, workout tips, and Peak Interval app updates.">
+    <meta name="description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://peakintervalapp.com/blog/">
+    <link rel="canonical" href="https://peakintervalapp.com/blog/{{ category | slugify }}/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Blog - Peak Interval">
-    <meta property="og:description" content="Read the latest articles about interval training, workout tips, and Peak Interval app updates.">
+    <meta property="og:title" content="{{ category }} - Peak Interval Blog">
+    <meta property="og:description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
     <meta property="og:image" content="https://peakintervalapp.com/assets/app_icon.png">
-    <meta property="og:url" content="https://peakintervalapp.com/blog/">
+    <meta property="og:url" content="https://peakintervalapp.com/blog/{{ category | slugify }}/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog - Peak Interval">
-    <meta name="twitter:description" content="Read the latest articles about interval training, workout tips, and Peak Interval app updates.">
+    <meta name="twitter:title" content="{{ category }} - Peak Interval Blog">
+    <meta name="twitter:description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
     <meta name="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
 
     <style>
@@ -85,17 +85,17 @@
             border-bottom: 2px solid #FF9500;
         }
         
-        .blog-header {
+        .category-header {
             text-align: center;
             padding: 60px 20px 40px;
         }
         
-        .blog-title {
+        .category-title {
             font-size: 42px;
             margin-bottom: 20px;
         }
         
-        .blog-description {
+        .category-description {
             font-size: 20px;
             max-width: 700px;
             margin: 0 auto 40px;
@@ -109,56 +109,83 @@
             padding: 0 20px 60px;
         }
         
-        .category-cards {
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .blog-posts {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 20px;
         }
         
-        @media (min-width: 576px) {
-            .category-cards {
+        @media (min-width: 768px) {
+            .blog-posts {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
         
-        @media (min-width: 992px) {
-            .category-cards {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        .category-card {
-            position: relative;
-            height: 200px;
+        .blog-post-card {
+            background-color: rgba(0,0,0,0.2);
             border-radius: 15px;
             overflow: hidden;
-            background-color: rgba(0,0,0,0.2);
         }
         
-        .category-link {
-            display: block;
-            height: 100%;
-            width: 100%;
+        .post-link {
             text-decoration: none;
             color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
-        .category-image {
+        .post-thumbnail {
             width: 100%;
-            height: 100%;
+            height: 200px;
             object-fit: cover;
         }
         
-        .placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .post-thumbnail-placeholder {
+            height: 200px;
             background-color: rgba(255,255,255,0.1);
+        }
+        
+        .post-details {
+            padding: 20px;
+        }
+        
+        .post-title {
             font-size: 24px;
-            font-weight: bold;
-            color: rgba(255,255,255,0.5);
+            margin-bottom: 10px;
+        }
+        
+        .post-meta {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+        }
+        
+        .post-excerpt {
+            margin-bottom: 20px;
+        }
+        
+        .read-more {
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        
+        .read-more:hover {
+            opacity: 0.7;
         }
         
         .footer {
@@ -207,63 +234,57 @@
         <a href="/contact/">Contact</a>
     </div>
     
-    <div class="blog-header">
-        <h1 class="blog-title">Explore</h1>
-        <p class="blog-description">
-            Discover tips, techniques, and insights to maximize your interval training workouts and get the most out of the Peak Interval app.
+    <div class="category-header">
+        <h1 class="category-title">{{ category }}</h1>
+        <p class="category-description">
+            {% if category == "HIIT Fundamentals" %}
+                Learn the basics and core principles of High-Intensity Interval Training.
+            {% elsif category == "Workout Guides" %}
+                Explore effective HIIT workout routines designed for different fitness levels and goals.
+            {% elsif category == "App Features" %}
+                Discover how to get the most out of the Peak Interval app with these feature guides.
+            {% elsif category == "Specialized HIIT Training" %}
+                HIIT workouts tailored for specific activities, sports, and special populations.
+            {% elsif category == "Fitness + Nutrition" %}
+                Nutrition strategies and fitness tips to maximize your HIIT training results.
+            {% elsif category == "HIIT Success Stories" %}
+                Real-life transformations and success stories from HIIT enthusiasts.
+            {% elsif category == "Advanced HIIT Concepts" %}
+                Advanced training methodologies and scientific concepts behind HIIT.
+            {% else %}
+                Browse our collection of articles about {{ category }}.
+            {% endif %}
         </p>
     </div>
     
     <div class="blog-content">
-        <div class="category-cards">
-            <!-- HIIT Fundamentals -->
-            <div class="category-card">
-                <a href="/blog/hiit-fundamentals/" class="category-link">
-                    <img src="/assets/blog/hiit-fundamentals-category.jpg" alt="HIIT Fundamentals" class="category-image">
-                </a>
-            </div>
-            
-            <!-- Workout Guides -->
-            <div class="category-card">
-                <a href="/blog/workout-guides/" class="category-link">
-                    <img src="/assets/blog/workouts-programs-category.jpg" alt="Workouts & Programs" class="category-image">
-                </a>
-            </div>
-            
-            <!-- App Features -->
-            <div class="category-card">
-                <a href="/blog/app-features/" class="category-link">
-                    <img src="/assets/blog/app-features-category.jpg" alt="App Features" class="category-image">
-                </a>
-            </div>
-            
-            <!-- Specialized HIIT Training -->
-            <div class="category-card">
-                <a href="/blog/specialized-hiit-training/" class="category-link">
-                    <img src="/assets/blog/specialized-training-category.jpg" alt="Specialized Training" class="category-image">
-                </a>
-            </div>
-            
-            <!-- Fitness + Nutrition -->
-            <div class="category-card">
-                <a href="/blog/fitness-nutrition/" class="category-link">
-                    <img src="/assets/blog/fitness-nutrition-category.jpg" alt="Experience Life" class="category-image">
-                </a>
-            </div>
-            
-            <!-- HIIT Success Stories -->
-            <div class="category-card">
-                <a href="/blog/hiit-success-stories/" class="category-link">
-                    <img src="/assets/blog/hiit-success-stories-category.jpg" alt="HIIT Success Stories" class="category-image">
-                </a>
-            </div>
-            
-            <!-- Advanced HIIT Concepts -->
-            <div class="category-card">
-                <a href="/blog/advanced-hiit-concepts/" class="category-link">
-                    <img src="/assets/blog/advanced-hiit-concepts-category.jpg" alt="Advanced HIIT Concepts" class="category-image">
-                </a>
-            </div>
+        <a href="/blog/" class="back-link">← Back to Categories</a>
+        
+        <div class="blog-posts">
+            {%- assign posts = collections.posts | reverse -%}
+            {%- for post in posts -%}
+                {% if post.data.category == category %}
+                <div class="blog-post-card">
+                    <a href="{{ post.url | url }}" class="post-link">
+                        {% if post.data.featured_image %}
+                        <img src="{{ post.data.featured_image | url }}" alt="{{ post.data.image_alt | default: post.data.title }}" class="post-thumbnail">
+                        {% else %}
+                        <div class="post-thumbnail-placeholder"></div>
+                        {% endif %}
+                        <div class="post-details">
+                            <h2 class="post-title">{{ post.data.title }}</h2>
+                            {% if post.date %}
+                            <div class="post-meta">Published on {{ post.date | date: "%B %d, %Y" }}</div>
+                            {% endif %}
+                            <p class="post-excerpt">
+                                {{ post.data.description }}
+                            </p>
+                            <span class="read-more">Read More →</span>
+                        </div>
+                    </a>
+                </div>
+                {% endif %}
+            {%- endfor -%}
         </div>
     </div>
     

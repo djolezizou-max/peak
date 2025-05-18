@@ -2,6 +2,9 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
+  // Clean the output directory before each build
+  eleventyConfig.setUseGitIgnore(false);
+  
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
@@ -26,6 +29,32 @@ module.exports = function(eleventyConfig) {
       return DateTime.now().toISODate(); 
     }
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISODate();
+  });
+
+  // Generate category pages
+  eleventyConfig.addCollection("categoryPages", function(collectionApi) {
+    // Get all posts
+    const posts = collectionApi.getFilteredByTag("posts");
+    
+    // Extract unique categories
+    const categories = new Set();
+    posts.forEach(post => {
+      if (post.data.category) {
+        categories.add(post.data.category);
+      }
+    });
+    
+    // Create category pages
+    return Array.from(categories).map(category => {
+      return {
+        category: category,
+        slug: slugify(category, {
+          lower: true,
+          strict: true,
+          remove: /[*+~.()\'"!:@]/g
+        })
+      };
+    });
   });
 
   // Set custom directories for input, output, includes, and data

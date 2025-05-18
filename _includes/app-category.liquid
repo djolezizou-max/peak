@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ category }} - Peak Interval Blog</title>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #181F3B;
+            color: white;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .category-header {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .category-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .category-description {
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        .blog-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .blog-post-card {
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .post-link {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .post-thumbnail {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .post-thumbnail-placeholder {
+            height: 180px;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .post-details {
+            padding: 20px;
+        }
+        
+        .post-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .post-meta {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+        }
+        
+        .post-excerpt {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .read-more {
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        
+        /* Sticky back button */
+        .sticky-back-button {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(24, 31, 59, 0.95);
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            text-align: left;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .sticky-back-button a {
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+        .sticky-back-button.visible {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+    </style>
+</head>
+<body>
+    <div class="category-header">
+        <h1 class="category-title">{{ category }}</h1>
+        <p class="category-description">
+            {% if category == "HIIT Fundamentals" %}
+                Learn the basics and core principles of High-Intensity Interval Training.
+            {% elsif category == "Workout Guides" %}
+                Explore effective HIIT workout routines designed for different fitness levels and goals.
+            {% elsif category == "App Features" %}
+                Discover how to get the most out of the Peak Interval app with these feature guides.
+            {% elsif category == "Specialized HIIT Training" %}
+                HIIT workouts tailored for specific activities, sports, and special populations.
+            {% elsif category == "Fitness + Nutrition" %}
+                Nutrition strategies and fitness tips to maximize your HIIT training results.
+            {% elsif category == "HIIT Success Stories" %}
+                Real-life transformations and success stories from HIIT enthusiasts.
+            {% elsif category == "Advanced HIIT Concepts" %}
+                Advanced training methodologies and scientific concepts behind HIIT.
+            {% else %}
+                Browse our collection of articles about {{ category }}.
+            {% endif %}
+        </p>
+    </div>
+    
+    <div class="blog-content">
+        <a href="/blog/app-index.html?app=true" class="back-link">← Back to Categories</a>
+        
+        <div class="blog-posts">
+            {%- assign posts = collections.posts | reverse -%}
+            {%- for post in posts -%}
+                {% if post.data.category == category %}
+                <div class="blog-post-card">
+                    <a href="{{ post.url | url }}?app=true" class="post-link">
+                        {% if post.data.featured_image %}
+                        <img src="{{ post.data.featured_image | url }}" alt="{{ post.data.image_alt | default: post.data.title }}" class="post-thumbnail">
+                        {% else %}
+                        <div class="post-thumbnail-placeholder"></div>
+                        {% endif %}
+                        <div class="post-details">
+                            <h2 class="post-title">{{ post.data.title }}</h2>
+                            {% if post.date %}
+                            <div class="post-meta">Published on {{ post.date | date: "%B %d, %Y" }}</div>
+                            {% endif %}
+                            <p class="post-excerpt">
+                                {{ post.data.description }}
+                            </p>
+                            <span class="read-more">Read More →</span>
+                        </div>
+                    </a>
+                </div>
+                {% endif %}
+            {%- endfor -%}
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create and add sticky back button to the DOM
+            const stickyBackButton = document.createElement('div');
+            stickyBackButton.className = 'sticky-back-button';
+            stickyBackButton.innerHTML = `<a href="/blog/app-index.html?app=true">← Back to Categories</a>`;
+            document.body.appendChild(stickyBackButton);
+            
+            // Get the original back button for position reference
+            const originalBackButton = document.querySelector('.back-link');
+            
+            // Handle sticky back button visibility based on scroll position
+            function handleScroll() {
+                const scrollY = window.scrollY || window.pageYOffset;
+                
+                // Show sticky button when scrolled past a specific threshold
+                if (scrollY > 150) {
+                    // Only show if original button is out of viewport
+                    if (originalBackButton) {
+                        const rect = originalBackButton.getBoundingClientRect();
+                        if (rect.top < 0) {
+                            stickyBackButton.classList.add('visible');
+                        } else {
+                            stickyBackButton.classList.remove('visible');
+                        }
+                    } else {
+                        stickyBackButton.classList.add('visible');
+                    }
+                } else {
+                    stickyBackButton.classList.remove('visible');
+                }
+            }
+            
+            // Initial check
+            handleScroll();
+            
+            // Add scroll listener
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            
+            // Add resize listener to recalculate positions
+            window.addEventListener('resize', handleScroll, { passive: true });
+        });
+    </script>
+</body>
+</html> 

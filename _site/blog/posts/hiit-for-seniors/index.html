@@ -361,10 +361,14 @@
                     }
                 });
                 
-                // Change back link to point to app blog index
+                // Get the post category for back link
+                const category = "Specialized HIIT Training";
+                const categorySlug = category.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+                
+                // Change back link to point to category page in app mode
                 if (backLink) {
-                    backLink.href = '/blog/app-index.html?app=true';
-                    backLink.textContent = '← Back to Blog';
+                    backLink.href = `/blog/app-${categorySlug}/?app=true`;
+                    backLink.textContent = `← Back to ${category}`;
                 }
                 
                 // Add more padding to the blog container for app view
@@ -374,10 +378,10 @@
                     blogContainer.style.marginTop = '0';
                 }
                 
-                // Create and add sticky back button to the DOM
+                // Create and add sticky back button with category link
                 const stickyBackButton = document.createElement('div');
                 stickyBackButton.className = 'sticky-back-button';
-                stickyBackButton.innerHTML = `<a href="/blog/app-index.html?app=true">← Back to Blog</a>`;
+                stickyBackButton.innerHTML = `<a href="/blog/app-${categorySlug}/?app=true">← Back to ${category}</a>`;
                 document.body.appendChild(stickyBackButton);
                 
                 // Get the original back button for position reference
@@ -434,7 +438,8 @@
     </div>
 
     <div class="blog-container">
-        <a href="/blog/" class="back-to-blog-link">‹ Back to Blog</a>
+        
+        <a href="/blog/specialized-hiit-training/" class="back-to-blog-link">‹ Back to Specialized HIIT Training</a>
         <article class="blog-post">
             <header class="blog-header">
                 <h1 class="blog-title">HIIT for Seniors: Safe and Effective Interval Training for Older Adults</h1>
