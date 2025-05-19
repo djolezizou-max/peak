@@ -216,6 +216,38 @@
             opacity: 0.7;
             font-size: 14px;
         }
+
+        /* Sticky back button */
+        .sticky-back-button {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(24, 31, 59, 0.95);
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            text-align: left;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .sticky-back-button a {
+            color: #FF9500;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+        .sticky-back-button.visible {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
     </style>
 </head>
 <body>
@@ -324,6 +356,84 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+    </script>
+
+    <script>
+    // Function to get URL parameters
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const isAppMode = getQueryParam('app') === 'true';
+
+        if (isAppMode) {
+            // Hide header, nav and footer
+            const header = document.querySelector('.header');
+            const nav = document.querySelector('.nav');
+            const footer = document.querySelector('.footer');
+            
+            if (header) header.style.display = 'none';
+            if (nav) nav.style.display = 'none';
+            if (footer) footer.style.display = 'none';
+
+            // Modify the main "Back to Categories" link
+            const backLink = document.querySelector('.back-link');
+            if (backLink) {
+                // Point to app-specific category index.
+                // This URL was used in the previous app-category.liquid
+                backLink.href = '/blog/app-index.html?app=true'; 
+            }
+
+            // Add ?app=true to all post links within the category listing
+            const postCardLinks = document.querySelectorAll('.blog-post-card .post-link');
+            postCardLinks.forEach(link => {
+                const originalHref = link.getAttribute('href');
+                if (originalHref) {
+                    const url = new URL(originalHref, window.location.origin);
+                    if (url.searchParams.get('app') !== 'true') {
+                         url.searchParams.set('app', 'true');
+                         link.setAttribute('href', url.pathname + url.search);
+                    }
+                }
+            });
+            
+            // Create and add sticky back button
+            const stickyBackButton = document.createElement('div');
+            stickyBackButton.className = 'sticky-back-button';
+            // Ensure sticky back button also points to the app index
+            stickyBackButton.innerHTML = `<a href="/blog/app-index.html?app=true">← Back to Categories</a>`;
+            document.body.appendChild(stickyBackButton);
+            
+            const originalBackButtonForSticky = backLink; 
+
+            function handleScroll() {
+                const scrollY = window.scrollY || window.pageYOffset;
+                if (scrollY > 150) { // Threshold
+                    if (originalBackButtonForSticky) {
+                        const rect = originalBackButtonForSticky.getBoundingClientRect();
+                        // Show sticky if original button is scrolled out of view
+                        if (rect.top < 0 || rect.bottom < 0) { 
+                            stickyBackButton.classList.add('visible');
+                        } else {
+                            stickyBackButton.classList.remove('visible');
+                        }
+                    } else {
+                         // If no .back-link, show sticky after 150px scroll
+                         stickyBackButton.classList.add('visible');
+                    }
+                } else {
+                    stickyBackButton.classList.remove('visible');
+                }
+            }
+            
+            // Add listeners if the original button exists or not (for general case)
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            window.addEventListener('resize', handleScroll, { passive: true });
+            handleScroll(); // Initial check
+        }
+    });
     </script>
 </body>
 </html> 

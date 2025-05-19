@@ -153,9 +153,34 @@ permalink: /blog/app-index.html
     <!-- Category Filter JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Add click event listener to category cards for better touch response
+            // Function to get URL parameters
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const isAppMode = getQueryParam('app') === 'true';
+
             const categoryLinks = document.querySelectorAll('.category-link');
             
+            if (isAppMode) {
+                categoryLinks.forEach(link => {
+                    const originalHref = link.getAttribute('href');
+                    if (originalHref) {
+                        try {
+                            const url = new URL(originalHref, window.location.origin);
+                            if (url.searchParams.get('app') !== 'true') {
+                                url.searchParams.set('app', 'true');
+                                link.setAttribute('href', url.pathname + url.search);
+                            }
+                        } catch (e) {
+                            console.error("Error processing URL for category link: ", originalHref, e);
+                        }
+                    }
+                });
+            }
+
+            // Add click event listener to category cards for better touch response
             categoryLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     // Native link behavior will handle navigation
