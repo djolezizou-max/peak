@@ -119,11 +119,11 @@ This document outlines the steps to create a new blog post now that the site use
    * For workout posts, include descriptions of the exercises being performed
    * For concept posts, visualize the key principles being discussed
 
-3. **Multiple People Synchronization:**
-   * **IMPORTANT:** When prompts include multiple people, ensure they are all performing the same exercise in perfect synchronization
-   * Specify "all performing the same exercise simultaneously" or "all doing identical movements in sync"
-   * Avoid prompts that could result in different people doing different exercises
-   * Example: "Group of people all performing jumping jacks simultaneously" instead of "Group of people doing various exercises"
+3. **Single Person Guidelines:**
+   * **IMPORTANT:** Always feature only ONE person in the image
+   * Never include multiple people in a single photo
+   * The person should be smiling and appear positive/happy
+   * Example: "One athletic person smiling while performing HIIT exercises outdoors" instead of "Group of people exercising together"
 
 4. **Image Sizes and Quality:**
    * The script generates 1024x1024 pixel images by default

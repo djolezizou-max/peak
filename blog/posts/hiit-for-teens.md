@@ -1,9 +1,9 @@
 ---
 title: "HIIT for Teens: Age-Appropriate Interval Training for Young Athletes"
-description: "Discover safe and effective HIIT training protocols specifically designed for teenagers. Learn about developmental considerations, age-appropriate workouts, and how to build healthy fitness habits during the crucial teenage years."
+description: "Learn how to design safe and effective HIIT programs for teenagers. Discover age-appropriate protocols that support healthy development while building fitness, strength, and athletic performance in young athletes."
 date: "2025-01-09"
 featured_image: "/assets/blog/hiit-teens-training.jpg"
-image_alt: "Group of diverse teenagers performing high-intensity interval training exercises in a modern gym setting"
+image_alt: "Teenage athlete smiling while performing age-appropriate HIIT exercises in a youth sports training facility, showing proper form and enthusiasm for fitness"
 layout: "post.liquid"
 tags: "posts"
 category: "Specialized HIIT Training"

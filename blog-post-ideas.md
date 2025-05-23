@@ -67,17 +67,17 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 52. HIIT for Powerlifters: Building Power and Conditioning Without Sacrifice [DONE]
 53. Pregnancy-Safe HIIT: Modifications for Each Trimester [DONE]
 54. Postpartum HIIT: Safe Return to Intensity After Childbirth
-55. HIIT for Teens: Age-Appropriate Interval Training for Young Athletes
+55. HIIT for Teens: Age-Appropriate Interval Training for Young Athletes [DONE]
 56. Adaptive HIIT: Interval Training for People with Disabilities
 57. HIIT for Desk Workers: Counteracting the Effects of Sitting [DONE]
-58. Water-Based HIIT: Pool Workouts for Low-Impact Intensity
-59. HIIT for Sports Performance: Sport-Specific Interval Protocols
-60. Rehab HIIT: Using Intervals in Injury Recovery
-61. HIIT for Metabolic Health: Targeting Blood Sugar and Insulin Sensitivity
-62. HIIT for Heart Health: Cardiovascular Benefits of Interval Training
+58. Water-Based HIIT: Pool Workouts for Low-Impact Intensity [DONE]
+59. HIIT for Sports Performance: Sport-Specific Interval Protocols [DONE]
+60. Rehab HIIT: Using Intervals in Injury Recovery [DONE]
+61. HIIT for Metabolic Health: Targeting Blood Sugar and Insulin Sensitivity [DONE]
+62. HIIT for Heart Health: Cardiovascular Benefits of Interval Training [DONE]
 63. HIIT for Stress Relief: The Mental Health Benefits of Short, Intense Exercise [DONE]
-64. HIIT for Women: Considerations for Female Physiology and Hormonal Cycles
-65. HIIT for Men: Targeting Male-Specific Fitness Goals
+64. HIIT for Women: Considerations for Female Physiology and Hormonal Cycles [DONE]
+65. HIIT for Men: Targeting Male-Specific Fitness Goals [DONE]
 
 ## Fitness and Nutrition (15 posts)
 
