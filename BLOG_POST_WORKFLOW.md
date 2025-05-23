@@ -119,12 +119,18 @@ This document outlines the steps to create a new blog post now that the site use
    * For workout posts, include descriptions of the exercises being performed
    * For concept posts, visualize the key principles being discussed
 
-3. **Image Sizes and Quality:**
+3. **Multiple People Synchronization:**
+   * **IMPORTANT:** When prompts include multiple people, ensure they are all performing the same exercise in perfect synchronization
+   * Specify "all performing the same exercise simultaneously" or "all doing identical movements in sync"
+   * Avoid prompts that could result in different people doing different exercises
+   * Example: "Group of people all performing jumping jacks simultaneously" instead of "Group of people doing various exercises"
+
+4. **Image Sizes and Quality:**
    * The script generates 1024x1024 pixel images by default
    * These are already optimized for web use
    * No additional compression is necessary for AI-generated images
 
-4. **Troubleshooting:**
+5. **Troubleshooting:**
    * If an image doesn't match your expectations, try running the script again with a more detailed prompt
    * Check the `assets/blog/` directory to confirm the image was saved correctly
    * Ensure the image path in the front matter exactly matches the filename used in the script
