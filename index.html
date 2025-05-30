@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peak Interval - HIIT Timer App</title>
+    <title>Peak Intervals - Advanced Interval Training Timer for iOS and Apple Watch</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Peak Interval is the perfect HIIT timer app for creating, customizing and conquering your interval workouts. Download now for iOS.">
+    <meta name="description" content="Peak Intervals is a sophisticated interval training timer for iOS and Apple Watch. Features simple and advanced workout modes, cross-device sync, customizable exercises, round management, and precision timing controls.">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="HZUjd5KPlnW8YCYrTBj_4rpkjUWu7dK5QJDpFX4N0I0" />
     <link rel="canonical" href="https://peakintervalapp.com/">
@@ -40,25 +40,25 @@
     </script>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Peak Interval - HIIT Timer App">
-    <meta property="og:description" content="The perfect HIIT timer app for your interval workouts">
+    <meta property="og:title" content="Peak Intervals - Advanced Interval Training Timer">
+    <meta property="og:description" content="Sophisticated interval training timer for iOS and Apple Watch with dual workout modes, cross-device sync, and precision timing controls">
     <meta property="og:image" content="https://peakintervalapp.com/assets/app_icon.png">
     <meta property="og:url" content="https://peakintervalapp.com">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peak Interval - HIIT Timer App">
-    <meta name="twitter:description" content="The perfect HIIT timer app for your interval workouts">
-    <meta name="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
+    <meta name="twitter:title" content="Peak Intervals - Advanced Interval Training Timer">
+    <meta name="twitter:description" content="Sophisticated interval training timer for iOS and Apple Watch with dual workout modes and cross-device sync">
+    <meta property="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MobileApplication",
-      "name": "Peak Interval",
-      "description": "The perfect HIIT timer app for your interval workouts",
+      "name": "Peak Intervals",
+      "description": "Sophisticated interval training timer for iOS and Apple Watch with dual workout modes, cross-device sync, and precision timing controls",
       "operatingSystem": "iOS",
       "applicationCategory": "HealthAndFitnessApplication",
       "offers": {
@@ -70,7 +70,16 @@
         "@type": "AggregateRating",
         "ratingValue": "4.8",
         "ratingCount": "25"
-      }
+      },
+      "featureList": [
+        "Simple and Advanced workout modes",
+        "Cross-device synchronization between iPhone and Apple Watch",
+        "Customizable workout builder with drag-and-drop",
+        "Precision timer with voice announcements",
+        "Workout library with search and management",
+        "Advanced sharing capabilities",
+        "Multi-language support"
+      ]
     }
     </script>
 
@@ -142,6 +151,68 @@
             text-align: center;
         }
         
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            gap: 60px;
+        }
+        
+        .hero-text {
+            flex: 1;
+            text-align: left;
+        }
+        
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .phone-mockup {
+            position: relative;
+            width: 280px;
+            height: 560px;
+            background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+            border-radius: 35px;
+            padding: 8px;
+            box-shadow: 
+                0 20px 40px rgba(0,0,0,0.3),
+                inset 0 2px 0 rgba(255,255,255,0.1),
+                inset 0 -2px 0 rgba(0,0,0,0.2);
+        }
+        
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 27px;
+            overflow: hidden;
+            background: #000;
+            position: relative;
+        }
+        
+        .phone-screen::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 6px;
+            background: #333;
+            border-radius: 3px;
+            z-index: 2;
+        }
+        
+        .phone-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 27px;
+        }
+        
         h1 {
             font-size: 42px;
             margin-bottom: 20px;
@@ -150,7 +221,7 @@
         .subtitle {
             font-size: 20px;
             margin-bottom: 40px;
-            max-width: 600px;
+            max-width: 500px;
             line-height: 1.5;
             opacity: 0.9;
         }
@@ -274,14 +345,29 @@
             .nav a {
                 padding: 5px 10px;
             }
+            
+            .hero-content {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .phone-mockup {
+                width: 220px;
+                height: 440px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <img src="/assets/app_icon.png" alt="Peak Interval App Icon" class="app-icon">
-            <div class="logo-text">Peak Interval</div>
+            <img src="/assets/app_icon.png" alt="Peak Intervals App Icon" class="app-icon">
+            <div class="logo-text">Peak Intervals</div>
         </div>
     </div>
     
@@ -292,62 +378,58 @@
     </div>
     
     <div class="hero">
-        <h1>The Ultimate HIIT Timer App</h1>
-        <p class="subtitle">
-            Create, customize, and conquer your interval workouts with our beautifully designed HIIT timer app. 
-            Perfect for all your interval training needs.
-        </p>
-        <div>
-            <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
-                Download on App Store
-            </a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>The Ultimate Interval Training Timer</h1>
+                <p class="subtitle">
+                    Peak Intervals is a sophisticated interval training timer for iOS and Apple Watch. Create custom workouts with precision timing, from simple HIIT sessions to complex training patterns. Cross-device sync keeps your iPhone and Apple Watch perfectly synchronized.
+                </p>
+                <div>
+                    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+                        Download on App Store
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="/assets/app_screen.jpeg" alt="Peak Intervals App Screenshot">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="features">
         <div class="features-container">
-            <h2 class="features-title">App Features</h2>
+            <h2 class="features-title">Powerful Features for Every Training Style</h2>
             <div class="feature-grid">
                 <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Simple & Advanced Modes</h3>
+                    <p class="feature-desc">
+                        Simple mode for quick uniform workouts, or Advanced mode for complex training patterns with variable exercise durations, custom rest periods, and round management.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏗️</div>
+                    <h3 class="feature-title">Complete Workout Builder</h3>
+                    <p class="feature-desc">
+                        Create workouts with multiple exercises and rounds. Drag-and-drop reordering, round duplication, and real-time total duration calculation.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Workout Library & Management</h3>
+                    <p class="feature-desc">
+                        Save workouts to your personal library with custom colors. Full editing support, search functionality, and manual reordering of saved workouts.
+                    </p>
+                </div>
+                <div class="feature-item">
                     <div class="feature-icon">⏱️</div>
-                    <h3 class="feature-title">Custom Intervals</h3>
+                    <h3 class="feature-title">Precision Timer with Smart Controls</h3>
                     <p class="feature-desc">
-                        Create custom interval sets with flexible work and rest periods to match your training style.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔄</div>
-                    <h3 class="feature-title">Workout Presets</h3>
-                    <p class="feature-desc">
-                        Save your favorite workouts as presets or choose from our pre-defined workout templates.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔊</div>
-                    <h3 class="feature-title">Audio Cues</h3>
-                    <p class="feature-desc">
-                        Stay focused with customizable audio alerts that keep you on track during your workout.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Track Progress</h3>
-                    <p class="feature-desc">
-                        Monitor your workout history and see your improvement over time.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔗</div>
-                    <h3 class="feature-title">Share Workouts</h3>
-                    <p class="feature-desc">
-                        Share your custom workouts with friends and training partners.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🌙</div>
-                    <h3 class="feature-title">Dark Mode</h3>
-                    <p class="feature-desc">
-                        Enjoy a beautiful dark interface that's easy on the eyes during your workouts.
+                        Interactive countdown timer with play/pause/resume functionality, visual cues, voice announcements, and haptic feedback for important transitions.
                     </p>
                 </div>
             </div>
