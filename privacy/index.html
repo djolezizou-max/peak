@@ -83,7 +83,7 @@
     <div class="container">
         <a href="/" class="back-button">← Back to Home</a>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: February 15, 2024</p>
+        <p class="last-updated">Last Updated: March 9, 2026</p>
 
         <div class="section">
             <h2>Introduction</h2>
@@ -96,6 +96,7 @@
                 <li><strong>Purchase Information:</strong> We process App Store purchase data to validate your subscription or one-time purchase status.</li>
                 <li><strong>Usage Data:</strong> Basic app usage information such as workout play count is stored locally on your device.</li>
                 <li><strong>Workout Data:</strong> Your custom workout configurations are stored locally on your device.</li>
+                <li><strong>Health Data:</strong> With your permission, we access Apple HealthKit data including heart rate, active energy burned, basal energy burned, and workout records. This data is used solely to enhance your workout experience and is never sent to external servers.</li>
             </ul>
         </div>
 
@@ -104,7 +105,8 @@
             <ul>
                 <li><strong>App Store:</strong> We use StoreKit to process and validate purchases.</li>
                 <li><strong>Local Storage:</strong> Workout configurations and usage data are stored locally using iOS's UserDefaults.</li>
-                <li><strong>No External Servers:</strong> We do not collect or store any data on external servers.</li>
+                <li><strong>Apple HealthKit:</strong> With your explicit permission, we read and write health data using Apple's HealthKit framework. Authorization is requested just-in-time when you start your first workout, and you can grant or deny access at any time.</li>
+                <li><strong>No External Servers:</strong> We do not collect or store any data on external servers. All health data remains on your device and within Apple's Health ecosystem.</li>
             </ul>
         </div>
 
@@ -114,7 +116,34 @@
                 <li><strong>Purchase Validation:</strong> To verify your subscription or one-time purchase status.</li>
                 <li><strong>App Functionality:</strong> To save your workout configurations and track free trial usage.</li>
                 <li><strong>User Experience:</strong> To provide seamless access to premium features based on your purchase status.</li>
+                <li><strong>Workout Tracking:</strong> To save completed workouts to Apple Health, display live heart rate during workouts when an Apple Watch is connected, and show post-workout statistics including heart rate zones and calories burned.</li>
             </ul>
+        </div>
+
+        <div class="section">
+            <h2>Apple Health Integration</h2>
+            <p>Peak Intervals integrates with Apple HealthKit to enhance your workout experience. This integration is entirely optional and requires your explicit permission.</p>
+            <div class="subsection">
+                <h3 style="color: #FF9500; font-size: 18px;">Health Data We Read</h3>
+                <ul>
+                    <li><strong>Heart Rate:</strong> Live heart rate from Apple Watch during workouts, used to display real-time BPM and calculate post-workout heart rate zone breakdowns.</li>
+                    <li><strong>Active Energy Burned:</strong> Calories burned during workouts, displayed on the workout completion screen.</li>
+                    <li><strong>Basal Energy Burned:</strong> Resting calorie data used to calculate total calories during a workout session.</li>
+                </ul>
+                <h3 style="color: #FF9500; font-size: 18px;">Health Data We Write</h3>
+                <ul>
+                    <li><strong>Workout Records:</strong> Completed workouts are saved to Apple Health as High Intensity Interval Training activities, including start time, end time, duration, and pause/resume events.</li>
+                    <li><strong>Active Energy Burned:</strong> Calorie data collected by Apple Watch during workouts is saved alongside the workout record.</li>
+                </ul>
+                <h3 style="color: #FF9500; font-size: 18px;">How Health Data Is Handled</h3>
+                <ul>
+                    <li>All health data stays on your device and within Apple's Health ecosystem. We never transmit health data to external servers.</li>
+                    <li>Heart rate data is streamed from Apple Watch to iPhone during workouts via a direct device-to-device connection (WatchConnectivity). It is not sent over the internet.</li>
+                    <li>You can enable or disable Apple Health integration at any time in the app's Settings.</li>
+                    <li>If you deny HealthKit permissions or disable the integration, the app functions normally without any health features — no data is collected or written.</li>
+                    <li>You can review and revoke permissions at any time through the Apple Health app on your iPhone.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section">
@@ -146,6 +175,9 @@
                 <li>Delete all app data by deleting the app</li>
                 <li>Reset purchase status through App Store settings</li>
                 <li>Manage subscriptions through your Apple ID settings</li>
+                <li>Enable or disable Apple Health integration in the app's Settings</li>
+                <li>Review and revoke HealthKit permissions through the Apple Health app</li>
+                <li>Delete any workout data written to Apple Health through the Apple Health app</li>
             </ul>
         </div>
 
