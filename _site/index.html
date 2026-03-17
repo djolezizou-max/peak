@@ -6,7 +6,7 @@
     <title>Peak Intervals - Advanced Interval Training Timer for iOS and Apple Watch</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Peak Intervals is a sophisticated interval training timer for iOS and Apple Watch. Features simple and advanced workout modes, cross-device sync, customizable exercises, round management, and precision timing controls.">
+    <meta name="description" content="Peak Intervals is the ultimate interval training timer for iOS and Apple Watch. Features AI Coach, image-based workout import, heart rate zones, workout history, Apple Watch companion, iCloud sync, and 25+ languages.">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="HZUjd5KPlnW8YCYrTBj_4rpkjUWu7dK5QJDpFX4N0I0" />
     <link rel="canonical" href="https://peakintervalapp.com/">
@@ -41,7 +41,7 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Peak Intervals - Advanced Interval Training Timer">
-    <meta property="og:description" content="Sophisticated interval training timer for iOS and Apple Watch with dual workout modes, cross-device sync, and precision timing controls">
+    <meta property="og:description" content="The ultimate interval training timer for iOS and Apple Watch. AI Coach, image workout import, heart rate zones, workout history, and 25+ languages.">
     <meta property="og:image" content="https://peakintervalapp.com/assets/app_icon.png">
     <meta property="og:url" content="https://peakintervalapp.com">
     <meta property="og:type" content="website">
@@ -49,7 +49,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Peak Intervals - Advanced Interval Training Timer">
-    <meta name="twitter:description" content="Sophisticated interval training timer for iOS and Apple Watch with dual workout modes and cross-device sync">
+    <meta name="twitter:description" content="The ultimate interval training timer for iOS and Apple Watch. AI Coach, image workout import, heart rate zones, workout history, and 25+ languages.">
     <meta property="twitter:image" content="https://peakintervalapp.com/assets/app_icon.png">
 
     <!-- Schema.org structured data -->
@@ -58,7 +58,7 @@
       "@context": "https://schema.org",
       "@type": "MobileApplication",
       "name": "Peak Intervals",
-      "description": "Sophisticated interval training timer for iOS and Apple Watch with dual workout modes, cross-device sync, and precision timing controls",
+      "description": "The ultimate interval training timer for iOS and Apple Watch. AI Coach, image workout import, heart rate zones, workout history, iCloud sync, and 25+ languages.",
       "operatingSystem": "iOS",
       "applicationCategory": "HealthAndFitnessApplication",
       "offers": {
@@ -73,320 +73,586 @@
       },
       "featureList": [
         "Simple and Advanced workout modes",
+        "AI Coach for intelligent workout remixing",
+        "Image-based workout import from photos and screenshots",
+        "Apple Watch companion app with auto-launch",
+        "Real-time heart rate monitoring with 5-zone analytics",
+        "Workout history with calendar view and streaks",
+        "iCloud sync across all devices",
         "Cross-device synchronization between iPhone and Apple Watch",
         "Customizable workout builder with drag-and-drop",
         "Precision timer with voice announcements",
         "Workout library with search and management",
         "Advanced sharing capabilities",
-        "Multi-language support"
+        "HealthKit integration for calories and workout tracking",
+        "Support for 25+ languages"
       ]
     }
     </script>
 
     <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg: #181F3B;
+            --color-bg-deep: #0f1429;
+            --color-accent: #FF9500;
+            --color-accent-hover: #FFB340;
+            --color-surface: rgba(255, 255, 255, 0.05);
+            --color-surface-hover: rgba(255, 255, 255, 0.1);
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-text: #FFFFFF;
+            --color-text-muted: rgba(255, 255, 255, 0.65);
+            --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 36px;
+            --max-width: 1200px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #181F3B;
-            color: white;
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
             padding: 0;
             margin: 0;
             min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
-        .header {
-            padding: 20px;
-            text-align: center;
-            background-color: rgba(0,0,0,0.2);
+
+        /* --- Header & Nav --- */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            background: rgba(24, 31, 59, 0.85);
+            border-bottom: 1px solid var(--color-border);
         }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .app-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 15px;
-        }
-        
-        .logo-text {
-            font-size: 24px;
-            font-weight: 700;
-        }
-        
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 15px 0;
-            background-color: rgba(0,0,0,0.3);
-        }
-        
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            opacity: 0.8;
-            transition: opacity 0.2s;
-        }
-        
-        .nav a:hover {
-            opacity: 1;
-        }
-        
-        .nav a.active {
-            opacity: 1;
-            border-bottom: 2px solid #FF9500;
-        }
-        
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .hero-content {
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1200px;
-            width: 100%;
-            gap: 60px;
+            padding: 16px 24px;
         }
-        
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--color-text);
+        }
+
+        .app-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav a {
+            color: var(--color-text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .nav a:hover {
+            color: var(--color-text);
+            background: var(--color-surface);
+        }
+
+        .nav a.active {
+            color: var(--color-text);
+            background: var(--color-surface-hover);
+        }
+
+        /* --- Hero --- */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 100px 24px 120px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 900px;
+            height: 900px;
+            background: radial-gradient(circle, rgba(255, 149, 0, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            gap: 80px;
+        }
+
         .hero-text {
             flex: 1;
-            text-align: left;
+            max-width: 560px;
         }
-        
-        .hero-image {
-            flex: 1;
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(255, 149, 0, 0.12);
+            border: 1px solid rgba(255, 149, 0, 0.25);
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: 24px;
+            letter-spacing: 0.02em;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin: 0 0 24px;
+        }
+
+        h1 .accent {
+            background: linear-gradient(135deg, var(--color-accent), #FFD580);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 19px;
+            line-height: 1.65;
+            color: var(--color-text-muted);
+            margin: 0 0 40px;
+        }
+
+        .cta-group {
             display: flex;
-            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
         }
-        
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--color-accent);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 16px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(255, 149, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 149, 0, 0.4);
+        }
+
+        .cta-button svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px 24px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            transition: all 0.25s;
+        }
+
+        .cta-secondary:hover {
+            color: var(--color-text);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: var(--color-surface);
+        }
+
+        .hero-image {
+            flex-shrink: 0;
+        }
+
         .phone-mockup {
             position: relative;
             width: 280px;
-            height: 560px;
-            background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
-            border-radius: 35px;
-            padding: 8px;
-            box-shadow: 
-                0 20px 40px rgba(0,0,0,0.3),
-                inset 0 2px 0 rgba(255,255,255,0.1),
-                inset 0 -2px 0 rgba(0,0,0,0.2);
+            height: 570px;
+            background: linear-gradient(160deg, #3a3a3a, #1a1a1a);
+            border-radius: 44px;
+            padding: 10px;
+            box-shadow:
+                0 40px 80px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
+            animation: float 6s ease-in-out infinite;
         }
-        
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
         .phone-screen {
             width: 100%;
             height: 100%;
-            border-radius: 27px;
+            border-radius: 34px;
             overflow: hidden;
             background: #000;
             position: relative;
         }
-        
+
         .phone-screen::before {
             content: '';
             position: absolute;
-            top: 15px;
+            top: 12px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 6px;
-            background: #333;
-            border-radius: 3px;
+            width: 100px;
+            height: 28px;
+            background: #1a1a1a;
+            border-radius: 20px;
             z-index: 2;
         }
-        
+
         .phone-screen img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 27px;
+            border-radius: 34px;
         }
-        
-        h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-        
-        .subtitle {
-            font-size: 20px;
-            margin-bottom: 40px;
-            max-width: 500px;
-            line-height: 1.5;
-            opacity: 0.9;
-        }
-        
-        .cta-button {
-            background: #FF9500;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 12px;
-            font-weight: 700;
-            display: inline-block;
-            transition: all 0.2s;
-            font-size: 18px;
-            margin: 20px 10px 0;
-        }
-        
-        .cta-button:hover {
-            background: #FFB340;
-            color: #FFFFFF;
-            transform: scale(1.02);
-        }
-        
-        .secondary-button {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .secondary-button:hover {
-            background: rgba(255,255,255,0.1);
-        }
-        
+
+        /* --- Features --- */
         .features {
-            padding: 60px 20px;
-            background-color: rgba(0,0,0,0.1);
+            padding: 100px 24px;
+            background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%);
         }
-        
+
         .features-container {
-            max-width: 1200px;
+            max-width: var(--max-width);
             margin: 0 auto;
         }
-        
-        .features-title {
+
+        .section-header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 64px;
         }
-        
+
+        .section-header h2 {
+            font-size: 38px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin: 0 0 16px;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--color-text-muted);
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-item {
-            padding: 30px;
-            background-color: rgba(0,0,0,0.2);
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-        
-        .feature-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        
-        .feature-desc {
-            font-size: 16px;
-            line-height: 1.5;
-            opacity: 0.8;
-        }
-        
-        .footer {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+        }
+
+        .feature-item {
+            padding: 32px 28px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-item:hover {
+            background: var(--color-surface-hover);
+            border-color: rgba(255, 255, 255, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            background: rgba(255, 149, 0, 0.1);
+            border-radius: var(--radius-sm);
             margin-bottom: 20px;
         }
-        
+
+        .feature-item:nth-child(2) .feature-icon { background: rgba(88, 166, 255, 0.1); }
+        .feature-item:nth-child(3) .feature-icon { background: rgba(52, 199, 89, 0.1); }
+        .feature-item:nth-child(4) .feature-icon { background: rgba(255, 69, 58, 0.1); }
+        .feature-item:nth-child(5) .feature-icon { background: rgba(175, 82, 222, 0.1); }
+        .feature-item:nth-child(6) .feature-icon { background: rgba(255, 214, 10, 0.1); }
+        .feature-item:nth-child(7) .feature-icon { background: rgba(0, 199, 190, 0.1); }
+        .feature-item:nth-child(8) .feature-icon { background: rgba(88, 166, 255, 0.1); }
+        .feature-item:nth-child(9) .feature-icon { background: rgba(255, 55, 95, 0.1); }
+        .feature-item:nth-child(10) .feature-icon { background: rgba(48, 209, 88, 0.1); }
+        .feature-item:nth-child(11) .feature-icon { background: rgba(255, 159, 10, 0.1); }
+        .feature-item:nth-child(12) .feature-icon { background: rgba(100, 210, 255, 0.1); }
+
+        .feature-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .feature-item p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--color-text-muted);
+            margin: 0;
+        }
+
+        /* --- Bottom CTA --- */
+        .bottom-cta {
+            padding: 80px 24px;
+            text-align: center;
+            background: var(--color-bg-deep);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bottom-cta::before {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 149, 0, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .bottom-cta-inner {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .bottom-cta h2 {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin: 0 0 16px;
+        }
+
+        .bottom-cta p {
+            font-size: 18px;
+            color: var(--color-text-muted);
+            margin: 0 0 32px;
+            line-height: 1.6;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            padding: 40px 24px;
+            border-top: 1px solid var(--color-border);
+            background: var(--color-bg-deep);
+        }
+
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
         .footer-links a {
-            color: white;
+            color: var(--color-text-muted);
             text-decoration: none;
-            opacity: 0.7;
-            transition: opacity 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
         }
-        
+
         .footer-links a:hover {
-            opacity: 1;
-            text-decoration: underline;
+            color: var(--color-text);
         }
-        
+
         .copyright {
-            opacity: 0.7;
+            color: var(--color-text-muted);
             font-size: 14px;
         }
-        
+
+        /* --- Scroll Animations --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 1024px) {
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
             h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
-            
-            .subtitle {
-                font-size: 18px;
+
+            .section-header h2 {
+                font-size: 28px;
             }
-            
-            .nav {
-                flex-wrap: wrap;
-                gap: 15px;
+
+            .hero {
+                padding: 60px 20px 80px;
             }
-            
-            .nav a {
-                padding: 5px 10px;
-            }
-            
+
             .hero-content {
                 flex-direction: column;
-                gap: 40px;
+                gap: 48px;
                 text-align: center;
             }
-            
+
             .hero-text {
+                max-width: 100%;
+            }
+
+            .cta-group {
+                justify-content: center;
+            }
+
+            .hero-badge {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .phone-mockup {
+                width: 240px;
+                height: 490px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 16px;
                 text-align: center;
             }
-            
-            .phone-mockup {
-                width: 220px;
-                height: 440px;
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav {
+                gap: 4px;
+            }
+
+            .nav a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+
+            .bottom-cta h2 {
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="/assets/app_icon.png" alt="Peak Intervals App Icon" class="app-icon">
-            <div class="logo-text">Peak Intervals</div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="/assets/app_icon.png" alt="Peak Intervals" class="app-icon">
+                <span class="logo-text">Peak Intervals</span>
+            </a>
+            <nav class="nav">
+                <a href="/" class="active">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact/">Contact</a>
+            </nav>
         </div>
-    </div>
-    
-    <div class="nav">
-        <a href="/" class="active">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
-    </div>
-    
-    <div class="hero">
+    </header>
+
+    <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>The Ultimate Interval Training Timer</h1>
+                <div class="hero-badge">Now with AI Coach</div>
+                <h1>Train Smarter with <span class="accent">Peak Intervals</span></h1>
                 <p class="subtitle">
-                    Peak Intervals is a sophisticated interval training timer for iOS and Apple Watch. Create custom workouts with precision timing, from simple HIIT sessions to complex training patterns. Cross-device sync keeps your iPhone and Apple Watch perfectly synchronized.
+                    The smartest interval training timer for iOS and Apple Watch. Build workouts from scratch or snap a photo — the AI Coach handles the rest. Track heart rate zones, sync across devices, and review your progress with detailed analytics.
                 </p>
-                <div>
+                <div class="cta-group">
                     <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                         Download on App Store
+                    </a>
+                    <a href="#features" class="cta-secondary">
+                        See Features
                     </a>
                 </div>
             </div>
@@ -398,68 +664,117 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="features">
+    </section>
+
+    <section class="features" id="features">
         <div class="features-container">
-            <h2 class="features-title">Powerful Features for Every Training Style</h2>
+            <div class="section-header fade-in">
+                <h2>Everything You Need to Train</h2>
+                <p>From AI-powered coaching to real-time heart rate tracking — built for athletes who take their training seriously.</p>
+            </div>
             <div class="feature-grid">
-                <div class="feature-item">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Coach</h3>
+                    <p>Let AI remix your workouts instantly. Make them harder, easier, swap exercises, go equipment-free, or switch to low-impact — all with a single tap.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">📸</div>
+                    <h3>Import from Photos</h3>
+                    <p>Snap a photo of any workout — from a whiteboard, Instagram post, or TikTok screenshot — and the app builds the interval timer for you automatically.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">⌚</div>
+                    <h3>Apple Watch</h3>
+                    <p>Your Watch app launches automatically when you start a workout. Run timers independently on your wrist with real-time heart rate streaming back to iPhone.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Heart Rate Zones</h3>
+                    <p>Monitor your heart rate in real time with 5-zone classification. See zone distribution breakdowns after every workout to track your intensity.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3>History & Analytics</h3>
+                    <p>Track every session with a calendar view, workout streaks, and detailed stats including heart rate, calories burned, and zone time breakdowns.</p>
+                </div>
+                <div class="feature-item fade-in">
                     <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Simple & Advanced Modes</h3>
-                    <p class="feature-desc">
-                        Simple mode for quick uniform workouts, or Advanced mode for complex training patterns with variable exercise durations, custom rest periods, and round management.
-                    </p>
+                    <h3>Simple & Advanced Modes</h3>
+                    <p>Quick uniform workouts in Simple mode, or complex training patterns with variable durations, custom rest periods, and round management in Advanced mode.</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item fade-in">
                     <div class="feature-icon">🏗️</div>
-                    <h3 class="feature-title">Complete Workout Builder</h3>
-                    <p class="feature-desc">
-                        Create workouts with multiple exercises and rounds. Drag-and-drop reordering, round duplication, and real-time total duration calculation.
-                    </p>
+                    <h3>Workout Builder</h3>
+                    <p>Create workouts with multiple exercises and rounds. Drag-and-drop reordering, round duplication, and real-time total duration calculation.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📚</div>
-                    <h3 class="feature-title">Workout Library & Management</h3>
-                    <p class="feature-desc">
-                        Save workouts to your personal library with custom colors. Full editing support, search functionality, and manual reordering of saved workouts.
-                    </p>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">☁️</div>
+                    <h3>iCloud Sync</h3>
+                    <p>Your saved workouts sync seamlessly across all your devices via iCloud. Never lose a workout, and pick up right where you left off.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">⏱️</div>
-                    <h3 class="feature-title">Precision Timer with Smart Controls</h3>
-                    <p class="feature-desc">
-                        Interactive countdown timer with play/pause/resume functionality, visual cues, voice announcements, and haptic feedback for important transitions.
-                    </p>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🏥</div>
+                    <h3>HealthKit Integration</h3>
+                    <p>Workouts automatically save to Apple Health with heart rate data, active and total calories, and proper activity type categorization.</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item fade-in">
                     <div class="feature-icon">🔗</div>
-                    <h3 class="feature-title">Share Workouts</h3>
-                    <p class="feature-desc">
-                        Share your custom workouts with friends and training partners. Import shared routines and discover new training patterns.
-                    </p>
+                    <h3>Share Workouts</h3>
+                    <p>Share your custom workouts with friends and training partners via shareable links. Import shared routines and discover new training patterns.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🌙</div>
-                    <h3 class="feature-title">Dark Mode</h3>
-                    <p class="feature-desc">
-                        Enjoy a beautiful dark interface that's easy on the eyes during your workouts and perfectly suited for any lighting condition.
-                    </p>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Precision Timer</h3>
+                    <p>Interactive countdown with play/pause/resume, configurable sound packs, voice announcements, and haptic feedback for every transition.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🌍</div>
+                    <h3>25+ Languages</h3>
+                    <p>Fully localized in over 25 languages including English, Spanish, French, German, Japanese, Chinese, Arabic, Hindi, Korean, and many more.</p>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="footer">
-        <div class="footer-links">
-            <a href="/terms">Terms & Conditions</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/blog">Blog</a>
+    </section>
+
+    <section class="bottom-cta">
+        <div class="bottom-cta-inner fade-in">
+            <h2>Ready to Train Smarter?</h2>
+            <p>Join thousands of athletes using Peak Intervals to push their limits. Free to download.</p>
+            <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download on App Store
+            </a>
         </div>
-        <div class="copyright">
-            &copy; 2023-2024 Peak Interval. All rights reserved.
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="/terms">Terms & Conditions</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/contact">Contact</a>
+                <a href="/blog">Blog</a>
+            </div>
+            <div class="copyright">
+                &copy; 2023-2026 Peak Interval. All rights reserved.
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 80);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
