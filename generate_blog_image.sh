@@ -22,13 +22,12 @@ echo "This will be saved as: $OUTPUT_DIR/$FILENAME"
 # Save API response to a file for debugging
 TEMP_RESPONSE="/tmp/openai_response.json"
 
-# Call OpenAI API with gpt-image-1 model parameters
-# Note: If your organization isn't verified for gpt-image-1, DALL-E 3 will be used as fallback
+# Call OpenAI API with gpt-image-2 (released 2026-04-21)
 curl -s https://api.openai.com/v1/images/generations \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -d "{
-    \"model\": \"gpt-image-1\",
+    \"model\": \"gpt-image-2\",
     \"prompt\": \"$PROMPT\",
     \"n\": 1,
     \"size\": \"$SIZE\"
