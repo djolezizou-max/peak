@@ -17,6 +17,7 @@
     "luxon": "^3.6.1"
   },
   "dependencies": {
+    "agentation": "^2.3.2",
     "slugify": "^1.6.6"
   }
 }
