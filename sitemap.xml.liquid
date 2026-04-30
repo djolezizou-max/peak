@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
   {%- endcomment -%}
   {%- if item.url and item.data.eleventyExcludeFromCollections != true and item.data.sitemap_exclude != true %}
   <url>
-    <loc>https://peakintervalapp.com{{ item.url | url }}</loc>
+    <loc>https://www.peakintervalapp.com{{ item.url | stripTrailingSlash }}</loc>
     {%- if item.date %}
     <lastmod>{{ item.date | htmlDateString }}</lastmod>
     {%- endif %}

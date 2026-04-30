@@ -13,6 +13,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("app_icon.png");
 
+  // Strip trailing slash (except for root "/") so canonical URLs match
+  // Vercel's trailingSlash: false routing.
+  eleventyConfig.addFilter("stripTrailingSlash", (url) => {
+    if (!url || url === "/") return url;
+    return url.endsWith("/") ? url.slice(0, -1) : url;
+  });
+
   // Add slugify filter
   const slugify = require("slugify");
   eleventyConfig.addFilter("slugify", (str) => {
