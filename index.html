@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,29 +14,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- Firebase SDKs -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyAH8e8l2Q7f-1ZXYYeDrMfB4oKGKEwoCxM",
-            authDomain: "peak-interval-site.firebaseapp.com",
-            projectId: "peak-interval-site",
-            storageBucket: "peak-interval-site.firebasestorage.app",
-            messagingSenderId: "199931231891",
-            appId: "1:199931231891:web:97e2dd591118fdcaf29766",
-            measurementId: "G-TGBMET8NFR"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGBMET8NFR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TGBMET8NFR');
     </script>
 
     <!-- Open Graph Meta Tags -->
@@ -638,8 +622,8 @@
             </a>
             <nav class="nav">
                 <a href="/" class="active">Home</a>
-                <a href="/blog/">Blog</a>
-                <a href="/contact/">Contact</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
             </nav>
         </div>
     </header>

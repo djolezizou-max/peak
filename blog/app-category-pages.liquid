@@ -4,6 +4,7 @@ pagination:
   size: 1
   alias: categoryPage
 permalink: /blog/app-{{ categoryPage.slug }}/
+sitemap_exclude: true
 ---
 {% assign category = categoryPage.category %}
 {% include "category.liquid" %} 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -433,13 +433,13 @@
 
     <div class="nav">
         <a href="/">Home</a>
-        <a href="/blog/" class="active">Blog</a> 
-        <a href="/contact/">Contact</a>
+        <a href="/blog" class="active">Blog</a> 
+        <a href="/contact">Contact</a>
     </div>
 
     <div class="blog-container">
         {% assign categorySlug = category | slugify %}
-        <a href="/blog/{{ categorySlug }}/" class="back-to-blog-link">‹ Back to {{ category }}</a>
+        <a href="/blog/{{ categorySlug }}" class="back-to-blog-link">‹ Back to {{ category }}</a>
         <article class="blog-post">
             <header class="blog-header">
                 <h1 class="blog-title">{{ title }}</h1>

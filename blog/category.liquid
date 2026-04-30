@@ -1,10 +1,14 @@
+---
+permalink: false
+eleventyExcludeFromCollections: true
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ category }} - Peak Interval Blog</title>
-    
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
     <meta name="robots" content="index, follow">
@@ -230,8 +234,8 @@
     
     <div class="nav">
         <a href="/">Home</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/contact/">Contact</a>
+        <a href="/blog" class="active">Blog</a>
+        <a href="/contact">Contact</a>
     </div>
     
     <div class="category-header">
@@ -258,7 +262,7 @@
     </div>
     
     <div class="blog-content">
-        <a href="/blog/" class="back-link">← Back to Categories</a>
+        <a href="/blog" class="back-link">← Back to Categories</a>
         
         <div class="blog-posts">
             {%- assign posts = collections.posts | reverse -%}
@@ -291,10 +295,10 @@
     <div class="footer">
         <div class="footer-links">
             <a href="/">Home</a>
-            <a href="/terms/">Terms & Conditions</a>
-            <a href="/privacy/">Privacy Policy</a>
-            <a href="/contact/">Contact Us</a>
-            <a href="/blog/">Blog</a>
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/blog">Blog</a>
         </div>
         <div class="copyright">
             &copy; 2023-2024 Peak Interval. All rights reserved.
