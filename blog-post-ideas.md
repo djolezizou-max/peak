@@ -66,9 +66,9 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 51. HIIT for Endurance Athletes: Complementing Your Long-Distance Training [DONE]
 52. HIIT for Powerlifters: Building Power and Conditioning Without Sacrifice [DONE]
 53. Pregnancy-Safe HIIT: Modifications for Each Trimester [DONE]
-54. Postpartum HIIT: Safe Return to Intensity After Childbirth
+54. Postpartum HIIT: Safe Return to Intensity After Childbirth [DONE]
 55. HIIT for Teens: Age-Appropriate Interval Training for Young Athletes [DONE]
-56. Adaptive HIIT: Interval Training for People with Disabilities
+56. Adaptive HIIT: Interval Training for People with Disabilities [DONE]
 57. HIIT for Desk Workers: Counteracting the Effects of Sitting [DONE]
 58. Water-Based HIIT: Pool Workouts for Low-Impact Intensity [DONE]
 59. HIIT for Sports Performance: Sport-Specific Interval Protocols [DONE]
@@ -90,12 +90,12 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 72. Carb Cycling and HIIT: Matching Your Nutrition to Your Training Intensity [DONE]
 73. Supplements for HIIT Performance: What Works and What Doesn't [DONE]
 74. HIIT and Sleep: The Crucial Connection Between Rest and Results [DONE]
-75. Plant-Based Nutrition for HIIT Athletes: Meeting Your Needs on a Vegan Diet
-76. HIIT and Hormones: How Intense Exercise Affects Your Endocrine System
-77. Fasted vs. Fed HIIT: The Science and Practical Applications
-78. Overtraining in HIIT: Signs, Symptoms, and Solutions
-79. Anti-Inflammatory Nutrition for HIIT Recovery
-80. HIIT and Aging: How Interval Training Can Slow the Aging Process
+75. Plant-Based Nutrition for HIIT Athletes: Meeting Your Needs on a Vegan Diet [DONE]
+76. HIIT and Hormones: How Intense Exercise Affects Your Endocrine System [DONE]
+77. Fasted vs. Fed HIIT: The Science and Practical Applications [DONE]
+78. Overtraining in HIIT: Signs, Symptoms, and Solutions [DONE]
+79. Anti-Inflammatory Nutrition for HIIT Recovery [DONE]
+80. HIIT and Aging: How Interval Training Can Slow the Aging Process [DONE]
 
 ## HIIT Success Stories and Case Studies (10 posts)
 
@@ -105,10 +105,10 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 84. HIIT for Weight Loss: Case Studies and Success Strategies [DONE]
 85. The 50+ HIIT Club: Stories of Older Adults Thriving with Interval Training [DONE]
 86. HIIT After Injury: Comeback Stories and Lessons Learned [DONE]
-87. Family HIIT: How Couples and Families Train Together
-88. HIIT Trainers Share Their Personal Routines and Tips
-89. From HIIT Skeptic to Believer: Stories of Conversion
-90. Long-Term HIIT: Stories from People Who've Been Doing It for Years
+87. Family HIIT: How Couples and Families Train Together [DONE]
+88. HIIT Trainers Share Their Personal Routines and Tips [DONE]
+89. From HIIT Skeptic to Believer: Stories of Conversion [DONE]
+90. Long-Term HIIT: Stories from People Who've Been Doing It for Years [DONE]
 
 ## Advanced HIIT Concepts (10 posts)
 
@@ -121,7 +121,7 @@ This document contains 100 blog post ideas for the Peak Interval app, organized 
 97. Concurrent Training: The Science of Combining HIIT and Strength Training [DONE]
 98. Neuromuscular Adaptations to HIIT: How Your Nervous System Changes [DONE]
 99. The Future of HIIT: Emerging Research and Training Methods [DONE]
-100. HIIT Around the World: How Different Countries and Cultures Approach Interval Training
+100. HIIT Around the World: How Different Countries and Cultures Approach Interval Training [DONE]
 
 ---
 
