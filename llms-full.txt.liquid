@@ -1,0 +1,28 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# Peak Interval - Complete Blog Content
+
+> Peak Interval is a precision HIIT timer for iOS and Apple Watch. This file contains the full text of every blog post on peakintervalapp.com, concatenated for easy ingestion by language models.
+
+App: https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716
+Website: https://www.peakintervalapp.com
+Total posts: {{ collections.posts.size }}
+
+---
+
+{% assign posts = collections.posts | sort: 'data.date' | reverse %}
+{% for post in posts %}
+# {{ post.data.title }}
+
+URL: https://www.peakintervalapp.com{{ post.url | stripTrailingSlash }}
+Category: {{ post.data.category }}
+Published: {{ post.data.date | htmlDateString }}
+Description: {{ post.data.description }}
+
+{{ post.templateContent | strip_html }}
+
+---
+
+{% endfor %}

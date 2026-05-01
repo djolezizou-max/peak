@@ -1,0 +1,33 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# Peak Interval
+
+> Peak Interval is a precision HIIT (high-intensity interval training) timer for iOS and Apple Watch. The Peak Interval blog publishes evidence-based articles on interval training, workout protocols, sports science, nutrition, and recovery to help athletes train smarter at every level.
+
+The Peak Interval app provides customizable interval timing, saved workouts, heart rate integration with Apple Watch, image-based workout import, AI-powered coaching, and 25+ language support. The blog covers HIIT fundamentals, workout guides, specialized training for different populations and goals, advanced concepts, and case studies — all written to help athletes apply interval training intelligently.
+
+## App
+- [Peak Interval - HIIT Timer for iOS and Apple Watch](https://www.peakintervalapp.com): Advanced interval training timer with AI Coach, heart rate zones, workout history, iCloud sync, and 25+ languages.
+- [Download on the App Store](https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716): Install the iOS and Apple Watch app.
+- [Privacy Policy](https://www.peakintervalapp.com/privacy): Data practices, Apple HealthKit integration, and how user information is handled.
+- [Terms of Service](https://www.peakintervalapp.com/terms): Conditions of use for the app and website.
+- [Contact](https://www.peakintervalapp.com/contact): Support, feedback, and partnership inquiries.
+
+## Blog Categories
+- [Blog](https://www.peakintervalapp.com/blog): Index of all blog content organized by category.
+- [HIIT Fundamentals](https://www.peakintervalapp.com/blog/hiit-fundamentals): Foundational concepts of high-intensity interval training.
+- [Workout Guides](https://www.peakintervalapp.com/blog/workout-guides): Practical interval workouts for different goals, equipment, and time constraints.
+- [Specialized HIIT Training](https://www.peakintervalapp.com/blog/specialized-hiit-training): HIIT for specific sports, populations, and conditions.
+- [Fitness + Nutrition](https://www.peakintervalapp.com/blog/fitness-nutrition): Nutrition and recovery strategies for interval athletes.
+- [HIIT Success Stories](https://www.peakintervalapp.com/blog/hiit-success-stories): Real-world stories and case studies from HIIT practitioners.
+- [Advanced HIIT Concepts](https://www.peakintervalapp.com/blog/advanced-hiit-concepts): Deeper science and advanced applications of interval training.
+
+{% assign posts = collections.posts | sort: 'data.date' | reverse %}
+{% assign categories = "HIIT Fundamentals,Workout Guides,Specialized HIIT Training,Fitness + Nutrition,HIIT Success Stories,Advanced HIIT Concepts,App Features" | split: "," %}
+{% for category in categories %}
+## {{ category }} Posts
+{% for post in posts %}{% if post.data.category == category %}- [{{ post.data.title }}](https://www.peakintervalapp.com{{ post.url | stripTrailingSlash }}): {{ post.data.description }}
+{% endif %}{% endfor %}
+{% endfor %}

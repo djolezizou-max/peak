@@ -23,6 +23,39 @@
     <meta name="twitter:description" content="{{ description }}">
     <meta name="twitter:image" content="https://www.peakintervalapp.com{{ featured_image }}">
 
+    <!-- Article JSON-LD for AI/search engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ title | jsonify }},
+      "description": {{ description | jsonify }},
+      "image": "https://www.peakintervalapp.com{{ featured_image }}",
+      "datePublished": "{{ page.date | htmlDateString }}",
+      "dateModified": "{{ page.date | htmlDateString }}",
+      "author": {
+        "@type": "Organization",
+        "name": "Peak Interval",
+        "url": "https://www.peakintervalapp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Peak Interval",
+        "url": "https://www.peakintervalapp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.peakintervalapp.com/assets/app_icon.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.peakintervalapp.com{{ page.url | stripTrailingSlash }}"
+      },
+      "articleSection": {{ category | jsonify }},
+      "inLanguage": "en"
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
