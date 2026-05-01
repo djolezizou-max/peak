@@ -1,0 +1,24 @@
+---
+permalink: /posts.json
+eleventyExcludeFromCollections: true
+---
+{
+  "site": {
+    "name": "Peak Interval",
+    "url": "https://www.peakintervalapp.com",
+    "description": "Peak Interval is a precision HIIT timer app for iOS and Apple Watch. The blog publishes evidence-based articles on interval training, sports science, nutrition, and recovery.",
+    "app_store_url": "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716"
+  },
+  "total": {{ collections.posts.size }},
+  "posts": [{% assign posts = collections.posts | sort: 'data.date' | reverse %}{% for post in posts %}
+    {
+      "title": {{ post.data.title | jsonify }},
+      "url": "https://www.peakintervalapp.com{{ post.url | stripTrailingSlash }}",
+      "slug": {{ post.fileSlug | jsonify }},
+      "description": {{ post.data.description | jsonify }},
+      "category": {{ post.data.category | jsonify }},
+      "date": "{{ post.data.date | htmlDateString }}",
+      "image": "https://www.peakintervalapp.com{{ post.data.featured_image }}"
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
