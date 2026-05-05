@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("app_icon.png");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   // Strip trailing slash (except for root "/") so canonical URLs match
   // Vercel's trailingSlash: false routing.
