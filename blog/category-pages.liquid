@@ -3,6 +3,7 @@ pagination:
   data: collections.categoryPages
   size: 1
   alias: categoryPage
+  addAllPagesToCollections: true
 permalink: /blog/{{ categoryPage.slug }}/
 ---
 {% assign category = categoryPage.category %}
