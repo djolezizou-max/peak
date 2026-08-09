@@ -297,7 +297,7 @@
             {%- for post in posts -%}
                 {% if post.data.category == category %}
                 <div class="blog-post-card">
-                    <a href="{{ post.url | url }}" class="post-link">
+                    <a href="{{ post.url | stripTrailingSlash }}" class="post-link">
                         {% if post.data.featured_image %}
                         <img src="{{ post.data.featured_image | url }}" alt="{{ post.data.image_alt | default: post.data.title }}" class="post-thumbnail">
                         {% else %}

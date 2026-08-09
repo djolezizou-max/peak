@@ -38,6 +38,11 @@
             "source": "/w/:path(.*)",
             "destination": "/download?workout=:path",
             "permanent": false
+        },
+        {
+            "source": "/blog/posts/the-lactate-threshold-and-hiit-training-to-push-your-limits",
+            "destination": "/blog/posts/lactate-threshold-and-hiit",
+            "permanent": true
         }
     ],
     "rewrites": [

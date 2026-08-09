@@ -149,6 +149,62 @@
             object-fit: cover;
         }
         
+        .category-label {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 14px 16px;
+            background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .category-label .count {
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .latest-posts {
+            margin-top: 60px;
+        }
+
+        .latest-posts h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .latest-posts ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .latest-posts ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .latest-posts a {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.9;
+            line-height: 1.4;
+            display: block;
+        }
+
+        .latest-posts a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
         .placeholder {
             width: 100%;
             height: 100%;
@@ -216,54 +272,49 @@
     
     <div class="blog-content">
         <div class="category-cards">
-            <!-- HIIT Fundamentals -->
+            {%- assign allPosts = collections.posts -%}
+            {%- for categoryPage in collections.categoryPages -%}
+                {%- assign slug = categoryPage.slug -%}
+                {%- case slug -%}
+                    {%- when 'workout-guides' -%}{%- assign image = '/assets/blog/workouts-programs-category.jpg' -%}
+                    {%- when 'specialized-hiit-training' -%}{%- assign image = '/assets/blog/specialized-training-category.jpg' -%}
+                    {%- when 'hiit-fundamentals' -%}{%- assign image = '/assets/blog/hiit-fundamentals-category.jpg' -%}
+                    {%- when 'fitness-nutrition' -%}{%- assign image = '/assets/blog/fitness-nutrition-category.jpg' -%}
+                    {%- when 'hiit-success-stories' -%}{%- assign image = '/assets/blog/hiit-success-stories-category.jpg' -%}
+                    {%- when 'advanced-hiit-concepts' -%}{%- assign image = '/assets/blog/advanced-hiit-concepts-category.jpg' -%}
+                    {%- when 'app-features' -%}{%- assign image = '/assets/blog/app-features-category.jpg' -%}
+                    {%- else -%}{%- assign image = '' -%}
+                {%- endcase -%}
+                {%- assign postCount = 0 -%}
+                {%- for post in allPosts -%}
+                    {%- if post.data.category == categoryPage.category -%}{%- assign postCount = postCount | plus: 1 -%}{%- endif -%}
+                {%- endfor -%}
             <div class="category-card">
-                <a href="/blog/hiit-fundamentals" class="category-link">
-                    <img src="/assets/blog/hiit-fundamentals-category.jpg" alt="HIIT Fundamentals" class="category-image">
+                <a href="/blog/{{ slug }}" class="category-link">
+                    {% if image != '' %}
+                    <img src="{{ image }}" alt="{{ categoryPage.category }}" class="category-image">
+                    {% else %}
+                    <div class="placeholder"></div>
+                    {% endif %}
+                    <span class="category-label">
+                        {{ categoryPage.category }}
+                        <span class="count">{{ postCount }} article{% if postCount != 1 %}s{% endif %}</span>
+                    </span>
                 </a>
             </div>
-            
-            <!-- Workout Guides -->
-            <div class="category-card">
-                <a href="/blog/workout-guides" class="category-link">
-                    <img src="/assets/blog/workouts-programs-category.jpg" alt="Workouts & Programs" class="category-image">
-                </a>
-            </div>
-            
-            <!-- App Features -->
-            <!-- <div class="category-card">
-                <a href="/blog/app-features" class="category-link">
-                    <img src="/assets/blog/app-features-category.jpg" alt="App Features" class="category-image">
-                </a>
-            </div> -->
-            
-            <!-- Specialized HIIT Training -->
-            <div class="category-card">
-                <a href="/blog/specialized-hiit-training" class="category-link">
-                    <img src="/assets/blog/specialized-training-category.jpg" alt="Specialized Training" class="category-image">
-                </a>
-            </div>
-            
-            <!-- Fitness + Nutrition -->
-            <div class="category-card">
-                <a href="/blog/fitness-nutrition" class="category-link">
-                    <img src="/assets/blog/fitness-nutrition-category.jpg" alt="Experience Life" class="category-image">
-                </a>
-            </div>
-            
-            <!-- HIIT Success Stories -->
-            <div class="category-card">
-                <a href="/blog/hiit-success-stories" class="category-link">
-                    <img src="/assets/blog/hiit-success-stories-category.jpg" alt="HIIT Success Stories" class="category-image">
-                </a>
-            </div>
-            
-            <!-- Advanced HIIT Concepts -->
-            <div class="category-card">
-                <a href="/blog/advanced-hiit-concepts" class="category-link">
-                    <img src="/assets/blog/advanced-hiit-concepts-category.jpg" alt="Advanced HIIT Concepts" class="category-image">
-                </a>
-            </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="latest-posts">
+            <h2>Latest articles</h2>
+            <ul>
+                {%- assign recentPosts = collections.posts | reverse -%}
+                {%- for post in recentPosts limit: 24 -%}
+                <li>
+                    <a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a>
+                </li>
+                {%- endfor -%}
+            </ul>
         </div>
     </div>
     

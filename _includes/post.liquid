@@ -159,6 +159,51 @@
             margin: 40px auto;
             padding: 0 20px;
         }
+
+        .related-posts {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .related-posts h2 {
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .related-posts ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .related-posts a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .related-posts a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .related-posts .all-link {
+            display: inline-block;
+            margin-top: 18px;
+            font-weight: 600;
+            color: #FF9500;
+        }
         
         .blog-header {
             text-align: center;
@@ -522,6 +567,36 @@
                 {{ content }}
             </div>
         </article>
+
+        {%- comment -%}
+          Related posts form a ring within each category: every post links to the
+          6 that follow it, so link equity is spread evenly instead of pooling on
+          whichever posts happen to sort first.
+        {%- endcomment -%}
+        {%- assign categoryPosts = collections.posts | where: "data.category", category -%}
+        {%- assign total = categoryPosts | size -%}
+        {%- if total > 1 -%}
+            {%- assign currentIndex = 0 -%}
+            {%- for post in categoryPosts -%}
+                {%- if post.url == page.url -%}{%- assign currentIndex = forloop.index0 -%}{%- endif -%}
+            {%- endfor -%}
+            {%- assign shown = 6 -%}
+            {%- assign maxShown = total | minus: 1 -%}
+            {%- if maxShown < shown -%}{%- assign shown = maxShown -%}{%- endif -%}
+        <section class="related-posts">
+            <h2>More in {{ category }}</h2>
+            <ul>
+                {%- for post in categoryPosts -%}
+                    {%- assign rel = forloop.index0 | minus: currentIndex -%}
+                    {%- if rel < 0 -%}{%- assign rel = rel | plus: total -%}{%- endif -%}
+                    {%- if rel > 0 and rel <= shown -%}
+                <li><a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a></li>
+                    {%- endif -%}
+                {%- endfor -%}
+            </ul>
+            <a href="/blog/{{ category | slugify }}" class="all-link">All {{ category }} articles →</a>
+        </section>
+        {%- endif -%}
     </div>
 
     <div class="footer">
