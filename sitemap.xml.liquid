@@ -13,9 +13,7 @@ eleventyExcludeFromCollections: true
   {%- if item.url and item.data.eleventyExcludeFromCollections != true and item.data.sitemap_exclude != true %}
   <url>
     <loc>https://www.peakintervalapp.com{{ item.url | stripTrailingSlash }}</loc>
-    {%- if item.date %}
-    <lastmod>{{ item.date | htmlDateString }}</lastmod>
-    {%- endif %}
+    <lastmod>{{ item.date | htmlDateString | maxDate: site.templateUpdated }}</lastmod>
     <changefreq>{{ item.data.sitemap_changefreq | default: 'weekly' }}</changefreq>
     <priority>{{ item.data.sitemap_priority | default: 0.7 }}</priority>
   </url>

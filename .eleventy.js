@@ -32,6 +32,16 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // A page's real last-modified date is the later of its own date and the last
+  // sitewide template change, because editing a layout rewrites every page that
+  // uses it. Without this, posts advertise a 2023 lastmod after their rendered
+  // HTML changed, and Google deprioritises recrawling them.
+  eleventyConfig.addFilter("maxDate", (a, b) => {
+    if (!a) return b;
+    if (!b) return a;
+    return a > b ? a : b;
+  });
+
   // Date formatting filter (for sitemap)
   eleventyConfig.addLiquidFilter("htmlDateString", (dateObj) => {
     // Check if dateObj is valid and not null
