@@ -205,6 +205,65 @@
             text-decoration: underline;
         }
 
+        .all-articles {
+            margin-top: 60px;
+        }
+
+        .all-articles h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .all-articles .intro {
+            opacity: 0.75;
+            margin: 0 0 30px;
+            line-height: 1.5;
+        }
+
+        .all-articles h3 {
+            font-size: 18px;
+            margin: 32px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .all-articles h3 a {
+            color: #FF9500;
+            text-decoration: none;
+        }
+
+        .all-articles h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .all-articles ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .all-articles ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .all-articles a {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.9;
+            line-height: 1.4;
+            display: block;
+        }
+
+        .all-articles a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
         .placeholder {
             width: 100%;
             height: 100%;
@@ -309,12 +368,37 @@
             <h2>Latest articles</h2>
             <ul>
                 {%- assign recentPosts = collections.posts | reverse -%}
-                {%- for post in recentPosts limit: 24 -%}
+                {%- for post in recentPosts limit: 12 -%}
                 <li>
                     <a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a>
                 </li>
                 {%- endfor -%}
             </ul>
+        </div>
+
+        {%- comment -%}
+          Every post is listed here, not just the recent ones. The category hubs
+          already link their own posts, but that puts each post three clicks from
+          the homepage and behind a hub Google rarely recrawls. Listing the full
+          archive here makes every post reachable in two clicks from the most
+          frequently crawled pages on the site.
+        {%- endcomment -%}
+        <div class="all-articles">
+            <h2>All articles</h2>
+            <p class="intro">Every article on the Peak Interval blog, grouped by topic.</p>
+            {%- for categoryPage in collections.categoryPages -%}
+                {%- assign categoryPosts = allPosts | where: "data.category", categoryPage.category -%}
+                {%- if categoryPosts.size > 0 -%}
+            <h3><a href="/blog/{{ categoryPage.slug }}">{{ categoryPage.category }}</a></h3>
+            <ul>
+                {%- for post in categoryPosts -%}
+                <li>
+                    <a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a>
+                </li>
+                {%- endfor -%}
+            </ul>
+                {%- endif -%}
+            {%- endfor -%}
         </div>
     </div>
     
