@@ -235,6 +235,15 @@ It prints the exact `featured_image:` line to paste. If it reports no API key,
 a cover breaks every existing layout, and silently shipping one is worse than
 skipping a day.
 
+When writing the `imagePrompt`, never ask for a readable phone screen, watch
+face or clock. The generator forbids text, but a screen in frame overrides that
+and the model renders garbled lettering, which is the most obvious AI tell a
+cover can carry. Describe the moment around the device instead.
+
+**Look at the generated image** (Read the file) before committing it. Check it
+matches the post, has no text artefacts, and shows plausible anatomy — a bad
+cover is worse than a generic one.
+
 Body style, matched to the surviving posts: open with two short paragraphs that
 name the reader's actual situation, then 3-5 `##` sections of 2-3 short
 paragraphs each, second person, concrete numbers over adjectives. Mention Peak

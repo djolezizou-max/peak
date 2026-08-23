@@ -22,6 +22,14 @@ House style for these covers, inferred from the existing assets: photoreal
 fitness photography, real people mid-effort, natural or gym lighting, no text
 overlays, no logos, landscape. Prompts are wrapped with that so every post
 does not need to restate it.
+
+Writing prompts: do NOT ask for a readable phone screen, watch face or wall
+clock. The style wrapper forbids text, but a prompt that puts a screen in
+frame overrides it and the model renders malformed lettering — the single most
+obvious AI tell on a cover image. Verified 2026-08-23: "phone propped on a
+bench running an interval timer" produced a phone with garbled digits on it.
+Describe the moment instead ("checking a phone between rounds", "hand
+reaching for a phone on the bench") and let the screen stay out of focus.
 """
 from __future__ import annotations
 
