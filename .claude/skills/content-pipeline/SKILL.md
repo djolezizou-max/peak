@@ -276,18 +276,37 @@ success. If it reports the key file unreachable, the deploy has not landed or
 
 Cheap regression test on the one thing that would silently kill every post at
 once. Do **not** inspect the post you just shipped; Google has not seen it yet.
-Inspect the post published **3 days ago**:
+Inspect the most recent post that is at least **3 days old** (the queue does
+not always run daily, so "3 days ago" may not exist — take the newest post
+older than that instead):
 
 ```
-inspect_search_console_url  https://peakintervalapp.com/blog/posts/<slug-from-3-days-ago>/
+inspect_search_console_url  https://www.peakintervalapp.com/blog/posts/<slug>
   with siteUrl: "sc-domain:peakintervalapp.com"
 ```
 
+**Use exactly that URL form — `www.` host, no trailing slash.** Google's chosen
+canonical for every post is the www host without the slash, and the other two
+forms return verdicts that look like breakage but are not. Verified 2026-08-23
+on `how-to-create-a-hyrox-interval-timer`, all three forms, same post:
+
+| URL inspected | Verdict | coverageState |
+|---|---|---|
+| `www.` + no slash | `PASS` | Submitted and indexed |
+| `www.` + trailing slash | `NEUTRAL` | Page with redirect |
+| bare domain + trailing slash | `NEUTRAL` | URL is unknown to Google |
+
+So a run that inspects the slug the way the IndexNow ping and the iMessage
+write it will report a false failure every single day. Only the no-slash www
+form answers the question. (The trailing-slash form is still correct for
+`indexnow_ping.py` — that submits the live URL, which 301s to the canonical,
+and Bing accepts it.)
+
 `indexStatusResult.verdict` should be `PASS`. Anything else — `NEUTRAL`,
 "Discovered - currently not indexed", "Crawled - currently not indexed" — means
-new posts are not reaching the index. Say so in the report **and the iMessage**.
-One post lagging is normal variance; two consecutive days failing is a real
-breakage worth stopping for.
+new posts are not reaching the index, **provided you used the URL form above**.
+Say so in the report **and the iMessage**. One post lagging is normal variance;
+two consecutive days failing is a real breakage worth stopping for.
 
 ### Notify (after the push succeeds)
 
