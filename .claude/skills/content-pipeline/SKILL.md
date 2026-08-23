@@ -36,12 +36,38 @@ of the category pages: `Workout Guides`, `Specialized HIIT Training`,
 `HIIT Fundamentals`, `Fitness + Nutrition`, `Advanced HIIT Concepts`,
 `App Features`, `HIIT Success Stories`, `Buying Guides`, `Comparisons`.
 
+## Stay in the app lane — this is the whole strategy
+
+On 2026-08-23, commit `5e9fc2b` deleted 89 of the 117 posts. The reason is the
+single most important thing to understand before choosing any topic. Search
+Console showed only 31 of 132 URLs indexed, split by intent like this:
+
+| Lane | Posts | Indexed |
+|---|---|---|
+| App lane — timers, interval formats, named competitors, how-to-build-X | 24 | 71% |
+| Generic fitness editorial — sleep, protein, carb cycling, mental health | 93 | 4% |
+
+Google predicts a page's value from the rest of the domain before it spends a
+crawl, so the generic library was not merely useless: at 79% of the site's URLs
+returning almost nothing, it was capping crawl demand for the pages that do
+work. All 89 pruned slugs are in the queue's `retired` list and the gate scores
+against them.
+
+**So: do not write generic fitness editorial.** A post about sleep, macros,
+motivation, or the physiology of EPOC is off-strategy here no matter how strong
+the Reddit signal behind it. Good topics for this blog answer a question
+someone asks *while trying to run intervals* — which timer, which format, how
+to set up a specific workout, how the Watch flow works, how Peak Interval
+compares to a named competitor, how to build a specific protocol.
+
+That constraint is what makes this pipeline different from QuestSpark's, where
+any parenting pain point is fair game.
+
 ## Never publish the same topic twice
 
-There are **118 posts**, written from a 100-idea list that is now almost
-entirely marked DONE in `blog-post-ideas.md`. The easy HIIT ground is taken, so
-repetition is the default failure mode here, not a rare one. The gate is not
-optional:
+28 posts remain, and they are commercially dense: half a dozen legitimately
+resemble each other because they are all about choosing an interval timer. The
+gate is not optional:
 
 ```bash
 python3 Scripts/marketing/topic_overlap.py index      # every published + queued topic
@@ -50,36 +76,32 @@ python3 Scripts/marketing/topic_overlap.py calibrate  # live score distribution 
 python3 Scripts/marketing/topic_overlap.py check "<slug>" "<theme> <hook> <query>"
 ```
 
-`check` exits non-zero at 0.34+ — a hard stop, pick something else. At 0.18+
-you must **open the closest neighbour in `blog/posts/` and read its title,
-description and opening**, then write one sentence in `distinctFrom` naming
-that slug and the different question your post answers. If you cannot write
-that sentence honestly, the topic is a duplicate — drop it.
+`check` refuses outright in three cases: the slug is already published, the
+slug is in `retired`, or the closest neighbour scores 0.50+. At 0.22+ you must
+**open the closest neighbour in `blog/posts/` and read it**, then write one
+sentence in `distinctFrom` naming that slug and the different question your
+post answers. If you cannot write that sentence honestly, drop the topic.
 
-Thresholds were calibrated against the real corpus on 2026-08-23 (median pair
-0.022, p99 0.178, max 0.683), not inherited. Re-run `calibrate` if the corpus
-grows by half.
+Thresholds were calibrated against the post-prune corpus on 2026-08-23 (28
+posts, median pair 0.053, p99 0.486, max 0.619), not inherited. They sit higher
+than QuestSpark's precisely because this corpus is dense. Re-run `calibrate`
+once the corpus passes ~45 posts.
 
-Two things that calibration surfaced, and you should know before trusting a score:
-
-- **The comparison series is a deliberate false positive.** The
-  `peak-interval-vs-<competitor>` posts score 0.41-0.44 against each other
-  because only the competitor's name differs. If the only BLOCK is another
-  `peak-interval-vs-*` post and the competitor is different, ship it.
-- **The existing corpus is not clean.** `best-emom-timer` and
-  `best-tabata-timer` score 0.68; `lactate-threshold-and-hiit` has a near-twin
-  at 0.60; `hiit-for-stress-relief` / `hiit-mental-health-benefits` at 0.49.
-  These predate the gate. Do not treat their existence as licence to add more,
-  and if a run has spare time, consolidating one pair is worth more than a new
-  post.
+Two deliberate false positives, both commercial series: `peak-interval-vs-*`
+posts score 0.35-0.49 against each other, and `best-<format>-timer` posts score
+0.33-0.62. If the closest neighbour is a sibling in one of those series and the
+competitor or format genuinely differs, ship it. One real duplicate survived
+the prune — `best-emom-timer` and `best-tabata-timer` at 0.62 — and
+consolidating that pair is worth more than a new post.
 
 A fresh angle, a newer study, or a different exercise list is not a different
 topic. A different *question someone typed into Google* is.
 
 ## Let search results steer the queue
 
-Peak Interval's 118 posts were written from an idea list, with no feedback from
-what search actually did with them. Both properties are wired into the
+Peak Interval's posts were written from an idea list with no feedback from
+search, which is exactly how 89 of them ended up deleted. Both properties are
+wired into the
 globally-registered `app-analytics` MCP server, so that loop can close:
 
 - `query_search_analytics` — Google clicks, impressions, CTR, position. Pass
@@ -113,12 +135,15 @@ Four things about this data that will mislead you if you forget them:
    back full of supplement spam and gym selfies):
    - xpoz `getRedditPostsByKeywords` / `getRedditCommentsByKeywords` over
      r/hiit, r/fitness, r/xxfitness, r/bodyweightfitness, r/crossfit and the
-     secondary list. High comment counts on the SAME question repeated = real
-     confusion worth a post.
-   - **Product-friction threads are the strongest signal available** — a timer
-     that stopped mid-workout, a watch app that drained the battery, intervals
-     that take too long to set up. They sit exactly where a search query meets
-     a reason to install the app. Prioritise them.
+     secondary list.
+   - **Filter every signal through the app lane.** A thread about protein
+     timing is real pain and a bad post for this blog. A thread about a timer
+     that stopped mid-workout, a Watch app that drained the battery, or not
+     being able to set up a 40/20 ladder quickly is the same pain in the lane
+     Google indexes for us. **Product-friction threads are the strongest signal
+     available** — they sit exactly where a search query meets a reason to
+     install the app. Prioritise them, and discard on-topic-but-generic threads
+     however well they perform socially.
    - xpoz `getTiktokPostsByUser` over fitness creators for phrasing and hooks.
      Find creators with `searchTiktokUsers` by name; never by hashtag or
      keyword, which returns unrelated results.
@@ -129,10 +154,11 @@ Four things about this data that will mislead you if you forget them:
      impressions. Google already associates us with these and we lose on the
      last stretch — worth more than a fresh topic from zero. **At least 2 of
      the themes must target one**, recorded in `searchEvidence`.
-   - Last 28 days, `dimensions: ["page"]`, `rowLimit: 1000`. With 118 posts
-     this is the most valuable read in the whole pipeline: the posts with real
-     impressions tell you which of ten years of guesses actually landed. Write
-     more like the winners. Note any post 21+ days old with no row at all.
+   - Last 28 days, `dimensions: ["page"]`, `rowLimit: 1000`. This is the most
+     valuable read in the pipeline: the surviving 28 posts are the ones Google
+     actually indexed, so the ones earning impressions show which app-lane
+     angles work. Write more like the winners. Note any post 21+ days old with
+     no row at all.
 4. **Keyword research, for volume the pain signals never surface.**
    ```bash
    python3 Scripts/marketing/keyword_volume.py ideas --seeds "hiit" "interval timer" --min-volume 100
@@ -209,7 +235,7 @@ It prints the exact `featured_image:` line to paste. If it reports no API key,
 a cover breaks every existing layout, and silently shipping one is worse than
 skipping a day.
 
-Body style, matched to the existing 118: open with two short paragraphs that
+Body style, matched to the surviving posts: open with two short paragraphs that
 name the reader's actual situation, then 3-5 `##` sections of 2-3 short
 paragraphs each, second person, concrete numbers over adjectives. Mention Peak
 Interval's mechanics (interval setup, Apple Watch flow, rest/prep phases, audio

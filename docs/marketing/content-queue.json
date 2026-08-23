@@ -1,4 +1,450 @@
 {
   "themes": [],
-  "retired": []
+  "retired": [
+    {
+      "slug": "10-minute-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "30-day-hiit-challenge",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "adaptive-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "altitude-and-hiit-how-elevation-affects-interval-training",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "altitude-training-simulation-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "anti-inflammatory-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "athletes-hiit-pro-training",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "carb-cycling-hiit-nutrition",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "combining-hiit-other-fitness",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "concurrent-training-hiit-strength",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "couch-to-hiit-beginner-stories",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "debunking-hiit-myths",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "dumbbell-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "family-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "full-body-no-equipment-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "future-hiit-research",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "getting-started-vercel-web-analytics",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "heart-rate-training-hiit-zones",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-after-injury-comeback-stories",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-and-aging",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-and-hormones",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-and-muscle-fiber-types-training-for-your-genetic-makeup",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-and-sleep-connection",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-around-the-world",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-circuit-training-guide",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-core-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-fasting-mimicking-diets",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-finishers",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-beginners-start-safely",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-creative-professionals",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-desk-workers",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-endurance-athletes",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-heart-health",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-martial-artists",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-men",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-metabolic-health",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-runners",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-seniors",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-sports-performance",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-strength",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-stress-relief",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-teens",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-track-sprint-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-weight-loss",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-for-women",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-ladder-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-mental-health-benefits",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-mistakes",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-on-the-go",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-periodization",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-recovery-balancing-workouts-rest",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-recovery-window",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-seniors-thriving",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-small-spaces",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-terminology",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-trainers-routines",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hiit-weight-loss-case-studies",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "history-of-hiit-evolution",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "hydration-strategies-for-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "jump-rope-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "kettlebell-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "lactate-threshold-and-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "long-term-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "low-impact-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "lower-body-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "measuring-hiit-intensity",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "neuromuscular-adaptations-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "nutrition-timing-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "outdoor-hiit-workouts-nature",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "overtraining-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "partner-hiit-workouts",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "perceived-exertion-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "perfect-hiit-work-rest-ratio",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "plant-based-hiit-nutrition",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "polarized-training-combining-hiit-with-very-low-intensity-work",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "postpartum-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "pregnancy-safe-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "protein-needs-hiit-training",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "rehab-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "science-behind-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "skeptic-to-believer",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "sound-cues-hiit-audio-feedback",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "supplements-for-hiit-performance",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "syncing-music-hiit-intervals",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "transformation-stories-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "upper-body-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "vo2-max-improvements-through-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "water-based-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "what-is-hiit",
+      "reason": "pruned 2026-08-23 (commit 5e9fc2b): generic fitness editorial. Google indexed that lane at 4% vs 71% for app-lane posts, and it was capping crawl demand for the pages that work. Do not rewrite.",
+      "date": "2026-08-23"
+    }
+  ]
 }

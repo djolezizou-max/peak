@@ -34,6 +34,14 @@ A thread with high comment counts asking the SAME question repeatedly is worth
 more than a high-upvote thread that is just a progress photo. What we want is
 the phrasing people use when confused, not the content that performs socially.
 
+**Then filter it through the app lane.** On 2026-08-23 commit 5e9fc2b deleted
+89 posts of generic fitness editorial that Google indexed at 4%, against 71%
+for posts about timers, interval formats, named competitors and building
+specific workouts. A strong Reddit thread about sleep or macros is still a bad
+post for this blog. Take the pain and find its app-lane expression, or discard
+it.
+
 Product friction posts (timer stopped mid-workout, watch app drained battery,
 cannot get intervals set up quickly) are the strongest signal of all, because
-they are the intersection of a search query and a reason to install the app.
+they are the intersection of a search query and a reason to install the app —
+and they are natively in the lane.

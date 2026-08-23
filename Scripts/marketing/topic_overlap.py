@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Guard against the content pipeline republishing a topic it already covered.
 
-Peak Interval has 118 posts, most of them written from a 100-idea list that is
-now almost entirely marked DONE. That makes accidental repetition the default
-failure mode rather than a rare one: the obvious HIIT ground is taken, so any
-new topic is close to something. This scores a candidate against every
-published post and queued theme so the near-misses surface before they ship.
+Peak Interval is down to 28 posts after commit 5e9fc2b pruned 89 generic
+fitness posts that Google indexed at 4%. What survived is the app lane —
+timers, interval formats, named competitors, how-to-build-X — which indexes at
+71%. That makes the surviving corpus small but DENSE: half a dozen posts about
+choosing an interval timer legitimately resemble each other, so scores here run
+higher than in a broad corpus and the thresholds are set accordingly.
+
+This scores a candidate against every published post and queued theme so the
+near-misses surface before they ship. It also scores against `retired`, which
+now holds all 89 pruned slugs — rewriting one of those would recreate exactly
+the content Google already refused.
 
 Modes:
 
@@ -30,16 +36,15 @@ The score is triage, not truth. It compares words, so a duplicate phrased in
 unfamiliar vocabulary slips through; `review` means read the neighbour and
 judge it yourself. The hard failure only catches near-identical phrasings.
 
-One known false positive: the `peak-interval-vs-<competitor>` comparison posts
-score 0.41-0.44 against each other because they share everything except the
-competitor's name. That series is deliberate. If the only BLOCK is another
-`peak-interval-vs-*` post and the competitor differs, it is not a duplicate —
-ship it.
+Two known false positives, both deliberate commercial series:
+`peak-interval-vs-<competitor>` posts score 0.35-0.49 against each other
+because only the competitor's name differs, and the `best-<format>-timer` posts
+score 0.33-0.62 for the same reason. If the closest neighbour is a sibling in
+one of those series and the format or competitor genuinely differs, it is not a
+duplicate — ship it.
 
-Calibration on 2026-08-23 also showed the existing corpus is not clean:
-best-emom-timer / best-tabata-timer score 0.68, and lactate-threshold-and-hiit
-has a near-literal twin at 0.60. Those predate this gate. Run `calibrate` to
-see the current worst pairs.
+One real duplicate survived the prune: best-emom-timer and best-tabata-timer at
+0.62. Consolidating that pair is worth more than a new post.
 """
 
 from __future__ import annotations
@@ -55,10 +60,15 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 POSTS_DIR = ROOT / "blog/posts"
 QUEUE = ROOT / "docs/marketing/content-queue.json"
 
-# Calibrated against the 2026-08 corpus (118 posts): see calibrate() below,
-# which prints the live distribution. Recalibrate if the corpus grows by half.
-BLOCK = 0.34     # near-identical topic — refuse outright
-REVIEW = 0.18    # close enough that you must read it and justify the difference
+# Calibrated 2026-08-23 against the post-prune corpus (28 posts, 378 pairs):
+# median 0.053, p90 0.143, p99 0.486, max 0.619. The survivors are commercially
+# clustered — best-*-timer and peak-interval-vs-* posts sit at 0.33-0.62 by
+# design — so BLOCK sits ABOVE p99 to avoid rejecting legitimate members of
+# those series, and REVIEW sits near p95 to force a human read instead.
+# Re-run `calibrate` once the corpus passes ~45 posts; a broad corpus will pull
+# these down again.
+BLOCK = 0.50     # near-identical topic — refuse outright
+REVIEW = 0.22    # close enough that you must read it and justify the difference
 
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "best", "but", "by", "can", "do",
@@ -171,6 +181,25 @@ def load_queue() -> tuple[dict, list[tuple[str, str]]]:
     return data, entries
 
 
+def load_retired() -> list[tuple[str, str]]:
+    """Deliberately rejected topics, scored like published ones.
+
+    Without this the 89 posts pruned in 5e9fc2b would look like FREE topics to
+    the pipeline rather than forbidden ones, and it would cheerfully rewrite
+    the exact content Google declined to index. A retired slug only carries its
+    own words, which is enough to catch a rewrite under the same name or a
+    close paraphrase.
+    """
+    if not QUEUE.exists():
+        return []
+    data = json.loads(QUEUE.read_text())
+    return [
+        (item.get("slug", "?"), item.get("slug", "").replace("-", " "))
+        for item in data.get("retired", [])
+        if item.get("slug")
+    ]
+
+
 def idf(corpus: list[list[str]]) -> dict[str, float]:
     n = len(corpus)
     seen = Counter()
@@ -194,9 +223,11 @@ def cosine(a: dict[str, float], b: dict[str, float]) -> float:
 def build(extra: list[tuple[str, str]] | None = None):
     published = load_posts()
     _, queued = load_queue()
+    retired = load_retired()
     labelled = (
         [("published", s, t) for s, t in published]
         + [("queued", s, t) for s, t in queued]
+        + [("retired", s, t) for s, t in retired]
         + [("candidate", s, t) for s, t in (extra or [])]
     )
     tokenized = [(kind, slug, tokenize(text)) for kind, slug, text in labelled]
@@ -227,7 +258,7 @@ def calibrate() -> int:
     """Prints the live pairwise score distribution, so the thresholds above
     can be justified against the corpus rather than inherited from another
     repo with a quarter as many posts."""
-    corpus = [(k, s, v) for k, s, v in build() if k != "candidate"]
+    corpus = [(k, s, v) for k, s, v in build() if k in ("published", "queued")]
     scores = sorted(
         cosine(a[2], b[2])
         for i, a in enumerate(corpus)
@@ -278,6 +309,20 @@ def audit() -> int:
 
 
 def check(slug: str, text: str) -> int:
+    # Exact-slug collisions are checked before scoring, because neighbours()
+    # skips same-slug pairs as "itself" — which would silently wave through a
+    # rewrite of a pruned post under its original name, the likeliest mistake
+    # of all now that 89 slugs sit in `retired`.
+    data, _ = load_queue()
+    for item in data.get("retired", []):
+        if item.get("slug") == slug:
+            print(f"candidate: {slug}\n\nREJECT: this slug is retired.\n  {item.get('reason', '')}")
+            return 1
+    for path in POSTS_DIR.glob("*.md"):
+        if path.stem == slug:
+            print(f"candidate: {slug}\n\nREJECT: {slug} is already published at blog/posts/{slug}.md.")
+            return 1
+
     corpus = build(extra=[(slug, f"{slug.replace('-', ' ')} {text}")])
     target = next(vec for kind, s, vec in corpus if kind == "candidate" and s == slug)
     top = neighbours(target, corpus, slug, limit=5)
