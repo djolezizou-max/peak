@@ -13,6 +13,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("app_icon.png");
   eleventyConfig.addPassthroughCopy("robots.txt");
+  // IndexNow verification key. Must stay reachable at the site root or every
+  // IndexNow ping is rejected (see Scripts/marketing/indexnow_ping.py).
+  eleventyConfig.addPassthroughCopy("bc78c3ae8d93a7d9bcb54ddaa9c837bd.txt");
 
   // Strip trailing slash (except for root "/") so canonical URLs match
   // Vercel's trailingSlash: false routing.
