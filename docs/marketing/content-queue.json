@@ -1,5 +1,118 @@
 {
-  "themes": [],
+  "themes": [
+    {
+      "slug": "30-second-interval-timer",
+      "theme": "Setting up a timer that cues you every 30 seconds for a whole session, hands-free",
+      "hook": "You want a buzz every 30 seconds for the next half hour without touching your watch once — here is how to build that instead of restarting a stopwatch 60 times.",
+      "query": "30 second interval timer",
+      "evidence": "r/AppleWatch thread asking for an app that notifies every 30 seconds for a set duration with no interaction drew 26 replies and ended with the poster marking it SOLVED only after app suggestions.",
+      "pain_quotes": [
+        "Wants to start a session and then never touch the watch again until it is over.",
+        "The stock timer has to be dismissed each time it fires, which breaks the interval.",
+        "Would pay for an app but cannot find one that repeats a short interval automatically."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "best-tabata-timer (0.26) is a buying guide asking which 20/10 app to install; this post answers the setup question of how to make any fixed 30-second cadence repeat unattended for a whole session, including odd totals that are not eight rounds.",
+      "searchEvidence": "Keyword research: '30 second interval timer' 5400/mo, LOW competition; supporting '1 minute interval timer' 1900/mo and 'repeat timer' 1600/mo.",
+      "imagePrompt": "A person mid-burpee on a rubber gym floor in a bright home garage gym, wrist raised slightly, motion blur on the arms, morning light through an open roller door"
+    },
+    {
+      "slug": "silent-interval-timer-vibration-only",
+      "theme": "Running intervals on vibration cues alone when beeps are not an option",
+      "hook": "Shared gyms, early mornings and quiet offices all rule out beeping — here is how to run a full interval session on haptics you can feel but nobody else can hear.",
+      "query": "silent interval timer vibrate only",
+      "evidence": "An r/AppleWatch post asking for a timer that vibrates once and stops on its own hit 40 upvotes and 28 comments; a second thread specifically wanted a custom interval that only buzzes the watch and never sounds.",
+      "pain_quotes": [
+        "The native timer keeps buzzing until it is dismissed, which forces you to look at the wrist.",
+        "Needs a discreet cue that fires once and clears itself in a room where sound would be rude.",
+        "Wants haptics on the watch only, with the phone staying silent in a pocket."
+      ],
+      "category": "App Features",
+      "distinctFrom": "interval-timer-with-music (0.19) answers how to hear cues over a playlist; this post answers the opposite question of how to run the same session with no audio at all, and what a haptic pattern has to do to replace a countdown beep.",
+      "searchEvidence": "Pain-signal led. Supporting striking distance: 'interval timer apple watch' 3 impressions at position 27.3 over 90 days, the cluster this phrasing sits inside.",
+      "imagePrompt": "Close-up of a person's forearm and hand gripping a kettlebell handle at the bottom of a swing, dim early-morning apartment living room, soft window light, no devices visible"
+    },
+    {
+      "slug": "apple-watch-workout-app-intervals-vs-timer-app",
+      "theme": "When the Apple Watch Workout app's built-in intervals are enough and when they are not",
+      "hook": "watchOS has interval support built in, so the honest question is where it stops being enough — and the answer is more specific than 'get an app'.",
+      "query": "interval timer on apple watch",
+      "evidence": "An r/AppleWatch user timing yoga holds and lifting rest with the Workout app's interval feature reported the haptic feedback silently dying mid-session a couple of times a month; another could not start a custom Workout-app interval from a Shortcut at all.",
+      "pain_quotes": [
+        "The built-in interval haptics stop firing partway through a session with no warning.",
+        "Custom workouts built in the Workout app cannot be launched from an automation.",
+        "Ends up counting in their head or staring at the wrist mid-pose when the cue fails."
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "best-apple-watch-interval-timer (0.25) is a buying guide ranking third-party apps against each other; this post compares Apple's own built-in Workout-app intervals against the third-party category as a whole, and names the specific limits — nested blocks, per-phase cues, reuse — where the stock feature runs out.",
+      "searchEvidence": "Striking distance: 'interval timer apple watch' 3 impressions at position 27.3, 'interval timer on apple watch' 2 impressions at position 38.5, 'workout timer apple watch' position 33 (90 days).",
+      "imagePrompt": "A person holding a low lunge stretch on a yoga mat in a sunlit spare room, wrist resting on the front knee, plants and a water bottle in the background"
+    },
+    {
+      "slug": "interval-timer-that-shows-exercise-names",
+      "theme": "Making the timer screen tell you what you are doing now and what is next",
+      "hook": "A number counting down tells you nothing if you cannot remember which move it belongs to — here is how to build intervals that name the current exercise and the one coming up.",
+      "query": "interval timer with exercise names",
+      "evidence": "A coach on r/crossfit described hunting for an iPad interval timer that shows the current move plus the next one with full setup cues, because Seconds Pro truncates the label text they need.",
+      "pain_quotes": [
+        "Wants the current movement and the upcoming movement both visible, not just a countdown.",
+        "Needs room for a full coaching cue like foot position and bracing, not a two-word label.",
+        "The app they use now cuts the script off halfway through."
+      ],
+      "category": "App Features",
+      "distinctFrom": "creating-saving-custom-hiit-workouts (0.13) covers building and saving a session at all; this post is specifically about the labelling layer — naming each phase, previewing the next one, and how much text actually survives on a watch face versus a phone.",
+      "searchEvidence": "Pain-signal led. Supporting striking distance: 'tabata timer exercises' at position 41 and 'personalized hiit workout' at position 21 over 90 days.",
+      "imagePrompt": "An iPad propped on a weight bench facing a small group gym floor, two people mid-squat in the background out of focus, industrial windows, screen angled away from the camera"
+    },
+    {
+      "slug": "rest-timer-between-sets",
+      "theme": "Timing rest between strength sets so it stops drifting from 90 seconds to four minutes",
+      "hook": "Rest is the part of a lifting session nobody times honestly, and the gap between what you think you took and what you actually took is usually enormous.",
+      "query": "rest timer between sets",
+      "evidence": "An r/AppleWatch thread asked for an app that times a work period and a rest period together and could not find one that also survived being started by automation; another wanted a 25-on/5-off block repeated sixteen times with wrist-only alerts.",
+      "pain_quotes": [
+        "Wants one app that handles the working set and the rest, not two separate stopwatches.",
+        "Rest between sets stretches out whenever they look at their phone.",
+        "Needs a long repeating work-and-rest block that runs for an hour without resetting."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "interval-timer-repeating-sets (0.19) is about building multi-block interval sessions where work is the point; this post is about strength training, where the work is rep-based and the only thing being timed is the recovery between sets.",
+      "searchEvidence": "Keyword research: 'workout timer' 2900/mo MEDIUM, 'exercise timer' 1300/mo LOW, 'repeat timer' 1600/mo LOW.",
+      "imagePrompt": "A lifter sitting on a bench beside a loaded barbell in a chalky commercial gym, forearms on knees, catching their breath between sets, warm overhead lighting"
+    },
+    {
+      "slug": "how-to-use-a-tabata-timer",
+      "theme": "Actually running a Tabata timer: prep phase, round counting and what each cue means",
+      "hook": "Twenty on, ten off, eight rounds is easy to say and surprisingly easy to run wrong — most people lose the count somewhere around round five.",
+      "query": "what is a tabata timer and how do you use it",
+      "evidence": "Search Console shows people reaching the site on 'what is tabata timer' and 'how to use tabata timer', and r/AppleWatch has a long-running complaint about not finding a simple Tabata app without a subscription.",
+      "pain_quotes": [
+        "Knows the 20/10 numbers but not where the prep countdown or the round counter fit.",
+        "Loses track of which round they are on once the effort gets high.",
+        "Cannot tell from the beeps alone whether a phase is work or rest."
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "best-tabata-timer (0.25) answers which Tabata app to pick; this post assumes you already have one open and answers how to drive it — prep length, round indexing, what to do when a session is not eight rounds, and which cue means what.",
+      "searchEvidence": "Striking distance: 'what is tabata timer' 3 impressions at position 36.3, 'tabata timing' at position 32, 'how to use tabata timer' at position 37 (90 days).",
+      "imagePrompt": "Overhead view of a person mid mountain-climber on a mat in a garage gym, one dumbbell and a towel just outside the mat, concrete floor, hard side lighting"
+    },
+    {
+      "slug": "treadmill-interval-workout-timer",
+      "theme": "Building treadmill speed and incline intervals when the console will not do what you want",
+      "hook": "Gym treadmill programs give you someone else's intervals; here is how to run your own blocks off a timer and just change the belt when it tells you to.",
+      "query": "treadmill interval workout timer",
+      "evidence": "Running-interval demand is the largest keyword cluster feeding our strongest app-lane post, and gym-floor threads repeatedly describe fighting a treadmill console instead of following a plan.",
+      "pain_quotes": [
+        "The built-in treadmill programs never match the work-to-rest ratio they actually want.",
+        "Loses the plan halfway through because they are doing mental maths at 12 kph.",
+        "Wants a cue that says change now rather than watching the console clock."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "how-to-build-a-running-interval-workout-on-apple-watch (0.13) covers outdoor running where pace and distance come from GPS; this post is about the treadmill, where the belt controls speed and the only thing your timer can do is tell you when to change it.",
+      "searchEvidence": "Keyword research seeded from our best-performing app-lane post: 'interval running workouts' 14800/mo LOW, 'interval running training' 14800/mo LOW.",
+      "imagePrompt": "A runner at a hard effort on a gym treadmill seen from the side at hip height, shoes and belt in motion blur, row of empty machines receding behind, cool gym lighting"
+    }
+  ],
   "retired": [
     {
       "slug": "10-minute-hiit-workouts",
