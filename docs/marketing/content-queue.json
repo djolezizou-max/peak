@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "30-second-interval-timer",
-      "theme": "Setting up a timer that cues you every 30 seconds for a whole session, hands-free",
-      "hook": "You want a buzz every 30 seconds for the next half hour without touching your watch once — here is how to build that instead of restarting a stopwatch 60 times.",
-      "query": "30 second interval timer",
-      "evidence": "r/AppleWatch thread asking for an app that notifies every 30 seconds for a set duration with no interaction drew 26 replies and ended with the poster marking it SOLVED only after app suggestions.",
-      "pain_quotes": [
-        "Wants to start a session and then never touch the watch again until it is over.",
-        "The stock timer has to be dismissed each time it fires, which breaks the interval.",
-        "Would pay for an app but cannot find one that repeats a short interval automatically."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "best-tabata-timer (0.26) is a buying guide asking which 20/10 app to install; this post answers the setup question of how to make any fixed 30-second cadence repeat unattended for a whole session, including odd totals that are not eight rounds.",
-      "searchEvidence": "Keyword research: '30 second interval timer' 5400/mo, LOW competition; supporting '1 minute interval timer' 1900/mo and 'repeat timer' 1600/mo.",
-      "imagePrompt": "A person mid-burpee on a rubber gym floor in a bright home garage gym, wrist raised slightly, motion blur on the arms, morning light through an open roller door"
-    },
-    {
       "slug": "silent-interval-timer-vibration-only",
       "theme": "Running intervals on vibration cues alone when beeps are not an option",
       "hook": "Shared gyms, early mornings and quiet offices all rule out beeping — here is how to run a full interval session on haptics you can feel but nobody else can hear.",
