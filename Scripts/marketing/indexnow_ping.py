@@ -37,6 +37,24 @@ LIVE_TRIES = 10
 LIVE_DELAY = 15
 
 
+# The bare domain 308s to the www host, and urllib does not follow 308 before
+# Python 3.11 — so without this handler a healthy site reports the key file
+# unreachable and every URL stuck at "308, never 200". Submitting the bare-host
+# URL is still correct: Bing follows the redirect to the canonical.
+class _Follow308(urllib.request.HTTPRedirectHandler):
+    http_error_308 = urllib.request.HTTPRedirectHandler.http_error_301
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        # 3.9's redirect_request raises for any code outside 301/302/303/307,
+        # so aliasing http_error_308 is not enough on its own.
+        if code == 308:
+            code = 301
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+urllib.request.install_opener(urllib.request.build_opener(_Follow308))
+
+
 def http_status(url, timeout=10):
     request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "questspark-indexnow/1.0"})
     try:
