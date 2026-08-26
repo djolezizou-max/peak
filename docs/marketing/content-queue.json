@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "silent-interval-timer-vibration-only",
-      "theme": "Running intervals on vibration cues alone when beeps are not an option",
-      "hook": "Shared gyms, early mornings and quiet offices all rule out beeping — here is how to run a full interval session on haptics you can feel but nobody else can hear.",
-      "query": "silent interval timer vibrate only",
-      "evidence": "An r/AppleWatch post asking for a timer that vibrates once and stops on its own hit 40 upvotes and 28 comments; a second thread specifically wanted a custom interval that only buzzes the watch and never sounds.",
-      "pain_quotes": [
-        "The native timer keeps buzzing until it is dismissed, which forces you to look at the wrist.",
-        "Needs a discreet cue that fires once and clears itself in a room where sound would be rude.",
-        "Wants haptics on the watch only, with the phone staying silent in a pocket."
-      ],
-      "category": "App Features",
-      "distinctFrom": "interval-timer-with-music (0.19) answers how to hear cues over a playlist; this post answers the opposite question of how to run the same session with no audio at all, and what a haptic pattern has to do to replace a countdown beep.",
-      "searchEvidence": "Pain-signal led. Supporting striking distance: 'interval timer apple watch' 3 impressions at position 27.3 over 90 days, the cluster this phrasing sits inside.",
-      "imagePrompt": "Close-up of a person's forearm and hand gripping a kettlebell handle at the bottom of a swing, dim early-morning apartment living room, soft window light, no devices visible"
-    },
-    {
       "slug": "apple-watch-workout-app-intervals-vs-timer-app",
       "theme": "When the Apple Watch Workout app's built-in intervals are enough and when they are not",
       "hook": "watchOS has interval support built in, so the honest question is where it stops being enough — and the answer is more specific than 'get an app'.",
