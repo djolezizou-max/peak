@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "apple-watch-workout-app-intervals-vs-timer-app",
-      "theme": "When the Apple Watch Workout app's built-in intervals are enough and when they are not",
-      "hook": "watchOS has interval support built in, so the honest question is where it stops being enough — and the answer is more specific than 'get an app'.",
-      "query": "interval timer on apple watch",
-      "evidence": "An r/AppleWatch user timing yoga holds and lifting rest with the Workout app's interval feature reported the haptic feedback silently dying mid-session a couple of times a month; another could not start a custom Workout-app interval from a Shortcut at all.",
-      "pain_quotes": [
-        "The built-in interval haptics stop firing partway through a session with no warning.",
-        "Custom workouts built in the Workout app cannot be launched from an automation.",
-        "Ends up counting in their head or staring at the wrist mid-pose when the cue fails."
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "best-apple-watch-interval-timer (0.25) is a buying guide ranking third-party apps against each other; this post compares Apple's own built-in Workout-app intervals against the third-party category as a whole, and names the specific limits — nested blocks, per-phase cues, reuse — where the stock feature runs out.",
-      "searchEvidence": "Striking distance: 'interval timer apple watch' 3 impressions at position 27.3, 'interval timer on apple watch' 2 impressions at position 38.5, 'workout timer apple watch' position 33 (90 days).",
-      "imagePrompt": "A person holding a low lunge stretch on a yoga mat in a sunlit spare room, wrist resting on the front knee, plants and a water bottle in the background"
-    },
-    {
       "slug": "interval-timer-that-shows-exercise-names",
       "theme": "Making the timer screen tell you what you are doing now and what is next",
       "hook": "A number counting down tells you nothing if you cannot remember which move it belongs to — here is how to build intervals that name the current exercise and the one coming up.",
