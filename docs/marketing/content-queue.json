@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-that-shows-exercise-names",
-      "theme": "Making the timer screen tell you what you are doing now and what is next",
-      "hook": "A number counting down tells you nothing if you cannot remember which move it belongs to — here is how to build intervals that name the current exercise and the one coming up.",
-      "query": "interval timer with exercise names",
-      "evidence": "A coach on r/crossfit described hunting for an iPad interval timer that shows the current move plus the next one with full setup cues, because Seconds Pro truncates the label text they need.",
-      "pain_quotes": [
-        "Wants the current movement and the upcoming movement both visible, not just a countdown.",
-        "Needs room for a full coaching cue like foot position and bracing, not a two-word label.",
-        "The app they use now cuts the script off halfway through."
-      ],
-      "category": "App Features",
-      "distinctFrom": "creating-saving-custom-hiit-workouts (0.13) covers building and saving a session at all; this post is specifically about the labelling layer — naming each phase, previewing the next one, and how much text actually survives on a watch face versus a phone.",
-      "searchEvidence": "Pain-signal led. Supporting striking distance: 'tabata timer exercises' at position 41 and 'personalized hiit workout' at position 21 over 90 days.",
-      "imagePrompt": "An iPad propped on a weight bench facing a small group gym floor, two people mid-squat in the background out of focus, industrial windows, screen angled away from the camera"
-    },
-    {
       "slug": "rest-timer-between-sets",
       "theme": "Timing rest between strength sets so it stops drifting from 90 seconds to four minutes",
       "hook": "Rest is the part of a lifting session nobody times honestly, and the gap between what you think you took and what you actually took is usually enormous.",
