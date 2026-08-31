@@ -3,7 +3,7 @@
     {
       "slug": "how-to-use-a-tabata-timer",
       "theme": "Actually running a Tabata timer: prep phase, round counting and what each cue means",
-      "hook": "Twenty on, ten off, eight rounds is easy to say and surprisingly easy to run wrong \u2014 most people lose the count somewhere around round five.",
+      "hook": "Twenty on, ten off, eight rounds is easy to say and surprisingly easy to run wrong — most people lose the count somewhere around round five.",
       "query": "what is a tabata timer and how do you use it",
       "evidence": "Search Console shows people reaching the site on 'what is tabata timer' and 'how to use tabata timer', and r/AppleWatch has a long-running complaint about not finding a simple Tabata app without a subscription.",
       "pain_quotes": [
@@ -12,7 +12,7 @@
         "Cannot tell from the beeps alone whether a phase is work or rest."
       ],
       "category": "HIIT Fundamentals",
-      "distinctFrom": "best-tabata-timer (0.25) answers which Tabata app to pick; this post assumes you already have one open and answers how to drive it \u2014 prep length, round indexing, what to do when a session is not eight rounds, and which cue means what.",
+      "distinctFrom": "best-tabata-timer (0.25) answers which Tabata app to pick; this post assumes you already have one open and answers how to drive it — prep length, round indexing, what to do when a session is not eight rounds, and which cue means what.",
       "searchEvidence": "Striking distance: 'what is tabata timer' 3 impressions at position 36.3, 'tabata timing' at position 32, 'how to use tabata timer' at position 37 (90 days).",
       "imagePrompt": "Overhead view of a person mid mountain-climber on a mat in a garage gym, one dumbbell and a towel just outside the mat, concrete floor, hard side lighting"
     },
@@ -31,6 +31,118 @@
       "distinctFrom": "how-to-build-a-running-interval-workout-on-apple-watch (0.13) covers outdoor running where pace and distance come from GPS; this post is about the treadmill, where the belt controls speed and the only thing your timer can do is tell you when to change it.",
       "searchEvidence": "Keyword research seeded from our best-performing app-lane post: 'interval running workouts' 14800/mo LOW, 'interval running training' 14800/mo LOW.",
       "imagePrompt": "A runner at a hard effort on a gym treadmill seen from the side at hip height, shoes and belt in motion blur, row of empty machines receding behind, cool gym lighting"
+    },
+    {
+      "slug": "norwegian-4x4-interval-timer",
+      "theme": "Setting up the Norwegian 4x4 protocol on an interval timer",
+      "hook": "Four minutes hard, three minutes easy, four times through — the simplest famous protocol in cardio, and the one stock timers handle worst because seven-minute blocks do not fit a 30/30 mental model.",
+      "query": "norwegian 4x4 interval timer",
+      "evidence": "r/hiit has recurring threads from people running Norwegian 4x4 who could not find a clean timer for it and ended up building their own app; the protocol has enormous search volume and no app-lane page on this site.",
+      "pain_quotes": [
+        "Runs 4x4 regularly but could not find a timer that handles long work blocks without a subscription.",
+        "Loses the round count because seven minutes per cycle is too long to hold in your head mid-effort.",
+        "Wants a cue at the start of the recovery block rather than watching a clock for three minutes."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "best-emom-timer (0.21) is a buying guide for minute-based CrossFit work; this post is the setup guide for one named endurance protocol with 4:00 work and 3:00 recovery blocks, where the hard part is long-block pacing rather than choosing an app.",
+      "searchEvidence": "Keyword research: 'norwegian 4x4' 22200/mo LOW competition, 'norwegian 4x4 workout' 4400/mo LOW.",
+      "imagePrompt": "A cyclist on an indoor trainer in a garage at a hard sustained effort, sweat on the forearms, fan angled at them, late afternoon light through a side window"
+    },
+    {
+      "slug": "how-to-run-an-emom-workout",
+      "theme": "Actually running an EMOM: picking rep counts, setting the minute blocks and what to do when you finish early",
+      "hook": "Every minute on the minute is trivially easy to describe and surprisingly easy to get wrong — the whole workout lives or dies on whether you picked rep counts that leave you any rest.",
+      "query": "how to do an emom workout",
+      "evidence": "r/crossfit threads asking for an EMOM timer pull dozens of replies about apps being fussy to set up, and the recurring beginner question underneath is what happens to the leftover seconds.",
+      "pain_quotes": [
+        "Sets the reps too high and turns every minute into a continuous grind with no rest.",
+        "Does not know whether the leftover seconds are meant to be rest or extra work.",
+        "Cannot tell how many minutes are left without unlocking the phone mid-set."
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "amrap-emom-tabata-hiit-formats-compared (below 0.15) tells you which of three formats to pick for a given goal; this post assumes you have already picked EMOM and answers the execution questions that post never touches — how to size the rep count, how to set the minute blocks, and what the remainder of the minute is for.",
+      "searchEvidence": "Keyword research: 'emom meaning' 2900/mo LOW, 'what is an emom' 720/mo LOW, 'emom workouts' 5400/mo LOW.",
+      "imagePrompt": "A person resting hands on knees beside a barbell on a gym floor between efforts, chalk dust on the plates, mid-breath, overhead gym lighting"
+    },
+    {
+      "slug": "is-emom-hiit",
+      "theme": "Whether EMOM and AMRAP count as HIIT, and whether the answer changes how you set the timer",
+      "hook": "CrossFit vocabulary and HIIT vocabulary grew up separately, so people arrive genuinely unsure whether the EMOM they just did was cardio, conditioning, or something else entirely.",
+      "query": "is emom hiit",
+      "evidence": "Google already puts this site on the front page for the exact phrasing people use, at position 7-8, and the existing formats post never answers the category question they are asking.",
+      "pain_quotes": [
+        "Cannot tell whether an EMOM counts toward their weekly HIIT target.",
+        "Assumes AMRAP and HIIT are the same thing and then wonders why the intensity feels different.",
+        "Wants to know whether the work-to-rest ratio changes when a session is called one thing or the other."
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "hiit-methods-comparison (0.36) compares HIIT, HIIS, Tabata and SIT and never mentions EMOM or AMRAP at all; amrap-emom-tabata-hiit-formats-compared (0.31) compares those three formats to each other but assumes you already accept they are all HIIT. This post answers the prior question — is it — and what that means for the timer.",
+      "searchEvidence": "Striking distance: 'amrap vs hiit' 21 impressions at position 7.0, 'emom vs hiit' 17 impressions at position 8.3, both zero clicks (90 days).",
+      "imagePrompt": "Two people working through a circuit in a bright box gym, one mid kettlebell swing and one hands on hips recovering, rubber flooring, open roller door behind"
+    },
+    {
+      "slug": "apple-watch-interval-timer-without-phone",
+      "theme": "Running a full interval session from the Watch with the iPhone left at home",
+      "hook": "The whole point of a wrist timer is not carrying the phone, and the moment you actually leave it behind you find out which parts of your setup quietly depended on it.",
+      "query": "interval timer on apple watch without phone",
+      "evidence": "Search Console shows steady impressions on standalone Apple Watch timer phrasing at positions in the teens and thirties, and r/crossfit threads specifically ask for a wrist timer so they can leave the phone in the bag.",
+      "pain_quotes": [
+        "Leaves the phone in a locker and finds the workout will not start on the Watch alone.",
+        "Wants audio or haptic cues without carrying a phone for the speaker.",
+        "Is unsure whether a workout built on the phone is already saved on the wrist or needs a sync first."
+      ],
+      "category": "App Features",
+      "distinctFrom": "best-apple-watch-interval-timer (0.44) is a buying guide answering which app to install; this post assumes Peak Interval is already installed and answers the capability question — what a standalone Watch session can and cannot do once the iPhone is out of range, and what to set up before you leave it behind.",
+      "searchEvidence": "Striking distance: 'interval timer on apple watch' 2 impressions at position 38.5, 'interval training on apple watch' at position 15, 'workout timer apple watch' at position 33 (90 days).",
+      "imagePrompt": "A runner pausing at the top of a coastal path at dawn, wrist raised across the chest, no phone or armband anywhere, sea haze behind, low warm light"
+    },
+    {
+      "slug": "gym-wall-timer-vs-timer-app",
+      "theme": "Whether a physical gym wall timer is worth buying when your phone and watch already do it",
+      "hook": "A wall timer is a few hundred pounds of hardware doing something the device in your pocket already does — the case for it is real but much narrower than the people selling them suggest.",
+      "query": "gym timer vs timer app",
+      "evidence": "An r/crossfit thread asking whether people training alone use a phone timer or buy a real one drew nearly thirty replies, and separate threads hunt for reviews of specific wall-timer hardware.",
+      "pain_quotes": [
+        "Is about to spend real money on hardware and cannot tell what it buys over a free app.",
+        "Trains alone in a garage and wants a clock readable from across the room mid-set.",
+        "Is tired of unlocking a phone with chalky hands between rounds."
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "apple-watch-workout-app-intervals-vs-timer-app (0.22) weighs the stock watchOS Workout app against a dedicated timer app, both software on a device you already own; this post is a hardware purchase decision — a wall-mounted gym clock against the phone or watch — where visibility across a room and shared use by more than one person are the only arguments that hold up.",
+      "searchEvidence": "Keyword research: 'gym timer' 880/mo, 'crossfit gym timer' 480/mo MEDIUM competition.",
+      "imagePrompt": "A garage gym seen from the doorway with a rig, plates and a rower, one athlete resting between rounds looking toward the far wall, morning light across the concrete"
+    },
+    {
+      "slug": "interval-timer-no-subscription",
+      "theme": "Interval timers without a subscription: what the free tiers actually take away",
+      "hook": "Almost every timer in the store is free to install, and almost every one of them puts something you need behind a monthly charge — the trick is knowing which limits you will hit in week two.",
+      "query": "interval timer without subscription",
+      "evidence": "Requests for a timer with no subscription, no ads and a one-off price are one of the most repeated asks in r/hiit and r/crossfit, and are the stated reason several people gave for building their own app instead.",
+      "pain_quotes": [
+        "Is happy to pay once and refuses to pay monthly for a countdown.",
+        "Hits a three-saved-workouts cap the moment they build a real training week.",
+        "Finds the ad appears exactly at the round change, when the screen mattered."
+      ],
+      "category": "Buying Guides",
+      "distinctFrom": "best-tabata-timer (0.28) asks which app runs 20/10 intervals best and treats price as a footnote; this post is the pricing question on its own — subscription versus one-off versus ad-supported, which limits free tiers actually impose (saved workout caps, Watch access, custom cues), and how to tell before you install.",
+      "searchEvidence": "Keyword research: 'free interval timer' 260/mo, 'free workout timer' 90/mo; supported by repeated no-subscription phrasing in the pain signals.",
+      "imagePrompt": "Close overhead of a phone face down on a gym bench next to a water bottle and a wrapped skipping rope, worn wooden bench, soft window light"
+    },
+    {
+      "slug": "timer-for-reps-and-timed-rounds",
+      "theme": "Building one session where some rounds are counted in reps and others in seconds",
+      "hook": "Real training is rarely all clock or all reps — fifty squats then a sixty-second plank then ten push-ups — and almost every timer forces you to pick one and fake the other.",
+      "query": "interval timer for reps and time",
+      "evidence": "An r/hiit thread laid out exactly this structure round by round and asked whether any app supports it; the replies were mostly other people saying they wanted the same thing.",
+      "pain_quotes": [
+        "Wants a stopwatch for the rep rounds and a countdown for the timed ones, in one workout.",
+        "Guesses at how long a rep block will take and ends up standing around or cut short.",
+        "Gives up and runs two apps side by side, then loses the place in both."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "timer-vs-rep-based-hiit (0.16) argues which of the two approaches suits your goals and treats hybrids as a concept; this post skips the argument and answers the build question — how to lay out a single session that alternates counted rounds and timed rounds, including how to size a rep block so the timer stays honest.",
+      "searchEvidence": "Pain-signal theme; keyword check returned no volume for the exact phrasing, which the tool documents as unreliable rather than evidence of no demand.",
+      "imagePrompt": "A person kneeling on a mat between exercises in a living room, resistance band and a single kettlebell nearby, sofa pushed back against the wall, evening lamp light"
     }
   ],
   "retired": [
