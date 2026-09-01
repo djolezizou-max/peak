@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "how-to-use-a-tabata-timer",
-      "theme": "Actually running a Tabata timer: prep phase, round counting and what each cue means",
-      "hook": "Twenty on, ten off, eight rounds is easy to say and surprisingly easy to run wrong — most people lose the count somewhere around round five.",
-      "query": "what is a tabata timer and how do you use it",
-      "evidence": "Search Console shows people reaching the site on 'what is tabata timer' and 'how to use tabata timer', and r/AppleWatch has a long-running complaint about not finding a simple Tabata app without a subscription.",
-      "pain_quotes": [
-        "Knows the 20/10 numbers but not where the prep countdown or the round counter fit.",
-        "Loses track of which round they are on once the effort gets high.",
-        "Cannot tell from the beeps alone whether a phase is work or rest."
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "best-tabata-timer (0.25) answers which Tabata app to pick; this post assumes you already have one open and answers how to drive it — prep length, round indexing, what to do when a session is not eight rounds, and which cue means what.",
-      "searchEvidence": "Striking distance: 'what is tabata timer' 3 impressions at position 36.3, 'tabata timing' at position 32, 'how to use tabata timer' at position 37 (90 days).",
-      "imagePrompt": "Overhead view of a person mid mountain-climber on a mat in a garage gym, one dumbbell and a towel just outside the mat, concrete floor, hard side lighting"
-    },
-    {
       "slug": "treadmill-interval-workout-timer",
       "theme": "Building treadmill speed and incline intervals when the console will not do what you want",
       "hook": "Gym treadmill programs give you someone else's intervals; here is how to run your own blocks off a timer and just change the belt when it tells you to.",
