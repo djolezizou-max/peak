@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "treadmill-interval-workout-timer",
-      "theme": "Building treadmill speed and incline intervals when the console will not do what you want",
-      "hook": "Gym treadmill programs give you someone else's intervals; here is how to run your own blocks off a timer and just change the belt when it tells you to.",
-      "query": "treadmill interval workout timer",
-      "evidence": "Running-interval demand is the largest keyword cluster feeding our strongest app-lane post, and gym-floor threads repeatedly describe fighting a treadmill console instead of following a plan.",
-      "pain_quotes": [
-        "The built-in treadmill programs never match the work-to-rest ratio they actually want.",
-        "Loses the plan halfway through because they are doing mental maths at 12 kph.",
-        "Wants a cue that says change now rather than watching the console clock."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "how-to-build-a-running-interval-workout-on-apple-watch (0.13) covers outdoor running where pace and distance come from GPS; this post is about the treadmill, where the belt controls speed and the only thing your timer can do is tell you when to change it.",
-      "searchEvidence": "Keyword research seeded from our best-performing app-lane post: 'interval running workouts' 14800/mo LOW, 'interval running training' 14800/mo LOW.",
-      "imagePrompt": "A runner at a hard effort on a gym treadmill seen from the side at hip height, shoes and belt in motion blur, row of empty machines receding behind, cool gym lighting"
-    },
-    {
       "slug": "norwegian-4x4-interval-timer",
       "theme": "Setting up the Norwegian 4x4 protocol on an interval timer",
       "hook": "Four minutes hard, three minutes easy, four times through — the simplest famous protocol in cardio, and the one stock timers handle worst because seven-minute blocks do not fit a 30/30 mental model.",
