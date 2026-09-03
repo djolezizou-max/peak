@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "norwegian-4x4-interval-timer",
-      "theme": "Setting up the Norwegian 4x4 protocol on an interval timer",
-      "hook": "Four minutes hard, three minutes easy, four times through — the simplest famous protocol in cardio, and the one stock timers handle worst because seven-minute blocks do not fit a 30/30 mental model.",
-      "query": "norwegian 4x4 interval timer",
-      "evidence": "r/hiit has recurring threads from people running Norwegian 4x4 who could not find a clean timer for it and ended up building their own app; the protocol has enormous search volume and no app-lane page on this site.",
-      "pain_quotes": [
-        "Runs 4x4 regularly but could not find a timer that handles long work blocks without a subscription.",
-        "Loses the round count because seven minutes per cycle is too long to hold in your head mid-effort.",
-        "Wants a cue at the start of the recovery block rather than watching a clock for three minutes."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "best-emom-timer (0.21) is a buying guide for minute-based CrossFit work; this post is the setup guide for one named endurance protocol with 4:00 work and 3:00 recovery blocks, where the hard part is long-block pacing rather than choosing an app.",
-      "searchEvidence": "Keyword research: 'norwegian 4x4' 22200/mo LOW competition, 'norwegian 4x4 workout' 4400/mo LOW.",
-      "imagePrompt": "A cyclist on an indoor trainer in a garage at a hard sustained effort, sweat on the forearms, fan angled at them, late afternoon light through a side window"
-    },
-    {
       "slug": "how-to-run-an-emom-workout",
       "theme": "Actually running an EMOM: picking rep counts, setting the minute blocks and what to do when you finish early",
       "hook": "Every minute on the minute is trivially easy to describe and surprisingly easy to get wrong — the whole workout lives or dies on whether you picked rep counts that leave you any rest.",
