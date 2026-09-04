@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "how-to-run-an-emom-workout",
-      "theme": "Actually running an EMOM: picking rep counts, setting the minute blocks and what to do when you finish early",
-      "hook": "Every minute on the minute is trivially easy to describe and surprisingly easy to get wrong — the whole workout lives or dies on whether you picked rep counts that leave you any rest.",
-      "query": "how to do an emom workout",
-      "evidence": "r/crossfit threads asking for an EMOM timer pull dozens of replies about apps being fussy to set up, and the recurring beginner question underneath is what happens to the leftover seconds.",
-      "pain_quotes": [
-        "Sets the reps too high and turns every minute into a continuous grind with no rest.",
-        "Does not know whether the leftover seconds are meant to be rest or extra work.",
-        "Cannot tell how many minutes are left without unlocking the phone mid-set."
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "amrap-emom-tabata-hiit-formats-compared (below 0.15) tells you which of three formats to pick for a given goal; this post assumes you have already picked EMOM and answers the execution questions that post never touches — how to size the rep count, how to set the minute blocks, and what the remainder of the minute is for.",
-      "searchEvidence": "Keyword research: 'emom meaning' 2900/mo LOW, 'what is an emom' 720/mo LOW, 'emom workouts' 5400/mo LOW.",
-      "imagePrompt": "A person resting hands on knees beside a barbell on a gym floor between efforts, chalk dust on the plates, mid-breath, overhead gym lighting"
-    },
-    {
       "slug": "is-emom-hiit",
       "theme": "Whether EMOM and AMRAP count as HIIT, and whether the answer changes how you set the timer",
       "hook": "CrossFit vocabulary and HIIT vocabulary grew up separately, so people arrive genuinely unsure whether the EMOM they just did was cardio, conditioning, or something else entirely.",
