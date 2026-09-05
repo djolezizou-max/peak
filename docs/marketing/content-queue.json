@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "is-emom-hiit",
-      "theme": "Whether EMOM and AMRAP count as HIIT, and whether the answer changes how you set the timer",
-      "hook": "CrossFit vocabulary and HIIT vocabulary grew up separately, so people arrive genuinely unsure whether the EMOM they just did was cardio, conditioning, or something else entirely.",
-      "query": "is emom hiit",
-      "evidence": "Google already puts this site on the front page for the exact phrasing people use, at position 7-8, and the existing formats post never answers the category question they are asking.",
-      "pain_quotes": [
-        "Cannot tell whether an EMOM counts toward their weekly HIIT target.",
-        "Assumes AMRAP and HIIT are the same thing and then wonders why the intensity feels different.",
-        "Wants to know whether the work-to-rest ratio changes when a session is called one thing or the other."
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "hiit-methods-comparison (0.36) compares HIIT, HIIS, Tabata and SIT and never mentions EMOM or AMRAP at all; amrap-emom-tabata-hiit-formats-compared (0.31) compares those three formats to each other but assumes you already accept they are all HIIT. This post answers the prior question — is it — and what that means for the timer.",
-      "searchEvidence": "Striking distance: 'amrap vs hiit' 21 impressions at position 7.0, 'emom vs hiit' 17 impressions at position 8.3, both zero clicks (90 days).",
-      "imagePrompt": "Two people working through a circuit in a bright box gym, one mid kettlebell swing and one hands on hips recovering, rubber flooring, open roller door behind"
-    },
-    {
       "slug": "apple-watch-interval-timer-without-phone",
       "theme": "Running a full interval session from the Watch with the iPhone left at home",
       "hook": "The whole point of a wrist timer is not carrying the phone, and the moment you actually leave it behind you find out which parts of your setup quietly depended on it.",
