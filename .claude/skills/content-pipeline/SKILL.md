@@ -12,8 +12,10 @@ on its own separate pipeline, so this one never touches Planoly or carousels.
 The site is **Eleventy**, not Next.js: posts are markdown files in
 `blog/posts/<slug>.md` with YAML front matter, built with `npm run build`,
 deployed to Vercel from `main`. Live URLs are
-`https://peakintervalapp.com/blog/posts/<slug>/` — note the `/posts/` segment,
-which the IndexNow and index-check steps both need.
+`https://www.peakintervalapp.com/blog/posts/<slug>` — **www, and no trailing
+slash**. The site 308-redirects the apex host and the canonical tags carry no
+slash, so any other form is a redirect away from the real URL. Use this exact
+form for IndexNow, for index checks, and anywhere else a URL is needed.
 
 ## First step of every run: pull
 
@@ -185,7 +187,7 @@ Four things about this data that will mislead you if you forget them:
 4. **Keyword research, for volume the pain signals never surface.**
    ```bash
    python3 Scripts/marketing/keyword_volume.py ideas --seeds "hiit" "interval timer" --min-volume 100
-   python3 Scripts/marketing/keyword_volume.py ideas --urls https://peakintervalapp.com/blog/posts/<a-strong-post>/ --min-volume 100
+   python3 Scripts/marketing/keyword_volume.py ideas --urls https://www.peakintervalapp.com/blog/posts/<a-strong-post> --min-volume 100
    ```
    Vary seeds run to run — short head terms only (`hiit`, `tabata`,
    `interval timer`, `cardio`, `fat loss`, `treadmill`, `kettlebell`). **At
@@ -285,7 +287,7 @@ ChatGPT's search grounds on Bing's index, so a post Bing has not crawled is
 invisible to that assistant however well it ranks on Google.
 
 ```bash
-python3 Scripts/marketing/indexnow_ping.py https://peakintervalapp.com/blog/posts/<slug>/
+python3 Scripts/marketing/indexnow_ping.py https://www.peakintervalapp.com/blog/posts/<slug>
 ```
 
 The script waits for the Vercel deploy to serve the URL before submitting —
@@ -339,7 +341,7 @@ every time a claude CLI or homebrew update replaces the calling binary — do no
 use them):
 
 ```bash
-printf 'send|New Peak Interval blog post is live: https://peakintervalapp.com/blog/posts/<slug>/' > /Users/djordjejankovicmacmini/QuestSpark/logs/qsnotify.cmd
+printf 'send|New Peak Interval blog post is live: https://www.peakintervalapp.com/blog/posts/<slug>' > /Users/djordjejankovicmacmini/QuestSpark/logs/qsnotify.cmd
 open -W -a /Users/djordjejankovicmacmini/Applications/QSNotify.app
 tail -1 /Users/djordjejankovicmacmini/QuestSpark/logs/qsnotify.log
 ```

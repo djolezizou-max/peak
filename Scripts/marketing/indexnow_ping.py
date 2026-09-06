@@ -12,8 +12,17 @@ Usage:
 
 The key lives in two places that must agree, or every ping is rejected:
 the KEY constant here, and <key>.txt in the repo root, passed through by
-.eleventy.js and served at https://peakintervalapp.com/<key>.txt. To rotate,
-change all three.
+.eleventy.js and served at https://www.peakintervalapp.com/<key>.txt. To
+rotate, change all three.
+
+HOST is the **www** form deliberately. The site 308-redirects apex to www and
+serves canonical tags with no trailing slash, so
+https://www.peakintervalapp.com/blog/posts/<slug> is the only form that
+matches what is in the sitemap and the canonical tag. From 2026-08-23 to
+2026-09-06 this pinged the apex host with a trailing slash — every URL a
+redirect away from the real one — and IndexNow returned 200 on all of them,
+because it validates the key and the host, not whether the URL is canonical.
+A clean 200 here does not prove the right URL was submitted.
 
 This pings AFTER the deploy is live, not at push time: a URL that 404s when
 the crawler arrives is worse than one it finds a day later via the sitemap,
@@ -27,7 +36,7 @@ import urllib.error
 import urllib.request
 
 KEY = "bc78c3ae8d93a7d9bcb54ddaa9c837bd"
-HOST = "peakintervalapp.com"
+HOST = "www.peakintervalapp.com"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 ENDPOINT = "https://api.indexnow.org/IndexNow"
 
@@ -138,6 +147,16 @@ def main():
     bad_host = [u for u in args.urls if f"//{HOST}/" not in u]
     if bad_host:
         sys.exit(f"These URLs are not on {HOST}, which IndexNow rejects: {bad_host}")
+
+    # Submitting a URL that redirects wastes the submission silently, so catch
+    # the two forms this site rewrites: apex instead of www, and a trailing
+    # slash the canonical tag does not use.
+    trailing = [u for u in args.urls if u.endswith("/") and u.count("/") > 3]
+    if trailing:
+        sys.exit(
+            "These URLs end in a trailing slash, which this site redirects away from; "
+            f"drop it to match the canonical form: {trailing[:3]}"
+        )
 
     if not check_key_file():
         sys.exit(1)
