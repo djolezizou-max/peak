@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "apple-watch-interval-timer-without-phone",
-      "theme": "Running a full interval session from the Watch with the iPhone left at home",
-      "hook": "The whole point of a wrist timer is not carrying the phone, and the moment you actually leave it behind you find out which parts of your setup quietly depended on it.",
-      "query": "interval timer on apple watch without phone",
-      "evidence": "Search Console shows steady impressions on standalone Apple Watch timer phrasing at positions in the teens and thirties, and r/crossfit threads specifically ask for a wrist timer so they can leave the phone in the bag.",
-      "pain_quotes": [
-        "Leaves the phone in a locker and finds the workout will not start on the Watch alone.",
-        "Wants audio or haptic cues without carrying a phone for the speaker.",
-        "Is unsure whether a workout built on the phone is already saved on the wrist or needs a sync first."
-      ],
-      "category": "App Features",
-      "distinctFrom": "best-apple-watch-interval-timer (0.44) is a buying guide answering which app to install; this post assumes Peak Interval is already installed and answers the capability question — what a standalone Watch session can and cannot do once the iPhone is out of range, and what to set up before you leave it behind.",
-      "searchEvidence": "Striking distance: 'interval timer on apple watch' 2 impressions at position 38.5, 'interval training on apple watch' at position 15, 'workout timer apple watch' at position 33 (90 days).",
-      "imagePrompt": "A runner pausing at the top of a coastal path at dawn, wrist raised across the chest, no phone or armband anywhere, sea haze behind, low warm light"
-    },
-    {
       "slug": "gym-wall-timer-vs-timer-app",
       "theme": "Whether a physical gym wall timer is worth buying when your phone and watch already do it",
       "hook": "A wall timer is a few hundred pounds of hardware doing something the device in your pocket already does — the case for it is real but much narrower than the people selling them suggest.",
