@@ -15,6 +15,29 @@ deployed to Vercel from `main`. Live URLs are
 `https://peakintervalapp.com/blog/posts/<slug>/` — note the `/posts/` segment,
 which the IndexNow and index-check steps both need.
 
+## First step of every run: pull
+
+```bash
+git pull --rebase --autostash
+```
+
+This used to live in the launchd job's shell, where it failed on every single
+run with `fatal: Unable to read current working directory: Operation not
+permitted`. That is macOS TCC, not git: this repo sits under `~/Documents`,
+which is a protected folder, and a launchd-spawned shell inherits no TCC
+grants — a probe on 2026-09-06 confirmed `ls ~/Documents` returns DENIED from
+that context while `cd` still appears to work, because `cd` is a shell builtin
+that never reads the directory. QuestSpark is unaffected only because it lives
+at `~/QuestSpark`, outside the protected tree.
+
+The `claude` binary does hold the grant, which is why every run has been able
+to read the repo, write posts, commit and push regardless. So the pull belongs
+here, inside the run, rather than in the wrapper shell. `|| true` was masking
+the failure, so the pipeline had silently not pulled since it was built.
+
+If the pull reports a conflict, stop and report it rather than forcing —
+another session commits to this repo too.
+
 The queue lives at `docs/marketing/content-queue.json`:
 ```json
 { "themes": [ { "slug": "...", "theme": "...", "hook": "...", "query": "...",
