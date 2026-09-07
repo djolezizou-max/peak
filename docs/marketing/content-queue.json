@@ -31,6 +31,118 @@
       "distinctFrom": "timer-vs-rep-based-hiit (0.16) argues which of the two approaches suits your goals and treats hybrids as a concept; this post skips the argument and answers the build question — how to lay out a single session that alternates counted rounds and timed rounds, including how to size a rep block so the timer stays honest.",
       "searchEvidence": "Pain-signal theme; keyword check returned no volume for the exact phrasing, which the tool documents as unreliable rather than evidence of no demand.",
       "imagePrompt": "A person kneeling on a mat between exercises in a living room, resistance band and a single kettlebell nearby, sofa pushed back against the wall, evening lamp light"
+    },
+    {
+      "slug": "how-to-run-an-amrap-workout",
+      "theme": "How to run an AMRAP workout: scoring, pacing and the time cap",
+      "hook": "AMRAP is one line of instructions and a wide open pace decision — the clock counts down, the score counts up, and most people blow the first three minutes.",
+      "query": "amrap workout",
+      "evidence": "r/crossfit 'plateau to PB' thread (7 upvotes, 10 comments, 2026-06-09) is entirely about pacing rounds against a target time rather than going out hot and gassing; the same mistake defines a badly run AMRAP.",
+      "pain_quotes": [
+        "I go out too hard on round one and then bleed time on every round after it.",
+        "I never know whether to score rounds, reps or both, so my log is useless for comparison.",
+        "Nothing tells me mid-workout whether I am ahead or behind the pace I wanted."
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "how-to-run-an-emom-workout — that post answers how to size rep counts so a fixed minute leaves you rest; this one answers the opposite problem, how to pace and score work when the clock is fixed and the volume is not.",
+      "searchEvidence": "Striking distance: 'amrap vs emom' 8 impressions at position 37.5 and 'emom vs amrap' 7 at 43.0 over 90 days, against position 8.9 for the three-way 'emom vs amrap vs tabata' — Google associates us with the format cluster but has nothing AMRAP-first to rank. Keyword Planner: 'amrap workout' 3,600/mo LOW, 'amrap' 9,900/mo LOW.",
+      "imagePrompt": "A chalky gym floor mid-workout, a rower and a loaded barbell in frame, an athlete mid-transition between the two, morning light through high windows, no clocks or screens visible"
+    },
+    {
+      "slug": "best-boxing-round-timer",
+      "theme": "Best boxing round timer: three-minute rounds, the ten-second warning and the bell",
+      "hook": "A boxing round is not a HIIT interval — it needs a bell at both ends, a warning before the end of the round, and a rest block you do not have to touch the phone to start.",
+      "query": "boxing round timer",
+      "evidence": "Generic interval apps keep coming up short in gym threads because a round timer needs a distinct end-of-round cue and a clapper warning, not the same beep at every phase change.",
+      "pain_quotes": [
+        "Most timers give me one identical beep for work and rest so I never know which one just ended.",
+        "I want the ten-second warning before the bell, and almost nothing has it.",
+        "Between rounds I am on the bag, not near the phone, so the timer has to run itself."
+      ],
+      "category": "Buying Guides",
+      "distinctFrom": "how-to-build-a-boxing-interval-workout — that post answers how to structure the rounds and what to do inside them; this one answers which timer to pick and which round-timer features actually matter when you are choosing an app.",
+      "searchEvidence": "Keyword Planner: 'round timer boxing' 720/mo HIGH, 'boxing interval timer' 110/mo HIGH, 'mma round timer' 110/mo LOW, 'round timer' 480/mo MEDIUM.",
+      "imagePrompt": "A heavy bag swinging in a boxing gym, wrapped hands resting on the bag, worn floorboards and a rope in the background, hard side light, no clocks or screens in frame"
+    },
+    {
+      "slug": "40-20-interval-timer",
+      "theme": "How to set up a 40/20 interval timer (and when 45/15 is the better ratio)",
+      "hook": "Forty on, twenty off is the ratio most class formats settle on, and getting it right is less about the numbers than about where the transition seconds go.",
+      "query": "40 20 interval timer",
+      "evidence": "The 40/20 and 45/15 ratios are the default in bootcamp and circuit programming, and the search phrasing for them is overwhelmingly 'set up a timer for X', not 'what is X'.",
+      "pain_quotes": [
+        "Twenty seconds sounds like enough rest until you have to move to a different station in it.",
+        "I set 40/20 and then spend the first five seconds of work still walking to the kettlebell.",
+        "I want to change the whole session from 40/20 to 45/15 without editing every round."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "best-tabata-timer — that post answers which app to buy for a fixed 20/10 protocol; this one answers how to build and adjust a 40/20 or 45/15 session, including where the transition time comes from, in a timer you already have.",
+      "searchEvidence": "Keyword Planner: 'interval timer 45 seconds' 480/mo LOW, '45 sec interval timer' 480/mo LOW, '45 15 interval timer' 210/mo LOW, '40 20 interval timer' 170/mo LOW, '40 20 hiit timer' 110/mo, 'hiit timer 40 20' 110/mo, 'timer 45 seconds 15 seconds rest' 140/mo — roughly 1,700/mo across the ratio cluster.",
+      "imagePrompt": "Three kettlebells of different sizes spaced out on a rubber gym floor with a jump rope coiled beside them, a person mid-stride between stations, overhead gym lighting, no screens or clocks"
+    },
+    {
+      "slug": "circuit-training-timer",
+      "theme": "Circuit training timer: rotating stations without losing the round",
+      "hook": "A circuit is not one repeated interval — it is a different exercise at every station, a transition between each, and a round count you lose the moment you stop looking.",
+      "query": "circuit training timer",
+      "evidence": "r/bodyweightfitness threads like 'Why is the minimalist routine in a circuit?' and 'Costs and benefits of groups of sets vs. full circuits?' keep circling the same practical problem: circuits are easy to program and hard to actually run without something driving the rotation.",
+      "pain_quotes": [
+        "By station four I have lost count of which round I am on.",
+        "The timer treats every block the same, but I need longer at the rower than at the mat.",
+        "I end up shouting the station change myself instead of letting the app do it."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "apple-watch-workout-app-intervals-vs-timer-app — that post answers whether the stock watchOS interval feature is enough; this one answers how to build a multi-station circuit with per-station durations, named exercises and a round counter, whichever app you land on.",
+      "searchEvidence": "Keyword Planner: 'circuit timer' 320/mo LOW, 'circuit training timer' 170/mo LOW, 'circuit workout timer' 170/mo LOW, 'exercise circuit timer' 170/mo LOW — about 830/mo, all LOW competition.",
+      "imagePrompt": "A garage gym set up as four stations around the room — a bench, a rower, a set of dumbbells, an open mat — empty and ready, warm afternoon light through an open door, no screens or clocks"
+    },
+    {
+      "slug": "crossfit-wod-timer",
+      "theme": "Running a WOD timer off your phone when the gym clock is not yours to set",
+      "hook": "Every box has a wall clock, and it is running the class's workout, not yours — here is how to drive For Time, AMRAP and EMOM from your own phone or wrist instead.",
+      "query": "wod timer",
+      "evidence": "r/crossfit product threads (GymNext paywall thread, 6 upvotes/16 comments; 'Timer with a set counter', 12 comments) show people running their own clock rather than the wall unit, and hitting app limits when they do.",
+      "pain_quotes": [
+        "The wall clock is on the class WOD and I am doing my own accessory work in the corner.",
+        "Open gym means no clock at all, so I am squinting at a phone stopwatch.",
+        "For Time counts up, AMRAP counts down, and I need both without rebuilding the timer."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "gym-wall-timer-vs-timer-app — that post argues which of the two you should rely on; this one assumes the wall clock is unavailable or busy and answers how to set up the three CrossFit scoring formats on your own device.",
+      "searchEvidence": "Keyword Planner: 'crossfit timer' 480/mo MEDIUM, 'wod timer' 320/mo LOW, 'crossfit gym timer' 480/mo MEDIUM, 'crossfit gym clock' 210/mo HIGH. Striking distance: 'emom clock' 3 impressions at position 49.0 and 'emom timer' 3 at 41.3 over 90 days.",
+      "imagePrompt": "A wide shot of a CrossFit box between classes, barbells loaded on the floor and rings hanging still, chalk dust in a shaft of light, no clocks or screens visible in frame"
+    },
+    {
+      "slug": "interval-timer-with-set-counter",
+      "theme": "Interval timer with a set counter: counting rounds you advance by hand",
+      "hook": "Some work cannot be put on a fixed clock — you finish the set when you finish it — but the rest still needs timing and the sets still need counting.",
+      "query": "interval timer with set counter",
+      "evidence": "r/crossfit 'Timer with a set counter' (12 comments) asks for exactly this: tap to start a rest countdown after each set, log how many sets that makes, and do it on the Watch — the one app that has the feature has no Watch app.",
+      "pain_quotes": [
+        "I want to tap when the set is done and have the rest start itself.",
+        "The timer should sit still until I tell it the next set has finished, not race ahead.",
+        "The phone app does this but there is nothing on the watch, which is where my hands are."
+      ],
+      "category": "App Features",
+      "distinctFrom": "rest-timer-between-sets — that post answers how long to rest and why rest drifts; this one answers the mechanical question of how to run a manually advanced timer that also keeps the set count, so the workout stops when the set count says so rather than when a fixed clock does.",
+      "searchEvidence": "Keyword Planner: 'rest timer' 1,300/mo LOW, 'repeat timer' 1,600/mo LOW, 'countdown repeat timer' 140/mo LOW, 'continuous timer' 210/mo LOW.",
+      "imagePrompt": "A lifter sitting on the end of a bench beside a rack, forearms on knees, breathing between sets in a quiet basement gym, chalk on the floor, no screens or clocks in frame"
+    },
+    {
+      "slug": "peak-interval-vs-gymnext",
+      "theme": "Peak Interval vs GymNext Flex: the app, the hardware, and what you pay for",
+      "hook": "GymNext started as the controller for a wall-mounted Flex timer, which explains both what it is very good at and the parts that feel like they are gating a device you may not own.",
+      "query": "peak interval vs gymnext",
+      "evidence": "r/crossfit 'GymNext App Users' (6 upvotes, 16 comments, within the last year): a user of eight years opened the app to find a launch video, a sign-in prompt, and a paywall behind the toggle that turns the video off.",
+      "pain_quotes": [
+        "It worked without an account for eight years and now it wants me to sign in.",
+        "The toggle to turn the intro video off sends you straight to a subscription screen.",
+        "I do not own the hardware, so half the app is built around a box I will never buy."
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "peak-interval-vs-smartwod — that comparison is about workout-generation workflow between two phone apps; this one is about a hardware-first competitor, where the question is whether you are buying a timer app or the remote control for a wall unit.",
+      "searchEvidence": "Keyword Planner: 'gym clocks and timers' 480/mo HIGH, 'crossfit gym clock' 210/mo HIGH, 'workout clock' 390/mo HIGH, 'gym interval clock' 110/mo HIGH — commercial hardware intent the comparison series is built to intercept.",
+      "imagePrompt": "A wall-mounted gym timer unit seen from a sharp angle so its face is not legible, blurred barbells and athletes in the background of a bright box, shallow depth of field"
     }
   ],
   "retired": [
