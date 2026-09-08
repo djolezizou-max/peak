@@ -1,6 +1,6 @@
 ---
 title: "Best Tabata Timer"
-description: "Looking for the best Tabata timer? Here is what matters for 20/10 workouts, what makes a timer practical, and why Peak Interval is a strong fit."
+description: "What separates a real Tabata timer from a stopwatch: 20/10 rounds preset, audio cues you can hear mid-effort, and no tapping between the eight intervals."
 date: "2026-07-11"
 featured_image: "/assets/blog/ai-best-tabata-timer.png"
 image_alt: "Tabata workout timer cover image"

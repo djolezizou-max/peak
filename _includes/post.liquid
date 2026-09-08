@@ -3,7 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }} | Peak Interval</title>
+    {%- comment -%}
+      Bing flags any title over 60 characters, and " | Peak Interval" spends 17
+      of them before the title says anything. So the brand suffix is appended
+      only when it fits, and a post can set `seoTitle` in front matter to give
+      search a short title while the on-page h1 stays descriptive.
+    {%- endcomment -%}
+    {%- assign pageTitle = seoTitle | default: title -%}
+    {%- assign branded = pageTitle | append: " | Peak Interval" -%}
+    {%- if branded.size <= 60 -%}
+    <title>{{ branded }}</title>
+    {%- else -%}
+    <title>{{ pageTitle }}</title>
+    {%- endif -%}
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="{{ description }}">

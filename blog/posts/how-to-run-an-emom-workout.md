@@ -1,5 +1,6 @@
 ---
 title: "How To Run An EMOM Workout: Rep Counts, Minute Blocks And The Leftover Seconds"
+seoTitle: "How to Run an EMOM Workout: Reps, Minutes, Rest"
 description: "EMOM is easy to describe and easy to get wrong. How to size rep counts so the minute leaves you rest, set up the blocks, and use the seconds you have left."
 date: "2026-09-04"
 featured_image: "/assets/blog/how-to-run-an-emom-workout.png"

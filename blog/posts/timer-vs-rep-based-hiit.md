@@ -9,8 +9,6 @@ tags: "posts"
 category: "App Features"
 ---
 
-# Timer-Based HIIT vs. Rep-Based HIIT: Which is Right for You?
-
 When it comes to High-Intensity Interval Training (HIIT), there are two primary ways to structure your workouts: using timed intervals or counting repetitions. Both approaches can deliver powerful results, but they offer different benefits and suit different goals. Understanding the distinctions between timer-based and rep-based HIIT can help you optimize your workouts and accelerate your progress.
 
 ## Understanding the Two Approaches

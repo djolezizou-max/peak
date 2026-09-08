@@ -1,6 +1,6 @@
 ---
 title: "The Ultimate Tabata Protocol Guide with 5 Workout Variations"
-description: "Master the Tabata protocol: Learn the science, structure, and five effective Tabata workout variations you can try today."
+description: "The complete Tabata protocol: the real 20/10 work-to-rest ratio, five workout variations, and how to run all eight rounds without ever watching a clock."
 date: "2024-08-12"
 featured_image: "/assets/blog/tabata-guide-cover.jpg"
 image_alt: "Stopwatch showing 20 seconds for Tabata interval"

@@ -1,5 +1,6 @@
 ---
 title: "5 Ways to Use the Peak Interval App for Different Training Styles"
+seoTitle: "5 Ways to Use Peak Interval for Any Training Style"
 description: "Discover five versatile ways to leverage the Peak Interval app for various training styles, from traditional HIIT to strength training, endurance work, mobility, and active recovery."
 date: "2024-05-14"
 featured_image: "/assets/blog/peak-interval-versatility.jpg"

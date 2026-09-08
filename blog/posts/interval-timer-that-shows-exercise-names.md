@@ -1,6 +1,6 @@
 ---
 title: "Interval Timer That Shows Exercise Names"
-description: "A countdown alone will not tell you which move you are on. Here is how to label every interval, preview the next one, and set it up in Peak Interval."
+description: "Stop guessing which move comes next. How to run an interval timer that names each exercise on the screen and calls it out loud between every single round."
 date: "2026-08-30"
 featured_image: "/assets/blog/interval-timer-that-shows-exercise-names.png"
 image_alt: "An iPad propped on a weight bench in a gym while two people do squats in the background"

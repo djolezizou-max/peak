@@ -1,6 +1,6 @@
 ---
 title: "Creating and Saving Custom HIIT Workouts in Peak Interval"
-description: "Learn how to design, customize, and save your own HIIT workout routines in the Peak Interval app to take your interval training to the next level."
+description: "How to build a custom HIIT workout once and reuse it: naming intervals, saving presets, and adjusting work-to-rest without rebuilding the whole session."
 date: "2024-05-06"
 featured_image: "/assets/blog/custom-hiit-workouts-cover.jpg"
 image_alt: "Person setting up a custom workout timer on a smartphone while in a gym setting"
@@ -8,8 +8,6 @@ layout: "post.liquid"
 tags: "posts"
 category: "App Features"
 ---
-
-# Creating and Saving Custom HIIT Workouts in Peak Interval
 
 High-Intensity Interval Training (HIIT) is most effective when tailored to your specific fitness goals, abilities, and preferences. While pre-designed workouts are great starting points, creating custom workouts allows you to take control of your fitness journey. The Peak Interval app makes this process simple and intuitive, letting you design, save, and access personalized HIIT routines with just a few taps.
 

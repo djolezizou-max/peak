@@ -1,5 +1,6 @@
 ---
 title: "The Psychology of the Countdown: How Timers Affect Your Workout Intensity"
+seoTitle: "The Psychology of the Countdown Timer"
 description: "Discover how countdown timers influence your mental performance during HIIT workouts and learn psychological techniques to harness the power of timing for better results."
 date: "2025-05-11"
 featured_image: "/assets/blog/countdown-psychology.jpg"
@@ -8,8 +9,6 @@ layout: "post.liquid"
 tags: "posts"
 category: "App Features"
 ---
-
-# The Psychology of the Countdown: How Timers Affect Your Workout Intensity
 
 The digital numbers tick down—5, 4, 3, 2, 1—and something happens in your brain. Your muscles tense, your focus narrows, and your breath quickens in anticipation. The psychological impact of a countdown timer during high-intensity interval training is profound, often making the difference between a mediocre workout and an exceptional one. This article explores the fascinating psychological mechanisms behind countdown timers and how they influence your performance, motivation, and perceived exertion during HIIT workouts.
 

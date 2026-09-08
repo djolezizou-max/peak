@@ -1,6 +1,6 @@
 ---
 title: "How to Turn a Workout Screenshot Into an Interval Timer"
-description: "Learn how to take a workout from Instagram, TikTok, or a gym whiteboard and turn it into a usable interval timer in minutes with Peak Interval."
+description: "Turn a screenshot of a workout into a running interval timer. How Peak Interval reads the blocks, what it tends to get wrong, and how to fix it in seconds."
 date: "2026-07-11"
 featured_image: "/assets/blog/ai-import-workout-from-screenshot.png"
 image_alt: "Workout timer interface used for turning a saved workout into a runnable session"

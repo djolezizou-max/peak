@@ -1,5 +1,6 @@
 ---
 title: "HIIT vs. Steady-State Cardio: Which Is Right for Your Fitness Goals?"
+seoTitle: "HIIT vs Steady-State Cardio: Which Is Right for You?"
 description: "Compare high-intensity interval training (HIIT) and steady-state cardio to determine which cardio method best aligns with your specific fitness goals and lifestyle."
 date: "2024-06-15"
 featured_image: "/assets/blog/hiit-vs-cardio-cover.jpg"

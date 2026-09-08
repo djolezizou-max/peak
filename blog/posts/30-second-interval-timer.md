@@ -1,5 +1,6 @@
 ---
 title: "30 Second Interval Timer: How to Get a Cue Every 30 Seconds Without Touching Anything"
+seoTitle: "30 Second Interval Timer: Hands-Free Cues"
 description: "Need a buzz every 30 seconds for a whole session? Here is how to set up a repeating 30 second interval timer that runs unattended instead of a stopwatch you restart."
 date: "2026-08-25"
 featured_image: "/assets/blog/30-second-interval-timer.png"

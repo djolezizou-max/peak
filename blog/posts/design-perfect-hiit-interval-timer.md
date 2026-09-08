@@ -1,5 +1,6 @@
 ---
 title: "How to Design the Perfect HIIT Interval Timer for Your Workout Goals"
+seoTitle: "How to Design the Perfect HIIT Interval Timer"
 description: "Learn how to customize your interval timer settings to perfectly match your fitness level, training goals, and workout style for maximum HIIT results."
 date: "2024-05-13"
 featured_image: "/assets/blog/hiit-timer-customization.jpg"

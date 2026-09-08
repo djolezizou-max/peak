@@ -1,5 +1,6 @@
 ---
 title: "HIIT for Powerlifters: Building Power and Conditioning Without Sacrifice"
+seoTitle: "HIIT for Powerlifters: Conditioning Without Losing Size"
 description: "Discover how powerlifters can strategically implement high-intensity interval training to enhance conditioning, recovery, and performance without compromising strength gains."
 date: "2023-07-05"
 featured_image: "/assets/blog/hiit-powerlifters.jpg"

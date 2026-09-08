@@ -1,6 +1,6 @@
 ---
 title: "Using Peak Interval for Group Workouts and Classes"
-description: "Learn how to leverage Peak Interval's powerful features to lead effective group workouts, create engaging fitness classes, and motivate participants with precision timing and customized intervals."
+description: "Running intervals for a group: audio cues everyone can hear across a room, screen visibility from a distance, and keeping a whole class in sync as it moves."
 date: "2024-05-18"
 featured_image: "/assets/blog/group-hiit-class.jpg"
 image_alt: "Fitness instructor leading a group HIIT workout class in a gym with participants following along and a timer display visible"

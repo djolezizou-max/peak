@@ -1,5 +1,6 @@
 ---
 title: "How to Track Your HIIT Progress: Using Timers for Performance Measurement"
+seoTitle: "How to Track HIIT Progress With Timers"
 description: "Learn how to effectively measure and track your HIIT workout progress using interval timers, even without fancy equipment or advanced fitness trackers."
 date: "2024-05-16"
 featured_image: "/assets/blog/hiit-progress-tracking.jpg"

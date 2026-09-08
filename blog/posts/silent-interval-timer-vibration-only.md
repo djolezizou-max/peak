@@ -1,5 +1,6 @@
 ---
 title: "Silent Interval Timer: How to Run a Full Session on Vibration Only"
+seoTitle: "Silent Interval Timer: Run a Session on Vibration"
 description: "Beeping is not an option in a shared flat or a quiet gym. Here is how to set up a silent interval timer in Peak Interval that cues you on haptics alone."
 date: "2026-08-26"
 featured_image: "/assets/blog/silent-interval-timer-vibration-only.png"

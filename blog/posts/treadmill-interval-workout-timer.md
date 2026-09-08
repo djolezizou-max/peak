@@ -1,6 +1,7 @@
 ---
 title: "Treadmill Interval Workout Timer: Run Your Blocks, Not The Console's"
-description: "Gym treadmill programs run someone else's intervals. Here is how to drive your own work and recovery blocks off a timer and just change the belt when it tells you."
+seoTitle: "Treadmill Interval Workout Timer: Run Your Blocks"
+description: "Run treadmill intervals off your own timer instead of the console programs: how to set up your speed and incline blocks, and when you should change them."
 date: "2026-09-02"
 featured_image: "/assets/blog/treadmill-interval-workout-timer.png"
 image_alt: "Runner at speed on a gym treadmill seen from the side, belt and shoes blurred with motion, empty machines behind"

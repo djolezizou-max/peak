@@ -1,5 +1,6 @@
 ---
 title: "Advanced Timer Features: Using Rest Intervals and Preparation Times Effectively"
+seoTitle: "Timer Rest and Prep Intervals: How to Use Them"
 description: "Master the art of optimizing rest intervals and preparation times in your HIIT workouts to maximize performance, improve form, and achieve better results."
 date: "2024-05-15"
 featured_image: "/assets/blog/advanced-timer-features.jpg"

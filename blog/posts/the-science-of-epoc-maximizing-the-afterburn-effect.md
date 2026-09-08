@@ -1,6 +1,6 @@
 ---
 title: "The Science of EPOC: Maximizing the Afterburn Effect"
-description: "Understand the science of EPOC (Excess Post-exercise Oxygen Consumption) and learn how to maximize the afterburn effect with your HIIT workouts."
+description: "What EPOC actually is, how much the afterburn effect really adds to the calories you burn, and which interval structures raise it enough to genuinely matter."
 date: "2024-11-04" # Assuming Month 11, Week 1
 featured_image: "/assets/blog/epoc-afterburn-effect.jpg" # Placeholder image name. Consider an infographic or dynamic image of someone post-HIIT.
 image_alt: "Infographic explaining the EPOC or afterburn effect in HIIT, showing increased oxygen consumption post-exercise."

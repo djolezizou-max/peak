@@ -1,5 +1,6 @@
 ---
 title: "How to Use a Rest Timer Between Sets (Without It Ruining Your Session)"
+seoTitle: "How to Use a Rest Timer Between Sets"
 description: "Rest between sets drifts from 90 seconds to four minutes without you noticing. Here is how to time it properly, and what Peak Interval does that a stopwatch cannot."
 date: "2026-08-31"
 featured_image: "/assets/blog/rest-timer-between-sets.png"

@@ -1,5 +1,6 @@
 ---
 title: "Norwegian 4x4 Interval Timer: How To Set Up The 4:00/3:00 Protocol"
+seoTitle: "Norwegian 4x4 Interval Timer: 4:00/3:00 Setup"
 description: "The Norwegian 4x4 is four minutes hard and three minutes easy, four times. Here is how to set it up on an interval timer so you never lose count mid-block."
 date: "2026-09-03"
 featured_image: "/assets/blog/norwegian-4x4-interval-timer.png"

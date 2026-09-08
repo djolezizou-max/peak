@@ -1,5 +1,6 @@
 ---
 title: "Interval Timer With Music: How to Hear Your Cues Without Losing the Track"
+seoTitle: "Interval Timer With Music: Hear Cues Over Your Track"
 description: "Your timer beeps get buried in your playlist, or the music cuts out every 20 seconds. Here is how to set up an interval timer with music so both work."
 date: "2026-08-23"
 featured_image: "/assets/blog/interval-timer-with-music.png"

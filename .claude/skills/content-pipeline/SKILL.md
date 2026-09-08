@@ -239,7 +239,8 @@ breaks the index and category pages:
 ```yaml
 ---
 title: "Title In Title Case"
-description: "~155 chars, the search-result snippet. Mentions Peak Interval naturally where it fits."
+seoTitle: "Short title, 60 chars max"
+description: "150-160 chars, the search-result snippet. Mentions Peak Interval naturally where it fits."
 date: "YYYY-MM-DD"
 featured_image: "/assets/blog/<filename>.png"
 image_alt: "Describes what the generated image actually shows"
@@ -268,6 +269,38 @@ cover can carry. Describe the moment around the device instead.
 **Look at the generated image** (Read the file) before committing it. Check it
 matches the post, has no text artefacts, and shows plausible anatomy — a bad
 cover is worse than a generic one.
+
+**Three SEO rules Bing's site scan enforces. All three were violated across the
+existing corpus on 2026-09-07 and every one came from the pipeline's own
+output, so they are not optional:**
+
+- **Do NOT start the body with a `# Heading`.** `post.liquid` already renders
+  the title as the page's h1, so a markdown h1 makes a second one. Six posts
+  had this and it was flagged High severity. Start with the first paragraph.
+- **`description` must be 150-160 characters.** Not "about 155" — under 150 is
+  flagged. Count it. Eight posts were short, two of them under 40 characters.
+- **`title` may exceed 60 characters, but `seoTitle` must not.** The template
+  appends " | Peak Interval" only when the result still fits in 60, and falls
+  back to `seoTitle` for the `<title>` tag while the h1 keeps the full title.
+  Write `seoTitle` with the head keyword first and the explanatory clause cut.
+  Thirty-two pages were over the limit before this was added.
+
+Verify all three after building, before committing:
+
+```bash
+python3 - <<'EOF'
+import pathlib, re
+for p in pathlib.Path('_site').rglob('*.html'):
+    h = p.read_text(encoding='utf-8', errors='replace')
+    t = re.search(r'<title>(.*?)</title>', h, re.S|re.I)
+    d = re.search(r'<meta[^>]+name=["\']description["\'][^>]*content=["\'](.*?)["\']', h, re.S|re.I)
+    bad = []
+    if t and len(re.sub(r'\s+',' ',t.group(1)).strip()) > 60: bad.append('title>60')
+    if not d or len(d.group(1).strip()) < 150: bad.append('desc<150')
+    if len(re.findall(r'<h1[\s>]', h, re.I)) > 1: bad.append('multi-h1')
+    if bad: print(p, bad)
+EOF
+```
 
 Body style, matched to the surviving posts: open with two short paragraphs that
 name the reader's actual situation, then 3-5 `##` sections of 2-3 short
