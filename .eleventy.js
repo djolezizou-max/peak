@@ -55,6 +55,27 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISODate();
   });
 
+  // Per-category search descriptions.
+  //
+  // The category template used one templated line for all ten ("Read the
+  // latest X articles on the Peak Interval Blog."), which is ~63 characters
+  // and identical bar the category name — short enough for Bing to flag and
+  // near-duplicate across every category page. These are indexed pages, so
+  // they get real descriptions. A category missing here falls back to the
+  // generic line, so adding a category does not break the build.
+  const CATEGORY_DESCRIPTIONS = {
+    "Workout Guides": "Interval workouts you can run start to finish: work-to-rest ratios, round counts, and how to set each one up on a timer instead of counting in your head.",
+    "Specialized HIIT Training": "Interval training for specific goals and constraints — treadmills, stairs, small spaces and named protocols — with the exact timer setup that each one needs.",
+    "HIIT Fundamentals": "The basics of interval training explained: what HIIT actually is, how work-to-rest ratios change the session, and how to structure intervals correctly.",
+    "Fitness + Nutrition": "How eating, fuelling and recovery interact with interval training, and what actually changes the result of a hard session versus what only sounds useful.",
+    "Advanced HIIT Concepts": "Deeper interval training topics: EPOC, lactate threshold, periodisation and progression, and how each one changes the intervals you should be running.",
+    "App Features": "How Peak Interval works in practice — building and saving workouts, rest and prep phases, audio cues, Apple Watch, and running a whole session hands-free.",
+    "HIIT Success Stories": "How real people structure their interval training, what they changed to keep it consistent, and the timer setups behind the sessions they actually finish.",
+    "Buying Guides": "How to choose an interval timer app: the features that matter mid-workout, what the free versions leave out, and which app fits which kind of training.",
+    "Comparisons": "Peak Interval measured against the other interval timer apps, feature by feature, so you can tell which one actually suits the way that you like to train.",
+    "Developer Tools": "Notes on how Peak Interval is built and the technical decisions behind the timer, for anyone interested in what runs underneath the app.",
+  };
+
   // Generate category pages
   eleventyConfig.addCollection("categoryPages", function(collectionApi) {
     // Get all posts
@@ -72,6 +93,7 @@ module.exports = function(eleventyConfig) {
     return Array.from(categories).map(category => {
       return {
         category: category,
+        description: CATEGORY_DESCRIPTIONS[category],
         slug: slugify(category, {
           lower: true,
           strict: true,

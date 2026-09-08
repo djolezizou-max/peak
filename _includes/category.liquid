@@ -6,7 +6,7 @@
     <title>{{ category }} - Peak Interval Blog</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
+    <meta name="description" content="{% if categoryDescription %}{{ categoryDescription }}{% else %}Read the latest {{ category }} articles on the Peak Interval Blog.{% endif %}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.peakintervalapp.com/blog/{{ category | slugify }}">
 
@@ -15,7 +15,7 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{ category }} - Peak Interval Blog">
-    <meta property="og:description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
+    <meta property="og:description" content="{% if categoryDescription %}{{ categoryDescription }}{% else %}Read the latest {{ category }} articles on the Peak Interval Blog.{% endif %}">
     <meta property="og:image" content="https://www.peakintervalapp.com/assets/app_icon.png">
     <meta property="og:url" content="https://www.peakintervalapp.com/blog/{{ category | slugify }}">
     <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ category }} - Peak Interval Blog">
-    <meta name="twitter:description" content="Read the latest {{ category }} articles on the Peak Interval Blog.">
+    <meta name="twitter:description" content="{% if categoryDescription %}{{ categoryDescription }}{% else %}Read the latest {{ category }} articles on the Peak Interval Blog.{% endif %}">
     <meta name="twitter:image" content="https://www.peakintervalapp.com/assets/app_icon.png">
 
     <style>
