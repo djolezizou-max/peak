@@ -1,0 +1,14 @@
+# Eleventy's input directory is the repo root, so ANY .md file anywhere in the
+# repo is treated as a template and published. On 2026-09-07 that put the
+# content-pipeline skill live at /.claude/skills/content-pipeline/SKILL and the
+# research playbook at /docs/marketing/reddit-communities.
+#
+# Add every non-site markdown path here. A new top-level folder containing .md
+# files is public by default until it is listed.
+.claude/
+docs/
+node_modules/
+README.md
+BLOG_POST_WORKFLOW.md
+blog-content-plan.md
+blog-post-ideas.md
