@@ -584,25 +584,86 @@
           Related posts form a ring within each category: every post links to the
           6 that follow it, so link equity is spread evenly instead of pooling on
           whichever posts happen to sort first.
+
+          A category with fewer than 7 posts cannot fill that ring on its own,
+          and a category of one renders no links at all — which is how posts end
+          up reachable only from /blog and a hub page. So the remainder is topped
+          up from a site-wide ring, in the same rotating way. Every post then
+          carries the same number of outbound links, and the link graph is not
+          partitioned along category lines.
+
+          Only 4 of the 6 slots go to the category, even when it could fill all
+          six. A large category that fills its own ring is a closed loop: its
+          posts link only to each other, so a cluster Google is ignoring has no
+          way back in from the pages Google does crawl. The reserved 2 slots are
+          what connect the clusters.
         {%- endcomment -%}
+        {%- assign wanted = 6 -%}
+        {%- assign categoryWanted = 4 -%}
         {%- assign categoryPosts = collections.posts | where: "data.category", category -%}
         {%- assign total = categoryPosts | size -%}
-        {%- if total > 1 -%}
+        {%- assign allPosts = collections.posts -%}
+        {%- assign allTotal = allPosts | size -%}
+        {%- assign shownUrls = "" -%}
+        {%- assign shownCount = 0 -%}
+        {%- if allTotal > 1 -%}
             {%- assign currentIndex = 0 -%}
             {%- for post in categoryPosts -%}
                 {%- if post.url == page.url -%}{%- assign currentIndex = forloop.index0 -%}{%- endif -%}
             {%- endfor -%}
-            {%- assign shown = 6 -%}
-            {%- assign maxShown = total | minus: 1 -%}
-            {%- if maxShown < shown -%}{%- assign shown = maxShown -%}{%- endif -%}
+            {%- assign allIndex = 0 -%}
+            {%- for post in allPosts -%}
+                {%- if post.url == page.url -%}{%- assign allIndex = forloop.index0 -%}{%- endif -%}
+            {%- endfor -%}
         <section class="related-posts">
-            <h2>More in {{ category }}</h2>
+            <h2>More from the blog</h2>
             <ul>
                 {%- for post in categoryPosts -%}
                     {%- assign rel = forloop.index0 | minus: currentIndex -%}
                     {%- if rel < 0 -%}{%- assign rel = rel | plus: total -%}{%- endif -%}
-                    {%- if rel > 0 and rel <= shown -%}
+                    {%- if rel > 0 and shownCount < categoryWanted -%}
+                        {%- assign key = post.url | append: "|" -%}
+                        {%- unless shownUrls contains key -%}
+                            {%- assign shownUrls = shownUrls | append: key -%}
+                            {%- assign shownCount = shownCount | plus: 1 -%}
                 <li><a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a></li>
+                        {%- endunless -%}
+                    {%- endif -%}
+                {%- endfor -%}
+                {%- comment -%}
+                  The cross-category picks are taken a third and two thirds of
+                  the way around the collection rather than from the next posts
+                  along. Neighbours in this ordering were published together, so
+                  a rotation hands a batch of new posts only to each other; a
+                  stride hands them to the older posts Google already crawls.
+                {%- endcomment -%}
+                {%- assign stride = allTotal | divided_by: 3 -%}
+                {%- assign stride2 = stride | times: 2 -%}
+                {%- for post in allPosts -%}
+                    {%- assign rel = forloop.index0 | minus: allIndex -%}
+                    {%- if rel < 0 -%}{%- assign rel = rel | plus: allTotal -%}{%- endif -%}
+                    {%- if shownCount < wanted -%}
+                        {%- if rel == stride or rel == stride2 -%}
+                            {%- assign key = post.url | append: "|" -%}
+                            {%- unless shownUrls contains key -%}
+                                {%- assign shownUrls = shownUrls | append: key -%}
+                                {%- assign shownCount = shownCount | plus: 1 -%}
+                <li><a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a></li>
+                            {%- endunless -%}
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endfor -%}
+                {%- comment -%} Anything still short is filled from the ring. {%- endcomment -%}
+                {%- for post in allPosts -%}
+                    {%- assign rel = forloop.index0 | minus: allIndex -%}
+                    {%- if rel < 0 -%}{%- assign rel = rel | plus: allTotal -%}{%- endif -%}
+                    {%- if rel > 0 and shownCount < wanted -%}
+                        {%- assign key = post.url | append: "|" -%}
+                        {%- unless shownUrls contains key -%}
+                            {%- assign shownUrls = shownUrls | append: key -%}
+                            {%- assign shownCount = shownCount | plus: 1 -%}
+                <li><a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a></li>
+                        {%- endunless -%}
                     {%- endif -%}
                 {%- endfor -%}
             </ul>
