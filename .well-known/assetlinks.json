@@ -1,0 +1,15 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.roli.intervals",
+      "sha256_cert_fingerprints": [
+        "00:59:94:04:D5:DA:8A:AA:93:6E:89:CF:99:C9:EA:41:D5:F1:C5:B5:FA:63:85:E9:3C:08:91:E0:0A:C2:52:59",
+        "B2:24:E1:4C:6E:91:44:CA:49:51:09:8A:28:84:6B:D9:61:B6:26:83:E3:93:55:77:45:BA:9F:33:C5:7C:23:69",
+        "FF:55:CB:C3:B4:9C:69:A0:CC:E6:DC:3B:7F:2E:74:A7:42:1A:64:F8:24:4C:B4:4D:41:DB:28:7B:59:6F:A6:3F",
+        "C8:4E:FD:E4:E3:22:AF:8D:B9:69:D5:9A:5E:D7:D8:4F:2E:AA:43:BA:A6:75:D7:FE:9B:B3:59:5C:92:16:87:7E"
+      ]
+    }
+  }
+]

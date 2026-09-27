@@ -16,6 +16,12 @@ module.exports = function(eleventyConfig) {
   // IndexNow verification key. Must stay reachable at the site root or every
   // IndexNow ping is rejected (see Scripts/marketing/indexnow_ping.py).
   eleventyConfig.addPassthroughCopy("bc78c3ae8d93a7d9bcb54ddaa9c837bd.txt");
+  // Deep-link association files: apple-app-site-association for iOS Universal
+  // Links, assetlinks.json for Android App Links. Without this passthrough the
+  // directory never reaches _site and both 404 in production, which silently
+  // breaks every /w/ share link — they land on the /download page instead of
+  // opening the app.
+  eleventyConfig.addPassthroughCopy(".well-known");
 
   // Strip trailing slash (except for root "/") so canonical URLs match
   // Vercel's trailingSlash: false routing.

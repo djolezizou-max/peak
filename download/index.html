@@ -98,57 +98,79 @@ sitemap_exclude: true
     </style>
 
     <script>
+        var APP_STORE_URL = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716";
+        var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.roli.intervals";
+        var ANDROID_PACKAGE = "com.roli.intervals";
+
+        var isAndroid = /android/i.test(navigator.userAgent);
+
+        // Where a workout payload can hide, in the order the app has ever
+        // produced: #sharedWorkout=, ?workout= (what the /w/ redirect in
+        // vercel.json rewrites to), the path itself, then the referrer for
+        // links that arrived through another redirect.
+        function payloadFromUrl() {
+            var hash = window.location.hash;
+            if (hash && hash.indexOf('#sharedWorkout=') === 0) {
+                return hash.substring('#sharedWorkout='.length);
+            }
+            var workout = new URLSearchParams(window.location.search).get('workout');
+            if (workout) return workout;
+            for (var i = 0, sources = [window.location.pathname, document.referrer]; i < sources.length; i++) {
+                var parts = (sources[i] || '').split('/w/');
+                if (parts.length > 1) {
+                    var data = parts[1].replace(/\/$/, '');
+                    if (data) return data;
+                }
+            }
+            return null;
+        }
+
+        // Android gets an intent: URI rather than the custom scheme. Chrome
+        // resolves it to the app when installed and follows
+        // browser_fallback_url to Play when it isn't — a bare
+        // peakintervals:// link just dead-ends on a device without the app.
+        function openInApp(target) {
+            if (isAndroid) {
+                window.location.href = 'intent://' + target + '#Intent' +
+                    ';scheme=peakintervals' +
+                    ';package=' + ANDROID_PACKAGE +
+                    ';S.browser_fallback_url=' + encodeURIComponent(PLAY_STORE_URL) +
+                    ';end';
+            } else {
+                window.location.href = 'peakintervals://' + target;
+            }
+        }
+
+        // Show the store that matches the device. Done before the redirect so
+        // the right button is already there when the app isn't installed and
+        // the user lands back on this page.
+        function showStoreButton() {
+            var store = document.getElementById('store-button');
+            if (!store) return;
+            if (isAndroid) {
+                store.href = PLAY_STORE_URL;
+                store.textContent = 'Get it on Google Play';
+            } else {
+                store.href = APP_STORE_URL;
+                store.textContent = 'Download from App Store';
+            }
+        }
+
         window.onload = function() {
-            // Get URL components
-            const urlParams = new URLSearchParams(window.location.search);
-            const urlPath = window.location.pathname;
-            const urlHash = window.location.hash;
-            
-            // Check if we have a shared workout in the URL hash
-            if (urlHash && urlHash.startsWith('#sharedWorkout=')) {
-                // Extract the workout data from the hash
-                const workoutData = urlHash.substring('#sharedWorkout='.length);
-                window.location.href = "peakintervals://w/" + workoutData;
+            showStoreButton();
+
+            var payload = payloadFromUrl();
+            if (payload) {
+                openInApp('w/' + payload);
                 return;
             }
-            
-            // Check if we have a workout ID in the query string (e.g. ?workout=...)
-            if (urlParams.has('workout')) {
-                const workoutData = urlParams.get('workout');
-                window.location.href = "peakintervals://w/" + workoutData;
-                return;
-            }
-            
-            // Check if URL path has workout data
-            if (urlPath.includes('/w/')) {
-                // Extract the workout data from the path
-                const parts = urlPath.split('/w/');
-                if (parts.length > 1) {
-                    const workoutData = parts[1].replace(/\/$/, ''); // Remove trailing slash if present
-                    window.location.href = "peakintervals://w/" + workoutData;
-                    return;
-                }
-            }
-            
-            // Check if we need to extract the original path from the referrer
-            const referrer = document.referrer;
-            if (referrer && referrer.includes('/w/')) {
-                const parts = referrer.split('/w/');
-                if (parts.length > 1) {
-                    const workoutData = parts[1].replace(/\/$/, ''); // Remove trailing slash if present
-                    window.location.href = "peakintervals://w/" + workoutData;
-                    return;
-                }
-            }
-            
-            // Fallback to regular path handling
-            let path = urlPath;
-            if (path.startsWith('/download')) {
+
+            // Non-workout links: carry the path through to the app.
+            var path = window.location.pathname;
+            if (path.indexOf('/download') === 0) {
                 path = path.substring('/download'.length) || '/';
             }
-            
-            // Use the path for deep linking for non-workout links
-            window.location.href = "peakintervals://" + path + window.location.search;
+            openInApp(path.replace(/^\//, '') + window.location.search);
         }
     </script>
 </head>
@@ -158,7 +180,8 @@ sitemap_exclude: true
         <h1>Opening Peak Intervals...</h1>
         <p class="message">If you have the app installed, click "Allow" when prompted.</p>
         <p class="message">Don't have the app yet?</p>
-        <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="app-store-button">
+        <!-- Label and href are swapped to Google Play on Android by showStoreButton(). -->
+        <a id="store-button" href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="app-store-button">
             Download from App Store
         </a>
         <div class="footer-links">
