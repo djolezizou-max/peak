@@ -48,6 +48,17 @@
     ],
     "redirects": [
         {
+            "source": "/:path((?!\\.well-known).*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "peakintervalapp.com"
+                }
+            ],
+            "destination": "https://www.peakintervalapp.com/:path",
+            "permanent": true
+        },
+        {
             "source": "/w/:path(.*)",
             "destination": "/download?workout=:path",
             "permanent": false
