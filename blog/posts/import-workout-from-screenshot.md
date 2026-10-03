@@ -142,7 +142,7 @@ That is a much better training loop than collecting inspiration without executio
 <div class="cta-box">
     <h3>Turn saved workouts into real workouts</h3>
     <p>If you already have screenshots sitting in your camera roll, Peak Interval helps you turn them into timers you can actually run on iPhone and Apple Watch.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## Final thought

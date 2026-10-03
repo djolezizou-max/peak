@@ -45,5 +45,5 @@ Peak Interval vs Seconds Pro comes down to complexity versus speed. For many use
 <div class="cta-box">
     <h3>Try the faster workflow</h3>
     <p>If you like the idea of a powerful interval timer but want a cleaner way to build and run workouts, Peak Interval is worth trying.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

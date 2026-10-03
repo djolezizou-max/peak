@@ -49,5 +49,5 @@ A good Hyrox interval timer helps you organize the workout before fatigue hits. 
 <div class="cta-box">
     <h3>Turn Hyrox-style training into a repeatable timer</h3>
     <p>Peak Interval helps you build station-based workouts quickly, save them once, and run them again from iPhone or Apple Watch.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

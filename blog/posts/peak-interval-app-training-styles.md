@@ -217,7 +217,7 @@ While the Peak Interval app focuses on timing rather than explicit tracking, you
 <div class="cta-box">
     <h3>One App, Unlimited Training Possibilities</h3>
     <p>From intense HIIT sessions to gentle recovery flows, the Peak Interval app adapts to any training style you prefer. Create your personalized workout library today and take control of your fitness journey.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ### Customization Tips for Different Training Environments

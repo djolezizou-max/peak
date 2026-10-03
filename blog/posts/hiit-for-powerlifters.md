@@ -167,7 +167,7 @@ The app's rest period timer functionality proves especially valuable for powerli
 <div class="cta-box">
     <h3>Precision Timing for Strength Athletes</h3>
     <p>Design custom HIIT protocols specifically for powerlifting with Peak Interval's specialized timing functions—maintaining conditioning without compromising your strength gains.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## The Balanced Approach to Powerlifting Performance

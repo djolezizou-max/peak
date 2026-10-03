@@ -175,7 +175,7 @@ shown to reverse age-related deterioration of muscle mitochondria.
         makes timing your workouts effortless. Create custom intervals or use our built-in templates for 
         different fitness goals.
     </p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+    <a href="/get" class="cta-button">
         Download Peak Interval
     </a>
 </div>
@@ -324,7 +324,7 @@ high-intensity intervals or tracking longer steady-state sessions.
         Whether you prefer HIIT, steady-state, or a combination of both, the Peak Interval app helps you time 
         your workouts with precision. Create custom intervals or use our templates to optimize your training.
     </p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+    <a href="/get" class="cta-button">
         Download Peak Interval
     </a>
 </div>

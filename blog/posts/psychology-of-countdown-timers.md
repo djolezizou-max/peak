@@ -160,7 +160,7 @@ The Peak Interval app allows you to customize these audio profiles to match your
 <div class="cta-box">
     <h3>Customize Your Psychological Edge</h3>
     <p>The Peak Interval app allows complete customization of visual displays and audio cues to match your unique psychological response patterns, maximizing your mental edge during workouts.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ### Advanced Psychological Timer Features
@@ -257,5 +257,5 @@ The next time you watch those numbers ticking down, remember that your brain is 
 <div class="cta-box">
     <h3>Optimize Your Mental Edge</h3>
     <p>The Peak Interval app provides research-based timer customization options that work with your brain's natural response patterns, creating the perfect psychological environment for peak performance.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div> 

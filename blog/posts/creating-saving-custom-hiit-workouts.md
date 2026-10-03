@@ -148,7 +148,7 @@ Need inspiration? Try these custom workout templates in the Peak Interval app:
 <div class="cta-box">
     <h3>Ready to create your custom HIIT workout?</h3>
     <p>Download Peak Interval now and start designing interval routines perfectly tailored to your fitness goals!</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## Tips for Effective Custom Workouts

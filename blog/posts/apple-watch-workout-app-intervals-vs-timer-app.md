@@ -52,5 +52,5 @@ The built-in intervals are good. They are just built for the simple case, and st
 <div class="cta-box">
     <h3>For the sessions the stock builder cannot hold</h3>
     <p>Peak Interval handles nested sets, per-phase cues and a proper prep phase, then runs the whole thing from your wrist.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

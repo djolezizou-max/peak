@@ -229,7 +229,7 @@ The Peak Interval app offers several features that are particularly well-suited 
 <div class="cta-box">
     <h3>Perfect Timing for Every Step</h3>
     <p>Stop worrying about counting intervals during your stair workouts. The Peak Interval app handles precise timing so you can focus on form, intensity, and conquering each step.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ### Sample Timer Settings for Different Stair Workouts
@@ -392,5 +392,5 @@ The next time you see a staircase, look beyond its utilitarian purpose and recog
 <div class="cta-box">
     <h3>Step Up Your Interval Game</h3>
     <p>The Peak Interval timer app makes stair workouts more effective with precise timing, audio cues, and customizable intervals tailored to your staircase and fitness level.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div> 

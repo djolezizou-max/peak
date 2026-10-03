@@ -213,7 +213,7 @@ The Peak Interval app excels at creating this seamless experience:
 <div class="cta-box">
     <h3>Precision Timing for Peak Performance</h3>
     <p>Stop leaving your rest and preparation intervals to chance. The Peak Interval app gives you complete control over every aspect of your workout timing for maximum efficiency and results.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ### Troubleshooting Common Rest/Prep Time Issues

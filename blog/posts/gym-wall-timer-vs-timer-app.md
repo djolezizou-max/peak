@@ -52,5 +52,5 @@ The middle path is the one most solo garage lifters land on and rarely name out 
 <div class="cta-box">
     <h3>Before you spend £400 on a clock</h3>
     <p>Peak Interval runs nested sets, per-phase audio cues and saved workouts from your wrist — no phone on the floor, no rebuilding the session every week.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

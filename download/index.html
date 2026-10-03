@@ -150,6 +150,11 @@ sitemap_exclude: true
             if (isAndroid) {
                 store.href = PLAY_STORE_URL;
                 store.textContent = 'Get it on Google Play';
+            } else if (!/iphone|ipad|ipod|macintosh/i.test(navigator.userAgent)) {
+                // Windows, Linux, ChromeOS: no way to tell which phone
+                // they own, so /get offers both stores.
+                store.href = '/get';
+                store.textContent = 'Get the app';
             } else {
                 store.href = APP_STORE_URL;
                 store.textContent = 'Download from App Store';

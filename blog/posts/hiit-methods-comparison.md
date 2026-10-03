@@ -174,7 +174,7 @@ The Peak Interval app is designed to support all interval training protocols:
 <div class="cta-box">
     <h3>One Timer for All Interval Methods</h3>
     <p>Whether you prefer Tabata, traditional HIIT, SIT, or HIIS, the Peak Interval app has you covered with customizable timers for any protocol. Experiment with different methods to find what works best for your fitness journey!</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 Understanding the nuances between these interval training methods empowers you to make informed choices about your workout routine. Remember that the "best" method is ultimately the one that you enjoy and can perform consistently. Experiment with different protocols, listen to your body, and adjust as needed to create a sustainable approach to interval training that delivers results. 

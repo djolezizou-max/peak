@@ -172,7 +172,7 @@ The Peak Interval app is versatile enough to support both timer-based and rep-ba
 <div class="cta-box">
     <h3>Ready to try both HIIT approaches?</h3>
     <p>Download Peak Interval now and experiment with both timer-based and rep-based workouts to discover which works best for your goals!</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## Sample Workouts to Try

@@ -48,7 +48,7 @@ Some people simply feel better training fasted. They report less digestive disco
 <div class="cta-box">
     <h3>Track Your Intervals With Precision, Whatever You Eat</h3>
     <p>Fasted or fed, the only way to know if your fueling strategy is working is to track how your performance changes over time. Peak Interval gives you precise interval timing, customizable work-to-rest ratios, and a clean interface that lets you focus on output instead of the timer.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## When Fed HIIT Is the Better Choice

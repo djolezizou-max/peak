@@ -60,5 +60,5 @@ Do that and the session becomes what you actually wanted when you got on: eight 
 <div class="cta-box">
     <h3>Bring your own intervals to any treadmill</h3>
     <p>Peak Interval lets you build work and recovery blocks with a prep phase and spoken cues, then run them from your iPhone or Apple Watch on whatever machine is free.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

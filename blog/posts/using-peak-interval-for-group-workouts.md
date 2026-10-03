@@ -112,7 +112,7 @@ In larger spaces or with divided group formations, the "zone coaching" method pr
 <div class="cta-box">
     <h3>Lead Better Group Workouts</h3>
     <p>Download Peak Interval today to transform your group training sessions with professional-quality timing and customizable intervals.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## Planning and Progression for Recurring Groups

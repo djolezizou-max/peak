@@ -97,7 +97,7 @@ Manual timing during Tabata is difficult and distracting. A dedicated timer is e
     <p>
         The Peak Interval app has a dedicated Tabata preset! Just select it and go. You can also customize the sounds and prep time to perfectly suit your **Tabata workouts**.
     </p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">
+    <a href="/get" class="cta-button">
         Download Peak Interval
     </a>
 </div>

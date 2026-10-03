@@ -78,7 +78,7 @@ This document outlines the steps to create a new blog post now that the site use
         <div class="cta-box">
             <h3>Check this out!</h3>
             <p>Some content.</p>
-            <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+            <a href="/get" class="cta-button">Download Peak Interval</a>
         </div>
         ```
 

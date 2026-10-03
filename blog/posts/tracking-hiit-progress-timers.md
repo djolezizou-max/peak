@@ -272,7 +272,7 @@ The Peak Interval app offers several features that enhance your ability to track
 <div class="cta-box">
     <h3>Track Your Progress with Precision</h3>
     <p>Stop guessing whether your HIIT workouts are actually improving your fitness. The Peak Interval app provides the perfect foundation for systematic progress tracking—no fancy equipment required.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ### Sample Tracking Workout: The Four-Week Progress Test

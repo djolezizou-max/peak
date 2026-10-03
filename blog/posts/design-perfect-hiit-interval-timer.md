@@ -220,7 +220,7 @@ The Peak Interval app offers comprehensive customization to implement all the ti
 <div class="cta-box">
     <h3>Design Your Perfect Timer Today</h3>
     <p>Stop guessing at your intervals or using generic timers that don't match your specific goals. The Peak Interval app gives you complete control over your HIIT timing for maximum results.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ### Adapting Your Timer as You Progress

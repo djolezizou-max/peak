@@ -39,5 +39,5 @@ If you are deciding between Peak Interval vs Tabata Stopwatch Pro, Peak Interval
 <div class="cta-box">
     <h3>Go beyond one fixed timer pattern</h3>
     <p>Peak Interval is built for Tabata, EMOM, HIIT, boxing rounds, and custom workouts, all in one cleaner workflow.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

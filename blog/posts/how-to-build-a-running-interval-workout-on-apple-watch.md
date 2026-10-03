@@ -47,5 +47,5 @@ The best running interval workout on Apple Watch is one you can follow without f
 <div class="cta-box">
     <h3>Run interval workouts from your wrist</h3>
     <p>Peak Interval makes it easy to create running intervals on iPhone and launch them on Apple Watch so your workouts stay structured without extra friction.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

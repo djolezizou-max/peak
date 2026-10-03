@@ -63,5 +63,5 @@ Get that right and the format does what it was designed to do: enforce a pace yo
 <div class="cta-box">
     <h3>Set an EMOM up once and repeat it forever</h3>
     <p>Peak Interval builds repeating minute blocks with named phases, prep time and spoken cues, on iPhone and Apple Watch.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

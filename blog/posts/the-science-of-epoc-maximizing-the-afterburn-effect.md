@@ -89,7 +89,7 @@ Ready to precisely control your work and rest intervals to optimize your HIIT se
 <div class="cta-box">
     <h3>Maximize Your Afterburn with Peak Interval!</h3>
     <p>Design and execute your HIIT workouts with precision. The <strong>Peak Interval app</strong> allows you to customize every aspect of your session, helping you push your limits and enhance your post-exercise oxygen consumption. Download today and take your training to the next level!</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval on the App Store</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ---

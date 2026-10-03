@@ -51,5 +51,5 @@ If you want the best interval timer for HIIT, Peak Interval is worth a serious l
 <div class="cta-box">
     <h3>Use a HIIT timer that does not slow you down</h3>
     <p>Peak Interval is built to help you create, save, and run HIIT workouts quickly so the timer feels like part of the workout, not extra admin.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

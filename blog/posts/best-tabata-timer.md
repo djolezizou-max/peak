@@ -47,5 +47,5 @@ If you are looking for the best Tabata timer, Peak Interval is worth trying. It 
 <div class="cta-box">
     <h3>Keep Tabata simple and repeatable</h3>
     <p>Peak Interval helps you build Tabata workouts quickly, save them once, and run them again on iPhone or Apple Watch without extra setup.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

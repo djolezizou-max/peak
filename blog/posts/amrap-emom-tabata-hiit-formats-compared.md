@@ -196,7 +196,7 @@ The structure of your HIIT workout is only as effective as your ability to time 
 <div class="cta-box">
     <h3>Perfect Timing for Every Format</h3>
     <p>Stop worrying about watching the clock during your HIIT workouts. Peak Interval handles the timing so you can focus 100% on your performance, whether you're doing AMRAP, EMOM, Tabata, or custom intervals.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
 
 ## Sample Week: Combining Different HIIT Formats
@@ -257,5 +257,5 @@ Whatever format you choose, the principles remain the same: work hard, maintain 
 <div class="cta-box">
     <h3>Take Your HIIT to the Next Level</h3>
     <p>The Peak Interval app makes it easy to switch between different HIIT formats, customize your workouts, and track your progress. Try it today and experience the difference proper timing makes in your HIIT results.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div> 

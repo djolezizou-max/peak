@@ -51,5 +51,5 @@ If your priority is the best all-around Apple Watch interval timer for real trai
 <div class="cta-box">
     <h3>Use your interval timer where you actually train</h3>
     <p>Peak Interval is built for iPhone and Apple Watch, so you can create workouts quickly and run them from your wrist without the usual setup friction.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

@@ -1,0 +1,115 @@
+---
+sitemap_exclude: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Peak Interval</title>
+
+    <!--
+      One download link for every platform. Phones normally never see this
+      page: vercel.json redirects /get to the matching store by User-Agent
+      before it is served. The script below covers what the header match
+      misses (iPadOS Safari reports itself as a Mac), and everyone else —
+      desktops, unknown devices — gets both store buttons.
+    -->
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.peakintervalapp.com/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <meta property="og:title" content="Peak Interval: HIIT & Interval Timer">
+    <meta property="og:description" content="Download Peak Interval for iPhone, Apple Watch, or Android.">
+    <meta property="og:image" content="https://www.peakintervalapp.com/assets/app_icon.png">
+    <meta property="og:url" content="https://www.peakintervalapp.com/get">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #181F3B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .stores {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .app-store-button {
+            background: #FF9500;
+            color: black;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+            display: inline-block;
+            transition: all 0.2s;
+            font-size: 18px;
+        }
+        .app-store-button:hover {
+            background: #FFB340;
+            transform: scale(1.02);
+        }
+        .footer-links {
+            margin-top: 40px;
+        }
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 10px;
+        }
+    </style>
+    <script>
+        var APP_STORE_URL = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716";
+        var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.roli.intervals";
+        var ua = navigator.userAgent;
+        var isAndroid = /android/i.test(ua);
+        // iPadOS 13+ Safari sends a Mac User-Agent; touch support gives it away.
+        var isApple = /iphone|ipad|ipod/i.test(ua) ||
+            (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+        if (isAndroid) {
+            window.location.replace(PLAY_STORE_URL);
+        } else if (isApple) {
+            window.location.replace(APP_STORE_URL);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="/assets/app_icon.png" alt="Peak Interval App Icon" class="app-icon">
+        <h1>Get Peak Interval</h1>
+        <div class="stores">
+            <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="app-store-button">Download on the App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.roli.intervals" class="app-store-button">Get it on Google Play</a>
+        </div>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

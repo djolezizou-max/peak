@@ -55,5 +55,5 @@ The protocol has survived decades of research because it is simple. Keep the exe
 <div class="cta-box">
     <h3>Build the 4x4 once and run it from your wrist</h3>
     <p>Peak Interval handles long work and recovery blocks with a prep phase, spoken cues and round counts, on iPhone or Apple Watch.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

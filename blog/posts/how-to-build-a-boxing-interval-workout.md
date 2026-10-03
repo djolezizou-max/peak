@@ -62,5 +62,5 @@ The best boxing interval workout is one you can repeat consistently. Start with 
 <div class="cta-box">
     <h3>Build boxing rounds once and reuse them</h3>
     <p>Peak Interval makes it easy to create boxing workouts with clean rounds, rest periods, and repeatable timer structures for iPhone and Apple Watch.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>

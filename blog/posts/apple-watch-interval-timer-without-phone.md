@@ -48,5 +48,5 @@ Set it up once with the phone beside you, confirm the workout is there, and then
 <div class="cta-box">
     <h3>Leave the phone in the locker</h3>
     <p>Peak Interval saves your workouts to the wrist, so the session, the cues and the round counting all run from the Watch alone.</p>
-    <a href="https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" class="cta-button">Download Peak Interval</a>
+    <a href="/get" class="cta-button">Download Peak Interval</a>
 </div>
