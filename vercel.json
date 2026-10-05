@@ -59,6 +59,36 @@
             "permanent": true
         },
         {
+            "source": "/blog/posts/amrap-emom-hiit-formats-compared",
+            "destination": "/blog/posts/amrap-emom-tabata-hiit-formats-compared",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/emom-vs-amrap-vs-tabata-different-hiit-formats-compared",
+            "destination": "/blog/posts/amrap-emom-tabata-hiit-formats-compared",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hydration-strategies-for-hiit",
+            "destination": "/blog/posts/fasted-vs-fed-hiit",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/combining-hiit-other-fitness",
+            "destination": "/blog/posts/hiit-for-powerlifters",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/syncing-music-hiit-intervals",
+            "destination": "/blog/posts/interval-timer-with-music",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/polarized-training-combining-hiit-with-very-low-intensity-work",
+            "destination": "/blog/posts/hiit-vs-steady-state",
+            "permanent": true
+        },
+        {
             "source": "/get",
             "has": [
                 {
