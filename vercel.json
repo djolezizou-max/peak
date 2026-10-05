@@ -89,6 +89,156 @@
             "permanent": true
         },
         {
+            "source": "/blog/posts/hiit-for-runners",
+            "destination": "/blog/posts/how-to-build-a-running-interval-workout-on-apple-watch",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-endurance-athletes",
+            "destination": "/blog/posts/norwegian-4x4-interval-timer",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/lactate-threshold-and-hiit",
+            "destination": "/blog/posts/norwegian-4x4-interval-timer",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/heart-rate-training-hiit-zones",
+            "destination": "/blog/posts/norwegian-4x4-interval-timer",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-track-sprint-workouts",
+            "destination": "/blog/posts/treadmill-interval-workout-timer",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-strength",
+            "destination": "/blog/posts/hiit-for-powerlifters",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/partner-hiit-workouts",
+            "destination": "/blog/posts/using-peak-interval-for-group-workouts",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/protein-needs-hiit-training",
+            "destination": "/blog/posts/fasted-vs-fed-hiit",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/what-is-hiit",
+            "destination": "/blog/posts/hiit-methods-comparison",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-circuit-training-guide",
+            "destination": "/blog/posts/hiit-methods-comparison",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/low-impact-hiit-workouts",
+            "destination": "/blog/posts/hiit-vs-steady-state",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-weight-loss",
+            "destination": "/blog/posts/the-science-of-epoc-maximizing-the-afterburn-effect",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-recovery-window",
+            "destination": "/blog/posts/the-science-of-epoc-maximizing-the-afterburn-effect",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/measuring-hiit-intensity",
+            "destination": "/blog/posts/tracking-hiit-progress-timers",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/30-day-hiit-challenge",
+            "destination": "/blog/posts/tracking-hiit-progress-timers",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/transformation-stories-hiit",
+            "destination": "/blog/posts/tracking-hiit-progress-timers",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/outdoor-hiit-workouts-nature",
+            "destination": "/blog/posts/stair-hiit-workouts",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-core-workouts",
+            "destination": "/blog/workout-guides",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-ladder-workouts",
+            "destination": "/blog/workout-guides",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/jump-rope-hiit-workouts",
+            "destination": "/blog/workout-guides",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-beginners-start-safely",
+            "destination": "/blog/hiit-fundamentals",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-seniors",
+            "destination": "/blog/hiit-fundamentals",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-teens",
+            "destination": "/blog/hiit-fundamentals",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/pregnancy-safe-hiit",
+            "destination": "/blog/hiit-fundamentals",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/athletes-hiit-pro-training",
+            "destination": "/blog/specialized-hiit-training",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-sports-performance",
+            "destination": "/blog/specialized-hiit-training",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-and-hormones",
+            "destination": "/blog/advanced-hiit-concepts",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-and-muscle-fiber-types-training-for-your-genetic-makeup",
+            "destination": "/blog/advanced-hiit-concepts",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-mental-health-benefits",
+            "destination": "/blog/advanced-hiit-concepts",
+            "permanent": true
+        },
+        {
+            "source": "/blog/posts/hiit-for-stress-relief",
+            "destination": "/blog/advanced-hiit-concepts",
+            "permanent": true
+        },
+        {
             "source": "/get",
             "has": [
                 {
