@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-no-subscription",
-      "theme": "Interval timers without a subscription: what the free tiers actually take away",
-      "hook": "Almost every timer in the store is free to install, and almost every one of them puts something you need behind a monthly charge — the trick is knowing which limits you will hit in week two.",
-      "query": "interval timer without subscription",
-      "evidence": "Requests for a timer with no subscription, no ads and a one-off price are one of the most repeated asks in r/hiit and r/crossfit, and are the stated reason several people gave for building their own app instead.",
-      "pain_quotes": [
-        "Is happy to pay once and refuses to pay monthly for a countdown.",
-        "Hits a three-saved-workouts cap the moment they build a real training week.",
-        "Finds the ad appears exactly at the round change, when the screen mattered."
-      ],
-      "category": "Buying Guides",
-      "distinctFrom": "best-tabata-timer (0.28) asks which app runs 20/10 intervals best and treats price as a footnote; this post is the pricing question on its own — subscription versus one-off versus ad-supported, which limits free tiers actually impose (saved workout caps, Watch access, custom cues), and how to tell before you install.",
-      "searchEvidence": "Keyword research: 'free interval timer' 260/mo, 'free workout timer' 90/mo; supported by repeated no-subscription phrasing in the pain signals.",
-      "imagePrompt": "Close overhead of a phone face down on a gym bench next to a water bottle and a wrapped skipping rope, worn wooden bench, soft window light"
-    },
-    {
       "slug": "timer-for-reps-and-timed-rounds",
       "theme": "Building one session where some rounds are counted in reps and others in seconds",
       "hook": "Real training is rarely all clock or all reps — fifty squats then a sixty-second plank then ten push-ups — and almost every timer forces you to pick one and fake the other.",
