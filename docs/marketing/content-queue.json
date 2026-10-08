@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "timer-for-reps-and-timed-rounds",
-      "theme": "Building one session where some rounds are counted in reps and others in seconds",
-      "hook": "Real training is rarely all clock or all reps — fifty squats then a sixty-second plank then ten push-ups — and almost every timer forces you to pick one and fake the other.",
-      "query": "interval timer for reps and time",
-      "evidence": "An r/hiit thread laid out exactly this structure round by round and asked whether any app supports it; the replies were mostly other people saying they wanted the same thing.",
-      "pain_quotes": [
-        "Wants a stopwatch for the rep rounds and a countdown for the timed ones, in one workout.",
-        "Guesses at how long a rep block will take and ends up standing around or cut short.",
-        "Gives up and runs two apps side by side, then loses the place in both."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "timer-vs-rep-based-hiit (0.16) argues which of the two approaches suits your goals and treats hybrids as a concept; this post skips the argument and answers the build question — how to lay out a single session that alternates counted rounds and timed rounds, including how to size a rep block so the timer stays honest.",
-      "searchEvidence": "Pain-signal theme; keyword check returned no volume for the exact phrasing, which the tool documents as unreliable rather than evidence of no demand.",
-      "imagePrompt": "A person kneeling on a mat between exercises in a living room, resistance band and a single kettlebell nearby, sofa pushed back against the wall, evening lamp light"
-    },
-    {
       "slug": "how-to-run-an-amrap-workout",
       "theme": "How to run an AMRAP workout: scoring, pacing and the time cap",
       "hook": "AMRAP is one line of instructions and a wide open pace decision — the clock counts down, the score counts up, and most people blow the first three minutes.",
