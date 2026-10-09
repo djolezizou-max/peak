@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "how-to-run-an-amrap-workout",
-      "theme": "How to run an AMRAP workout: scoring, pacing and the time cap",
-      "hook": "AMRAP is one line of instructions and a wide open pace decision — the clock counts down, the score counts up, and most people blow the first three minutes.",
-      "query": "amrap workout",
-      "evidence": "r/crossfit 'plateau to PB' thread (7 upvotes, 10 comments, 2026-06-09) is entirely about pacing rounds against a target time rather than going out hot and gassing; the same mistake defines a badly run AMRAP.",
-      "pain_quotes": [
-        "I go out too hard on round one and then bleed time on every round after it.",
-        "I never know whether to score rounds, reps or both, so my log is useless for comparison.",
-        "Nothing tells me mid-workout whether I am ahead or behind the pace I wanted."
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "how-to-run-an-emom-workout — that post answers how to size rep counts so a fixed minute leaves you rest; this one answers the opposite problem, how to pace and score work when the clock is fixed and the volume is not.",
-      "searchEvidence": "Striking distance: 'amrap vs emom' 8 impressions at position 37.5 and 'emom vs amrap' 7 at 43.0 over 90 days, against position 8.9 for the three-way 'emom vs amrap vs tabata' — Google associates us with the format cluster but has nothing AMRAP-first to rank. Keyword Planner: 'amrap workout' 3,600/mo LOW, 'amrap' 9,900/mo LOW.",
-      "imagePrompt": "A chalky gym floor mid-workout, a rower and a loaded barbell in frame, an athlete mid-transition between the two, morning light through high windows, no clocks or screens visible"
-    },
-    {
       "slug": "best-boxing-round-timer",
       "theme": "Best boxing round timer: three-minute rounds, the ten-second warning and the bell",
       "hook": "A boxing round is not a HIIT interval — it needs a bell at both ends, a warning before the end of the round, and a rest block you do not have to touch the phone to start.",
