@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "best-boxing-round-timer",
-      "theme": "Best boxing round timer: three-minute rounds, the ten-second warning and the bell",
-      "hook": "A boxing round is not a HIIT interval — it needs a bell at both ends, a warning before the end of the round, and a rest block you do not have to touch the phone to start.",
-      "query": "boxing round timer",
-      "evidence": "Generic interval apps keep coming up short in gym threads because a round timer needs a distinct end-of-round cue and a clapper warning, not the same beep at every phase change.",
-      "pain_quotes": [
-        "Most timers give me one identical beep for work and rest so I never know which one just ended.",
-        "I want the ten-second warning before the bell, and almost nothing has it.",
-        "Between rounds I am on the bag, not near the phone, so the timer has to run itself."
-      ],
-      "category": "Buying Guides",
-      "distinctFrom": "how-to-build-a-boxing-interval-workout — that post answers how to structure the rounds and what to do inside them; this one answers which timer to pick and which round-timer features actually matter when you are choosing an app.",
-      "searchEvidence": "Keyword Planner: 'round timer boxing' 720/mo HIGH, 'boxing interval timer' 110/mo HIGH, 'mma round timer' 110/mo LOW, 'round timer' 480/mo MEDIUM.",
-      "imagePrompt": "A heavy bag swinging in a boxing gym, wrapped hands resting on the bag, worn floorboards and a rope in the background, hard side light, no clocks or screens in frame"
-    },
-    {
       "slug": "40-20-interval-timer",
       "theme": "How to set up a 40/20 interval timer (and when 45/15 is the better ratio)",
       "hook": "Forty on, twenty off is the ratio most class formats settle on, and getting it right is less about the numbers than about where the transition seconds go.",
