@@ -41,3 +41,30 @@ Google-held entries.
 
 `Intervals/Info.plist` must list `applinks:www.peakintervalapp.com`. Declaring
 only the apex does not work, for the redirect reason above.
+
+**Scope the paths with `components`, and only `components`.** On iOS 13 and up —
+which is everything, the app's deployment target is 18.0 — the system reads
+`components` and **ignores `paths` entirely** whenever both are present. A
+`components` entry with no `/` key places no constraint on the path, so it
+matches *every* URL on the domain.
+
+That is exactly what happened on 2026-10-11: the file carried a correct-looking
+`"paths": ["/download/w/*", "/w/*"]` beside a single component that only had a
+`?` query matcher and a `fallback` key, so iOS matched the whole domain and
+every `/blog/posts/*` link opened the app instead of the page. Note also that
+`fallback` is not part of the applinks schema at all — Apple ignores unknown
+keys, so it silently did nothing. To exclude a pattern, use `"exclude": true` on
+its own component.
+
+Each path the app should claim gets its own component:
+
+```json
+"components": [
+    { "/": "/w/*" },
+    { "/": "/download/w/*" }
+]
+```
+
+After any change, check that a blog URL still opens in Safari and a `/w/` link
+still opens the app. Apple caches the AASA, so give it a few minutes, or
+delete and reinstall the app to force a refetch.
