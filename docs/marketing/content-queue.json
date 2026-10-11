@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "40-20-interval-timer",
-      "theme": "How to set up a 40/20 interval timer (and when 45/15 is the better ratio)",
-      "hook": "Forty on, twenty off is the ratio most class formats settle on, and getting it right is less about the numbers than about where the transition seconds go.",
-      "query": "40 20 interval timer",
-      "evidence": "The 40/20 and 45/15 ratios are the default in bootcamp and circuit programming, and the search phrasing for them is overwhelmingly 'set up a timer for X', not 'what is X'.",
-      "pain_quotes": [
-        "Twenty seconds sounds like enough rest until you have to move to a different station in it.",
-        "I set 40/20 and then spend the first five seconds of work still walking to the kettlebell.",
-        "I want to change the whole session from 40/20 to 45/15 without editing every round."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "best-tabata-timer — that post answers which app to buy for a fixed 20/10 protocol; this one answers how to build and adjust a 40/20 or 45/15 session, including where the transition time comes from, in a timer you already have.",
-      "searchEvidence": "Keyword Planner: 'interval timer 45 seconds' 480/mo LOW, '45 sec interval timer' 480/mo LOW, '45 15 interval timer' 210/mo LOW, '40 20 interval timer' 170/mo LOW, '40 20 hiit timer' 110/mo, 'hiit timer 40 20' 110/mo, 'timer 45 seconds 15 seconds rest' 140/mo — roughly 1,700/mo across the ratio cluster.",
-      "imagePrompt": "Three kettlebells of different sizes spaced out on a rubber gym floor with a jump rope coiled beside them, a person mid-stride between stations, overhead gym lighting, no screens or clocks"
-    },
-    {
       "slug": "circuit-training-timer",
       "theme": "Circuit training timer: rotating stations without losing the round",
       "hook": "A circuit is not one repeated interval — it is a different exercise at every station, a transition between each, and a round count you lose the moment you stop looking.",
