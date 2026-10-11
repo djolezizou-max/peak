@@ -83,8 +83,19 @@ sitemap_exclude: true
         }
     </style>
     <script>
-        var APP_STORE_URL = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716";
-        var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.roli.intervals";
+        // Where the visitor came from, as ?s=instagram (or utm_source, if a shortener rewrote it).
+        // Phones are redirected by vercel.json before this runs and it tags the store link there;
+        // this covers the ones that reach the page — iPadOS, and desktop visitors who click a button.
+        // Apple reads ct (App Analytics campaigns), Play reads referrer (the Install Referrer API).
+        var params = new URLSearchParams(window.location.search);
+        var campaign = (params.get("s") || params.get("utm_source") || "")
+            .replace(/[^A-Za-z0-9_.-]/g, "").slice(0, 40);
+
+        var APP_STORE_URL = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716" +
+            (campaign ? "?ct=" + encodeURIComponent(campaign) + "&mt=8" : "");
+        var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.roli.intervals" +
+            (campaign ? "&referrer=" + encodeURIComponent("utm_source=" + campaign + "&utm_medium=social") : "");
+
         var ua = navigator.userAgent;
         var isAndroid = /android/i.test(ua);
         // iPadOS 13+ Safari sends a Mac User-Agent; touch support gives it away.
@@ -94,6 +105,15 @@ sitemap_exclude: true
             window.location.replace(PLAY_STORE_URL);
         } else if (isApple) {
             window.location.replace(APP_STORE_URL);
+        } else if (campaign) {
+            // Desktop: leave both buttons, but let them carry the campaign too.
+            document.addEventListener("DOMContentLoaded", function () {
+                var links = document.querySelectorAll(".app-store-button");
+                for (var i = 0; i < links.length; i++) {
+                    if (links[i].href.indexOf("apps.apple.com") !== -1) links[i].href = APP_STORE_URL;
+                    if (links[i].href.indexOf("play.google.com") !== -1) links[i].href = PLAY_STORE_URL;
+                }
+            });
         }
     </script>
 </head>

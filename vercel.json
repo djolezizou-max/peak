@@ -245,6 +245,74 @@
                     "type": "header",
                     "key": "user-agent",
                     "value": ".*[Aa]ndroid.*"
+                },
+                {
+                    "type": "query",
+                    "key": "s",
+                    "value": "(?<campaign>[A-Za-z0-9_.-]{1,40})"
+                }
+            ],
+            "destination": "https://play.google.com/store/apps/details?id=com.roli.intervals&referrer=utm_source%3D:campaign%26utm_medium%3Dsocial",
+            "permanent": false
+        },
+        {
+            "source": "/get",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "user-agent",
+                    "value": ".*[Aa]ndroid.*"
+                },
+                {
+                    "type": "query",
+                    "key": "utm_source",
+                    "value": "(?<campaign>[A-Za-z0-9_.-]{1,40})"
+                }
+            ],
+            "destination": "https://play.google.com/store/apps/details?id=com.roli.intervals&referrer=utm_source%3D:campaign%26utm_medium%3Dsocial",
+            "permanent": false
+        },
+        {
+            "source": "/get",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "user-agent",
+                    "value": ".*(iPhone|iPad|iPod).*"
+                },
+                {
+                    "type": "query",
+                    "key": "s",
+                    "value": "(?<campaign>[A-Za-z0-9_.-]{1,40})"
+                }
+            ],
+            "destination": "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716?ct=:campaign&mt=8",
+            "permanent": false
+        },
+        {
+            "source": "/get",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "user-agent",
+                    "value": ".*(iPhone|iPad|iPod).*"
+                },
+                {
+                    "type": "query",
+                    "key": "utm_source",
+                    "value": "(?<campaign>[A-Za-z0-9_.-]{1,40})"
+                }
+            ],
+            "destination": "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716?ct=:campaign&mt=8",
+            "permanent": false
+        },
+        {
+            "source": "/get",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "user-agent",
+                    "value": ".*[Aa]ndroid.*"
                 }
             ],
             "destination": "https://play.google.com/store/apps/details?id=com.roli.intervals",
