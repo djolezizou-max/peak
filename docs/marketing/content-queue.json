@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "circuit-training-timer",
-      "theme": "Circuit training timer: rotating stations without losing the round",
-      "hook": "A circuit is not one repeated interval — it is a different exercise at every station, a transition between each, and a round count you lose the moment you stop looking.",
-      "query": "circuit training timer",
-      "evidence": "r/bodyweightfitness threads like 'Why is the minimalist routine in a circuit?' and 'Costs and benefits of groups of sets vs. full circuits?' keep circling the same practical problem: circuits are easy to program and hard to actually run without something driving the rotation.",
-      "pain_quotes": [
-        "By station four I have lost count of which round I am on.",
-        "The timer treats every block the same, but I need longer at the rower than at the mat.",
-        "I end up shouting the station change myself instead of letting the app do it."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "apple-watch-workout-app-intervals-vs-timer-app — that post answers whether the stock watchOS interval feature is enough; this one answers how to build a multi-station circuit with per-station durations, named exercises and a round counter, whichever app you land on.",
-      "searchEvidence": "Keyword Planner: 'circuit timer' 320/mo LOW, 'circuit training timer' 170/mo LOW, 'circuit workout timer' 170/mo LOW, 'exercise circuit timer' 170/mo LOW — about 830/mo, all LOW competition.",
-      "imagePrompt": "A garage gym set up as four stations around the room — a bench, a rower, a set of dumbbells, an open mat — empty and ready, warm afternoon light through an open door, no screens or clocks"
-    },
-    {
       "slug": "crossfit-wod-timer",
       "theme": "Running a WOD timer off your phone when the gym clock is not yours to set",
       "hook": "Every box has a wall clock, and it is running the class's workout, not yours — here is how to drive For Time, AMRAP and EMOM from your own phone or wrist instead.",
