@@ -47,6 +47,118 @@
       "distinctFrom": "peak-interval-vs-smartwod — that comparison is about workout-generation workflow between two phone apps; this one is about a hardware-first competitor, where the question is whether you are buying a timer app or the remote control for a wall unit.",
       "searchEvidence": "Keyword Planner: 'gym clocks and timers' 480/mo HIGH, 'crossfit gym clock' 210/mo HIGH, 'workout clock' 390/mo HIGH, 'gym interval clock' 110/mo HIGH — commercial hardware intent the comparison series is built to intercept.",
       "imagePrompt": "A wall-mounted gym timer unit seen from a sharp angle so its face is not legible, blurred barbells and athletes in the background of a bright box, shallow depth of field"
+    },
+    {
+      "slug": "stair-climber-interval-workout",
+      "theme": "Running StairMaster intervals off your own timer instead of the machine's programs",
+      "hook": "The stair climber's built-in 'interval' program picks the levels and the timing for you — here is how to set your own level changes, recovery blocks and rounds on an interval timer and just follow the cue.",
+      "query": "stair climber intervals",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Google already shows stair-hiit-workouts for stair-interval queries at positions 18-47, so the domain is associated with the topic but has no machine-specific answer.",
+      "pain_quotes": [
+        "The machine's interval program jumps levels whenever it likes, not when I am ready.",
+        "I want two minutes hard, one minute easy, but the console only offers presets.",
+        "I keep looking down at the console to see how long is left in the push."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "stair-hiit-workouts — that post is bodyweight drills on a real staircase (step-ups, bounds, sprints); this one answers how to structure and time intervals on the stair-climber machine, where the variable is the level setting, not the exercise. Closer in shape to treadmill-interval-workout-timer, but a different machine and query.",
+      "searchEvidence": "Striking distance (GSC 90d): 'stairs hiit workout' 6 impressions at 40.5, 'stair sprints' 2 at 34.0, 'staircase workout' 2 at 18.0, 'climbing hiit classes' 7 at 11.3, plus 'stair climber intervals' 1 at 31 and 'stair climber interval workout' 3 at 46.7. Keyword Planner: 'stairmaster' 74,000/mo HIGH (equipment intent, not the target).",
+      "imagePrompt": "A person mid-climb on a stair-climber machine in a bright gym, side view, hands lightly on the rails, sweat on their shirt, the machine console turned away from camera and out of frame, morning light through tall windows"
+    },
+    {
+      "slug": "peak-interval-vs-gymboss",
+      "theme": "Peak Interval vs Gymboss: a clip-on interval timer versus a phone and Watch app",
+      "hook": "Gymboss is a beeping, vibrating box on your waistband with two intervals and a repeat count — here is exactly what an app adds, what it costs you, and who should keep the clip.",
+      "query": "gymboss interval timer",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Gymboss is the most-searched named interval timer in this run's keyword pull and the blog has no page on it.",
+      "pain_quotes": [
+        "Two intervals and a repeat count is all it does, and my workouts have more blocks than that.",
+        "I like that it vibrates on my hip without needing my phone out.",
+        "Setting it up with three buttons takes longer than the workout's first round."
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "peak-interval-vs-tabata-stopwatch-pro — a sibling in the vs-series (0.25) comparing two apps; this one compares an app against dedicated hardware, so the question is device vs phone (battery, buttons, vibration on the body, no screen), a different competitor and a different trade-off.",
+      "searchEvidence": "Keyword Planner: 'gymboss interval timer' 1,600/mo MEDIUM, 'gymboss' 880/mo LOW, 'gym boss timer' 480/mo HIGH, 'gymboss interval timer and stopwatch' 320/mo MEDIUM.",
+      "imagePrompt": "Close-up of a runner's waistband at a park track, a small plain clip-on device attached at the hip with no visible display, blurred track lanes behind, late-afternoon light"
+    },
+    {
+      "slug": "interval-timer-app-android",
+      "theme": "What to check before you trust an interval timer app on Android",
+      "hook": "On Android the timer is only half the question — battery optimisation, a locked screen and music apps all decide whether your cue actually fires at second 40. Here is what to test before your first session.",
+      "query": "interval timer app android",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Peak Interval now ships on Android (commit 0a3800d, 2026-10-02) and every existing buying guide is written from the iPhone/Apple Watch side.",
+      "pain_quotes": [
+        "The timer stops counting the moment my screen turns off.",
+        "Battery saver kills the app halfway through the session.",
+        "The beep is silent when Spotify is playing."
+      ],
+      "category": "Buying Guides",
+      "distinctFrom": "best-interval-timer-for-hiit — that guide picks a timer by workout features; this one answers the platform question Android users search for: which behaviours (background running, battery optimisation exemptions, audio ducking, notification controls) decide whether any timer works on their phone.",
+      "searchEvidence": "Keyword Planner: 'interval timer app android' 590/mo LOW; parent 'interval timer app' 2,400/mo LOW, 'workout timer app' 1,300/mo LOW.",
+      "imagePrompt": "A phone lying face-down on a rubber gym floor next to a resistance band and a water bottle, a person's feet in trainers mid-jump just behind it, soft warm light"
+    },
+    {
+      "slug": "interval-running-workout-timer",
+      "theme": "Timing outdoor running intervals off audio cues with the phone in your pocket",
+      "hook": "Interval runs fall apart when you keep checking your wrist on rep four — here is how to build warm-up, repeats and recovery jogs as one timer that talks you through the session.",
+      "query": "interval running workout",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. 'Interval running workout' is the largest in-lane cluster in this run's keyword pull, and it is a timing problem before it is a training one.",
+      "pain_quotes": [
+        "I lose count of which repeat I am on by the fifth one.",
+        "I keep glancing at my watch and it breaks my stride.",
+        "My recovery jogs keep getting longer because nothing tells me to go."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "how-to-build-a-running-interval-workout-on-apple-watch (0.15) — that post is the Watch build flow; this one is the phone-in-pocket, audio-first version and the session structure itself (warm-up, time-based repeats, recovery jogs, cool-down) for runners without a Watch. treadmill-interval-workout-timer covers the indoor case.",
+      "searchEvidence": "Keyword Planner: 'interval running workout' / 'interval training running' 14,800/mo LOW, 'interval running' 4,400/mo LOW, 'interval running app' 1,900/mo LOW, '5k interval workout' 3,600/mo LOW.",
+      "imagePrompt": "A runner mid-stride on an empty suburban road at dawn, earbuds in, phone in a zipped back pocket, breath visible in cool air, long shadows across the tarmac"
+    },
+    {
+      "slug": "walk-run-interval-timer",
+      "theme": "Setting up a walk-run interval timer and progressing the ratio week by week",
+      "hook": "Run one minute, walk two, repeat eight times — the plan is simple until you are counting it in your head on a pavement. How to build each week's ratio as a saved timer so you only follow the cue.",
+      "query": "walk run intervals",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Walk-run is a beginner timing problem with its own search cluster, distinct from performance interval running.",
+      "pain_quotes": [
+        "I keep losing track of whether I am on walk four or walk five.",
+        "Every week the plan changes the ratio and I have to rebuild the timer.",
+        "I need a cue I can hear without taking my phone out."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "interval-running-workout-timer (queued in the same batch) — that one is hard repeats for runners who already run; this answers the beginner run/walk method and how to step the ratio (1:2 to 2:1 to continuous) as a series of saved timers. Closest published is how-to-run-an-amrap-workout at only 0.14.",
+      "searchEvidence": "Keyword Planner: 'walk run intervals' 720/mo LOW, 'run and walk intervals' 720/mo LOW.",
+      "imagePrompt": "A beginner runner slowing from a jog to a walk on a tree-lined park path, hands on hips, relaxed smile, autumn leaves on the ground, soft overcast light"
+    },
+    {
+      "slug": "emom-meaning",
+      "theme": "EMOM meaning: what 'every minute on the minute' actually asks the clock to do",
+      "hook": "EMOM means start a new set at the top of every minute and rest whatever is left — plus E2MOM, E90S and the alternating versions, and what each one looks like on a timer.",
+      "query": "emom meaning",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. GSC shows definitional EMOM queries ('what does emom stand for in fitness', 'what does every minute on the minute mean') landing on us at positions 48-97 with no page built to answer them.",
+      "pain_quotes": [
+        "Does EMOM mean I rest a full minute or just what is left?",
+        "What is the difference between EMOM and E2MOM?",
+        "The workout says alternating EMOM and I do not know how to set it."
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "how-to-run-an-emom-workout — that post assumes you know EMOM and answers how to size reps and pace it; this one answers the definitional query and the variants (E2MOM, E90S, alternating/odd-even EMOM) and how each maps onto a timer. is-emom-hiit answers whether it counts as HIIT.",
+      "searchEvidence": "Keyword Planner: 'emom meaning' 3,600/mo LOW, 'emom' 5,400/mo LOW, 'emom time' 1,900/mo LOW, 'emom workout meaning' 320/mo LOW. GSC 90d: 'what does emom stand for in fitness' 2 impressions at 48.0.",
+      "imagePrompt": "An athlete in a garage gym dropping a kettlebell after a set and stepping back to breathe, chalk on their hands, a second kettlebell waiting on the floor, warm side light, no clocks visible"
+    },
+    {
+      "slug": "rowing-machine-interval-workout",
+      "theme": "Running rowing-machine intervals off your own timer instead of the monitor",
+      "hook": "The rower's monitor can do intervals, but setting them up mid-session is a maze of buttons — how to structure timed pieces and recovery paddles on a timer you can hear over the flywheel.",
+      "query": "rowing machine interval workout",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Rower intervals are the same 'run it off your own timer' problem treadmill-interval-workout-timer answers, on a machine the blog does not cover.",
+      "pain_quotes": [
+        "Programming intervals on the rower monitor takes longer than the warm-up.",
+        "I cannot hear a phone beep over the flywheel.",
+        "I want 250 metre pieces some days and timed pieces others."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "treadmill-interval-workout-timer — same pattern on a different machine; this answers rower-specific choices (time vs distance pieces, stroke-rate targets for each block, recovery paddle length, cues loud enough over the fan). Gate's closest is retired hiit-circuit-training-guide (0.23), a generic circuit guide with no rower content.",
+      "searchEvidence": "Keyword Planner: 'rowing machine interval workout' 390/mo LOW, 'rowing interval workout' 390/mo LOW, 'interval training on rower' 390/mo LOW, 'hiit rowing machine' 480/mo HIGH.",
+      "imagePrompt": "A person rowing on an indoor rowing machine at the catch position, legs compressed, arms extended, focused expression, gym in soft focus, the monitor angled away out of frame"
     }
   ],
   "retired": [
