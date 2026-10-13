@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "crossfit-wod-timer",
-      "theme": "Running a WOD timer off your phone when the gym clock is not yours to set",
-      "hook": "Every box has a wall clock, and it is running the class's workout, not yours — here is how to drive For Time, AMRAP and EMOM from your own phone or wrist instead.",
-      "query": "wod timer",
-      "evidence": "r/crossfit product threads (GymNext paywall thread, 6 upvotes/16 comments; 'Timer with a set counter', 12 comments) show people running their own clock rather than the wall unit, and hitting app limits when they do.",
-      "pain_quotes": [
-        "The wall clock is on the class WOD and I am doing my own accessory work in the corner.",
-        "Open gym means no clock at all, so I am squinting at a phone stopwatch.",
-        "For Time counts up, AMRAP counts down, and I need both without rebuilding the timer."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "gym-wall-timer-vs-timer-app — that post argues which of the two you should rely on; this one assumes the wall clock is unavailable or busy and answers how to set up the three CrossFit scoring formats on your own device.",
-      "searchEvidence": "Keyword Planner: 'crossfit timer' 480/mo MEDIUM, 'wod timer' 320/mo LOW, 'crossfit gym timer' 480/mo MEDIUM, 'crossfit gym clock' 210/mo HIGH. Striking distance: 'emom clock' 3 impressions at position 49.0 and 'emom timer' 3 at 41.3 over 90 days.",
-      "imagePrompt": "A wide shot of a CrossFit box between classes, barbells loaded on the floor and rings hanging still, chalk dust in a shaft of light, no clocks or screens visible in frame"
-    },
-    {
       "slug": "interval-timer-with-set-counter",
       "theme": "Interval timer with a set counter: counting rounds you advance by hand",
       "hook": "Some work cannot be put on a fixed clock — you finish the set when you finish it — but the rest still needs timing and the sets still need counting.",
