@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-with-set-counter",
-      "theme": "Interval timer with a set counter: counting rounds you advance by hand",
-      "hook": "Some work cannot be put on a fixed clock — you finish the set when you finish it — but the rest still needs timing and the sets still need counting.",
-      "query": "interval timer with set counter",
-      "evidence": "r/crossfit 'Timer with a set counter' (12 comments) asks for exactly this: tap to start a rest countdown after each set, log how many sets that makes, and do it on the Watch — the one app that has the feature has no Watch app.",
-      "pain_quotes": [
-        "I want to tap when the set is done and have the rest start itself.",
-        "The timer should sit still until I tell it the next set has finished, not race ahead.",
-        "The phone app does this but there is nothing on the watch, which is where my hands are."
-      ],
-      "category": "App Features",
-      "distinctFrom": "rest-timer-between-sets — that post answers how long to rest and why rest drifts; this one answers the mechanical question of how to run a manually advanced timer that also keeps the set count, so the workout stops when the set count says so rather than when a fixed clock does.",
-      "searchEvidence": "Keyword Planner: 'rest timer' 1,300/mo LOW, 'repeat timer' 1,600/mo LOW, 'countdown repeat timer' 140/mo LOW, 'continuous timer' 210/mo LOW.",
-      "imagePrompt": "A lifter sitting on the end of a bench beside a rack, forearms on knees, breathing between sets in a quiet basement gym, chalk on the floor, no screens or clocks in frame"
-    },
-    {
       "slug": "peak-interval-vs-gymnext",
       "theme": "Peak Interval vs GymNext Flex: the app, the hardware, and what you pay for",
       "hook": "GymNext started as the controller for a wall-mounted Flex timer, which explains both what it is very good at and the parts that feel like they are gating a device you may not own.",
