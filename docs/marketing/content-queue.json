@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "peak-interval-vs-gymnext",
-      "theme": "Peak Interval vs GymNext Flex: the app, the hardware, and what you pay for",
-      "hook": "GymNext started as the controller for a wall-mounted Flex timer, which explains both what it is very good at and the parts that feel like they are gating a device you may not own.",
-      "query": "peak interval vs gymnext",
-      "evidence": "r/crossfit 'GymNext App Users' (6 upvotes, 16 comments, within the last year): a user of eight years opened the app to find a launch video, a sign-in prompt, and a paywall behind the toggle that turns the video off.",
-      "pain_quotes": [
-        "It worked without an account for eight years and now it wants me to sign in.",
-        "The toggle to turn the intro video off sends you straight to a subscription screen.",
-        "I do not own the hardware, so half the app is built around a box I will never buy."
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "peak-interval-vs-smartwod — that comparison is about workout-generation workflow between two phone apps; this one is about a hardware-first competitor, where the question is whether you are buying a timer app or the remote control for a wall unit.",
-      "searchEvidence": "Keyword Planner: 'gym clocks and timers' 480/mo HIGH, 'crossfit gym clock' 210/mo HIGH, 'workout clock' 390/mo HIGH, 'gym interval clock' 110/mo HIGH — commercial hardware intent the comparison series is built to intercept.",
-      "imagePrompt": "A wall-mounted gym timer unit seen from a sharp angle so its face is not legible, blurred barbells and athletes in the background of a bright box, shallow depth of field"
-    },
-    {
       "slug": "stair-climber-interval-workout",
       "theme": "Running StairMaster intervals off your own timer instead of the machine's programs",
       "hook": "The stair climber's built-in 'interval' program picks the levels and the timing for you — here is how to set your own level changes, recovery blocks and rounds on an interval timer and just follow the cue.",
