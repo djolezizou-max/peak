@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "stair-climber-interval-workout",
-      "theme": "Running StairMaster intervals off your own timer instead of the machine's programs",
-      "hook": "The stair climber's built-in 'interval' program picks the levels and the timing for you — here is how to set your own level changes, recovery blocks and rounds on an interval timer and just follow the cue.",
-      "query": "stair climber intervals",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Google already shows stair-hiit-workouts for stair-interval queries at positions 18-47, so the domain is associated with the topic but has no machine-specific answer.",
-      "pain_quotes": [
-        "The machine's interval program jumps levels whenever it likes, not when I am ready.",
-        "I want two minutes hard, one minute easy, but the console only offers presets.",
-        "I keep looking down at the console to see how long is left in the push."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "stair-hiit-workouts — that post is bodyweight drills on a real staircase (step-ups, bounds, sprints); this one answers how to structure and time intervals on the stair-climber machine, where the variable is the level setting, not the exercise. Closer in shape to treadmill-interval-workout-timer, but a different machine and query.",
-      "searchEvidence": "Striking distance (GSC 90d): 'stairs hiit workout' 6 impressions at 40.5, 'stair sprints' 2 at 34.0, 'staircase workout' 2 at 18.0, 'climbing hiit classes' 7 at 11.3, plus 'stair climber intervals' 1 at 31 and 'stair climber interval workout' 3 at 46.7. Keyword Planner: 'stairmaster' 74,000/mo HIGH (equipment intent, not the target).",
-      "imagePrompt": "A person mid-climb on a stair-climber machine in a bright gym, side view, hands lightly on the rails, sweat on their shirt, the machine console turned away from camera and out of frame, morning light through tall windows"
-    },
-    {
       "slug": "peak-interval-vs-gymboss",
       "theme": "Peak Interval vs Gymboss: a clip-on interval timer versus a phone and Watch app",
       "hook": "Gymboss is a beeping, vibrating box on your waistband with two intervals and a repeat count — here is exactly what an app adds, what it costs you, and who should keep the clip.",
