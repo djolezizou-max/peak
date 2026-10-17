@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "peak-interval-vs-gymboss",
-      "theme": "Peak Interval vs Gymboss: a clip-on interval timer versus a phone and Watch app",
-      "hook": "Gymboss is a beeping, vibrating box on your waistband with two intervals and a repeat count — here is exactly what an app adds, what it costs you, and who should keep the clip.",
-      "query": "gymboss interval timer",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Gymboss is the most-searched named interval timer in this run's keyword pull and the blog has no page on it.",
-      "pain_quotes": [
-        "Two intervals and a repeat count is all it does, and my workouts have more blocks than that.",
-        "I like that it vibrates on my hip without needing my phone out.",
-        "Setting it up with three buttons takes longer than the workout's first round."
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "peak-interval-vs-tabata-stopwatch-pro — a sibling in the vs-series (0.25) comparing two apps; this one compares an app against dedicated hardware, so the question is device vs phone (battery, buttons, vibration on the body, no screen), a different competitor and a different trade-off.",
-      "searchEvidence": "Keyword Planner: 'gymboss interval timer' 1,600/mo MEDIUM, 'gymboss' 880/mo LOW, 'gym boss timer' 480/mo HIGH, 'gymboss interval timer and stopwatch' 320/mo MEDIUM.",
-      "imagePrompt": "Close-up of a runner's waistband at a park track, a small plain clip-on device attached at the hip with no visible display, blurred track lanes behind, late-afternoon light"
-    },
-    {
       "slug": "interval-timer-app-android",
       "theme": "What to check before you trust an interval timer app on Android",
       "hook": "On Android the timer is only half the question — battery optimisation, a locked screen and music apps all decide whether your cue actually fires at second 40. Here is what to test before your first session.",
