@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-app-android",
-      "theme": "What to check before you trust an interval timer app on Android",
-      "hook": "On Android the timer is only half the question — battery optimisation, a locked screen and music apps all decide whether your cue actually fires at second 40. Here is what to test before your first session.",
-      "query": "interval timer app android",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Peak Interval now ships on Android (commit 0a3800d, 2026-10-02) and every existing buying guide is written from the iPhone/Apple Watch side.",
-      "pain_quotes": [
-        "The timer stops counting the moment my screen turns off.",
-        "Battery saver kills the app halfway through the session.",
-        "The beep is silent when Spotify is playing."
-      ],
-      "category": "Buying Guides",
-      "distinctFrom": "best-interval-timer-for-hiit — that guide picks a timer by workout features; this one answers the platform question Android users search for: which behaviours (background running, battery optimisation exemptions, audio ducking, notification controls) decide whether any timer works on their phone.",
-      "searchEvidence": "Keyword Planner: 'interval timer app android' 590/mo LOW; parent 'interval timer app' 2,400/mo LOW, 'workout timer app' 1,300/mo LOW.",
-      "imagePrompt": "A phone lying face-down on a rubber gym floor next to a resistance band and a water bottle, a person's feet in trainers mid-jump just behind it, soft warm light"
-    },
-    {
       "slug": "interval-running-workout-timer",
       "theme": "Timing outdoor running intervals off audio cues with the phone in your pocket",
       "hook": "Interval runs fall apart when you keep checking your wrist on rep four — here is how to build warm-up, repeats and recovery jogs as one timer that talks you through the session.",
