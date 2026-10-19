@@ -127,6 +127,118 @@
       "distinctFrom": "how-to-run-an-emom-workout (0.06) — that post holds the rep count fixed and banks the leftover seconds as rest; this answers the ascending version where rest shrinks to nothing each minute: counting rounds without counting reps, scoring a failed minute, and swapping in other movements (death by thrusters, pull-ups).",
       "searchEvidence": "Keyword Planner: 'death by burpees' 140/mo LOW, 'death by burpees workout' 50/mo LOW.",
       "imagePrompt": "A person mid-burpee on a gym floor, chest just off the mat, visibly exhausted, sweat on the floor beside them, other athletes blurred in the background"
+    },
+    {
+      "slug": "interval-timer-iphone",
+      "theme": "Interval timer on iPhone: what to test before you trust one with the screen locked",
+      "hook": "The cue that never comes in round three is rarely the timer's maths. On iPhone it is the silent switch, a Focus mode, or an app that only counts while it is on screen. Five tests to run on any timer, Peak Interval included.",
+      "query": "interval timer app iphone",
+      "evidence": "Reddit was unreachable this run (WebFetch blocked and direct JSON returned HTTP 403 on every primary sub), so the friction signal comes from competitor app-store listings and reviews instead. Competing iOS timers now advertise 'keeps running with the screen locked' and Lock Screen countdowns as headline features, and reviews of other timers report cues stopping once the phone sleeps — the friction is real enough that vendors market against it.",
+      "pain_quotes": [
+        "The timer kept counting but I never heard the beep once the phone locked.",
+        "My cues went silent because the ring switch was off and I didn't realise it mattered.",
+        "It works fine until my music starts, then the beeps vanish under it."
+      ],
+      "category": "App Features",
+      "distinctFrom": "interval-timer-app-android (0.21) — that post tests Android's foreground services and manufacturer battery killers; this answers the iPhone version, where the failure modes are different: the silent switch versus media audio, Focus modes and notification sounds, Live Activities on the Lock Screen, and audio ducking under Apple Music or Spotify.",
+      "searchEvidence": "Keyword Planner: 'interval timer app' 2,400/mo LOW, 'workout timer app' 1,300/mo LOW, 'interval timer' 9,900/mo LOW.",
+      "imagePrompt": "An iPhone lying face-down on a rubber gym floor next to a pair of dumbbells, a person in the background mid-squat, soft side light, phone screen not visible"
+    },
+    {
+      "slug": "online-interval-timer",
+      "theme": "Online interval timer vs an app: when a browser timer is enough and when it stalls",
+      "hook": "A web timer needs no install and no account, which is exactly why people reach for one. It also pauses the moment the tab sleeps. Where a browser timer is fine, where it fails, and how to tell before the workout does it for you.",
+      "query": "online interval timer",
+      "evidence": "Reddit was unreachable this run (WebFetch blocked and direct JSON returned HTTP 403 on every primary sub), so the friction signal comes from competitor app-store listings and reviews instead. A user review of a popular web boxing timer reports it stopped counting as soon as the Pixel's screen locked, and browser tabs are throttled in the background on both iOS and Android.",
+      "pain_quotes": [
+        "The website timer froze the second my phone screen turned off.",
+        "I just wanted something quick without downloading an app.",
+        "It worked on my laptop at the gym but not on my phone."
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "best-emom-timer (0.24) and gym-wall-timer-vs-timer-app — those pick a timer for a format or weigh a wall clock against an app; this answers the browser-versus-installed question: why tabs get throttled when the screen sleeps, when a laptop or TV web timer is perfectly fine, and what an app does that a page cannot.",
+      "searchEvidence": "Keyword Planner: 'web interval timer' 110/mo LOW, 'interval timer website' 110/mo LOW, 'free interval timer' 320/mo LOW.",
+      "imagePrompt": "A laptop open on a weight bench in a home garage gym, a person stretching on a mat in front of it, warm morning light, screen angled away from camera"
+    },
+    {
+      "slug": "mma-round-timer",
+      "theme": "MMA round timer: five-minute rounds, one-minute rest and the warnings that matter",
+      "hook": "Boxing timers default to three minutes. MMA rounds are five, BJJ rolls run five or six, Muay Thai sits at three with two off. How to set a round timer for each, and the warning cues that help most in a long round.",
+      "query": "mma round timer",
+      "evidence": "Keyword-led. Round timers are a recurring buy-decision in combat-sports gyms, and the boxing post covers only three-minute rounds, leaving the longer MMA and grappling formats unanswered.",
+      "pain_quotes": [
+        "Every round timer I find is stuck on three-minute boxing rounds.",
+        "I need a warning at one minute left in a five-minute round, not just ten seconds.",
+        "Rolling rounds and striking rounds need different settings in the same session."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "best-boxing-round-timer (0.27) — a sibling in the round-timer series; that post is built around three-minute boxing rounds and the ten-second warning, this answers the five-minute MMA round, BJJ and Muay Thai settings, and mixing round lengths in one session.",
+      "searchEvidence": "Keyword Planner: 'mma round timer' 110/mo MEDIUM, 'round timer' 390/mo MEDIUM, 'round timer clock' 110/mo.",
+      "imagePrompt": "Two athletes grappling on a mat in a martial arts gym, one in a guard position, bright overhead lights, cage fencing blurred in the background"
+    },
+    {
+      "slug": "push-up-amrap-test",
+      "theme": "Push-up AMRAP: how to time a max push-up test and track it week to week",
+      "hook": "A max push-up set is only a useful number if it is run the same way every time. Fixed window or open-ended, what counts as a rep, and how to log it so week six can be compared with week one.",
+      "query": "amrap push up",
+      "evidence": "Keyword-led. 'amrap push up' and 'push up amrap' together draw about 530 searches a month, and the question underneath is a timing one: open-ended to failure or a fixed one- or two-minute window.",
+      "pain_quotes": [
+        "Should a push-up test be to failure or in a set time?",
+        "My number jumps around every time I test, so I can't tell if I'm improving.",
+        "Do pauses at the top count, or does the set end?"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "how-to-run-an-amrap-workout (0.08 vs the corpus) — that post scores multi-movement rounds against a time cap; this answers the single-movement test: choosing a fixed window versus to-failure, standardising the rep, and tracking one number across weeks.",
+      "searchEvidence": "Keyword Planner: 'amrap push up' 320/mo LOW, 'push up amrap' 210/mo LOW, 'emom push ups' 110/mo LOW.",
+      "imagePrompt": "A person at the bottom of a push-up on a wooden floor, chest near the ground, focused expression, a notebook and pencil on the floor beside their hand"
+    },
+    {
+      "slug": "tabata-equipment-guide",
+      "theme": "Tabata equipment: what you actually need for 20/10 at home",
+      "hook": "Tabata needs less kit than any other format: a timer that does 20/10 with an eight-round count, two square metres of floor, and at most one implement. What each piece has to do, and what to skip.",
+      "query": "tabata equipment guide",
+      "evidence": "Striking-distance query from Search Console: 'tabata equipment guide' already surfaces ultimate-tabata-guide at position 8.6, and that post answers the protocol, not the kit question the searcher typed.",
+      "pain_quotes": [
+        "Do I need to buy anything to start Tabata at home?",
+        "Is a kettlebell worth it for Tabata or just bodyweight?",
+        "My phone timer can't do 20/10 rounds without me resetting it."
+      ],
+      "category": "Buying Guides",
+      "distinctFrom": "ultimate-tabata-guide — that post explains the protocol and five workout variations; this answers what to buy (and not buy) to run it: the timer requirements, floor and footwear, and which single implement earns its place. Closest retired neighbour is full-body-no-equipment-hiit (0.29), a generic bodyweight workout list; this is a kit decision for one format, not a workout.",
+      "searchEvidence": "Search Console, last 90 days: 'tabata equipment guide' 7 impressions at average position 8.6 (ultimate-tabata-guide), zero clicks.",
+      "imagePrompt": "A small home workout corner with a yoga mat, a single kettlebell and a towel on a wooden floor, morning sunlight through a window, nobody in frame"
+    },
+    {
+      "slug": "best-amrap-timer",
+      "theme": "Best AMRAP timer: a countdown, a round counter and checkpoints",
+      "hook": "An AMRAP timer looks like the simplest timer there is: one countdown. The ones worth using also count rounds for you and cue the halfway mark. What to check before you pick one, Peak Interval included.",
+      "query": "amrap timer",
+      "evidence": "Keyword-led, and completes the best-<format>-timer series beside the EMOM and Tabata posts. Competitor reviews flag that some popular interval timers do not support AMRAP at all.",
+      "pain_quotes": [
+        "I lose count of rounds halfway through every AMRAP.",
+        "My interval app has EMOM and Tabata but no AMRAP mode.",
+        "I want a cue at the halfway mark so I know if I'm on pace."
+      ],
+      "category": "Buying Guides",
+      "distinctFrom": "best-emom-timer (0.23) — a sibling in the best-<format>-timer series answering a different format; how-to-run-an-amrap-workout covers pacing and scoring, while this answers which timer to use: round counting, checkpoint cues and time-cap display.",
+      "searchEvidence": "Keyword Planner: 'amrap timer' 110/mo LOW, 'amrap workouts' 3,600/mo LOW.",
+      "imagePrompt": "A person mid kettlebell swing in a CrossFit-style gym, a tally of chalk marks on the rubber floor beside them, other athletes blurred behind"
+    },
+    {
+      "slug": "random-interval-timer",
+      "theme": "Random interval timer: unpredictable cues for reaction drills and fartlek",
+      "hook": "Fixed intervals let you pace; random ones stop you pacing. When unpredictable cues are the point (reaction drills, defensive boxing, fartlek), what a random timer has to do, and how to build unpredictability from a fixed timer when yours does not randomise.",
+      "query": "random interval timer",
+      "evidence": "Keyword-led. Searchers want cues they cannot anticipate, a need a standard interval timer does not meet. The post must be honest that Peak Interval's timers are fixed and show the workaround, not claim a randomise feature.",
+      "pain_quotes": [
+        "I start anticipating the beep and it ruins the reaction drill.",
+        "Fartlek is supposed to be unstructured but I still want something to push me.",
+        "Every timer app does the same intervals in the same order."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "how-to-build-a-boxing-interval-workout (0.12) — that post sets fixed rounds and rest; this answers the opposite need, cues the athlete cannot predict, for reaction and fartlek work.",
+      "searchEvidence": "Keyword Planner: 'random interval timer' 140/mo LOW.",
+      "imagePrompt": "A boxer in a defensive stance reacting mid-movement in a dim boxing gym, a coach holding pads to the side, motion blur on the gloves"
     }
   ],
   "retired": [
