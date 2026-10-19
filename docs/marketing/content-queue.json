@@ -47,6 +47,86 @@
       "distinctFrom": "treadmill-interval-workout-timer — same pattern on a different machine; this answers rower-specific choices (time vs distance pieces, stroke-rate targets for each block, recovery paddle length, cues loud enough over the fan). Gate's closest is retired hiit-circuit-training-guide (0.23), a generic circuit guide with no rower content.",
       "searchEvidence": "Keyword Planner: 'rowing machine interval workout' 390/mo LOW, 'rowing interval workout' 390/mo LOW, 'interval training on rower' 390/mo LOW, 'hiit rowing machine' 480/mo HIGH.",
       "imagePrompt": "A person rowing on an indoor rowing machine at the catch position, legs compressed, arms extended, focused expression, gym in soft focus, the monitor angled away out of frame"
+    },
+    {
+      "slug": "stationary-bike-hiit-workout",
+      "theme": "Running HIIT on a stationary bike off your own timer instead of the console programs",
+      "hook": "The bike's built-in interval program picks the resistance and the length for you; here is how to set your own work and recovery blocks, what to change between them (cadence, resistance, or both), and cues you hear with your head down.",
+      "query": "hiit stationary bike",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Bike HIIT is the biggest machine cluster in the planner and the blog has treadmill and stair climber posts but nothing for the bike.",
+      "pain_quotes": [
+        "The preset hill program on the bike never matches the intervals I actually want to do.",
+        "I never know whether to crank resistance or just spin faster for the hard part.",
+        "I lose count of which sprint I am on by the fifth one."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "treadmill-interval-workout-timer (0.12) — same own-timer pattern, but this answers bike-specific choices: resistance vs cadence as the effort lever, near-instant effort changes so blocks can be as short as 10-20 seconds, and seated vs standing sprints. Gate's closest is retired kettlebell-hiit-workouts (0.19), unrelated.",
+      "searchEvidence": "Keyword Planner: 'hiit exercise bike' 2,400/mo LOW, 'hiit cycling workout' 2,400/mo LOW, 'hiit stationary bike' 1,900/mo MEDIUM, 'stationary bike hiit workout' 590/mo LOW.",
+      "imagePrompt": "A person mid-sprint on a stationary exercise bike in a bright home gym, standing out of the saddle, sweat on their forearms, towel draped over the handlebars, the bike console turned away out of frame"
+    },
+    {
+      "slug": "elliptical-hiit-workout",
+      "theme": "Building an elliptical HIIT routine on your own timer",
+      "hook": "Elliptical intervals feel pointless when the machine's presets just nudge resistance up and down; how to set real work and recovery blocks, use stride rate and incline as the effort lever, and keep it low-impact without making it easy.",
+      "query": "elliptical hiit routine",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Elliptical is the low-impact machine people turn to when running hurts, and the blog has no post for it.",
+      "pain_quotes": [
+        "Intervals on the elliptical never feel hard enough to be worth it.",
+        "The cross trainer's interval preset is just random hills.",
+        "I want something easier on my knees than treadmill sprints."
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "treadmill-interval-workout-timer and the queued stationary-bike-hiit-workout — same own-timer pattern; this answers elliptical-specific questions: why effort barely rises without a deliberate lever (stride rate, resistance, reverse stride, arms only), and longer 30-60 second work blocks because the machine is slow to load the heart rate. Gate's closest is retired hiit-circuit-training-guide (0.32), a generic circuit guide with no elliptical content.",
+      "searchEvidence": "Keyword Planner: 'elliptical hiit routine' 1,900/mo LOW, 'hiit elliptical' 1,300/mo MEDIUM, 'cross trainer hiit training' 1,300/mo MEDIUM, 'elliptical intervals' 320/mo LOW.",
+      "imagePrompt": "A person working hard on an elliptical cross trainer in a sunlit gym, arms driving the handles, mid-stride, focused expression, the machine display angled away out of frame"
+    },
+    {
+      "slug": "heavy-bag-workout-for-beginners",
+      "theme": "A first heavy bag workout: round length, rest, and what to throw in each round",
+      "hook": "You bought a punching bag and have no coach: how long a beginner's rounds should be (2:00, not 3:00), how much rest, what to throw in each round so it isn't flailing, and a round timer that tells you when to stop.",
+      "query": "punching bag workouts for beginners",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Home punching bag owners without a coach are a large, low-competition cluster distinct from the head term 'heavy bag workout' (14,800/mo HIGH, equipment-commercial).",
+      "pain_quotes": [
+        "I gas out in the first minute of hitting the bag and then just slap it.",
+        "No idea how long rounds should be when you are new.",
+        "I want a structure for bag work at home, not random punching."
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "how-to-build-a-boxing-interval-workout — that post designs a general boxing session for someone who already knows the round format; this answers the beginner-at-home question: shorter rounds, one combination per round, a six-round first session, and pacing so the last round is not wild arm-swinging. best-boxing-round-timer is about choosing the timer, not the workout.",
+      "searchEvidence": "Keyword Planner: 'punching bag workouts for beginners' 4,400/mo LOW, 'heavy bag workout for beginners' 4,400/mo LOW.",
+      "imagePrompt": "A person in a garage gym throwing a jab at a hanging heavy bag, wrapped hands, guard up, bag swinging slightly, warm afternoon light through an open garage door"
+    },
+    {
+      "slug": "e2mom-workout",
+      "theme": "E2MOM: how to set up every-2-minutes-on-the-2-minutes and what fits in the window",
+      "hook": "E2MOM is EMOM with a longer window, which changes what you can put in it: heavier sets, two movements, or a short run. How to set the clock, size the work to 60-80 seconds, and when E3MOM makes more sense.",
+      "query": "e2mom",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Small but clean format query in the lane: the blog has EMOM posts and the queued emom-meaning, but nothing on the longer-window variants.",
+      "pain_quotes": [
+        "My EMOM timer only does 60 seconds, so I end up watching a clock for E2MOM.",
+        "How many reps should I put in a two minute window?",
+        "Is E2MOM just an EMOM with more rest?"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "how-to-run-an-emom-workout (and queued emom-meaning) — those size work to 30-40 seconds in a one-minute window; this answers the two-minute-window question: heavier strength sets, paired movements, buy-in runs, sizing to 60-80 seconds, and setting a 2:00 repeating interval rather than a 1:00 one. Neither EMOM post mentions E2MOM.",
+      "searchEvidence": "Keyword Planner: 'e2mom' 110/mo LOW. Low volume, kept because it is an exact format query with no competitor post on our domain.",
+      "imagePrompt": "A person in a CrossFit-style gym setting down a loaded barbell after a set of front squats, chalk on their hands, catching their breath, rubber floor and rig in the background"
+    },
+    {
+      "slug": "death-by-burpees",
+      "theme": "Death by burpees: the ascending EMOM and how to time it",
+      "hook": "One burpee in minute one, two in minute two, until you can't finish the minute. How to set the timer, score it, and when the format stops being a workout and starts being a test.",
+      "query": "death by burpees",
+      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. 'Death by' is an EMOM variant the blog does not cover, and its whole difficulty is a timing problem: the work grows while the window stays fixed.",
+      "pain_quotes": [
+        "I lose count of which minute I am on by round twelve.",
+        "How do you score death by burpees when you fail mid-minute?",
+        "Is it supposed to be a workout or a test?"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "how-to-run-an-emom-workout (0.06) — that post holds the rep count fixed and banks the leftover seconds as rest; this answers the ascending version where rest shrinks to nothing each minute: counting rounds without counting reps, scoring a failed minute, and swapping in other movements (death by thrusters, pull-ups).",
+      "searchEvidence": "Keyword Planner: 'death by burpees' 140/mo LOW, 'death by burpees workout' 50/mo LOW.",
+      "imagePrompt": "A person mid-burpee on a gym floor, chest just off the mat, visibly exhausted, sweat on the floor beside them, other athletes blurred in the background"
     }
   ],
   "retired": [
