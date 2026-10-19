@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-running-workout-timer",
-      "theme": "Timing outdoor running intervals off audio cues with the phone in your pocket",
-      "hook": "Interval runs fall apart when you keep checking your wrist on rep four — here is how to build warm-up, repeats and recovery jogs as one timer that talks you through the session.",
-      "query": "interval running workout",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. 'Interval running workout' is the largest in-lane cluster in this run's keyword pull, and it is a timing problem before it is a training one.",
-      "pain_quotes": [
-        "I lose count of which repeat I am on by the fifth one.",
-        "I keep glancing at my watch and it breaks my stride.",
-        "My recovery jogs keep getting longer because nothing tells me to go."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "how-to-build-a-running-interval-workout-on-apple-watch (0.15) — that post is the Watch build flow; this one is the phone-in-pocket, audio-first version and the session structure itself (warm-up, time-based repeats, recovery jogs, cool-down) for runners without a Watch. treadmill-interval-workout-timer covers the indoor case.",
-      "searchEvidence": "Keyword Planner: 'interval running workout' / 'interval training running' 14,800/mo LOW, 'interval running' 4,400/mo LOW, 'interval running app' 1,900/mo LOW, '5k interval workout' 3,600/mo LOW.",
-      "imagePrompt": "A runner mid-stride on an empty suburban road at dawn, earbuds in, phone in a zipped back pocket, breath visible in cool air, long shadows across the tarmac"
-    },
-    {
       "slug": "walk-run-interval-timer",
       "theme": "Setting up a walk-run interval timer and progressing the ratio week by week",
       "hook": "Run one minute, walk two, repeat eight times — the plan is simple until you are counting it in your head on a pavement. How to build each week's ratio as a saved timer so you only follow the cue.",
