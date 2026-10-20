@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "walk-run-interval-timer",
-      "theme": "Setting up a walk-run interval timer and progressing the ratio week by week",
-      "hook": "Run one minute, walk two, repeat eight times — the plan is simple until you are counting it in your head on a pavement. How to build each week's ratio as a saved timer so you only follow the cue.",
-      "query": "walk run intervals",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Walk-run is a beginner timing problem with its own search cluster, distinct from performance interval running.",
-      "pain_quotes": [
-        "I keep losing track of whether I am on walk four or walk five.",
-        "Every week the plan changes the ratio and I have to rebuild the timer.",
-        "I need a cue I can hear without taking my phone out."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "interval-running-workout-timer (queued in the same batch) — that one is hard repeats for runners who already run; this answers the beginner run/walk method and how to step the ratio (1:2 to 2:1 to continuous) as a series of saved timers. Closest published is how-to-run-an-amrap-workout at only 0.14.",
-      "searchEvidence": "Keyword Planner: 'walk run intervals' 720/mo LOW, 'run and walk intervals' 720/mo LOW.",
-      "imagePrompt": "A beginner runner slowing from a jog to a walk on a tree-lined park path, hands on hips, relaxed smile, autumn leaves on the ground, soft overcast light"
-    },
-    {
       "slug": "emom-meaning",
       "theme": "EMOM meaning: what 'every minute on the minute' actually asks the clock to do",
       "hook": "EMOM means start a new set at the top of every minute and rest whatever is left — plus E2MOM, E90S and the alternating versions, and what each one looks like on a timer.",
