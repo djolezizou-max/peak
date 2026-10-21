@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "emom-meaning",
-      "theme": "EMOM meaning: what 'every minute on the minute' actually asks the clock to do",
-      "hook": "EMOM means start a new set at the top of every minute and rest whatever is left — plus E2MOM, E90S and the alternating versions, and what each one looks like on a timer.",
-      "query": "emom meaning",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. GSC shows definitional EMOM queries ('what does emom stand for in fitness', 'what does every minute on the minute mean') landing on us at positions 48-97 with no page built to answer them.",
-      "pain_quotes": [
-        "Does EMOM mean I rest a full minute or just what is left?",
-        "What is the difference between EMOM and E2MOM?",
-        "The workout says alternating EMOM and I do not know how to set it."
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "how-to-run-an-emom-workout — that post assumes you know EMOM and answers how to size reps and pace it; this one answers the definitional query and the variants (E2MOM, E90S, alternating/odd-even EMOM) and how each maps onto a timer. is-emom-hiit answers whether it counts as HIIT.",
-      "searchEvidence": "Keyword Planner: 'emom meaning' 3,600/mo LOW, 'emom' 5,400/mo LOW, 'emom time' 1,900/mo LOW, 'emom workout meaning' 320/mo LOW. GSC 90d: 'what does emom stand for in fitness' 2 impressions at 48.0.",
-      "imagePrompt": "An athlete in a garage gym dropping a kettlebell after a set and stepping back to breathe, chalk on their hands, a second kettlebell waiting on the floor, warm side light, no clocks visible"
-    },
-    {
       "slug": "rowing-machine-interval-workout",
       "theme": "Running rowing-machine intervals off your own timer instead of the monitor",
       "hook": "The rower's monitor can do intervals, but setting them up mid-session is a maze of buttons — how to structure timed pieces and recovery paddles on a timer you can hear over the flywheel.",
