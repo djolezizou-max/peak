@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "rowing-machine-interval-workout",
-      "theme": "Running rowing-machine intervals off your own timer instead of the monitor",
-      "hook": "The rower's monitor can do intervals, but setting them up mid-session is a maze of buttons — how to structure timed pieces and recovery paddles on a timer you can hear over the flywheel.",
-      "query": "rowing machine interval workout",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and reddit.com is blocked to web search, so this theme rests on search data only. Rower intervals are the same 'run it off your own timer' problem treadmill-interval-workout-timer answers, on a machine the blog does not cover.",
-      "pain_quotes": [
-        "Programming intervals on the rower monitor takes longer than the warm-up.",
-        "I cannot hear a phone beep over the flywheel.",
-        "I want 250 metre pieces some days and timed pieces others."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "treadmill-interval-workout-timer — same pattern on a different machine; this answers rower-specific choices (time vs distance pieces, stroke-rate targets for each block, recovery paddle length, cues loud enough over the fan). Gate's closest is retired hiit-circuit-training-guide (0.23), a generic circuit guide with no rower content.",
-      "searchEvidence": "Keyword Planner: 'rowing machine interval workout' 390/mo LOW, 'rowing interval workout' 390/mo LOW, 'interval training on rower' 390/mo LOW, 'hiit rowing machine' 480/mo HIGH.",
-      "imagePrompt": "A person rowing on an indoor rowing machine at the catch position, legs compressed, arms extended, focused expression, gym in soft focus, the monitor angled away out of frame"
-    },
-    {
       "slug": "stationary-bike-hiit-workout",
       "theme": "Running HIIT on a stationary bike off your own timer instead of the console programs",
       "hook": "The bike's built-in interval program picks the resistance and the length for you; here is how to set your own work and recovery blocks, what to change between them (cadence, resistance, or both), and cues you hear with your head down.",
