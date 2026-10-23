@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "stationary-bike-hiit-workout",
-      "theme": "Running HIIT on a stationary bike off your own timer instead of the console programs",
-      "hook": "The bike's built-in interval program picks the resistance and the length for you; here is how to set your own work and recovery blocks, what to change between them (cadence, resistance, or both), and cues you hear with your head down.",
-      "query": "hiit stationary bike",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Bike HIIT is the biggest machine cluster in the planner and the blog has treadmill and stair climber posts but nothing for the bike.",
-      "pain_quotes": [
-        "The preset hill program on the bike never matches the intervals I actually want to do.",
-        "I never know whether to crank resistance or just spin faster for the hard part.",
-        "I lose count of which sprint I am on by the fifth one."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "treadmill-interval-workout-timer (0.12) — same own-timer pattern, but this answers bike-specific choices: resistance vs cadence as the effort lever, near-instant effort changes so blocks can be as short as 10-20 seconds, and seated vs standing sprints. Gate's closest is retired kettlebell-hiit-workouts (0.19), unrelated.",
-      "searchEvidence": "Keyword Planner: 'hiit exercise bike' 2,400/mo LOW, 'hiit cycling workout' 2,400/mo LOW, 'hiit stationary bike' 1,900/mo MEDIUM, 'stationary bike hiit workout' 590/mo LOW.",
-      "imagePrompt": "A person mid-sprint on a stationary exercise bike in a bright home gym, standing out of the saddle, sweat on their forearms, towel draped over the handlebars, the bike console turned away out of frame"
-    },
-    {
       "slug": "elliptical-hiit-workout",
       "theme": "Building an elliptical HIIT routine on your own timer",
       "hook": "Elliptical intervals feel pointless when the machine's presets just nudge resistance up and down; how to set real work and recovery blocks, use stride rate and incline as the effort lever, and keep it low-impact without making it easy.",
