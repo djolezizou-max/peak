@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "elliptical-hiit-workout",
-      "theme": "Building an elliptical HIIT routine on your own timer",
-      "hook": "Elliptical intervals feel pointless when the machine's presets just nudge resistance up and down; how to set real work and recovery blocks, use stride rate and incline as the effort lever, and keep it low-impact without making it easy.",
-      "query": "elliptical hiit routine",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Elliptical is the low-impact machine people turn to when running hurts, and the blog has no post for it.",
-      "pain_quotes": [
-        "Intervals on the elliptical never feel hard enough to be worth it.",
-        "The cross trainer's interval preset is just random hills.",
-        "I want something easier on my knees than treadmill sprints."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "treadmill-interval-workout-timer and the queued stationary-bike-hiit-workout — same own-timer pattern; this answers elliptical-specific questions: why effort barely rises without a deliberate lever (stride rate, resistance, reverse stride, arms only), and longer 30-60 second work blocks because the machine is slow to load the heart rate. Gate's closest is retired hiit-circuit-training-guide (0.32), a generic circuit guide with no elliptical content.",
-      "searchEvidence": "Keyword Planner: 'elliptical hiit routine' 1,900/mo LOW, 'hiit elliptical' 1,300/mo MEDIUM, 'cross trainer hiit training' 1,300/mo MEDIUM, 'elliptical intervals' 320/mo LOW.",
-      "imagePrompt": "A person working hard on an elliptical cross trainer in a sunlit gym, arms driving the handles, mid-stride, focused expression, the machine display angled away out of frame"
-    },
-    {
       "slug": "heavy-bag-workout-for-beginners",
       "theme": "A first heavy bag workout: round length, rest, and what to throw in each round",
       "hook": "You bought a punching bag and have no coach: how long a beginner's rounds should be (2:00, not 3:00), how much rest, what to throw in each round so it isn't flailing, and a round timer that tells you when to stop.",
