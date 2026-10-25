@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "heavy-bag-workout-for-beginners",
-      "theme": "A first heavy bag workout: round length, rest, and what to throw in each round",
-      "hook": "You bought a punching bag and have no coach: how long a beginner's rounds should be (2:00, not 3:00), how much rest, what to throw in each round so it isn't flailing, and a round timer that tells you when to stop.",
-      "query": "punching bag workouts for beginners",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Home punching bag owners without a coach are a large, low-competition cluster distinct from the head term 'heavy bag workout' (14,800/mo HIGH, equipment-commercial).",
-      "pain_quotes": [
-        "I gas out in the first minute of hitting the bag and then just slap it.",
-        "No idea how long rounds should be when you are new.",
-        "I want a structure for bag work at home, not random punching."
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "how-to-build-a-boxing-interval-workout — that post designs a general boxing session for someone who already knows the round format; this answers the beginner-at-home question: shorter rounds, one combination per round, a six-round first session, and pacing so the last round is not wild arm-swinging. best-boxing-round-timer is about choosing the timer, not the workout.",
-      "searchEvidence": "Keyword Planner: 'punching bag workouts for beginners' 4,400/mo LOW, 'heavy bag workout for beginners' 4,400/mo LOW.",
-      "imagePrompt": "A person in a garage gym throwing a jab at a hanging heavy bag, wrapped hands, guard up, bag swinging slightly, warm afternoon light through an open garage door"
-    },
-    {
       "slug": "e2mom-workout",
       "theme": "E2MOM: how to set up every-2-minutes-on-the-2-minutes and what fits in the window",
       "hook": "E2MOM is EMOM with a longer window, which changes what you can put in it: heavier sets, two movements, or a short run. How to set the clock, size the work to 60-80 seconds, and when E3MOM makes more sense.",
