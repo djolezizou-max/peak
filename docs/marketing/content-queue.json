@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "e2mom-workout",
-      "theme": "E2MOM: how to set up every-2-minutes-on-the-2-minutes and what fits in the window",
-      "hook": "E2MOM is EMOM with a longer window, which changes what you can put in it: heavier sets, two movements, or a short run. How to set the clock, size the work to 60-80 seconds, and when E3MOM makes more sense.",
-      "query": "e2mom",
-      "evidence": "No social signal this run: xpoz credits exhausted (502/500) and the app-analytics MCP (Search Console) timed out on connect, so this theme rests on keyword volume only. Small but clean format query in the lane: the blog has EMOM posts and the queued emom-meaning, but nothing on the longer-window variants.",
-      "pain_quotes": [
-        "My EMOM timer only does 60 seconds, so I end up watching a clock for E2MOM.",
-        "How many reps should I put in a two minute window?",
-        "Is E2MOM just an EMOM with more rest?"
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "how-to-run-an-emom-workout (and queued emom-meaning) — those size work to 30-40 seconds in a one-minute window; this answers the two-minute-window question: heavier strength sets, paired movements, buy-in runs, sizing to 60-80 seconds, and setting a 2:00 repeating interval rather than a 1:00 one. Neither EMOM post mentions E2MOM.",
-      "searchEvidence": "Keyword Planner: 'e2mom' 110/mo LOW. Low volume, kept because it is an exact format query with no competitor post on our domain.",
-      "imagePrompt": "A person in a CrossFit-style gym setting down a loaded barbell after a set of front squats, chalk on their hands, catching their breath, rubber floor and rig in the background"
-    },
-    {
       "slug": "death-by-burpees",
       "theme": "Death by burpees: the ascending EMOM and how to time it",
       "hook": "One burpee in minute one, two in minute two, until you can't finish the minute. How to set the timer, score it, and when the format stops being a workout and starts being a test.",
