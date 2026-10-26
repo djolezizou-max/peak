@@ -127,6 +127,111 @@
       "distinctFrom": "how-to-build-a-boxing-interval-workout (0.12) — that post sets fixed rounds and rest; this answers the opposite need, cues the athlete cannot predict, for reaction and fartlek work.",
       "searchEvidence": "Keyword Planner: 'random interval timer' 140/mo LOW.",
       "imagePrompt": "A boxer in a defensive stance reacting mid-movement in a dim boxing gym, a coach holding pads to the side, motion blur on the gloves"
+    },
+    {
+      "slug": "12-3-30-treadmill-workout",
+      "theme": "12-3-30 treadmill workout",
+      "hook": "The 12-3-30 treadmill workout: build up to 12% incline with a timer that cues each stage instead of staring at the console",
+      "query": "12 3 30 treadmill workout",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); top results (ASICS, WalkingPad, Merach) all tell beginners to start at 6-8% and build up, but none give a staged plan you can actually run off a timer",
+      "pain_quotes": [
+        "Thirty minutes at 12% wrecked me on day one, so I keep dropping the incline halfway and losing track",
+        "I never know when to bump the incline back up, so the build-up just doesn't happen"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "treadmill-interval-workout-timer — that post times speed intervals off your own clock; this one answers how to do the specific 12-3-30 protocol and stage the incline build-up as timed blocks",
+      "searchEvidence": "Keyword Planner: '12 3 30' 9,900/mo LOW, '12 3 30 workout' 8,100/mo LOW, '12 3 30 treadmill' 6,600/mo MEDIUM",
+      "imagePrompt": "A woman walking steadily on a treadmill set to a steep incline in a bright home gym, hands off the rails, morning light, side view showing the angle of the deck, no screens visible"
+    },
+    {
+      "slug": "kettlebell-swing-emom",
+      "theme": "kettlebell swing EMOM",
+      "hook": "Kettlebell swing EMOM: get 100 swings done in 10 minutes with a timer that paces the sets and the rest",
+      "query": "kettlebell swing workout",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); '100 swings a day' and swing-for-cardio searches show people doing a fixed swing count with no structure; an EMOM is the simplest way to pace it",
+      "pain_quotes": [
+        "I try to do 100 swings and my form falls apart around 60 because I rush the rest",
+        "I never know whether to rest 30 seconds or a minute between swing sets"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "retired hiit-for-strength (0.40) and kettlebell-hiit-workouts (0.22) were generic strength/kettlebell editorial; this answers one timing question — how to pace a fixed swing count with an EMOM — which neither e2mom-workout nor how-to-run-an-emom-workout covers",
+      "searchEvidence": "Keyword Planner: 'kettlebell swing workout' 9,900/mo LOW, 'kb swing workout' 1,300/mo LOW, '100 kb swings a day' 720/mo LOW",
+      "imagePrompt": "A person mid kettlebell swing at chest height in a garage gym, hips fully extended, a single cast iron kettlebell, concrete floor, warm side light, no clocks or screens in frame"
+    },
+    {
+      "slug": "hangboard-repeaters-timer",
+      "theme": "hangboard repeaters timer",
+      "hook": "Hangboard repeaters timer: set up 7-on/3-off hangs, sets and long rests so you never count seconds while hanging",
+      "query": "hangboard timer",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); climbers run repeaters (7s hang/3s off x6, then 3 min rest) off dedicated hangboard apps; it is exactly a nested-interval timer problem",
+      "pain_quotes": [
+        "Counting seconds in my head while hanging means my hangs drift to 5 or 9 seconds",
+        "The generic timer apps can't do sets inside sets, so I end up restarting it every round"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "interval-timer-with-set-counter (0.11) is about counting sets in a normal workout; this answers how to build the climbing-specific repeater structure (short hang/off cycles nested inside sets with long rests)",
+      "searchEvidence": "Striking distance: 'climbing hiit classes' 7 impressions at position 11.3 (90 days) — Google already pairs us with climbing intervals; Keyword Planner 'hangboard repeaters' 70/mo LOW",
+      "imagePrompt": "Close-up of a climber's chalked hands gripping the edges of a wooden hangboard mounted above a doorway, forearms tensed, soft indoor light, no devices visible"
+    },
+    {
+      "slug": "for-time-workout-meaning",
+      "theme": "for time workout meaning",
+      "hook": "What 'for time' means in a workout: the score is the clock, the cap is the deadline, and how to read both",
+      "query": "for time workout",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); 'emom amrap for time' searches show people lining up the three CrossFit scoring formats and only finding definitions for the first two",
+      "pain_quotes": [
+        "The board said '21-15-9 for time, 12 min cap' and I had no idea what to do when the cap hit",
+        "I don't get how you score a for time workout if you don't finish"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "crossfit-wod-timer — that post sets up the timer for a capped For Time; this answers the vocabulary question (what 'for time' means, how capped scores and unfinished reps are recorded), the way emom-meaning sits beside how-to-run-an-emom-workout",
+      "searchEvidence": "Striking distance: 'emom amrap for time' 2 impressions at position 32.5 (90 days)",
+      "imagePrompt": "An athlete lying on a gym floor catching their breath beside a barbell just after finishing a workout, chalk dust in the air, wide shot, no clocks or whiteboards with writing visible"
+    },
+    {
+      "slug": "garmin-hiit-custom-intervals",
+      "theme": "Garmin HIIT custom intervals",
+      "hook": "Garmin HIIT custom intervals: why rounds don't auto-advance after rest, and when a phone or watch timer is the simpler fix",
+      "query": "garmin hiit custom intervals",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); Garmin forums: a CrossFit coach reports the HIIT 'Custom' mode stops after rest and counts up until lap is pressed; the workaround forces GPS on for the whole session",
+      "pain_quotes": [
+        "My Garmin HIIT timer just sits there after the rest until I hit lap, which defeats the point",
+        "The only way I got intervals to advance was a run-style workout that turns on GPS in the gym"
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "creating-saving-custom-hiit-workouts (0.22) explains building workouts inside Peak Interval; this answers a Garmin owner's question — how Garmin's HIIT/custom interval modes behave and where a dedicated timer is easier",
+      "searchEvidence": "Pain signal only — forums.garmin.com epix-2 thread 'Building Crossfit Interval Workouts'; no Search Console row yet",
+      "imagePrompt": "A person in a gym checking a rugged sports watch on their wrist between sets, kettlebells and a jump rope on the floor, the watch face turned away from camera, natural light"
+    },
+    {
+      "slug": "interval-timer-with-voice-coach",
+      "theme": "interval timer with voice announcements",
+      "hook": "Interval timer with voice: what a voice coach should actually say, and why calling the next exercise beats a beep",
+      "query": "interval timer with voice",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); App Store listings (Exercise Timer, IntervalTimer, Interval Workout Fitness Timer) all sell voice cues as a headline feature, and the most-reviewed one locks it behind a subscription",
+      "pain_quotes": [
+        "A beep tells me something changed but not what, so I'm looking at the phone every round",
+        "The voice coach was the whole reason I downloaded it and it turned out to be premium only"
+      ],
+      "category": "App Features",
+      "distinctFrom": "interval-timer-that-shows-exercise-names covers seeing the next exercise on screen; this answers the eyes-free question — which cues to hear (next exercise, halfway, last 3 seconds) and how to set them up",
+      "searchEvidence": "Pain signal only — competitor App Store listings; no Search Console row yet",
+      "imagePrompt": "A man doing walking lunges in a living room wearing wireless earbuds, phone face-down on a yoga mat in the background, relaxed focused expression, warm evening light"
+    },
+    {
+      "slug": "apple-watch-battery-interval-workout",
+      "theme": "Apple Watch battery during interval workouts",
+      "hook": "Apple Watch battery during interval workouts: what actually drains it in a timer session and the settings that make a long session last",
+      "query": "apple watch workout battery drain",
+      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); Apple Community and AppleInsider threads on watches dying mid-workout; Slowtwitch thread 'Apple Watch for workouts - making battery last longer'",
+      "pain_quotes": [
+        "My watch hit 10% halfway through a 90-minute session and killed the timer",
+        "I don't know if it's the heart rate sensor or the app keeping the screen on that eats the battery"
+      ],
+      "category": "App Features",
+      "distinctFrom": "closest is retired hiit-circuit-training-guide (0.30), a generic circuit guide; the nearest live post, apple-watch-workout-app-intervals-vs-timer-app (0.27), compares Apple's Workout app to a timer app — this answers why the watch battery drains during a timed session and how to configure it to last",
+      "searchEvidence": "Pain signal only — Apple Community / AppleInsider / Slowtwitch threads",
+      "imagePrompt": "A runner resting on a bench in an indoor gym glancing at an Apple Watch on their wrist, the watch face angled away from camera, sweat towel over shoulder, soft overhead light"
     }
   ],
   "retired": [
