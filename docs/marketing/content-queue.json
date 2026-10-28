@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-iphone",
-      "theme": "Interval timer on iPhone: what to test before you trust one with the screen locked",
-      "hook": "The cue that never comes in round three is rarely the timer's maths. On iPhone it is the silent switch, a Focus mode, or an app that only counts while it is on screen. Five tests to run on any timer, Peak Interval included.",
-      "query": "interval timer app iphone",
-      "evidence": "Reddit was unreachable this run (WebFetch blocked and direct JSON returned HTTP 403 on every primary sub), so the friction signal comes from competitor app-store listings and reviews instead. Competing iOS timers now advertise 'keeps running with the screen locked' and Lock Screen countdowns as headline features, and reviews of other timers report cues stopping once the phone sleeps — the friction is real enough that vendors market against it.",
-      "pain_quotes": [
-        "The timer kept counting but I never heard the beep once the phone locked.",
-        "My cues went silent because the ring switch was off and I didn't realise it mattered.",
-        "It works fine until my music starts, then the beeps vanish under it."
-      ],
-      "category": "App Features",
-      "distinctFrom": "interval-timer-app-android (0.21) — that post tests Android's foreground services and manufacturer battery killers; this answers the iPhone version, where the failure modes are different: the silent switch versus media audio, Focus modes and notification sounds, Live Activities on the Lock Screen, and audio ducking under Apple Music or Spotify.",
-      "searchEvidence": "Keyword Planner: 'interval timer app' 2,400/mo LOW, 'workout timer app' 1,300/mo LOW, 'interval timer' 9,900/mo LOW.",
-      "imagePrompt": "An iPhone lying face-down on a rubber gym floor next to a pair of dumbbells, a person in the background mid-squat, soft side light, phone screen not visible"
-    },
-    {
       "slug": "online-interval-timer",
       "theme": "Online interval timer vs an app: when a browser timer is enough and when it stalls",
       "hook": "A web timer needs no install and no account, which is exactly why people reach for one. It also pauses the moment the tab sleeps. Where a browser timer is fine, where it fails, and how to tell before the workout does it for you.",
