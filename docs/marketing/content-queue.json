@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "online-interval-timer",
-      "theme": "Online interval timer vs an app: when a browser timer is enough and when it stalls",
-      "hook": "A web timer needs no install and no account, which is exactly why people reach for one. It also pauses the moment the tab sleeps. Where a browser timer is fine, where it fails, and how to tell before the workout does it for you.",
-      "query": "online interval timer",
-      "evidence": "Reddit was unreachable this run (WebFetch blocked and direct JSON returned HTTP 403 on every primary sub), so the friction signal comes from competitor app-store listings and reviews instead. A user review of a popular web boxing timer reports it stopped counting as soon as the Pixel's screen locked, and browser tabs are throttled in the background on both iOS and Android.",
-      "pain_quotes": [
-        "The website timer froze the second my phone screen turned off.",
-        "I just wanted something quick without downloading an app.",
-        "It worked on my laptop at the gym but not on my phone."
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "best-emom-timer (0.24) and gym-wall-timer-vs-timer-app — those pick a timer for a format or weigh a wall clock against an app; this answers the browser-versus-installed question: why tabs get throttled when the screen sleeps, when a laptop or TV web timer is perfectly fine, and what an app does that a page cannot.",
-      "searchEvidence": "Keyword Planner: 'web interval timer' 110/mo LOW, 'interval timer website' 110/mo LOW, 'free interval timer' 320/mo LOW.",
-      "imagePrompt": "A laptop open on a weight bench in a home garage gym, a person stretching on a mat in front of it, warm morning light, screen angled away from camera"
-    },
-    {
       "slug": "mma-round-timer",
       "theme": "MMA round timer: five-minute rounds, one-minute rest and the warnings that matter",
       "hook": "Boxing timers default to three minutes. MMA rounds are five, BJJ rolls run five or six, Muay Thai sits at three with two off. How to set a round timer for each, and the warning cues that help most in a long round.",
