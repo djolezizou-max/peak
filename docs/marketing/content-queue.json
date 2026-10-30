@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "mma-round-timer",
-      "theme": "MMA round timer: five-minute rounds, one-minute rest and the warnings that matter",
-      "hook": "Boxing timers default to three minutes. MMA rounds are five, BJJ rolls run five or six, Muay Thai sits at three with two off. How to set a round timer for each, and the warning cues that help most in a long round.",
-      "query": "mma round timer",
-      "evidence": "Keyword-led. Round timers are a recurring buy-decision in combat-sports gyms, and the boxing post covers only three-minute rounds, leaving the longer MMA and grappling formats unanswered.",
-      "pain_quotes": [
-        "Every round timer I find is stuck on three-minute boxing rounds.",
-        "I need a warning at one minute left in a five-minute round, not just ten seconds.",
-        "Rolling rounds and striking rounds need different settings in the same session."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "best-boxing-round-timer (0.27) — a sibling in the round-timer series; that post is built around three-minute boxing rounds and the ten-second warning, this answers the five-minute MMA round, BJJ and Muay Thai settings, and mixing round lengths in one session.",
-      "searchEvidence": "Keyword Planner: 'mma round timer' 110/mo MEDIUM, 'round timer' 390/mo MEDIUM, 'round timer clock' 110/mo.",
-      "imagePrompt": "Two athletes grappling on a mat in a martial arts gym, one in a guard position, bright overhead lights, cage fencing blurred in the background"
-    },
-    {
       "slug": "push-up-amrap-test",
       "theme": "Push-up AMRAP: how to time a max push-up test and track it week to week",
       "hook": "A max push-up set is only a useful number if it is run the same way every time. Fixed window or open-ended, what counts as a rep, and how to log it so week six can be compared with week one.",
