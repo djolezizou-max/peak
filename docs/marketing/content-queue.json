@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "push-up-amrap-test",
-      "theme": "Push-up AMRAP: how to time a max push-up test and track it week to week",
-      "hook": "A max push-up set is only a useful number if it is run the same way every time. Fixed window or open-ended, what counts as a rep, and how to log it so week six can be compared with week one.",
-      "query": "amrap push up",
-      "evidence": "Keyword-led. 'amrap push up' and 'push up amrap' together draw about 530 searches a month, and the question underneath is a timing one: open-ended to failure or a fixed one- or two-minute window.",
-      "pain_quotes": [
-        "Should a push-up test be to failure or in a set time?",
-        "My number jumps around every time I test, so I can't tell if I'm improving.",
-        "Do pauses at the top count, or does the set end?"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "how-to-run-an-amrap-workout (0.08 vs the corpus) — that post scores multi-movement rounds against a time cap; this answers the single-movement test: choosing a fixed window versus to-failure, standardising the rep, and tracking one number across weeks.",
-      "searchEvidence": "Keyword Planner: 'amrap push up' 320/mo LOW, 'push up amrap' 210/mo LOW, 'emom push ups' 110/mo LOW.",
-      "imagePrompt": "A person at the bottom of a push-up on a wooden floor, chest near the ground, focused expression, a notebook and pencil on the floor beside their hand"
-    },
-    {
       "slug": "tabata-equipment-guide",
       "theme": "Tabata equipment: what you actually need for 20/10 at home",
       "hook": "Tabata needs less kit than any other format: a timer that does 20/10 with an eight-round count, two square metres of floor, and at most one implement. What each piece has to do, and what to skip.",
