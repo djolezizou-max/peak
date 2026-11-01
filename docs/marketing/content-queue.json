@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "tabata-equipment-guide",
-      "theme": "Tabata equipment: what you actually need for 20/10 at home",
-      "hook": "Tabata needs less kit than any other format: a timer that does 20/10 with an eight-round count, two square metres of floor, and at most one implement. What each piece has to do, and what to skip.",
-      "query": "tabata equipment guide",
-      "evidence": "Striking-distance query from Search Console: 'tabata equipment guide' already surfaces ultimate-tabata-guide at position 8.6, and that post answers the protocol, not the kit question the searcher typed.",
-      "pain_quotes": [
-        "Do I need to buy anything to start Tabata at home?",
-        "Is a kettlebell worth it for Tabata or just bodyweight?",
-        "My phone timer can't do 20/10 rounds without me resetting it."
-      ],
-      "category": "Buying Guides",
-      "distinctFrom": "ultimate-tabata-guide — that post explains the protocol and five workout variations; this answers what to buy (and not buy) to run it: the timer requirements, floor and footwear, and which single implement earns its place. Closest retired neighbour is full-body-no-equipment-hiit (0.29), a generic bodyweight workout list; this is a kit decision for one format, not a workout.",
-      "searchEvidence": "Search Console, last 90 days: 'tabata equipment guide' 7 impressions at average position 8.6 (ultimate-tabata-guide), zero clicks.",
-      "imagePrompt": "A small home workout corner with a yoga mat, a single kettlebell and a towel on a wooden floor, morning sunlight through a window, nobody in frame"
-    },
-    {
       "slug": "best-amrap-timer",
       "theme": "Best AMRAP timer: a countdown, a round counter and checkpoints",
       "hook": "An AMRAP timer looks like the simplest timer there is: one countdown. The ones worth using also count rounds for you and cue the halfway mark. What to check before you pick one, Peak Interval included.",
