@@ -120,6 +120,102 @@
       "distinctFrom": "closest is retired hiit-circuit-training-guide (0.30), a generic circuit guide; the nearest live post, apple-watch-workout-app-intervals-vs-timer-app (0.27), compares Apple's Workout app to a timer app — this answers why the watch battery drains during a timed session and how to configure it to last",
       "searchEvidence": "Pain signal only — Apple Community / AppleInsider / Slowtwitch threads",
       "imagePrompt": "A runner resting on a bench in an indoor gym glancing at an Apple Watch on their wrist, the watch face angled away from camera, sweat towel over shoulder, soft overhead light"
+    },
+    {
+      "slug": "interval-timer-screen-locked",
+      "theme": "Interval timer that keeps running when the screen locks",
+      "hook": "Why your interval timer pauses or goes silent the moment the phone locks or you switch to Spotify, and how to set one up that keeps cueing.",
+      "query": "interval timer stops when screen locks",
+      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Freeletics forum thread on Run Interval pausing and losing voice cues on lock; App Store listing for Interval Timer Alarm admits it does not run in background; 2025 Polycents Tabata Timer review says it shuts off mid-interval.",
+      "pain_quotes": [
+        "I lock my phone to run and the voice cues just stop until I unlock it again",
+        "Switching apps to change the song paused my whole Tabata",
+        "It worked for months then started cutting out halfway through an interval"
+      ],
+      "category": "App Features",
+      "distinctFrom": "online-interval-timer answers browser-tab-vs-app; this answers why an installed iPhone/Android timer app still pauses on lock or app switch, and which settings (background audio, notifications, Watch handoff) fix it.",
+      "searchEvidence": "Pain-signal theme: no Search Console query yet; app-lane product friction surfaced repeatedly in competitor reviews.",
+      "imagePrompt": "A runner on a city pavement at dawn mid-stride, phone strapped to upper arm with the screen dark, earbuds in, focused expression, cool morning light, shallow depth of field, no readable screens"
+    },
+    {
+      "slug": "apple-watch-interval-haptics-weak",
+      "theme": "Apple Watch interval haptics too weak to feel mid-workout",
+      "hook": "You miss the wrist tap mid-sprint: why Apple Watch interval alerts get lost during hard efforts and how to make cues you actually notice.",
+      "query": "apple watch interval haptics weak",
+      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. iMore watchOS thread calls the interval haptic a very weak vibration that is often missed; Apple Community thread on intervals giving no alert at switches; competitor listings (HIIT Workouts, Pulse) now advertise stronger escalating haptics.",
+      "pain_quotes": [
+        "The vibration for the next interval is so faint I miss it every time I'm running hard",
+        "My watch never told me the interval changed, I only noticed when I looked",
+        "I want a stronger buzz for the last round, not the same tiny tap"
+      ],
+      "category": "App Features",
+      "distinctFrom": "best-apple-watch-interval-timer answers which Watch timer app to pick; this answers why the haptic cue itself goes unnoticed (Prominent haptics, wrist fit, motion masking, pairing haptic with audio, countdown pre-warnings) whatever app you use.",
+      "searchEvidence": "Pain-signal theme; adjacent Watch posts earn impressions (apple-watch-interval-timer-without-phone 17 imp pos 11, best-apple-watch-interval-timer 27 imp pos 25 in last 28 days).",
+      "imagePrompt": "Close-up of a sweaty forearm and wrist wearing a smartwatch mid push-up on a rubber gym floor, watch face turned away from camera, dramatic side light, motion and effort, no readable screens"
+    },
+    {
+      "slug": "bouldering-4x4-timer",
+      "theme": "Bouldering 4x4 timer: four problems, four rounds, timed rest",
+      "hook": "The climbers' 4x4 builds power endurance only if the rest stays honest; how long to rest between sets and how to time it so it doesn't drift.",
+      "query": "bouldering 4x4",
+      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Search Console shows climbers already reaching the site ('climbing hiit classes') with no climbing post published; hangboard-repeaters-timer is queued for finger strength, the 4x4 is the wall-conditioning counterpart.",
+      "pain_quotes": [
+        "My rest between 4x4 sets turns into ten minutes of chatting",
+        "I never know if I should rest after each problem or only between sets",
+        "Hard to keep count of which round I'm on when I'm pumped"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "norwegian-4x4-interval-timer is a 4:00/3:00 cardio protocol; this is the climbing 4x4 (four boulder problems back to back, four sets, timed rest) and how to time set-ends you finish by hand. Distinct from queued hangboard-repeaters-timer (7/3 finger hangs).",
+      "searchEvidence": "Striking distance: 'climbing hiit classes' 7 impressions at avg position 11.3 (90 days); '4x4 timer' 2 imp pos 10 and '4x4 time' 2 imp pos 10.",
+      "imagePrompt": "A climber on an indoor bouldering wall, chalked hands reaching for a hold, forearms pumped, colourful holds, soft gym lighting, another climber resting on the crash mat in the background"
+    },
+    {
+      "slug": "swim-interval-timer",
+      "theme": "Swim interval timer: send-off times without a pace clock",
+      "hook": "How to run swim sets on send-offs like 4x100 on 1:45 when the pool has no pace clock, and keep the cue on a wet wrist.",
+      "query": "swim interval timer",
+      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Apple Community thread asking how to set interval alerts for pool swims on Series 8 with no answer; Apple's Workout app has no send-off timer, so swimmers buy single-purpose apps (Pool Clock, Swim Coach Tools, Swimming Lap Tracker); Suunto forum thread on managing intervals mid-swim.",
+      "pain_quotes": [
+        "Our pool doesn't have a pace clock so I can't do send-off sets",
+        "The Workout app tracks laps but won't tell me when to leave the wall",
+        "I end up counting seconds in my head between 100s"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "No swim post exists (closest best-tabata-timer at 0.12); this answers how to time send-off intervals in the pool, which no published post covers.",
+      "searchEvidence": "Pain-signal theme; no Search Console query yet.",
+      "imagePrompt": "A swimmer pausing at the pool wall between sets, goggles on forehead, water droplets, lane ropes and blue water, bright natatorium light, smartwatch on wrist seen from the side, no readable screens"
+    },
+    {
+      "slug": "tabata-song-vs-timer",
+      "theme": "Tabata song vs a Tabata timer app",
+      "hook": "Tabata songs bake the 20/10 cues into the track; when that is all you need and when a timer over your own music works better.",
+      "query": "tabata song",
+      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Tabata Songs app sells 43 cue-baked tracks behind an in-app purchase; Totally Tabata reviews complain switching apps to change a song pauses the timer, the exact choice this post settles.",
+      "pain_quotes": [
+        "I love the Tabata song but I'm sick of the same track every session",
+        "Can I use my own playlist and still know when the 20 seconds is up",
+        "The song only works for one 4-minute round, what about the rest of the workout"
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "interval-timer-with-music answers how to hear timer cues over a playlist; this answers whether a pre-cued Tabata song can replace the timer entirely (fixed 8 rounds, one protocol, no multi-block) versus a timer over any music.",
+      "searchEvidence": "Keyword research: 'tabata song' 880/mo, LOW competition (seed 'tabata').",
+      "imagePrompt": "A person mid jump squat in a bright living room, wireless headphones on, a small bluetooth speaker on the floor nearby, warm afternoon light, energetic, no readable screens"
+    },
+    {
+      "slug": "5-minute-plank-timer",
+      "theme": "5 minute plank timer: a plank series that switches position on cue",
+      "hook": "Five minutes of front, side and reverse planks as a timer that calls each switch, so you hold the position instead of watching a clock.",
+      "query": "5 minute plank",
+      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Keyword-led; plank routines are a top use of interval timers and existing generic core posts were retired, so this is scoped strictly to timing the series.",
+      "pain_quotes": [
+        "I always cheat my plank because I'm staring at the stopwatch",
+        "I can't remember which side plank comes next",
+        "Five minutes straight is impossible but I don't know how to break it up"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "Closest is retired 10-minute-hiit-workouts at 0.13; no published post times a plank sequence. Answers how to build a 5:00 plank series (positions, switch cues, rest splits for beginners) as one timer.",
+      "searchEvidence": "Keyword research: '5 minute plank' / 'five minute plank' 1,900/mo, LOW competition (seed 'plank').",
+      "imagePrompt": "A person holding a side plank on a yoga mat in a minimalist room, strong straight line from shoulder to ankle, soft window light, calm focus"
     }
   ],
   "retired": [
