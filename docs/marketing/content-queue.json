@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "best-amrap-timer",
-      "theme": "Best AMRAP timer: a countdown, a round counter and checkpoints",
-      "hook": "An AMRAP timer looks like the simplest timer there is: one countdown. The ones worth using also count rounds for you and cue the halfway mark. What to check before you pick one, Peak Interval included.",
-      "query": "amrap timer",
-      "evidence": "Keyword-led, and completes the best-<format>-timer series beside the EMOM and Tabata posts. Competitor reviews flag that some popular interval timers do not support AMRAP at all.",
-      "pain_quotes": [
-        "I lose count of rounds halfway through every AMRAP.",
-        "My interval app has EMOM and Tabata but no AMRAP mode.",
-        "I want a cue at the halfway mark so I know if I'm on pace."
-      ],
-      "category": "Buying Guides",
-      "distinctFrom": "best-emom-timer (0.23) — a sibling in the best-<format>-timer series answering a different format; how-to-run-an-amrap-workout covers pacing and scoring, while this answers which timer to use: round counting, checkpoint cues and time-cap display.",
-      "searchEvidence": "Keyword Planner: 'amrap timer' 110/mo LOW, 'amrap workouts' 3,600/mo LOW.",
-      "imagePrompt": "A person mid kettlebell swing in a CrossFit-style gym, a tally of chalk marks on the rubber floor beside them, other athletes blurred behind"
-    },
-    {
       "slug": "random-interval-timer",
       "theme": "Random interval timer: unpredictable cues for reaction drills and fartlek",
       "hook": "Fixed intervals let you pace; random ones stop you pacing. When unpredictable cues are the point (reaction drills, defensive boxing, fartlek), what a random timer has to do, and how to build unpredictability from a fixed timer when yours does not randomise.",
