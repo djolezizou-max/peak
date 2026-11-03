@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "random-interval-timer",
-      "theme": "Random interval timer: unpredictable cues for reaction drills and fartlek",
-      "hook": "Fixed intervals let you pace; random ones stop you pacing. When unpredictable cues are the point (reaction drills, defensive boxing, fartlek), what a random timer has to do, and how to build unpredictability from a fixed timer when yours does not randomise.",
-      "query": "random interval timer",
-      "evidence": "Keyword-led. Searchers want cues they cannot anticipate, a need a standard interval timer does not meet. The post must be honest that Peak Interval's timers are fixed and show the workaround, not claim a randomise feature.",
-      "pain_quotes": [
-        "I start anticipating the beep and it ruins the reaction drill.",
-        "Fartlek is supposed to be unstructured but I still want something to push me.",
-        "Every timer app does the same intervals in the same order."
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "how-to-build-a-boxing-interval-workout (0.12) — that post sets fixed rounds and rest; this answers the opposite need, cues the athlete cannot predict, for reaction and fartlek work.",
-      "searchEvidence": "Keyword Planner: 'random interval timer' 140/mo LOW.",
-      "imagePrompt": "A boxer in a defensive stance reacting mid-movement in a dim boxing gym, a coach holding pads to the side, motion blur on the gloves"
-    },
-    {
       "slug": "12-3-30-treadmill-workout",
       "theme": "12-3-30 treadmill workout",
       "hook": "The 12-3-30 treadmill workout: build up to 12% incline with a timer that cues each stage instead of staring at the console",
