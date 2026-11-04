@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "12-3-30-treadmill-workout",
-      "theme": "12-3-30 treadmill workout",
-      "hook": "The 12-3-30 treadmill workout: build up to 12% incline with a timer that cues each stage instead of staring at the console",
-      "query": "12 3 30 treadmill workout",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); top results (ASICS, WalkingPad, Merach) all tell beginners to start at 6-8% and build up, but none give a staged plan you can actually run off a timer",
-      "pain_quotes": [
-        "Thirty minutes at 12% wrecked me on day one, so I keep dropping the incline halfway and losing track",
-        "I never know when to bump the incline back up, so the build-up just doesn't happen"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "treadmill-interval-workout-timer — that post times speed intervals off your own clock; this one answers how to do the specific 12-3-30 protocol and stage the incline build-up as timed blocks",
-      "searchEvidence": "Keyword Planner: '12 3 30' 9,900/mo LOW, '12 3 30 workout' 8,100/mo LOW, '12 3 30 treadmill' 6,600/mo MEDIUM",
-      "imagePrompt": "A woman walking steadily on a treadmill set to a steep incline in a bright home gym, hands off the rails, morning light, side view showing the angle of the deck, no screens visible"
-    },
-    {
       "slug": "kettlebell-swing-emom",
       "theme": "kettlebell swing EMOM",
       "hook": "Kettlebell swing EMOM: get 100 swings done in 10 minutes with a timer that paces the sets and the rest",
