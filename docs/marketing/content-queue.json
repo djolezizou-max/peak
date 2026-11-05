@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "kettlebell-swing-emom",
-      "theme": "kettlebell swing EMOM",
-      "hook": "Kettlebell swing EMOM: get 100 swings done in 10 minutes with a timer that paces the sets and the rest",
-      "query": "kettlebell swing workout",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); '100 swings a day' and swing-for-cardio searches show people doing a fixed swing count with no structure; an EMOM is the simplest way to pace it",
-      "pain_quotes": [
-        "I try to do 100 swings and my form falls apart around 60 because I rush the rest",
-        "I never know whether to rest 30 seconds or a minute between swing sets"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "retired hiit-for-strength (0.40) and kettlebell-hiit-workouts (0.22) were generic strength/kettlebell editorial; this answers one timing question — how to pace a fixed swing count with an EMOM — which neither e2mom-workout nor how-to-run-an-emom-workout covers",
-      "searchEvidence": "Keyword Planner: 'kettlebell swing workout' 9,900/mo LOW, 'kb swing workout' 1,300/mo LOW, '100 kb swings a day' 720/mo LOW",
-      "imagePrompt": "A person mid kettlebell swing at chest height in a garage gym, hips fully extended, a single cast iron kettlebell, concrete floor, warm side light, no clocks or screens in frame"
-    },
-    {
       "slug": "hangboard-repeaters-timer",
       "theme": "hangboard repeaters timer",
       "hook": "Hangboard repeaters timer: set up 7-on/3-off hangs, sets and long rests so you never count seconds while hanging",
