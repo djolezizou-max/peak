@@ -38,7 +38,7 @@ In Peak Interval the skip control also sits on the lock-screen Live Activity, so
 
 ## Mixing hand-timed sets with timed work
 
-Plenty of sessions combine both kinds of set. Heavy squats on a manual skip, then accessory work on a fixed 40/20, then a timed carry to finish. You do not need two apps for that. Build the strength block with long work caps and its own rest, follow it with the timed block, and let the [round structure](/blog/posts/interval-timer-repeating-sets) carry you from one to the other.
+Plenty of sessions combine both kinds of set. Heavy squats on a manual skip, then accessory work on a fixed 40/20, then a timed carry to finish. You do not need two apps for that. Build the strength block with long work caps and its own rest, follow it with the timed block, and let the [round structure](/blog/posts/interval-timer-repeating-sets) carry you from one to the other. For a climbing-specific example of a fully timed short-work block nested inside longer set rests, see [how to set up a hangboard repeaters timer](/blog/posts/hangboard-repeaters-timer).
 
 The rest lengths are where most of the thinking goes, and they deserve it — three to five minutes for heavy triples, ninety seconds for hypertrophy sets. [How long to rest between sets](/blog/posts/rest-timer-between-sets) covers that side. This post is only about the mechanics of getting a timer to wait for you.
 

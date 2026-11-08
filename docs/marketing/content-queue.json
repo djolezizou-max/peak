@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "hangboard-repeaters-timer",
-      "theme": "hangboard repeaters timer",
-      "hook": "Hangboard repeaters timer: set up 7-on/3-off hangs, sets and long rests so you never count seconds while hanging",
-      "query": "hangboard timer",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); climbers run repeaters (7s hang/3s off x6, then 3 min rest) off dedicated hangboard apps; it is exactly a nested-interval timer problem",
-      "pain_quotes": [
-        "Counting seconds in my head while hanging means my hangs drift to 5 or 9 seconds",
-        "The generic timer apps can't do sets inside sets, so I end up restarting it every round"
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "interval-timer-with-set-counter (0.11) is about counting sets in a normal workout; this answers how to build the climbing-specific repeater structure (short hang/off cycles nested inside sets with long rests)",
-      "searchEvidence": "Striking distance: 'climbing hiit classes' 7 impressions at position 11.3 (90 days) — Google already pairs us with climbing intervals; Keyword Planner 'hangboard repeaters' 70/mo LOW",
-      "imagePrompt": "Close-up of a climber's chalked hands gripping the edges of a wooden hangboard mounted above a doorway, forearms tensed, soft indoor light, no devices visible"
-    },
-    {
       "slug": "for-time-workout-meaning",
       "theme": "for time workout meaning",
       "hook": "What 'for time' means in a workout: the score is the clock, the cap is the deadline, and how to read both",
