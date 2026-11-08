@@ -1,0 +1,21 @@
+Run the Peak Interval daily blog publish automation for the current date in America/Chicago.
+
+Work only inside `/Users/djordjejankovicmacmini/peak`.
+
+Before doing anything substantial:
+1. Read `/Users/djordjejankovicmacmini/peak/.claude/skills/content-pipeline/SKILL.md` completely.
+2. Follow its `publish` mode instructions directly with local tools. Do not invoke Claude Code or a `/content-pipeline` slash command.
+
+Execution rules:
+- Pull the current branch with `git pull --rebase --autostash`; stop and report any conflict.
+- Take the first queued theme, run the required topic-overlap gate, and retire collisions exactly as the skill specifies.
+- Write the post in the existing blog house style, cross-link it to a genuinely related post, and update the queue.
+- Require a successful site build before continuing.
+- Commit and push the completed change to `main`.
+- Submit the canonical no-trailing-slash URL through the existing IndexNow script.
+- Run the required Search Console index check; use local service-account tooling if the analytics MCP is unavailable, and do not fail the publish solely because that check cannot run.
+- Send the user-facing summary via QSNotify.app using the established flow.
+
+Reporting rules:
+- Report the published slug, nearest related post and distinction, build/push/IndexNow status, index-check verdict, and queue depth.
+- If a phase fails, send one concise QSNotify message naming the failed phase and current state.
