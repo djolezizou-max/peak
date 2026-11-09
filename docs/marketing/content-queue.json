@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "for-time-workout-meaning",
-      "theme": "for time workout meaning",
-      "hook": "What 'for time' means in a workout: the score is the clock, the cap is the deadline, and how to read both",
-      "query": "for time workout",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); 'emom amrap for time' searches show people lining up the three CrossFit scoring formats and only finding definitions for the first two",
-      "pain_quotes": [
-        "The board said '21-15-9 for time, 12 min cap' and I had no idea what to do when the cap hit",
-        "I don't get how you score a for time workout if you don't finish"
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "crossfit-wod-timer — that post sets up the timer for a capped For Time; this answers the vocabulary question (what 'for time' means, how capped scores and unfinished reps are recorded), the way emom-meaning sits beside how-to-run-an-emom-workout",
-      "searchEvidence": "Striking distance: 'emom amrap for time' 2 impressions at position 32.5 (90 days)",
-      "imagePrompt": "An athlete lying on a gym floor catching their breath beside a barbell just after finishing a workout, chalk dust in the air, wide shot, no clocks or whiteboards with writing visible"
-    },
-    {
       "slug": "garmin-hiit-custom-intervals",
       "theme": "Garmin HIIT custom intervals",
       "hook": "Garmin HIIT custom intervals: why rounds don't auto-advance after rest, and when a phone or watch timer is the simpler fix",
