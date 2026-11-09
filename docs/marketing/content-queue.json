@@ -140,6 +140,118 @@
       "distinctFrom": "Closest is retired 10-minute-hiit-workouts at 0.13; no published post times a plank sequence. Answers how to build a 5:00 plank series (positions, switch cues, rest splits for beginners) as one timer.",
       "searchEvidence": "Keyword research: '5 minute plank' / 'five minute plank' 1,900/mo, LOW competition (seed 'plank').",
       "imagePrompt": "A person holding a side plank on a yoga mat in a minimalist room, strong straight line from shoulder to ankle, soft window light, calm focus"
+    },
+    {
+      "slug": "air-bike-interval-timer",
+      "theme": "Air bike interval timer for Assault and Echo calorie intervals",
+      "hook": "Fan-bike intervals are scored in calories, and an Echo flywheel wastes anything much shorter than 15 seconds — the spin-bike timer setup does not transfer",
+      "query": "air bike interval timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Peak Primal Wellness says a dedicated interval timer is essential because watching a clock during an all-out air-bike sprint is impractical; The Workout Mag says the Echo flywheel takes 2–3 seconds longer to spin up, so 5-second sprints are mostly inertia and work should be at least 15 seconds; Fit at Midlife lists 30/30 air-bike intervals and readers ask where to put a phone.",
+      "pain_quotes": [
+        "I cannot watch a wall clock during an all-out air-bike sprint, so the intervals have to be set before I start",
+        "Ten-second sprints on the Echo mostly go to spinning the flywheel up, not to the work",
+        "The console programs are not the 30-on, 30-off session I actually want"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "stationary-bike-hiit-workout (0.28) is resistance versus cadence on a spin bike, upright, Peloton or recumbent, where 10–20 second sprints work because effort changes in two pedal strokes; this answers how to time calorie intervals on an Assault or Echo fan bike, where the Echo flywheel makes sub-15-second sprints mostly spin-up",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from peakprimalwellness.com, theworkoutmag.com Echo programming guide, and fitatmidlife.com assault-bike workouts.",
+      "imagePrompt": "A person driving an air bike hard in a garage gym, arms pushing and legs spinning, the fan housing in the foreground, a phone lying face-down on a bench behind them, late afternoon light, no readable screens"
+    },
+    {
+      "slug": "10-20-30-running-timer",
+      "theme": "10-20-30 running timer with three paces inside one minute",
+      "hook": "The 10-20-30 run is 30 seconds easy, 20 moderate and 10 all-out, five times, then a walk — a work/rest timer cannot name the three paces",
+      "query": "10-20-30 running workout",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Runlovers lays out the minute as 30 easy, 20 moderate and 10 all-out, five times without stopping, then about 2 minutes easy, for 3–4 sets; Futurity describes beginners starting at one 5-minute block and fitter runners at two blocks with a 3–4 minute break; Runner's World reports the same protocol in a performance study.",
+      "pain_quotes": [
+        "I lose which of the three speeds I am in because they all live inside the same minute",
+        "A normal interval timer only has work and rest, and this run has three efforts plus a set break",
+        "I end up counting the 10-second sprint in my head and the rest of the minute falls apart"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "interval-running-workout-timer (0.27) builds a generic run — warm-up, equal hard/easy repeats, cool-down — as one audio timer; this answers how to encode the 10-20-30 minute (30 easy, 20 moderate, 10 sprint, five times, then a walk), which a single work/rest repeat cannot name. walk-run-interval-timer is a two-pace week-by-week ratio, not three efforts inside one minute",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from runlovers.it, futurity.org and runnersworld.com descriptions of the 10-20-30 protocol.",
+      "imagePrompt": "A runner mid-stride on an outdoor track at dawn, leaning into a sprint, earbuds in, empty lanes and long shadows, a watch on the wrist turned away from the camera, cool morning light, no readable screens"
+    },
+    {
+      "slug": "fight-gone-bad-timer",
+      "theme": "Fight Gone Bad timer: five one-minute stations and one minute off",
+      "hook": "Fight Gone Bad is one minute at each of five stations with the clock still running, then one minute off, three rounds, and the score is reps",
+      "query": "fight gone bad timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Wodball and Fit2Live describe one minute at each of five stations with no added rest between them, one minute off, three rounds, score by reps (rowing calories count as reps), and a clock that does not reset between stations; the Rogue timer manual has a dedicated Fight Gone Bad mode for that exact clock; Captime's guide is about building the same thing in an interval timer.",
+      "pain_quotes": [
+        "A rest beep in the middle of the five minutes ruins the round, because the clock is not supposed to stop between stations",
+        "Every minute sounds the same, so I lose which station I am on",
+        "The score is total reps, not a finish time, and a for-time clock does not tell me when to move"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "mma-round-timer (0.11) sets sport rounds with rest and warnings; this answers the Fight Gone Bad clock — five one-minute stations with no rest between them, one minute off, three rounds, scored by reps. circuit-training-timer is unequal stations plus a walk between them; Fight Gone Bad has neither",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from wodball.com, fit2livegym.com, the Rogue 049X timer manual, and captime.app's Fight Gone Bad setup.",
+      "imagePrompt": "An athlete in a gym holding a medicine ball at chest height in front of a wall, a rower and a plyo box set up as the next stations behind them, chalk and sweat, overhead industrial light, no clocks or readable screens"
+    },
+    {
+      "slug": "armor-building-complex-timer",
+      "theme": "Armor building complex timer: 2 cleans, 1 press, 3 squats on the minute",
+      "hook": "Dan John's armor building complex is 2 cleans, 1 press and 3 squats, aiming at 30 rounds in 30 minutes, and one bell needs a cue at the halfway mark to switch arms",
+      "query": "armor building complex emom",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. The StrongFirst forum thread on Dan John's armour building complex sets the long-term goal at 30 rounds in 30 minutes (2 double cleans, 1 press, 3 front squats); The Workout Mag's single-bell version cues the other arm at the 30-second mark inside a 20-minute EMOM; Pedestal Footwear describes an 8-minute EMOM of the same complex.",
+      "pain_quotes": [
+        "I am trying to fit 30 complexes into 30 minutes and I lose the minute once a round runs long",
+        "With one bell I need a beep at 30 seconds to switch arms, not only at the top of the minute",
+        "If I rest by feel I never know whether I actually hit the 30-minute goal"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "Closest scored neighbour is hiit-for-powerlifters at 0.05. The question this must not repeat is kettlebell-swing-emom (100 swings across ten one-minute windows) and how-to-run-an-emom (a generic set sized to 30–40 seconds); this answers Dan John's armor building complex — 2 cleans, 1 press, 3 squats, a 30-rounds-in-30-minutes goal, and a halfway cue to switch arms on one bell",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from the StrongFirst forum ABC thread, theworkoutmag.com armor-building guide, and pedestalfootwear.com.",
+      "imagePrompt": "A person standing in a gym with two kettlebells racked at the shoulders, elbows tucked, chalk on the hands, bumper plates stacked behind, focused expression, warm side light, no readable screens"
+    },
+    {
+      "slug": "gibala-sprint-interval-timer",
+      "theme": "Gibala sprint interval timer: 30 seconds on, four minutes easy",
+      "hook": "The Gibala sprint interval is 30 seconds all-out and about four minutes easy, four to seven times — a Tabata timer and a repeating 30-second beep both run the wrong clock",
+      "query": "gibala interval timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Time.tz ships a sprint-timer preset named Classic SIT (30 seconds on, 4 minutes off); Precision Nutrition describes the Gibala protocol as a 30-second sprint plus four minutes rest; a PubMed Central trial used 30-second all-out efforts with 4 minutes rest, progressing from 4 to 7 bouts.",
+      "pain_quotes": [
+        "The recovery is so long I start the next sprint early or late because nothing calls me back",
+        "A Tabata timer is twenty on and ten off, which is a different session entirely",
+        "A beep every 30 seconds keeps firing through the four-minute recovery, which is the opposite of what I need"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "norwegian-4x4-interval-timer (0.17) is four minutes hard and three minutes easy, four times; this answers the Gibala sprint interval — about 30 seconds all-out and four minutes easy, four to seven times — which neither a Tabata timer nor a repeating 30-second cue can run. Retired hiit-for-track-sprint-workouts (0.15) was generic sprint editorial and stays retired",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from time.tz sprint timer presets, precisionnutrition.com's Gibala writeup, and PMC5839711.",
+      "imagePrompt": "A sprinter bent over with hands on knees on an empty track after a hard effort, chest heaving, lane lines stretching into the distance, early morning light, no readable screens or watch faces"
+    },
+    {
+      "slug": "cluster-set-rest-timer",
+      "theme": "Cluster set timer with a short rest inside the set",
+      "hook": "A cluster set needs 15–20 seconds between mini-sets and a normal multi-minute rest after the cluster, and a rest timer only runs one of those clocks",
+      "query": "cluster set timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Muscle & Fitness programs hypertrophy clusters as 4+4+4 with 15–20 seconds between clusters, or 20–30 seconds on heavier setups; Sci-Fit specifies 15–45 seconds between sub-sets and then a normal 2–4 minute rest; The Barbell describes the same 15–20 second intra-set break that lifters otherwise count in their heads.",
+      "pain_quotes": [
+        "I count the twenty seconds in my head and it is never actually twenty",
+        "My rest timer only starts after the whole set, so the short breaks inside the set are guesswork",
+        "By the last cluster the short rest has stretched and the point of the cluster is gone"
+      ],
+      "category": "App Features",
+      "distinctFrom": "Closest scored neighbour is emom-meaning at 0.15, which explains what a one-minute EMOM window is. This answers a different clock: 15–20 seconds between mini-sets inside a cluster, then the normal multi-minute rest after the cluster. rest-timer-between-sets only covers that long rest between whole sets",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from muscleandfitness.com cluster-set programming, sci-fit.net and thebarbell.com.",
+      "imagePrompt": "A lifter standing in a squat rack between efforts, a loaded barbell resting on the hooks, chalk on the hands, a short pause rather than sitting down, dim gym light, no clocks or readable screens"
+    },
+    {
+      "slug": "fitbit-interval-notifications",
+      "theme": "Fitbit interval alerts that never fire mid-workout",
+      "hook": "A Fitbit Charge will track the exercise and still stay silent when the interval changes, so the buzz you needed is back on the phone",
+      "query": "fitbit interval timer notifications",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. A JustAnswer thread on the Charge 5 says the band does not vibrate or chime for each interval unless an interval timer was saved inside the Exercise app; Google's Fitbit help page documents alerts that never arrive (Do Not Disturb, low battery, a dead vibration motor); web search also surfaces a public r/fitbit thread asking how to run a timer while exercise tracking is on.",
+      "pain_quotes": [
+        "My Fitbit never buzzes when the interval changes, even though the workout is running",
+        "The only way to get a cue is a setup buried in the Exercise app, and I did not know it had to be saved first",
+        "Once exercise tracking is on I cannot tell whether the band is ignoring my timer or just not built for intervals"
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "Closest scored neighbour is retired what-is-hiit at 0.10. The live collision is the queued apple-watch-interval-haptics-weak theme, which is an Apple Watch tap too faint to feel; this answers a Fitbit Charge that has no usable interval cue unless a saved Exercise-app timer fires, and often does not",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from justanswer.com Charge 5 interval-notification thread, support.google.com Fitbit alert help, and a public r/fitbit thread found by web search.",
+      "imagePrompt": "A runner on a park path glancing at a slim fitness band on the wrist, the band face turned away from the camera, phone zipped into a pocket, overcast daylight, no readable screens"
     }
   ],
   "retired": [
