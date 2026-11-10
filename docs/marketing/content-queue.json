@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "garmin-hiit-custom-intervals",
-      "theme": "Garmin HIIT custom intervals",
-      "hook": "Garmin HIIT custom intervals: why rounds don't auto-advance after rest, and when a phone or watch timer is the simpler fix",
-      "query": "garmin hiit custom intervals",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); Garmin forums: a CrossFit coach reports the HIIT 'Custom' mode stops after rest and counts up until lap is pressed; the workaround forces GPS on for the whole session",
-      "pain_quotes": [
-        "My Garmin HIIT timer just sits there after the rest until I hit lap, which defeats the point",
-        "The only way I got intervals to advance was a run-style workout that turns on GPS in the gym"
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "creating-saving-custom-hiit-workouts (0.22) explains building workouts inside Peak Interval; this answers a Garmin owner's question — how Garmin's HIIT/custom interval modes behave and where a dedicated timer is easier",
-      "searchEvidence": "Pain signal only — forums.garmin.com epix-2 thread 'Building Crossfit Interval Workouts'; no Search Console row yet",
-      "imagePrompt": "A person in a gym checking a rugged sports watch on their wrist between sets, kettlebells and a jump rope on the floor, the watch face turned away from camera, natural light"
-    },
-    {
       "slug": "interval-timer-with-voice-coach",
       "theme": "interval timer with voice announcements",
       "hook": "Interval timer with voice: what a voice coach should actually say, and why calling the next exercise beats a beep",
