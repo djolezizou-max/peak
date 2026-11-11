@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-with-voice-coach",
-      "theme": "interval timer with voice announcements",
-      "hook": "Interval timer with voice: what a voice coach should actually say, and why calling the next exercise beats a beep",
-      "query": "interval timer with voice",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); App Store listings (Exercise Timer, IntervalTimer, Interval Workout Fitness Timer) all sell voice cues as a headline feature, and the most-reviewed one locks it behind a subscription",
-      "pain_quotes": [
-        "A beep tells me something changed but not what, so I'm looking at the phone every round",
-        "The voice coach was the whole reason I downloaded it and it turned out to be premium only"
-      ],
-      "category": "App Features",
-      "distinctFrom": "interval-timer-that-shows-exercise-names covers seeing the next exercise on screen; this answers the eyes-free question — which cues to hear (next exercise, halfway, last 3 seconds) and how to set them up",
-      "searchEvidence": "Pain signal only — competitor App Store listings; no Search Console row yet",
-      "imagePrompt": "A man doing walking lunges in a living room wearing wireless earbuds, phone face-down on a yoga mat in the background, relaxed focused expression, warm evening light"
-    },
-    {
       "slug": "apple-watch-battery-interval-workout",
       "theme": "Apple Watch battery during interval workouts",
       "hook": "Apple Watch battery during interval workouts: what actually drains it in a timer session and the settings that make a long session last",
