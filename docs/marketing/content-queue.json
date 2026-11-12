@@ -1,21 +1,6 @@
 {
   "themes": [
     {
-      "slug": "apple-watch-battery-interval-workout",
-      "theme": "Apple Watch battery during interval workouts",
-      "hook": "Apple Watch battery during interval workouts: what actually drains it in a timer session and the settings that make a long session last",
-      "query": "apple watch workout battery drain",
-      "evidence": "Reddit skipped (no OAuth creds at config/reddit-oauth.json); Apple Community and AppleInsider threads on watches dying mid-workout; Slowtwitch thread 'Apple Watch for workouts - making battery last longer'",
-      "pain_quotes": [
-        "My watch hit 10% halfway through a 90-minute session and killed the timer",
-        "I don't know if it's the heart rate sensor or the app keeping the screen on that eats the battery"
-      ],
-      "category": "App Features",
-      "distinctFrom": "closest is retired hiit-circuit-training-guide (0.30), a generic circuit guide; the nearest live post, apple-watch-workout-app-intervals-vs-timer-app (0.27), compares Apple's Workout app to a timer app — this answers why the watch battery drains during a timed session and how to configure it to last",
-      "searchEvidence": "Pain signal only — Apple Community / AppleInsider / Slowtwitch threads",
-      "imagePrompt": "A runner resting on a bench in an indoor gym glancing at an Apple Watch on their wrist, the watch face angled away from camera, sweat towel over shoulder, soft overhead light"
-    },
-    {
       "slug": "interval-timer-screen-locked",
       "theme": "Interval timer that keeps running when the screen locks",
       "hook": "Why your interval timer pauses or goes silent the moment the phone locks or you switch to Spotify, and how to set one up that keeps cueing.",
