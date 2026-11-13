@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "interval-timer-screen-locked",
-      "theme": "Interval timer that keeps running when the screen locks",
-      "hook": "Why your interval timer pauses or goes silent the moment the phone locks or you switch to Spotify, and how to set one up that keeps cueing.",
-      "query": "interval timer stops when screen locks",
-      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Freeletics forum thread on Run Interval pausing and losing voice cues on lock; App Store listing for Interval Timer Alarm admits it does not run in background; 2025 Polycents Tabata Timer review says it shuts off mid-interval.",
-      "pain_quotes": [
-        "I lock my phone to run and the voice cues just stop until I unlock it again",
-        "Switching apps to change the song paused my whole Tabata",
-        "It worked for months then started cutting out halfway through an interval"
-      ],
-      "category": "App Features",
-      "distinctFrom": "online-interval-timer answers browser-tab-vs-app; this answers why an installed iPhone/Android timer app still pauses on lock or app switch, and which settings (background audio, notifications, Watch handoff) fix it.",
-      "searchEvidence": "Pain-signal theme: no Search Console query yet; app-lane product friction surfaced repeatedly in competitor reviews.",
-      "imagePrompt": "A runner on a city pavement at dawn mid-stride, phone strapped to upper arm with the screen dark, earbuds in, focused expression, cool morning light, shallow depth of field, no readable screens"
-    },
-    {
       "slug": "apple-watch-interval-haptics-weak",
       "theme": "Apple Watch interval haptics too weak to feel mid-workout",
       "hook": "You miss the wrist tap mid-sprint: why Apple Watch interval alerts get lost during hard efforts and how to make cues you actually notice.",
