@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "apple-watch-interval-haptics-weak",
-      "theme": "Apple Watch interval haptics too weak to feel mid-workout",
-      "hook": "You miss the wrist tap mid-sprint: why Apple Watch interval alerts get lost during hard efforts and how to make cues you actually notice.",
-      "query": "apple watch interval haptics weak",
-      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. iMore watchOS thread calls the interval haptic a very weak vibration that is often missed; Apple Community thread on intervals giving no alert at switches; competitor listings (HIIT Workouts, Pulse) now advertise stronger escalating haptics.",
-      "pain_quotes": [
-        "The vibration for the next interval is so faint I miss it every time I'm running hard",
-        "My watch never told me the interval changed, I only noticed when I looked",
-        "I want a stronger buzz for the last round, not the same tiny tap"
-      ],
-      "category": "App Features",
-      "distinctFrom": "best-apple-watch-interval-timer answers which Watch timer app to pick; this answers why the haptic cue itself goes unnoticed (Prominent haptics, wrist fit, motion masking, pairing haptic with audio, countdown pre-warnings) whatever app you use.",
-      "searchEvidence": "Pain-signal theme; adjacent Watch posts earn impressions (apple-watch-interval-timer-without-phone 17 imp pos 11, best-apple-watch-interval-timer 27 imp pos 25 in last 28 days).",
-      "imagePrompt": "Close-up of a sweaty forearm and wrist wearing a smartwatch mid push-up on a rubber gym floor, watch face turned away from camera, dramatic side light, motion and effort, no readable screens"
-    },
-    {
       "slug": "bouldering-4x4-timer",
       "theme": "Bouldering 4x4 timer: four problems, four rounds, timed rest",
       "hook": "The climbers' 4x4 builds power endurance only if the rest stays honest; how long to rest between sets and how to time it so it doesn't drift.",
