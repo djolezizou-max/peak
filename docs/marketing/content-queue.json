@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "bouldering-4x4-timer",
-      "theme": "Bouldering 4x4 timer: four problems, four rounds, timed rest",
-      "hook": "The climbers' 4x4 builds power endurance only if the rest stays honest; how long to rest between sets and how to time it so it doesn't drift.",
-      "query": "bouldering 4x4",
-      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Search Console shows climbers already reaching the site ('climbing hiit classes') with no climbing post published; hangboard-repeaters-timer is queued for finger strength, the 4x4 is the wall-conditioning counterpart.",
-      "pain_quotes": [
-        "My rest between 4x4 sets turns into ten minutes of chatting",
-        "I never know if I should rest after each problem or only between sets",
-        "Hard to keep count of which round I'm on when I'm pumped"
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "norwegian-4x4-interval-timer is a 4:00/3:00 cardio protocol; this is the climbing 4x4 (four boulder problems back to back, four sets, timed rest) and how to time set-ends you finish by hand. Distinct from queued hangboard-repeaters-timer (7/3 finger hangs).",
-      "searchEvidence": "Striking distance: 'climbing hiit classes' 7 impressions at avg position 11.3 (90 days); '4x4 timer' 2 imp pos 10 and '4x4 time' 2 imp pos 10.",
-      "imagePrompt": "A climber on an indoor bouldering wall, chalked hands reaching for a hold, forearms pumped, colourful holds, soft gym lighting, another climber resting on the crash mat in the background"
-    },
-    {
       "slug": "swim-interval-timer",
       "theme": "Swim interval timer: send-off times without a pace clock",
       "hook": "How to run swim sets on send-offs like 4x100 on 1:45 when the pool has no pace clock, and keep the cue on a wet wrist.",
