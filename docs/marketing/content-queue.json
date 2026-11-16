@@ -143,6 +143,118 @@
       "distinctFrom": "Closest scored neighbour is retired what-is-hiit at 0.10. The live collision is the queued apple-watch-interval-haptics-weak theme, which is an Apple Watch tap too faint to feel; this answers a Fitbit Charge that has no usable interval cue unless a saved Exercise-app timer fires, and often does not",
       "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from justanswer.com Charge 5 interval-notification thread, support.google.com Fitbit alert help, and a public r/fitbit thread found by web search.",
       "imagePrompt": "A runner on a park path glancing at a slim fitness band on the wrist, the band face turned away from the camera, phone zipped into a pocket, overcast daylight, no readable screens"
+    },
+    {
+      "slug": "beep-test-timer",
+      "theme": "Beep test timer: a 20m shuttle whose beeps get closer every level",
+      "hook": "The beep test is not a fixed work/rest pair. The gap between beeps shrinks every level, and two late shuttles in a row end the test.",
+      "query": "beep test timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Beep Test Online and beeptest.net describe a 20m shuttle that starts near 8.5 km/h, about 8.5 seconds per shuttle on the Léger protocol, and shortens every level; the score is the last level and shuttle, and two missed beeps in a row end it. Dedicated beep-test timers exist because a normal interval timer holds every shuttle at the same length.",
+      "pain_quotes": [
+        "A normal interval timer made every shuttle the same length, so it was not a beep test",
+        "Nothing tells me the beeps just got closer, and I lose which level I am in",
+        "One late beep is only a warning, and I cannot tell whether the next miss ends the test"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "Closest scored neighbour is the queued kettlebell-snatch-test-timer at 0.26, a rep race against a 5- or 10-minute clock with a hand-switch cue, not a shuttle. This answers the 20m beep test: the time allowed for each shuttle shrinks every level, there is no walk break, and the score is the last level and shuttle. The queued 30-15 intermittent fitness test at 0.23 keeps a fixed 30 seconds of running and 15 seconds of walking and raises the speed inside that structure.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from beeptest.online, beeptest.net and thetimerlab.com beep-test timer.",
+      "imagePrompt": "Athletes sprinting between two cones in a school gym, a coach at the side with a whistle raised, polished floor and painted lines, bright overhead light, no screens or clocks"
+    },
+    {
+      "slug": "yasso-800s-timer",
+      "theme": "Yasso 800s timer: the rest has to match the 800 you just ran",
+      "hook": "Ten 800s only work if the recovery lasts as long as that 800 took, so a preset work/rest pair starts the next rep early or late.",
+      "query": "yasso 800s",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Runner's World and Runstreet describe ten 800-meter repeats with a recovery equal to the time of the 800; Middle Age Marathoner says the rest between each 800 matches the length of that 800. A preset rest typed in before the first rep is wrong as soon as the rep time drifts.",
+      "pain_quotes": [
+        "I set the rest to three minutes, ran the 800 in 3:20, and the next one started before I had recovered",
+        "I do the rest maths while I am jogging and lose count of the repeat",
+        "The timer wants both sides filled in before I start, and I do not know the rest until the 800 is done"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "Closest scored neighbour is emom-meaning at 0.06, which explains a one-minute window. interval-running-workout-timer builds a run as warm-up, equal hard/easy repeats and a cool-down with both sides preset; this answers Yasso 800s, where the jog lasts as long as the 800 you just ran, so the rest cannot be typed in until that rep finishes. swim-interval-timer is a fixed leave interval, and the rest is whatever time is left.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from runnersworld.com, runstreet.com, middleagemarathoner.com and rundida.com.",
+      "imagePrompt": "A runner on an outdoor track bent forward with hands on knees after a hard repeat, empty lanes curving away, early morning light, a watch on the wrist turned so the face is hidden, no readable screens"
+    },
+    {
+      "slug": "mona-fartlek-timer",
+      "theme": "Mona fartlek timer: 90, 60, 30 and 15 second efforts with a matching float",
+      "hook": "The Mona fartlek is twenty minutes of four different effort lengths, each with a float of the same length, and one repeating interval cannot descend through them.",
+      "query": "mona fartlek",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Runner's World UK, the morning shakeout and Runlovers give the same script: 2 x 90 seconds hard with a 90-second float, then 4 x 60, 4 x 30 and 4 x 15, exactly 20 minutes. Runlovers says to set a timer or memorize the sequence, because the 15-second reps leave no time to think.",
+      "pain_quotes": [
+        "By the 15-second reps I cannot remember whether I am on the third or the fourth",
+        "One repeating interval cannot step down from 90 seconds to 15",
+        "I slow the float to a walk because nothing tells me the recovery is supposed to stay quick"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "Closest scored neighbour is random-interval-timer at 0.12, which is for cues you must not be able to predict. This answers the Mona fartlek, a fixed 20-minute script of 2x90, 4x60, 4x30 and 4x15 with a float equal to the effort. interval-running-workout-timer is equal repeats. The queued 10-20-30 run is three paces inside one repeating minute, not four effort lengths that get shorter.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from runnersworld.com/uk, themorningshakeout.com, runlovers.it and rogues.run.",
+      "imagePrompt": "A runner accelerating on a flat park path at sunrise, a second runner a few strides behind settling into a slower float, long shadows, earbuds in, no clocks or readable screens"
+    },
+    {
+      "slug": "kettlebell-snatch-test-timer",
+      "theme": "Kettlebell snatch test timer: five or ten minutes, and a cue to switch hands",
+      "hook": "The snatch test is a rep race against a fixed clock, and the hand switch has to land on a minute or the pace you were counting is gone.",
+      "query": "kettlebell snatch test timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Kettlebell Monster describes the common standards as 100 snatches in 5 minutes or 200 in 10, with a hand switch on a plan such as every full minute. A StrongFirst forum thread says people ran Seconds Pro during the snatch test so the pace stayed honest. Interval Timer's kettlebell page uses one minute of snatches and one minute of rest as pacing practice so the hands stay on the bell.",
+      "pain_quotes": [
+        "I lose the minute once I am snatching, and the hand switch happens whenever my grip gives up",
+        "The test is a total against the clock, not a set every minute, and an EMOM keeps stopping me",
+        "I needed a beep for the hand change because looking at a clock breaks the pace"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "Closest scored neighbour is the queued beep-test-timer at 0.26, a 20m shuttle whose beeps get closer every level. This answers the kettlebell snatch test: as many snatches as possible in 5 or 10 minutes, with a cue to switch hands. kettlebell-swing-emom paces 100 swings across ten one-minute windows. Retired kettlebell-hiit-workouts at 0.15 was generic kettlebell editorial and stays retired. The queued armor-building complex is 2 cleans, 1 press and 3 squats on the minute.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from kettlebell.monster, the StrongFirst custom-timer thread, and intervaltimer.com kettlebell workouts.",
+      "imagePrompt": "A person locking out a kettlebell overhead in a garage gym, the other arm free, chalk on the hand, bumper plates behind, warm side light, no clocks or readable screens"
+    },
+    {
+      "slug": "galaxy-watch-timer-vibration",
+      "theme": "Galaxy Watch timer that goes silent when the interval ends",
+      "hook": "After a Galaxy Watch update the timer still finishes and no longer vibrates, so the cue the workout was built around is gone.",
+      "query": "galaxy watch timer vibration",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). A Samsung Community thread says the Galaxy Watch timer stopped vibrating after a software update and now finishes in silence, including during workouts. A public Pixel Watch thread asks how to get a timer that buzzes without a sound. A Wear OS interval-timer project lists separate watch controls for vibration and sound because the stock countdown is not enough to run a session.",
+      "pain_quotes": [
+        "My Galaxy Watch timer still ends, it just does not buzz anymore, and I miss the change while I am moving",
+        "I cannot find a vibration-only timer on the watch, so the cue is either a beep or nothing",
+        "The stock watch timer is one countdown, not a work and rest pair, and the buzz disappeared in an update"
+      ],
+      "category": "Comparisons",
+      "distinctFrom": "Closest scored neighbour is silent-interval-timer-vibration-only at 0.22, which is how to choose an Apple Watch haptic-only session on purpose: mute the Watch, turn Prominent Haptic on, and let one tap mark each boundary. This answers a Galaxy Watch whose stock timer vibration stopped after an update, and a Wear OS watch whose stock timer is a single countdown rather than work and rest. apple-watch-interval-haptics-weak is an Apple Watch tap that is too faint to feel. The queued fitbit-interval-notifications theme is a Fitbit that never alerts unless a saved Exercise-app timer fires.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from the Samsung Community Galaxy Watch timer thread (3363337), a public r/PixelWatch vibration-timer thread, and Wear OS interval-timer notes.",
+      "imagePrompt": "A person mid squat in a small apartment gym glancing at a round smartwatch, the watch face turned away from the camera, a dumbbell on the floor, soft daylight, no readable screens"
+    },
+    {
+      "slug": "30-15-intermittent-fitness-test-timer",
+      "theme": "30-15 intermittent fitness test timer: 30 seconds out, 15 seconds walking, faster every stage",
+      "hook": "A repeating 30/15 timer holds one speed. The 30-15 test speeds up every stage, and the beeps inside the 30 seconds are what set the pace.",
+      "query": "30-15 intermittent fitness test",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Martin Buchheit describes the test as 30-second 40m shuttles with 15 seconds of walking, starting at 8 km/h and rising 0.5 km/h each stage. Topend Sports says a double beep ends the 30-second run, which may finish between the lines, and the athlete walks to the next line for the 15-second recovery.",
+      "pain_quotes": [
+        "I set 30 on and 15 off and it never got harder, so it was not the test",
+        "The beeps inside the 30 seconds are the pace, and one beep at the start does not tell me where I should be",
+        "The run ends on a double beep that is not always at a line, and I do not know which way to walk"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "Closest scored neighbour is the queued beep-test-timer at 0.23, which shortens the time for every 20m shuttle and never inserts a walk. This answers the 30-15 intermittent fitness test: 30 seconds of 40m shuttles, 15 seconds of walking, and 0.5 km/h faster each stage, with beeps inside the 30 seconds. 30-second-interval-timer is a cue every 30 seconds. Queued gibala-sprint-interval-timer is about 30 seconds all-out and four minutes easy.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from martin-buchheit.net and topendsports.com 30-15 test instructions.",
+      "imagePrompt": "Athletes walking slowly across an indoor court between cones after a shuttle, one person still breathing hard, painted lines on the floor, gym lights, no screens or clocks"
+    },
+    {
+      "slug": "little-method-interval-timer",
+      "theme": "Little method interval timer: 60 seconds hard and 75 seconds easy",
+      "hook": "The Little method is a minute hard and 75 seconds easy, eight to twelve times. A Tabata timer and a 30-second sprint timer both run the wrong pair.",
+      "query": "little method hiit timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Wikipedia's HIIT page and HIIT Academy describe 60 seconds near 95% of VO2max and 75 seconds of recovery, repeated 8 to 12 times after a short warm-up, often on a bike; writeups call that 60/75 prescription the Little method. Owayo and HiTONE list the same ratio. The 75-second rest is the part that gets shortened to a round minute.",
+      "pain_quotes": [
+        "I keep resting for a minute because 75 seconds is an awkward thing to count",
+        "A Tabata timer is 20 on and 10 off, and this session is a full minute hard",
+        "I lose which of the twelve rounds I am on once the rest is longer than the work"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "Closest scored neighbour is the queued gibala-sprint-interval-timer at 0.14, which is about 30 seconds all-out and four minutes easy. This answers the 60-second effort and 75-second recovery, repeated 8 to 12 times. best-tabata-timer is 20 seconds on and 10 off for eight rounds. norwegian-4x4-interval-timer is four minutes hard and three minutes easy, four times.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from the Wikipedia HIIT page (60/75 cycles, sometimes called the Little method), hiitacademy.com, owayo.co.uk and hitonefitness.com.",
+      "imagePrompt": "A person driving a hard minute on a stationary bike in a gym, sweat on the arms, the console turned away, a water bottle on the floor, overhead light, no readable screens"
     }
   ],
   "retired": [
