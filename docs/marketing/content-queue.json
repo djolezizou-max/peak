@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "swim-interval-timer",
-      "theme": "Swim interval timer: send-off times without a pace clock",
-      "hook": "How to run swim sets on send-offs like 4x100 on 1:45 when the pool has no pace clock, and keep the cue on a wet wrist.",
-      "query": "swim interval timer",
-      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Apple Community thread asking how to set interval alerts for pool swims on Series 8 with no answer; Apple's Workout app has no send-off timer, so swimmers buy single-purpose apps (Pool Clock, Swim Coach Tools, Swimming Lap Tracker); Suunto forum thread on managing intervals mid-swim.",
-      "pain_quotes": [
-        "Our pool doesn't have a pace clock so I can't do send-off sets",
-        "The Workout app tracks laps but won't tell me when to leave the wall",
-        "I end up counting seconds in my head between 100s"
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "No swim post exists (closest best-tabata-timer at 0.12); this answers how to time send-off intervals in the pool, which no published post covers.",
-      "searchEvidence": "Pain-signal theme; no Search Console query yet.",
-      "imagePrompt": "A swimmer pausing at the pool wall between sets, goggles on forehead, water droplets, lane ropes and blue water, bright natatorium light, smartwatch on wrist seen from the side, no readable screens"
-    },
-    {
       "slug": "tabata-song-vs-timer",
       "theme": "Tabata song vs a Tabata timer app",
       "hook": "Tabata songs bake the 20/10 cues into the track; when that is all you need and when a timer over your own music works better.",
