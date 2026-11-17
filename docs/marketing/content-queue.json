@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "tabata-song-vs-timer",
-      "theme": "Tabata song vs a Tabata timer app",
-      "hook": "Tabata songs bake the 20/10 cues into the track; when that is all you need and when a timer over your own music works better.",
-      "query": "tabata song",
-      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Tabata Songs app sells 43 cue-baked tracks behind an in-app purchase; Totally Tabata reviews complain switching apps to change a song pauses the timer, the exact choice this post settles.",
-      "pain_quotes": [
-        "I love the Tabata song but I'm sick of the same track every session",
-        "Can I use my own playlist and still know when the 20 seconds is up",
-        "The song only works for one 4-minute round, what about the rest of the workout"
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "interval-timer-with-music answers how to hear timer cues over a playlist; this answers whether a pre-cued Tabata song can replace the timer entirely (fixed 8 rounds, one protocol, no multi-block) versus a timer over any music.",
-      "searchEvidence": "Keyword research: 'tabata song' 880/mo, LOW competition (seed 'tabata').",
-      "imagePrompt": "A person mid jump squat in a bright living room, wireless headphones on, a small bluetooth speaker on the floor nearby, warm afternoon light, energetic, no readable screens"
-    },
-    {
       "slug": "5-minute-plank-timer",
       "theme": "5 minute plank timer: a plank series that switches position on cue",
       "hook": "Five minutes of front, side and reverse planks as a timer that calls each switch, so you hold the position instead of watching a clock.",
