@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "5-minute-plank-timer",
-      "theme": "5 minute plank timer: a plank series that switches position on cue",
-      "hook": "Five minutes of front, side and reverse planks as a timer that calls each switch, so you hold the position instead of watching a clock.",
-      "query": "5 minute plank",
-      "evidence": "Reddit skipped: no OAuth creds at config/reddit-oauth.json. Keyword-led; plank routines are a top use of interval timers and existing generic core posts were retired, so this is scoped strictly to timing the series.",
-      "pain_quotes": [
-        "I always cheat my plank because I'm staring at the stopwatch",
-        "I can't remember which side plank comes next",
-        "Five minutes straight is impossible but I don't know how to break it up"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "Closest is retired 10-minute-hiit-workouts at 0.13; no published post times a plank sequence. Answers how to build a 5:00 plank series (positions, switch cues, rest splits for beginners) as one timer.",
-      "searchEvidence": "Keyword research: '5 minute plank' / 'five minute plank' 1,900/mo, LOW competition (seed 'plank').",
-      "imagePrompt": "A person holding a side plank on a yoga mat in a minimalist room, strong straight line from shoulder to ankle, soft window light, calm focus"
-    },
-    {
       "slug": "air-bike-interval-timer",
       "theme": "Air bike interval timer for Assault and Echo calorie intervals",
       "hook": "Fan-bike intervals are scored in calories, and an Echo flywheel wastes anything much shorter than 15 seconds — the spin-bike timer setup does not transfer",
