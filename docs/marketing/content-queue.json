@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "air-bike-interval-timer",
-      "theme": "Air bike interval timer for Assault and Echo calorie intervals",
-      "hook": "Fan-bike intervals are scored in calories, and an Echo flywheel wastes anything much shorter than 15 seconds — the spin-bike timer setup does not transfer",
-      "query": "air bike interval timer",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Peak Primal Wellness says a dedicated interval timer is essential because watching a clock during an all-out air-bike sprint is impractical; The Workout Mag says the Echo flywheel takes 2–3 seconds longer to spin up, so 5-second sprints are mostly inertia and work should be at least 15 seconds; Fit at Midlife lists 30/30 air-bike intervals and readers ask where to put a phone.",
-      "pain_quotes": [
-        "I cannot watch a wall clock during an all-out air-bike sprint, so the intervals have to be set before I start",
-        "Ten-second sprints on the Echo mostly go to spinning the flywheel up, not to the work",
-        "The console programs are not the 30-on, 30-off session I actually want"
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "stationary-bike-hiit-workout (0.28) is resistance versus cadence on a spin bike, upright, Peloton or recumbent, where 10–20 second sprints work because effort changes in two pedal strokes; this answers how to time calorie intervals on an Assault or Echo fan bike, where the Echo flywheel makes sub-15-second sprints mostly spin-up",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from peakprimalwellness.com, theworkoutmag.com Echo programming guide, and fitatmidlife.com assault-bike workouts.",
-      "imagePrompt": "A person driving an air bike hard in a garage gym, arms pushing and legs spinning, the fan housing in the foreground, a phone lying face-down on a bench behind them, late afternoon light, no readable screens"
-    },
-    {
       "slug": "10-20-30-running-timer",
       "theme": "10-20-30 running timer with three paces inside one minute",
       "hook": "The 10-20-30 run is 30 seconds easy, 20 moderate and 10 all-out, five times, then a walk — a work/rest timer cannot name the three paces",
