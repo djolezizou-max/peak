@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "10-20-30-running-timer",
-      "theme": "10-20-30 running timer with three paces inside one minute",
-      "hook": "The 10-20-30 run is 30 seconds easy, 20 moderate and 10 all-out, five times, then a walk — a work/rest timer cannot name the three paces",
-      "query": "10-20-30 running workout",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Runlovers lays out the minute as 30 easy, 20 moderate and 10 all-out, five times without stopping, then about 2 minutes easy, for 3–4 sets; Futurity describes beginners starting at one 5-minute block and fitter runners at two blocks with a 3–4 minute break; Runner's World reports the same protocol in a performance study.",
-      "pain_quotes": [
-        "I lose which of the three speeds I am in because they all live inside the same minute",
-        "A normal interval timer only has work and rest, and this run has three efforts plus a set break",
-        "I end up counting the 10-second sprint in my head and the rest of the minute falls apart"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "interval-running-workout-timer (0.27) builds a generic run — warm-up, equal hard/easy repeats, cool-down — as one audio timer; this answers how to encode the 10-20-30 minute (30 easy, 20 moderate, 10 sprint, five times, then a walk), which a single work/rest repeat cannot name. walk-run-interval-timer is a two-pace week-by-week ratio, not three efforts inside one minute",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from runlovers.it, futurity.org and runnersworld.com descriptions of the 10-20-30 protocol.",
-      "imagePrompt": "A runner mid-stride on an outdoor track at dawn, leaning into a sprint, earbuds in, empty lanes and long shadows, a watch on the wrist turned away from the camera, cool morning light, no readable screens"
-    },
-    {
       "slug": "fight-gone-bad-timer",
       "theme": "Fight Gone Bad timer: five one-minute stations and one minute off",
       "hook": "Fight Gone Bad is one minute at each of five stations with the clock still running, then one minute off, three rounds, and the score is reps",
