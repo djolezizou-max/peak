@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "armor-building-complex-timer",
-      "theme": "Armor building complex timer: 2 cleans, 1 press, 3 squats on the minute",
-      "hook": "Dan John's armor building complex is 2 cleans, 1 press and 3 squats, aiming at 30 rounds in 30 minutes, and one bell needs a cue at the halfway mark to switch arms",
-      "query": "armor building complex emom",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. The StrongFirst forum thread on Dan John's armour building complex sets the long-term goal at 30 rounds in 30 minutes (2 double cleans, 1 press, 3 front squats); The Workout Mag's single-bell version cues the other arm at the 30-second mark inside a 20-minute EMOM; Pedestal Footwear describes an 8-minute EMOM of the same complex.",
-      "pain_quotes": [
-        "I am trying to fit 30 complexes into 30 minutes and I lose the minute once a round runs long",
-        "With one bell I need a beep at 30 seconds to switch arms, not only at the top of the minute",
-        "If I rest by feel I never know whether I actually hit the 30-minute goal"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "Closest scored neighbour is hiit-for-powerlifters at 0.05. The question this must not repeat is kettlebell-swing-emom (100 swings across ten one-minute windows) and how-to-run-an-emom (a generic set sized to 30–40 seconds); this answers Dan John's armor building complex — 2 cleans, 1 press, 3 squats, a 30-rounds-in-30-minutes goal, and a halfway cue to switch arms on one bell",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from the StrongFirst forum ABC thread, theworkoutmag.com armor-building guide, and pedestalfootwear.com.",
-      "imagePrompt": "A person standing in a gym with two kettlebells racked at the shoulders, elbows tucked, chalk on the hands, bumper plates stacked behind, focused expression, warm side light, no readable screens"
-    },
-    {
       "slug": "gibala-sprint-interval-timer",
       "theme": "Gibala sprint interval timer: 30 seconds on, four minutes easy",
       "hook": "The Gibala sprint interval is 30 seconds all-out and about four minutes easy, four to seven times — a Tabata timer and a repeating 30-second beep both run the wrong clock",
