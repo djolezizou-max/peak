@@ -14,6 +14,8 @@ You hear the tone and still do not know whether the squat just ended or the push
 
 A beep only marks that a phase changed. Once the rounds are different exercises, the missing piece is a few words: which move is next, and how close the change is.
 
+Speaking the workout into the app is a separate feature. [Speak your workout](/blog/posts/speak-your-workout) listens while you name the rounds and the exercises, and the timer appears as you talk. Voice Cues, including the celebrity voice packs, are what this post is about: the words the timer says once the workout already exists.
+
 ## Use a beep when every round is the same move
 
 Eight rounds of the same exercise, 20 seconds on and 10 off, is a beep's kind of workout. You already know the movement. You only need the boundary, and a single tone can carry that.

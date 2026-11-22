@@ -36,6 +36,8 @@ That is especially useful if you:
 - use iPhone and Apple Watch together
 - save workouts from screenshots, notes, or social media
 
+A photo is [screenshot import](/blog/posts/import-workout-from-screenshot). A post you can share from Instagram or TikTok is [follow-along import](/blog/posts/import-instagram-tiktok-workout). A workout you can say out loud is [speak your workout](/blog/posts/speak-your-workout).
+
 The product advantage is not just timing accuracy. It is reducing the friction between idea and execution.
 
 ## Who it is best for

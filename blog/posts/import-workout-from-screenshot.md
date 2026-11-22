@@ -11,7 +11,7 @@ category: "App Features"
 
 Finding workouts is easy now. The hard part is actually using them.
 
-You save a HIIT circuit from Instagram, screenshot a boxing round structure from TikTok, or snap a gym whiteboard after class. Then you still have to manually rebuild the whole thing into a timer. That friction is where a lot of good workouts die. The plan looked great when you found it, but turning it into something you can actually follow during training is usually more annoying than it should be.
+You save a HIIT circuit as a screenshot, photograph a boxing round structure, or snap a gym whiteboard after class. Then you still have to manually rebuild the whole thing into a timer. That friction is where a lot of good workouts die. The plan looked great when you found it, but turning it into something you can actually follow during training is usually more annoying than it should be.
 
 This is exactly the problem Peak Interval is built to solve. Instead of manually entering every work block, rest block, round, and finisher, you can start with the workout you already found and turn it into a timer you can run. If you're trying to save time, stay consistent, and stop rebuilding workouts from scratch, screenshot import is one of the most useful features in the app.
 
@@ -66,9 +66,9 @@ Some of the best real-world sources for screenshot-based timer building are the 
 
 ### Instagram and TikTok workouts
 
-Short-form fitness content is packed with interval workouts, but most of it is trapped inside static images or captions. If a creator posts a 20-minute bodyweight burner, a boxing finisher, or a treadmill interval ladder, the hard part is not understanding the workout. The hard part is turning it into a timer before your motivation disappears.
+A still slide, a caption you saved as a screenshot, or a photo of the workout still belongs here. Screenshot import reads the text in the image and builds the timer.
 
-Screenshot import gives those posts a second life. Instead of bookmarking them and forgetting them, you can turn them into something runnable.
+If the workout is the video, share the post instead of pausing the reel. In Instagram or TikTok, tap Share and choose Peak Intervals, or paste the link under Import. That builds a follow-along timer from the creator's own video, covered in [turn an Instagram or TikTok workout into a follow-along timer](/blog/posts/import-instagram-tiktok-workout). If you would rather say the session, [speak your workout](/blog/posts/speak-your-workout) builds the timer while you talk.
 
 ### Gym whiteboards
 

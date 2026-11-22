@@ -21,7 +21,7 @@ Most people switch for one of three reasons:
 - they want faster workout creation
 - they want a setup that fits how they actually find workouts now
 
-That last point matters a lot. Many workouts now come from screenshots, creators, coach messages, notes apps, and saved social posts. A good timer app should help you get from those sources to a runnable workout with as little friction as possible.
+That last point matters a lot. Many workouts now come from screenshots, creators, coach messages, notes apps, and saved social posts. A good timer app should help you get from those sources to a runnable workout with as little friction as possible. Peak Interval covers a photo, a post, and a workout you say out loud: [screenshot import](/blog/posts/import-workout-from-screenshot), [Instagram or TikTok follow-along](/blog/posts/import-instagram-tiktok-workout), and [speak your workout](/blog/posts/speak-your-workout).
 
 ## Where Peak Interval stands out
 

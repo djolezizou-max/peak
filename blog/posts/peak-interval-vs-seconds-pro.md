@@ -22,7 +22,7 @@ Peak Interval is probably the better fit if you want:
 - less friction when turning saved workouts into timers
 - a more modern feel
 
-That is especially true if you regularly build workouts from screenshots, social posts, or coach-written plans and want the app to help you move faster.
+That is especially true if you regularly build workouts from screenshots, social posts, or coach-written plans and want the app to help you move faster. A photo, an Instagram or TikTok post, and a workout you say out loud each have a path: [screenshot import](/blog/posts/import-workout-from-screenshot), [follow-along import](/blog/posts/import-instagram-tiktok-workout), and [speak your workout](/blog/posts/speak-your-workout).
 
 ## Choose Seconds Pro if...
 
