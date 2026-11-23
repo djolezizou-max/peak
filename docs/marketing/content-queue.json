@@ -143,6 +143,118 @@
       "distinctFrom": "Closest scored neighbour is the queued gibala-sprint-interval-timer at 0.14, which is about 30 seconds all-out and four minutes easy. This answers the 60-second effort and 75-second recovery, repeated 8 to 12 times. best-tabata-timer is 20 seconds on and 10 off for eight rounds. norwegian-4x4-interval-timer is four minutes hard and three minutes easy, four times.",
       "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from the Wikipedia HIIT page (60/75 cycles, sometimes called the Little method), hiitacademy.com, owayo.co.uk and hitonefitness.com.",
       "imagePrompt": "A person driving a hard minute on a stationary bike in a gym, sweat on the arms, the console turned away, a water bottle on the floor, overhead light, no readable screens"
+    },
+    {
+      "slug": "billat-30-30-interval-timer",
+      "theme": "Billat 30/30 interval timer: 30 seconds at vVO2max and 30 seconds at half of that pace",
+      "hook": "The Billat 30/30 is two equal halves, and how long you keep going comes from your time to exhaustion at that pace, not from eight Tabata rounds",
+      "query": "billat 30/30 interval timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. LW Coaching programs the Billat 30-30 as 30 seconds at 100% of vVO2max and 30 seconds at 50%, repeated until the work plus the recoveries add up to about two to two-and-a-half times your time to exhaustion at that pace. Middaugh Coaching notes most athletes can hold VO2max pace for only about 5 to 9 minutes, which is why the short pair exists. A 20/10 Tabata clock and a 30-seconds-on, four-minutes-easy sprint clock both run a different session.",
+      "pain_quotes": [
+        "I started an eight-round timer because that is the preset, and the 30/30 ended before the pace was supposed to accumulate",
+        "The easy 30 seconds has to stay near half of vVO2max, and a full stop turns the next one into a fresh sprint",
+        "I cannot type a round count until I know how long I can hold the pace, so a fixed-round timer is a guess"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "Closest scored neighbour is best-tabata-timer at 0.13, which is 20 seconds on and 10 off for eight rounds. This answers Billat's 30/30: equal 30-second halves at vVO2max and at half of that pace, continued for about 2 to 2.5 times your time to exhaustion at vVO2max. gibala-sprint-interval-timer is 30 seconds all-out and about four minutes easy. The queued little-method-interval-timer is 60 seconds hard and 75 seconds easy. The Ronnestad 30/15 queued with this batch is 30 seconds hard and 15 seconds easy, in sets, with a few minutes between the sets.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from lwcoaching.com Billat 30-30 sessions and middaughcoaching.com on Billat intervals.",
+      "imagePrompt": "A runner on an outdoor track settling from a hard stride into an easier jog, empty lanes, early light, a watch on the wrist turned so the face is hidden, no clocks or readable screens"
+    },
+    {
+      "slug": "timmons-protocol-timer",
+      "theme": "Timmons protocol timer: 20 seconds flat-out, about two minutes easy, three efforts",
+      "hook": "Three 20-second sprints separated by about two minutes easy is not a Tabata, and a 20/10 timer starts the next sprint while you are still catching your breath",
+      "query": "timmons protocol timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Primary Care Notebook describes Jamie Timmons' protocol as three bursts of about two minutes of gentle pedalling followed by 20 seconds flat-out. Medical News Today walks the same shape from the BBC Horizon session: a short easy warm-up, 20 seconds as hard as possible, about two minutes easy, and that hard effort three times in all. A Tabata clock uses 10 seconds of rest and eight rounds, so it starts the next sprint on the wrong cue.",
+      "pain_quotes": [
+        "A Tabata timer gives me 10 seconds off, and the easy spinning here is supposed to last about two minutes",
+        "The session is only three hard efforts, and the preset wants eight rounds",
+        "I keep grabbing a 30-second sprint timer, and the hard part of this one is 20"
+      ],
+      "category": "HIIT Fundamentals",
+      "distinctFrom": "Closest scored neighbour is gibala-sprint-interval-timer at 0.16, which is about 30 seconds all-out and four minutes easy, four to six times. This answers the Timmons protocol: 20 seconds flat-out and about two minutes easy between efforts, exactly three hard efforts. best-tabata-timer and ultimate-tabata-guide are 20 seconds on and 10 seconds off for eight rounds. The queued little-method-interval-timer is a full minute hard and 75 seconds easy.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from primarycarenotebook.com on the Timmons regime and medicalnewstoday.com on the three 20-second efforts.",
+      "imagePrompt": "A person slumped over the bars of a stationary bike after a short sprint, feet still clipped in, the console turned away, a water bottle on the floor, overhead gym light, no clocks or readable screens"
+    },
+    {
+      "slug": "murph-workout-timer",
+      "theme": "Murph timer: two miles on one clock, and a middle you partition instead of an AMRAP",
+      "hook": "Murph is for time. Twenty rounds of 5, 10 and 15 use up 100, 200 and 300, and an AMRAP timer is still running after that work is done",
+      "query": "murph workout timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. CrossFit's Murph benchmark is a one-mile run, 100 pull-ups, 200 push-ups, 300 squats and another mile, partitioned as needed, with an optional 20/14 lb vest. CrossFit Roots, SugarWOD and WOD Machine treat 20 rounds of 5/10/15 as the usual split, with 10 rounds of 10/20/30 and 5 rounds of 20/40/60 as the other common ones. Evox's Murph page counts up with no cap and keeps the straight chipper and the 20-round partition as separate timers, because one interval pair cannot hold both miles and the middle.",
+      "pain_quotes": [
+        "I started a 20-minute AMRAP and still had squats left when it hit zero",
+        "I lose which round of 5, 10 and 15 I am in, and the second mile starts late",
+        "The first mile and the last mile have to stay on the same clock as the pull-ups"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "Closest scored neighbours are apple-watch-workout-app-intervals-vs-timer-app and interval-running-workout-timer, both at 0.14. The Watch post is about where the stock Workout app is enough. The running post builds a run as a warm-up, equal repeats and a cool-down. This answers Murph: one running clock across two miles and a fixed middle of 100 pull-ups, 200 push-ups and 300 squats, usually split into 20 rounds of 5/10/15. for-time-workout-meaning explains that the clock is the score on a fixed amount of work. how-to-run-an-amrap and best-amrap-timer fix the clock and score the reps, which is the wrong direction once the partition is a set amount of work.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from crossfit.com/benchmark/murph, crossfitroots.com, sugarwod.com, wodmachine.com and getevox.fit.",
+      "imagePrompt": "An athlete at the bottom of a pull-up bar in a garage gym, a weight vest on the floor beside a chalk bowl, morning light through an open door, no clocks or readable screens"
+    },
+    {
+      "slug": "yo-yo-intermittent-recovery-test-timer",
+      "theme": "Yo-yo intermittent recovery test timer: 20 meters out and back, then 10 seconds to jog",
+      "hook": "A beep-test timer never gives the 10-second jog, so the yo-yo turns into a continuous shuttle and the score stops meaning anything",
+      "query": "yo-yo intermittent recovery test timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. A systematic review of the yo-yo tests describes the intermittent recovery test as repeated 2 × 20 m runs at rising speed with 10 seconds of active recovery over 2 × 5 m, stopped after two failures, scored as distance. Pabau's protocol guide separates that from the beep test, which is continuous shuttle running with no recovery. FC Barcelona's notes put a 10-second pause between each out-and-back and a start at 10 km/h. The two tests need different audio.",
+      "pain_quotes": [
+        "I played a beep test and there was nowhere to jog the 10 seconds",
+        "One beep does not tell me whether I am late to the turn or late coming out of the recovery",
+        "Level 1 and level 2 do not start at the same speed, and a single shuttle timer cannot change the audio"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "Closest scored neighbour on the queue audit is the queued 30-15-intermittent-fitness-test-timer at 0.32: 30 seconds of 40 m shuttles and 15 seconds of walking, faster every stage, with the pace beeps inside the 30 seconds. This answers the yo-yo intermittent recovery test: 20 m out and 20 m back, then 10 seconds to jog 5 m and back, with the running speed rising by stage and the score in meters. The check against theme, hook and query also scored the queued beep-test-timer at 0.33, a continuous 20 m shuttle whose gap shrinks every level and which has no jog between shuttles.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from the yo-yo intermittent tests review (PMC6041409), pabau.com's protocol comparison with the beep test, and barcainnovationhub.fcbarcelona.com.",
+      "imagePrompt": "Athletes jogging slowly between two cones on a grass pitch after a shuttle, one person still breathing hard, a coach at the sideline, late afternoon light, no clocks or readable screens"
+    },
+    {
+      "slug": "ronnestad-30-15-interval-timer",
+      "theme": "Ronnestad 30/15 timer: about thirteen hard efforts, a few minutes off, then the next set",
+      "hook": "Thirty seconds hard and 15 seconds easy is only the inner loop. The session is three blocks of about 13, with a few minutes between the blocks",
+      "query": "ronnestad 30/15 intervals",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. The Wattkg write-up of the Rønnestad workout says riders repeated 30 seconds hard and 15 seconds easy for 13 cycles, about 9.5 minutes, then took a 3-minute break. Road Cycling Academy programs 3 sets of about 12 reps with 3 to 5 minutes between sets. TrainingPeaks says the 15 seconds should stay near tempo rather than drop to a stop. A single repeating 30/15 with no set break is a different workout, and so is the 30-15 shuttle test.",
+      "pain_quotes": [
+        "I set 30 on and 15 off and it never stopped for the few minutes between sets",
+        "Thirteen reps is most of ten minutes, and I lost the count around the eighth",
+        "I treated the 15 seconds as a full stop, and the next 30 never got back to the same power"
+      ],
+      "category": "Specialized HIIT Training",
+      "distinctFrom": "Closest scored neighbour is the queued little-method-interval-timer at 0.14, which is 60 seconds hard and 75 seconds easy for 8 to 12 rounds. This answers the Rønnestad 30/15: about 13 repeats of 30 seconds hard and 15 seconds still pedaling, done as three sets, with about three minutes between sets. 40-20-interval-timer is about whether a station change fits inside 20 seconds of rest, and when 45/15 helps that transition. The queued 30-15-intermittent-fitness-test-timer is a 40 m shuttle that gets faster every stage, with 15 seconds of walking. The Billat 30/30 queued with this batch uses equal 30-second halves and no set break.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from the Wattkg 30/15 short-interval PDF, roadcyclingacademy.com and trainingpeaks.com on Rønnestad 30/15s.",
+      "imagePrompt": "A cyclist on an indoor trainer driving a short hard effort, sweat on the arms, the bike computer turned away from the camera, a fan on the floor, dim garage light, no clocks or readable screens"
+    },
+    {
+      "slug": "japanese-interval-walking-timer",
+      "theme": "Japanese interval walking timer: 3 minutes brisk and 3 minutes easy",
+      "hook": "Interval walking is five or more pairs of 3 minutes fast and 3 minutes slow, and a walk-run plan is a different clock because it asks you to run",
+      "query": "japanese interval walking timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Get Fit Craft and Daily Burn describe the Shinshu University interval walking protocol as 3 minutes near 70% of peak aerobic capacity and 3 minutes near 40%, five or more cycles. japaneseintervalwalking.com is a timer with separate fast and slow fields and a 30-minute session of five sets, because one countdown does not call the pace change. Daily Burn also separates that 3/3 pair from the 6-6-6 step-count trend.",
+      "pain_quotes": [
+        "I tell myself three minutes and the brisk walk turns into five",
+        "A running interval app wants a jog, and this session never leaves a walk",
+        "Nothing marks the switch from fast to slow unless I keep looking at the phone"
+      ],
+      "category": "Workout Guides",
+      "distinctFrom": "Closest scored neighbour is walk-run-interval-timer at 0.09, which saves a new run-to-walk ratio each week on the way to continuous running. This answers Japanese interval walking: a fixed pair of 3 minutes brisk and 3 minutes easy, five or more times, with no running. 12-3-30-treadmill-workout is 30 minutes at one incline and one speed, not alternating paces.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from getfitcraft.com and dailyburn.com on the Shinshu University 3/3 protocol, and japaneseintervalwalking.com as a dedicated fast/slow timer.",
+      "imagePrompt": "Two people walking a park path at different paces, the nearer one striding briskly and the other a few steps behind at an easy stroll, morning light, no clocks or readable screens"
+    },
+    {
+      "slug": "pyramid-interval-timer",
+      "theme": "Pyramid interval timer: each rep is a different length, up and then back down",
+      "hook": "A 1-2-3-4-3-2-1 pyramid changes the work every rep. One work-and-rest pair holds a single length, so the long middle rep never happens",
+      "query": "pyramid interval timer",
+      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Polar's running journal climbs from 1 minute to 4 and back down, with a jog between each rep. Mile By Mile's time pyramid steps 2, 3 and 4 minutes hard and back down, with one minute easy between. Watta's rower pyramid is 1-2-3-4-3-2-1 minutes and sets the rest equal to the piece just rowed. A timer with one work length and one rest length cannot climb and descend.",
+      "pain_quotes": [
+        "I can set one work time, and the pyramid needs a different length every rep",
+        "On the rower the rest is supposed to match the piece I just finished, and a fixed rest starts the next one early",
+        "Halfway through I cannot tell whether I am still going up or already coming down"
+      ],
+      "category": "App Features",
+      "distinctFrom": "Closest scored neighbour is best-emom-timer at 0.12, a one-minute window you start at the top of. interval-timer-repeating-sets at 0.10 shows how to nest a block so a session is not thirty separate rows, and mentions a pyramid in one line as durations that step up and back down. This answers the pyramid itself: a 1-2-3-4-3-2-1 minute ladder, including the rower version where the rest matches the piece just done. The queued mona-fartlek-timer is a fixed 20-minute run of 90, 60, 30 and 15 second efforts that only get shorter. Retired hiit-ladder-workouts was generic ladder editorial and stays retired.",
+      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from polar.com's pyramid running routine, milebymileblog.com's time-based pyramid, and getwatta.com's 1-2-3-4-3-2-1 rower pyramid.",
+      "imagePrompt": "A rower at the catch on an indoor rowing machine, the monitor turned away, a gym floor stretching behind, side light, no clocks or readable screens"
     }
   ],
   "retired": [
