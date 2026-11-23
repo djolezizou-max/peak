@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "gibala-sprint-interval-timer",
-      "theme": "Gibala sprint interval timer: 30 seconds on, four minutes easy",
-      "hook": "The Gibala sprint interval is 30 seconds all-out and about four minutes easy, four to seven times — a Tabata timer and a repeating 30-second beep both run the wrong clock",
-      "query": "gibala interval timer",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Time.tz ships a sprint-timer preset named Classic SIT (30 seconds on, 4 minutes off); Precision Nutrition describes the Gibala protocol as a 30-second sprint plus four minutes rest; a PubMed Central trial used 30-second all-out efforts with 4 minutes rest, progressing from 4 to 7 bouts.",
-      "pain_quotes": [
-        "The recovery is so long I start the next sprint early or late because nothing calls me back",
-        "A Tabata timer is twenty on and ten off, which is a different session entirely",
-        "A beep every 30 seconds keeps firing through the four-minute recovery, which is the opposite of what I need"
-      ],
-      "category": "HIIT Fundamentals",
-      "distinctFrom": "norwegian-4x4-interval-timer (0.17) is four minutes hard and three minutes easy, four times; this answers the Gibala sprint interval — about 30 seconds all-out and four minutes easy, four to seven times — which neither a Tabata timer nor a repeating 30-second cue can run. Retired hiit-for-track-sprint-workouts (0.15) was generic sprint editorial and stays retired",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from time.tz sprint timer presets, precisionnutrition.com's Gibala writeup, and PMC5839711.",
-      "imagePrompt": "A sprinter bent over with hands on knees on an empty track after a hard effort, chest heaving, lane lines stretching into the distance, early morning light, no readable screens or watch faces"
-    },
-    {
       "slug": "cluster-set-rest-timer",
       "theme": "Cluster set timer with a short rest inside the set",
       "hook": "A cluster set needs 15–20 seconds between mini-sets and a normal multi-minute rest after the cluster, and a rest timer only runs one of those clocks",
