@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "cluster-set-rest-timer",
-      "theme": "Cluster set timer with a short rest inside the set",
-      "hook": "A cluster set needs 15–20 seconds between mini-sets and a normal multi-minute rest after the cluster, and a rest timer only runs one of those clocks",
-      "query": "cluster set timer",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. Muscle & Fitness programs hypertrophy clusters as 4+4+4 with 15–20 seconds between clusters, or 20–30 seconds on heavier setups; Sci-Fit specifies 15–45 seconds between sub-sets and then a normal 2–4 minute rest; The Barbell describes the same 15–20 second intra-set break that lifters otherwise count in their heads.",
-      "pain_quotes": [
-        "I count the twenty seconds in my head and it is never actually twenty",
-        "My rest timer only starts after the whole set, so the short breaks inside the set are guesswork",
-        "By the last cluster the short rest has stretched and the point of the cluster is gone"
-      ],
-      "category": "App Features",
-      "distinctFrom": "Closest scored neighbour is emom-meaning at 0.15, which explains what a one-minute EMOM window is. This answers a different clock: 15–20 seconds between mini-sets inside a cluster, then the normal multi-minute rest after the cluster. rest-timer-between-sets only covers that long rest between whole sets",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from muscleandfitness.com cluster-set programming, sci-fit.net and thebarbell.com.",
-      "imagePrompt": "A lifter standing in a squat rack between efforts, a loaded barbell resting on the hooks, chalk on the hands, a short pause rather than sitting down, dim gym light, no clocks or readable screens"
-    },
-    {
       "slug": "fitbit-interval-notifications",
       "theme": "Fitbit interval alerts that never fire mid-workout",
       "hook": "A Fitbit Charge will track the exercise and still stay silent when the interval changes, so the buzz you needed is back on the phone",
