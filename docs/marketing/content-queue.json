@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "fitbit-interval-notifications",
-      "theme": "Fitbit interval alerts that never fire mid-workout",
-      "hook": "A Fitbit Charge will track the exercise and still stay silent when the interval changes, so the buzz you needed is back on the phone",
-      "query": "fitbit interval timer notifications",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. A JustAnswer thread on the Charge 5 says the band does not vibrate or chime for each interval unless an interval timer was saved inside the Exercise app; Google's Fitbit help page documents alerts that never arrive (Do Not Disturb, low battery, a dead vibration motor); web search also surfaces a public r/fitbit thread asking how to run a timer while exercise tracking is on.",
-      "pain_quotes": [
-        "My Fitbit never buzzes when the interval changes, even though the workout is running",
-        "The only way to get a cue is a setup buried in the Exercise app, and I did not know it had to be saved first",
-        "Once exercise tracking is on I cannot tell whether the band is ignoring my timer or just not built for intervals"
-      ],
-      "category": "Comparisons",
-      "distinctFrom": "Closest scored neighbour is retired what-is-hiit at 0.10. The live collision is the queued apple-watch-interval-haptics-weak theme, which is an Apple Watch tap too faint to feel; this answers a Fitbit Charge that has no usable interval cue unless a saved Exercise-app timer fires, and often does not",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (not available in this cloud environment); web search only. No impressions or keyword volume. Pain signal from justanswer.com Charge 5 interval-notification thread, support.google.com Fitbit alert help, and a public r/fitbit thread found by web search.",
-      "imagePrompt": "A runner on a park path glancing at a slim fitness band on the wrist, the band face turned away from the camera, phone zipped into a pocket, overcast daylight, no readable screens"
-    },
-    {
       "slug": "beep-test-timer",
       "theme": "Beep test timer: a 20m shuttle whose beeps get closer every level",
       "hook": "The beep test is not a fixed work/rest pair. The gap between beeps shrinks every level, and two late shuttles in a row end the test.",
