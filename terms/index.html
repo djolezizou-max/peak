@@ -19,75 +19,11 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #181F3B;
-            color: white;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 32px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        h2 {
-            font-size: 24px;
-            margin-top: 30px;
-            color: #FF9500;
-        }
-        .last-updated {
-            text-align: center;
-            opacity: 0.7;
-            margin-bottom: 40px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .subsection {
-            margin-left: 20px;
-        }
-        .footer-links {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 14px;
-            opacity: 0.7;
-        }
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-            opacity: 1;
-        }
-        .back-button {
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 20px;
-            opacity: 0.7;
-            transition: opacity 0.2s;
-        }
-        .back-button:hover {
-            opacity: 1;
-        }
-    </style>
+    {% include "site-head.liquid" %}
 </head>
 <body>
-    <div class="container">
-        <a href="/" class="back-button">← Back to Home</a>
+{% include "site-header.liquid", active: "" %}
+    <main class="container doc">
         <h1>Terms and Conditions</h1>
         <p class="last-updated">Last Updated: February 15, 2024</p>
 
@@ -178,12 +114,7 @@
             <h2>Apple App Store Terms</h2>
             <p>These Terms are in addition to Apple's App Store Terms of Service.</p>
         </div>
-
-        <div class="footer-links">
-            <a href="/">Home</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/contact">Contact Us</a>
-        </div>
-    </div>
+    </main>
+{% include "site-footer.liquid" %}
 </body>
 </html> 

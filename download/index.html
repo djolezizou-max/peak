@@ -31,72 +31,6 @@ sitemap_exclude: true
     <meta name="twitter:description" content="Check out this HIIT workout!">
     <meta name="twitter:image" content="https://www.peakintervalapp.com/assets/app_icon.png">
 
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #181F3B;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 25px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .app-store-button {
-            background: #FF9500;
-            color: black;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 12px;
-            font-weight: 600;
-            margin-top: 20px;
-            display: inline-block;
-            transition: all 0.2s;
-            font-size: 18px;
-        }
-        .app-store-button:hover {
-            background: #FFB340;
-            transform: scale(1.02);
-        }
-        .message {
-            margin: 20px 0;
-            font-size: 18px;
-            line-height: 1.5;
-            opacity: 0.9;
-        }
-        .footer-links {
-            margin-top: 40px;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-            opacity: 1;
-        }
-    </style>
-
     <script>
         var APP_STORE_URL = "https://apps.apple.com/us/app/peak-interval-hiit-timer/id6741055716";
         var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.roli.intervals";
@@ -178,8 +112,9 @@ sitemap_exclude: true
             openInApp(path.replace(/^\//, '') + window.location.search);
         }
     </script>
+    {% include "site-head.liquid" %}
 </head>
-<body>
+<body class="page-store">
     <div class="container">
         <img src="/assets/app_icon.png" alt="Peak Intervals App Icon" class="app-icon">
         <h1>Opening Peak Intervals...</h1>
