@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "beep-test-timer",
-      "theme": "Beep test timer: a 20m shuttle whose beeps get closer every level",
-      "hook": "The beep test is not a fixed work/rest pair. The gap between beeps shrinks every level, and two late shuttles in a row end the test.",
-      "query": "beep test timer",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Beep Test Online and beeptest.net describe a 20m shuttle that starts near 8.5 km/h, about 8.5 seconds per shuttle on the Léger protocol, and shortens every level; the score is the last level and shuttle, and two missed beeps in a row end it. Dedicated beep-test timers exist because a normal interval timer holds every shuttle at the same length.",
-      "pain_quotes": [
-        "A normal interval timer made every shuttle the same length, so it was not a beep test",
-        "Nothing tells me the beeps just got closer, and I lose which level I am in",
-        "One late beep is only a warning, and I cannot tell whether the next miss ends the test"
-      ],
-      "category": "Specialized HIIT Training",
-      "distinctFrom": "Closest scored neighbour is the queued kettlebell-snatch-test-timer at 0.26, a rep race against a 5- or 10-minute clock with a hand-switch cue, not a shuttle. This answers the 20m beep test: the time allowed for each shuttle shrinks every level, there is no walk break, and the score is the last level and shuttle. The queued 30-15 intermittent fitness test at 0.23 keeps a fixed 30 seconds of running and 15 seconds of walking and raises the speed inside that structure.",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from beeptest.online, beeptest.net and thetimerlab.com beep-test timer.",
-      "imagePrompt": "Athletes sprinting between two cones in a school gym, a coach at the side with a whistle raised, polished floor and painted lines, bright overhead light, no screens or clocks"
-    },
-    {
       "slug": "yasso-800s-timer",
       "theme": "Yasso 800s timer: the rest has to match the 800 you just ran",
       "hook": "Ten 800s only work if the recovery lasts as long as that 800 took, so a preset work/rest pair starts the next rep early or late.",
