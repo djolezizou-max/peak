@@ -23,65 +23,6 @@ sitemap_exclude: true
     <meta property="og:description" content="Download Peak Interval for iPhone, Apple Watch, or Android.">
     <meta property="og:image" content="https://www.peakintervalapp.com/assets/app_icon.png">
     <meta property="og:url" content="https://www.peakintervalapp.com/get">
-
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #181F3B;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 25px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .stores {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }
-        .app-store-button {
-            background: #FF9500;
-            color: black;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 12px;
-            font-weight: 600;
-            margin-top: 20px;
-            display: inline-block;
-            transition: all 0.2s;
-            font-size: 18px;
-        }
-        .app-store-button:hover {
-            background: #FFB340;
-            transform: scale(1.02);
-        }
-        .footer-links {
-            margin-top: 40px;
-        }
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
-            margin: 0 10px;
-        }
-    </style>
     <script>
         // Where the visitor came from, as ?s=instagram (or utm_source, if a shortener rewrote it).
         // Phones are redirected by vercel.json before this runs and it tags the store link there;
@@ -116,8 +57,9 @@ sitemap_exclude: true
             });
         }
     </script>
+    {% include "site-head.liquid" %}
 </head>
-<body>
+<body class="page-store">
     <div class="container">
         <img src="/assets/app_icon.png" alt="Peak Interval App Icon" class="app-icon">
         <h1>Get Peak Interval</h1>

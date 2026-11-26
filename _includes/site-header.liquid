@@ -1,0 +1,11 @@
+    <header class="site-top header">
+        <div class="in">
+            <a class="brand" href="/"><img src="/assets/app_icon.png" alt="" width="36" height="36">Peak Interval</a>
+            <nav class="nav" aria-label="Main">
+                <a class="home" href="/">Home</a>
+                <a href="/blog"{% if active == "blog" %} class="active" aria-current="page"{% endif %}>Blog</a>
+                <a href="/contact"{% if active == "contact" %} class="active" aria-current="page"{% endif %}>Contact</a>
+                <a class="get" href="/get">Get the app</a>
+            </nav>
+        </div>
+    </header>

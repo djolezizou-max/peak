@@ -106,839 +106,660 @@
     }
     </script>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap">
+    <meta name="theme-color" content="#7dd3a0">
     <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        :root {
-            --color-bg: #181F3B;
-            --color-bg-deep: #0f1429;
-            --color-accent: #FF9500;
-            --color-accent-hover: #FFB340;
-            --color-surface: rgba(255, 255, 255, 0.05);
-            --color-surface-hover: rgba(255, 255, 255, 0.1);
-            --color-border: rgba(255, 255, 255, 0.08);
-            --color-text: #FFFFFF;
-            --color-text-muted: rgba(255, 255, 255, 0.65);
-            --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
-            --radius-sm: 10px;
-            --radius-md: 16px;
-            --radius-lg: 24px;
-            --radius-xl: 36px;
-            --max-width: 1200px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-sans);
-            background: var(--color-bg);
-            color: var(--color-text);
-            padding: 0;
-            margin: 0;
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* --- Header & Nav --- */
-        .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            background: rgba(24, 31, 59, 0.85);
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        .header-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 24px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-            color: var(--color-text);
-        }
-
-        .app-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
-        }
-
-        .logo-text {
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .nav a {
-            color: var(--color-text-muted);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 15px;
-            padding: 8px 16px;
-            border-radius: var(--radius-sm);
-            transition: color 0.2s, background 0.2s;
-        }
-
-        .nav a:hover {
-            color: var(--color-text);
-            background: var(--color-surface);
-        }
-
-        .nav a.active {
-            color: var(--color-text);
-            background: var(--color-surface-hover);
-        }
-
-        /* --- Hero --- */
-        .hero {
-            position: relative;
-            overflow: hidden;
-            padding: 100px 24px 120px;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -40%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 900px;
-            height: 900px;
-            background: radial-gradient(circle, rgba(255, 149, 0, 0.12) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            gap: 80px;
-        }
-
-        .hero-text {
-            flex: 1;
-            max-width: 560px;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 14px;
-            background: rgba(255, 149, 0, 0.12);
-            border: 1px solid rgba(255, 149, 0, 0.25);
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--color-accent);
-            margin-bottom: 24px;
-            letter-spacing: 0.02em;
-        }
-
-        h1 {
-            font-size: 52px;
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            margin: 0 0 24px;
-        }
-
-        h1 .accent {
-            background: linear-gradient(135deg, var(--color-accent), #FFD580);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .subtitle {
-            font-size: 19px;
-            line-height: 1.65;
-            color: var(--color-text-muted);
-            margin: 0 0 40px;
-        }
-
-        .cta-group {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--color-accent);
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 16px 28px;
-            border-radius: var(--radius-md);
-            font-weight: 700;
-            font-size: 16px;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 20px rgba(255, 149, 0, 0.3);
-        }
-
-        .cta-button:hover {
-            background: var(--color-accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(255, 149, 0, 0.4);
-        }
-
-        .cta-button svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .cta-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--color-text-muted);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            padding: 16px 24px;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--color-border);
-            transition: all 0.25s;
-        }
-
-        .cta-secondary:hover {
-            color: var(--color-text);
-            border-color: rgba(255, 255, 255, 0.2);
-            background: var(--color-surface);
-        }
-
-        .hero-image {
-            flex-shrink: 0;
-        }
-
-        .phone-mockup {
-            position: relative;
-            width: 280px;
-            height: 570px;
-            background: linear-gradient(160deg, #3a3a3a, #1a1a1a);
-            border-radius: 44px;
-            padding: 10px;
-            box-shadow:
-                0 40px 80px rgba(0, 0, 0, 0.4),
-                0 0 0 1px rgba(255, 255, 255, 0.08),
-                inset 0 1px 0 rgba(255, 255, 255, 0.12);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
-
-        .phone-screen {
-            width: 100%;
-            height: 100%;
-            border-radius: 34px;
-            overflow: hidden;
-            background: #000;
-            position: relative;
-        }
-
-        .phone-screen::before {
-            content: '';
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 28px;
-            background: #1a1a1a;
-            border-radius: 20px;
-            z-index: 2;
-        }
-
-        .phone-screen img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 34px;
-        }
-
-        /* --- Features --- */
-        .features {
-            padding: 100px 24px;
-            background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%);
-        }
-
-        .features-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 64px;
-        }
-
-        .section-header h2 {
-            font-size: 38px;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            margin: 0 0 16px;
-        }
-
-        .section-header p {
-            font-size: 18px;
-            color: var(--color-text-muted);
-            max-width: 520px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .feature-item {
-            padding: 32px 28px;
-            background: var(--color-surface);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-lg);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .feature-item:hover {
-            background: var(--color-surface-hover);
-            border-color: rgba(255, 255, 255, 0.12);
-            transform: translateY(-4px);
-        }
-
-        .feature-icon {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 149, 0, 0.1);
-            color: #FF9500;
-            border-radius: var(--radius-sm);
-            margin-bottom: 20px;
-        }
-
-        .feature-icon svg {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
-
-        .feature-item:nth-child(2) .feature-icon { background: rgba(88, 166, 255, 0.1); color: #58A6FF; }
-        .feature-item:nth-child(3) .feature-icon { background: rgba(52, 199, 89, 0.1); color: #34C759; }
-        .feature-item:nth-child(4) .feature-icon { background: rgba(255, 69, 58, 0.1); color: #FF453A; }
-        .feature-item:nth-child(5) .feature-icon { background: rgba(175, 82, 222, 0.1); color: #AF52DE; }
-        .feature-item:nth-child(6) .feature-icon { background: rgba(255, 214, 10, 0.1); color: #FFD60A; }
-        .feature-item:nth-child(7) .feature-icon { background: rgba(0, 199, 190, 0.1); color: #00C7BE; }
-        .feature-item:nth-child(8) .feature-icon { background: rgba(88, 166, 255, 0.1); color: #58A6FF; }
-        .feature-item:nth-child(9) .feature-icon { background: rgba(255, 55, 95, 0.1); color: #FF375F; }
-        .feature-item:nth-child(10) .feature-icon { background: rgba(48, 209, 88, 0.1); color: #30D158; }
-        .feature-item:nth-child(11) .feature-icon { background: rgba(255, 159, 10, 0.1); color: #FF9F0A; }
-        .feature-item:nth-child(12) .feature-icon { background: rgba(100, 210, 255, 0.1); color: #64D2FF; }
-        .feature-item:nth-child(13) .feature-icon { background: rgba(255, 69, 58, 0.1); color: #FF453A; }
-        .feature-item:nth-child(14) .feature-icon { background: rgba(175, 82, 222, 0.1); color: #AF52DE; }
-
-        .feature-item a {
-            color: var(--color-accent);
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .feature-item a:hover {
-            color: var(--color-accent-hover);
-        }
-
-        .feature-item h3 {
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0 0 8px;
-            letter-spacing: -0.01em;
-        }
-
-        .feature-item p {
-            font-size: 15px;
-            line-height: 1.6;
-            color: var(--color-text-muted);
-            margin: 0;
-        }
-
-        /* --- From the blog --- */
-        .blog-teaser {
-            padding: 100px 24px;
-            background: var(--color-bg-deep);
-        }
-
-        .blog-teaser-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .topic-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 48px;
-        }
-
-        .topic-links a {
-            padding: 10px 20px;
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-xl);
-            background: var(--color-surface);
-            color: var(--color-text);
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .topic-links a:hover {
-            background: var(--color-surface-hover);
-            border-color: var(--color-accent);
-        }
-
-        .recent-posts {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            list-style: none;
-            padding: 0;
-            margin: 0 0 40px;
-        }
-
-        .recent-posts a {
-            display: block;
-            padding: 20px 24px;
-            background: var(--color-surface);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-md);
-            color: var(--color-text);
-            text-decoration: none;
-            line-height: 1.5;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .recent-posts a:hover {
-            background: var(--color-surface-hover);
-            border-color: var(--color-accent);
-        }
-
-        .blog-teaser-all {
-            text-align: center;
-        }
-
-        .blog-teaser-all a {
-            color: var(--color-accent);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 17px;
-        }
-
-        .blog-teaser-all a:hover {
-            color: var(--color-accent-hover);
-            text-decoration: underline;
-        }
-
-        /* --- Bottom CTA --- */
-        .bottom-cta {
-            padding: 80px 24px;
-            text-align: center;
-            background: var(--color-bg-deep);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .bottom-cta::before {
-            content: '';
-            position: absolute;
-            bottom: -20%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255, 149, 0, 0.08) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .bottom-cta-inner {
-            position: relative;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .bottom-cta h2 {
-            font-size: 36px;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            margin: 0 0 16px;
-        }
-
-        .bottom-cta p {
-            font-size: 18px;
-            color: var(--color-text-muted);
-            margin: 0 0 32px;
-            line-height: 1.6;
-        }
-
-        /* --- Footer --- */
-        .footer {
-            padding: 40px 24px;
-            border-top: 1px solid var(--color-border);
-            background: var(--color-bg-deep);
-        }
-
-        .footer-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-links a {
-            color: var(--color-text-muted);
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: var(--color-text);
-        }
-
-        .copyright {
-            color: var(--color-text-muted);
-            font-size: 14px;
-        }
-
-        /* --- Scroll Animations --- */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* --- Responsive --- */
-        @media (max-width: 1024px) {
-            .feature-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 36px;
-            }
-
-            .section-header h2 {
-                font-size: 28px;
-            }
-
-            .hero {
-                padding: 60px 20px 80px;
-            }
-
-            .hero-content {
-                flex-direction: column;
-                gap: 48px;
-                text-align: center;
-            }
-
-            .hero-text {
-                max-width: 100%;
-            }
-
-            .cta-group {
-                justify-content: center;
-            }
-
-            .hero-badge {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .phone-mockup {
-                width: 240px;
-                height: 490px;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .recent-posts {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-                gap: 16px;
-                text-align: center;
-            }
-
-            .footer-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .nav {
-                gap: 4px;
-            }
-
-            .nav a {
-                padding: 8px 12px;
-                font-size: 14px;
-            }
-
-            .bottom-cta h2 {
-                font-size: 28px;
-            }
-        }
-    </style>
+/* Layout: the page is a workout. Each band takes a colour straight from the app's timer screen:
+   green = work (the pitch), navy = between screens, coral = rest (what you hear), amber = round rest (what you did).
+   One committed look, so no light/dark switch: every colour is set explicitly. */
+:root {
+  color-scheme: dark;
+  --work: #7dd3a0;
+  --rest: #f2918b;
+  --round: #ffcb6b;
+  --navy: #1a2240;
+  --navy-2: #232c4f;
+  --ink: #111830;
+  --paper: #f3f5fa;
+  --muted: #b4bbd0;
+  --amber: #ffa500;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--navy); color: var(--paper); font: 400 1.0625rem/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--work); }
+a { color: inherit; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; border-radius: 4px; }
+p { margin: 0; }
+h1, h2, h3 { margin: 0; font-family: var(--display); font-stretch: 112%; font-weight: 800; letter-spacing: -0.025em; line-height: 0.95; text-wrap: balance; }
+.wrap { max-width: 1160px; margin-inline: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 760px) { .wrap { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); } }
+.band { padding-block: 96px; }
+@media (max-width: 760px) { .band { padding-block: 64px; } }
+.label { font: 700 0.8rem/1 var(--display); font-stretch: 125%; letter-spacing: 0.08em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+
+/* Store buttons */
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.store { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; padding: 11px 20px 11px 16px; border-radius: 14px; background: var(--ink); color: #fff; line-height: 1.1; transition: transform .15s ease; }
+.store:hover { transform: translateY(-2px); }
+.store svg { width: 24px; height: 24px; flex: none; }
+.store small { display: block; font-size: 0.72rem; opacity: 0.75; }
+.store b { font: 700 1.08rem/1.1 var(--display); font-stretch: 105%; }
+
+/* Hero: work */
+.hero { background: var(--work); color: var(--ink); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px); position: relative; z-index: 2; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 22px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 800 1.15rem/1 var(--display); font-stretch: 112%; letter-spacing: -0.01em; }
+.brand img { width: 36px; height: 36px; border-radius: 10px; }
+.top a.dl { font: 700 0.95rem/1 var(--display); text-decoration: none; border-bottom: 2px solid currentColor; padding-bottom: 3px; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 32px; align-items: center; padding-top: 40px; }
+.hero h1 { font-size: clamp(3.4rem, 9.5vw, 8.4rem); font-stretch: 118%; }
+.hero .copy { padding-bottom: 72px; display: grid; gap: 28px; }
+.hero .copy > p { font-size: 1.2rem; max-width: 34em; color: #1f2b45; }
+.hero .fine { font-size: 0.92rem; color: #2c3a58; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+.legend span { display: inline-flex; align-items: center; gap: 9px; }
+.legend i { width: 14px; height: 14px; border-radius: 4px; border: 2px solid var(--ink); }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; padding-top: 16px; }
+  .hero .copy { padding-bottom: 8px; }
+  }
+
+/* Import: navy */
+.import h2 { font-size: clamp(2.6rem, 6.4vw, 5.2rem); max-width: 12ch; }
+.import .intro { margin-top: 22px; color: var(--muted); max-width: 40em; font-size: 1.12rem; }
+.ways { margin-top: 56px; display: grid; }
+.way { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px; padding-block: 34px; border-top: 1px solid rgba(243,245,250,0.14); align-items: baseline; }
+.way:last-child { border-bottom: 1px solid rgba(243,245,250,0.14); }
+.way h3 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); color: var(--work); }
+.way p { color: var(--muted); max-width: 36em; }
+.way p q { color: var(--paper); }
+.way a { color: var(--paper); font-weight: 600; text-underline-offset: 3px; }
+.coach { margin-top: 40px; font-size: 1.12rem; max-width: 44em; }
+.coach b { color: var(--amber); font-weight: 600; }
+@media (max-width: 760px) { .way { grid-template-columns: 1fr; gap: 12px; padding-block: 26px; } }
+
+/* Sound: rest */
+.sound { background: var(--rest); color: var(--ink); }
+.sound-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+.sound h2 { font-size: clamp(2.6rem, 6.4vw, 5.2rem); }
+.sound .body { display: grid; gap: 18px; margin-top: 26px; color: #2a2236; font-size: 1.1rem; max-width: 34em; }
+.heard { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.heard li { display: grid; grid-template-columns: 7.5em 1fr; gap: 16px; align-items: baseline; padding-block: 14px; border-bottom: 2px solid rgba(17,24,48,0.18); }
+.heard li:first-child { border-top: 2px solid rgba(17,24,48,0.18); }
+.heard .when { font: 700 0.78rem/1.2 var(--display); font-stretch: 125%; letter-spacing: 0.06em; text-transform: uppercase; color: #5a2f33; font-variant-numeric: tabular-nums; }
+.heard .say { font: 800 clamp(1.5rem, 3vw, 2.2rem)/1.05 var(--display); font-stretch: 110%; letter-spacing: -0.02em; }
+.heard-cap { margin-top: 16px; font-size: 0.9rem; color: #4a2f3a; }
+@media (max-width: 860px) { .sound-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+/* Modes: navy */
+.modes h2 { font-size: clamp(2.4rem, 5.6vw, 4.6rem); max-width: 16ch; }
+.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 56px; }
+.mode { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 28px; align-items: center; }
+.mode .phone { width: 100%; }
+.mode h3 { font-size: 2rem; }
+.mode h3 span { color: var(--work); }
+.mode p { color: var(--muted); margin-top: 12px; }
+@media (max-width: 980px) { .mode-grid { grid-template-columns: 1fr; gap: 56px; } }
+@media (max-width: 520px) { .mode { grid-template-columns: 1fr; } .mode .phone { width: 62%; } }
+
+/* History: round rest */
+.history { background: var(--round); color: var(--ink); }
+.history-grid { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); gap: 64px; align-items: center; }
+
+.history h2 { font-size: clamp(2.4rem, 5.6vw, 4.6rem); }
+.facts { list-style: none; padding: 0; margin: 34px 0 0; display: grid; gap: 0; }
+.facts li { padding-block: 18px; border-top: 2px solid rgba(17,24,48,0.18); display: grid; gap: 4px; }
+.facts b { font: 800 1.3rem/1.15 var(--display); font-stretch: 110%; letter-spacing: -0.015em; }
+.facts span { color: #3d3420; max-width: 38em; }
+@media (max-width: 860px) { .history-grid { grid-template-columns: 1fr; gap: 40px; }  }
+
+/* Close: navy */
+.close { text-align: left; }
+.close h2 { font-size: clamp(2.8rem, 7.4vw, 6rem); max-width: 14ch; }
+.close .price { margin-top: 28px; color: var(--muted); max-width: 40em; font-size: 1.1rem; }
+.close .price b { color: var(--paper); font-weight: 600; }
+.close .stores { margin-top: 32px; }
+.close .store { background: var(--work); color: var(--ink); }
+footer { padding-block: 36px 44px; border-top: 1px solid rgba(243,245,250,0.12); color: var(--muted); font-size: 0.9rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 28px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 22px; }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--paper); }
+
+
+/* Device frames drawn in CSS around the real iOS screens */
+.phone { display: block; position: relative; background: #0b0f1f; padding: 3.2%; border-radius: 15% / 7%; box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 34px 60px -24px rgba(8,12,30,0.6), 0 14px 26px -14px rgba(8,12,30,0.45); }
+.phone img { display: block; width: 100%; height: auto; border-radius: 12% / 5.6%; }
+.fan { position: relative; width: min(520px, 100%); aspect-ratio: 440 / 600; justify-self: center; margin-bottom: 64px; }
+.fan .phone { position: absolute; width: 56%; }
+.fan .p-work { left: 22%; top: 2%; z-index: 3; }
+.fan .p-rest { left: 0; top: 10%; transform: rotate(-9deg); z-index: 1; }
+.fan .p-round { right: 0; top: 10%; transform: rotate(9deg); z-index: 2; }
+.duo { position: relative; width: min(330px, 100%); margin-inline: auto; padding-right: 22%; }
+.duo .watch { position: absolute; right: -6%; bottom: -4%; width: 46%; filter: drop-shadow(0 20px 26px rgba(17,24,48,0.35)); }
+.duo .watch img { display: block; width: 100%; height: auto; }
+@media (max-width: 860px) { .fan { width: min(340px, 92%); margin-bottom: 48px; } .duo { width: min(280px, 82%); } }
+
+.phone video { display: block; width: 100%; height: auto; border-radius: 12% / 5.6%; background: #0b0f1f; }
+.import-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.5fr); gap: 56px; align-items: start; }
+.import-phones { display: grid; gap: 40px; padding-top: 8px; }
+.import-phones figure { margin: 0; display: grid; gap: 14px; }
+.import-phones figcaption { color: var(--muted); font-size: 0.9rem; text-align: center; }
+.clip { width: min(420px, 100%); margin-inline: auto; border-radius: 28px; overflow: hidden; box-shadow: 0 34px 60px -24px rgba(17,24,48,0.55); }
+.clip video { display: block; width: 100%; height: auto; }
+@media (max-width: 980px) { .import-grid { grid-template-columns: 1fr; } .import-phones { grid-template-columns: 1fr 1fr; gap: 20px; max-width: 560px; } }
+
+/* Import: four phones, each showing that import path in the app */
+.ways4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin-top: 56px; }
+.w4 { display: grid; grid-template-rows: auto auto 1fr; gap: 12px; align-content: start; }
+.w4 h3 { font-size: 1.7rem; color: var(--work); margin-top: 14px; }
+.w4 p { color: var(--muted); font-size: 0.98rem; }
+.w4 a { color: var(--paper); font-weight: 600; text-underline-offset: 3px; }
+.mini { width: 100%; max-width: 250px; background: #0b0f1f; padding: 7px; border-radius: 15% / 7%; box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7); }
+.scr { position: relative; aspect-ratio: 1206 / 2622; border-radius: 12% / 5.6%; overflow: hidden; background: linear-gradient(#1a1a2e, #16213e); font-family: "Inter", system-ui, sans-serif; color: #fff; container-type: inline-size; }
+.scr video { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 1000px) { .ways4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; } }
+@media (max-width: 480px) { .ways4 { grid-template-columns: 1fr; } .mini { max-width: 230px; } }
+
+/* shared preview pieces, sized in container units so they scale with the phone */
+.wname { font-size: 7.4cqw; font-weight: 700; }
+.wstats { font-size: 4.2cqw; color: rgba(255,255,255,0.7); margin-top: 1.5cqw; font-variant-numeric: tabular-nums; }
+.wrows { margin-top: 5cqw; background: rgba(255,255,255,0.06); border-radius: 4cqw; padding: 1.5cqw 0; }
+.wr { display: flex; align-items: center; gap: 2.2cqw; padding: 1.8cqw 3.4cqw; border-radius: 3cqw; font-size: 4.3cqw; }
+.wr span { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wr em, .wr u { font-style: normal; text-decoration: none; font-weight: 700; font-size: 3.7cqw; padding: 1.7cqw 2.2cqw; border-radius: 2.2cqw; background: rgba(255,255,255,0.1); font-variant-numeric: tabular-nums; }
+.wr em { color: #7dd3a0; } .wr u { color: #f2918b; } .wr u.y { color: #ffcb6b; }
+.rep { text-align: center; color: #ffa500; font-size: 3.8cqw; font-weight: 500; padding-top: 3cqw; }
+
+/* Photograph: camera, scan, then the result sheet slides up. 9s loop */
+.cam { background: #050505; }
+.vf { position: absolute; inset: 14% 6% 24%; }
+.wb { position: absolute; inset: 6% 4%; background: #f1f2ec; border-radius: 2cqw; transform: rotate(-3deg); padding: 6cqw 7cqw; display: grid; align-content: start; gap: 0.8cqw; color: #1f2d5c; font: 600 8.4cqw/1.05 "Caveat", "Bradley Hand", cursive; box-shadow: 0 0 0 1px rgba(0,0,0,0.2); }
+.wb b { font-size: 10cqw; text-decoration: underline; }
+.br { position: absolute; width: 9cqw; height: 9cqw; border: 0.9cqw solid #fff; }
+.br.tl { top: 0; left: 0; border-right: 0; border-bottom: 0; } .br.tr { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.br.bl { bottom: 0; left: 0; border-right: 0; border-top: 0; } .br.bm { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+.scanl { position: absolute; left: 2%; right: 2%; height: 0.8cqw; background: #7dd3a0; box-shadow: 0 0 5cqw 1.5cqw rgba(125,211,160,0.7); top: 0; animation: scanY 9s infinite; }
+@keyframes scanY { 0% { top: 2%; opacity: 0; } 4% { opacity: 1; } 28% { top: 96%; opacity: 1; } 31%, 100% { top: 96%; opacity: 0; } }
+.shutter { position: absolute; bottom: 7%; left: 50%; width: 17cqw; height: 17cqw; margin-left: -8.5cqw; border-radius: 50%; background: #fff; box-shadow: 0 0 0 1.4cqw #050505, 0 0 0 2.4cqw #fff; animation: snap 9s infinite; }
+@keyframes snap { 0%, 30% { transform: none; } 32% { transform: scale(0.86); } 35%, 100% { transform: none; } }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; height: 74%; background: linear-gradient(#1a1a2e, #16213e); border-radius: 7cqw 7cqw 0 0; padding: 4cqw 6cqw; transform: translateY(102%); animation: sheetUp 9s infinite; }
+.grab { display: block; width: 12cqw; height: 1.2cqw; border-radius: 1cqw; background: rgba(255,255,255,0.3); margin: 0 auto 5cqw; }
+@keyframes sheetUp { 0%, 36% { transform: translateY(102%); } 44%, 90% { transform: none; } 97%, 100% { transform: translateY(102%); } }
+
+/* Say: the real voice sheet. Example, then the preview builds while listening. 10s loop */
+.voice { display: flex; flex-direction: column; padding: 13% 5.5% 6%; }
+.xbtn { width: 11cqw; height: 11cqw; border-radius: 50%; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-style: normal; font-size: 4.4cqw; font-weight: 600; flex: none; }
+.vex, .vprev { position: absolute; left: 6%; right: 6%; top: 24%; }
+.vex { display: grid; gap: 3.5cqw; text-align: center; top: 30%; animation: exOut 10s infinite; }
+.try { color: #ffa500; font-size: 4.2cqw; font-weight: 500; }
+.big { font-size: 8.2cqw; font-weight: 600; line-height: 1.2; }
+@keyframes exOut { 0%, 22% { opacity: 1; } 26%, 94% { opacity: 0; } 100% { opacity: 1; } }
+.vprev { opacity: 0; animation: prevIn 10s infinite; }
+@keyframes prevIn { 0%, 24% { opacity: 0; } 28%, 92% { opacity: 1; } 96%, 100% { opacity: 0; } }
+.vprev .wr { opacity: 0; }
+.vprev .hl1 { animation: rowHl 10s infinite; }
+.vprev .hl2 { animation: rowHl 10s 1.6s infinite; }
+.vprev .rep { opacity: 0; animation: prevIn2 10s infinite; }
+@keyframes rowHl { 0%, 34% { opacity: 0; background: rgba(255,165,0,0.18); } 37% { opacity: 1; background: rgba(255,165,0,0.18); } 52%, 88% { opacity: 1; background: transparent; } 93%, 100% { opacity: 0; } }
+@keyframes prevIn2 { 0%, 60% { opacity: 0; } 64%, 90% { opacity: 1; } 95%, 100% { opacity: 0; } }
+.vstatus { margin-top: auto; text-align: center; display: grid; gap: 1cqw; padding-bottom: 5cqw; position: relative; }
+.vstatus b { font-size: 4.2cqw; font-weight: 600; }
+.vstatus .g { font-size: 3.9cqw; color: rgba(255,255,255,0.7); grid-area: 2 / 1; opacity: 0; }
+.g1 { animation: g1 10s infinite; } .g2 { animation: g2 10s infinite; } .g3 { animation: g3 10s infinite; }
+@keyframes g1 { 0%, 30% { opacity: 1; } 33%, 97% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes g2 { 0%, 33% { opacity: 0; } 36%, 58% { opacity: 1; } 61%, 100% { opacity: 0; } }
+@keyframes g3 { 0%, 61% { opacity: 0; } 64%, 92% { opacity: 1; } 95%, 100% { opacity: 0; } }
+.vctl { display: flex; align-items: center; gap: 4cqw; }
+.pbtn, .cbtn { width: 15.5cqw; height: 15.5cqw; flex: none; border-radius: 50%; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-style: normal; font-size: 4.6cqw; font-weight: 700; letter-spacing: -0.4cqw; }
+.cbtn { color: rgba(255,255,255,0.5); font-size: 5.6cqw; animation: ready 10s infinite; }
+@keyframes ready { 0%, 62% { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); } 66%, 92% { background: #ffa500; color: #000; } 96%, 100% { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); } }
+.bars { flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.9cqw; height: 15.5cqw; }
+.bars i { width: 0.9cqw; height: 1.3cqw; border-radius: 0.6cqw; background: #ffa500; animation: lvl 0.7s ease-in-out infinite alternate; }
+.bars i:nth-child(3n) { animation-duration: 0.55s; } .bars i:nth-child(3n+1) { animation-duration: 0.85s; animation-delay: .2s; } .bars i:nth-child(4n) { animation-delay: .35s; }
+@keyframes lvl { to { height: 9cqw; } }
+
+
+.sbar { position: absolute; top: 0; left: 0; right: 0; height: 12%; display: flex; justify-content: space-between; align-items: center; padding: 0 9cqw; font-size: 4.6cqw; z-index: 2; pointer-events: none; }
+.sbar b { font-weight: 600; } .sbar span { font-size: 3.4cqw; letter-spacing: 0.4cqw; }
+.voice .sbar { position: absolute; }
+.voice { padding-top: 16%; }
+.sheet { height: 88% !important; padding: 3cqw 6cqw 5cqw !important; display: flex; flex-direction: column; background: #1b2140 !important; }
+.grab { margin-bottom: 4cqw !important; }
+.shead { display: grid; grid-template-columns: 1fr auto 1fr; font-size: 4.4cqw; align-items: center; }
+.shead b { font-weight: 600; }
+.field { margin-top: 5cqw; background: rgba(255,255,255,0.08); border-radius: 3cqw; padding: 3.6cqw 4cqw; font-size: 4.3cqw; }
+.lbl { margin-top: 4.5cqw; color: #ffa500; font-weight: 600; font-size: 4.4cqw; }
+.lbl.w { color: #fff; margin-top: 3cqw; }
+.dots { display: flex; justify-content: space-between; margin-top: 2.6cqw; }
+.dots i { width: 10.5cqw; height: 10.5cqw; border-radius: 50%; }
+.dots i.on { box-shadow: 0 0 0 0.7cqw #1b2140, 0 0 0 1.4cqw #fff; }
+.sheet .wstats { margin-top: 4.5cqw; }
+.sheet .wrows { margin-top: 2.4cqw; }
+.sheet .rep { padding-top: 3cqw; }
+.savebtn { margin-top: auto; background: #f6b93b; color: #111; text-align: center; font-weight: 700; font-size: 4.5cqw; padding: 3.6cqw; border-radius: 3cqw; }
+.vf { inset: 15% 6% 24% !important; }
+@media (prefers-reduced-motion: reduce) {
+  .scr *, .scr { animation: none !important; }
+  .sheet { transform: none; } .scanl { display: none; }
+  .vex { opacity: 0; } .vprev, .vprev .wr, .vprev .rep { opacity: 1; } .g1, .g2 { opacity: 0; } .g3 { opacity: 1; } .cbtn { background: #ffa500; color: #000; }
+}
+
+/* watch float */
+.duo .watch { animation: float 5s ease-in-out infinite; }
+@keyframes float { 50% { transform: translateY(-8px); } }
+@media (prefers-reduced-motion: reduce) { .duo .watch { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .store { transition: none; } }
+
+
+/* ---------- Motion ----------
+   Only under html.m, which is set when the visitor has not asked for reduced
+   motion. Without it (or without JS) every element is simply visible.
+   Reveals use the individual translate/scale/rotate properties so they never
+   fight the transforms the layout already uses (the fanned phones, the watch). */
+.m .split .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.m .split .w > span { display: inline-block; translate: 0 105%; transition: translate .9s cubic-bezier(.2,.75,.15,1); transition-delay: calc(var(--i, 0) * 55ms); }
+.m .split.in .w > span { translate: 0 0; }
+.m .rv { opacity: 0; translate: 0 36px; transition: opacity .8s ease, translate .9s cubic-bezier(.2,.75,.15,1); transition-delay: calc(var(--d, 0) * 1ms); }
+.m .rv.from-l { translate: -60px 0; }
+.m .rv.from-r { translate: 60px 0; }
+.m .rv.pop { translate: 0 0; scale: .7; transition-property: opacity, scale; transition-duration: .7s; transition-timing-function: cubic-bezier(.3,1.5,.5,1); }
+.m .rv.in { opacity: 1; translate: 0 0; scale: 1; }
+
+/* Hero: the headline rises word by word, then the three timer screens fan out */
+.m .hero .fan .phone { transition: translate 1.1s cubic-bezier(.2,.8,.15,1), rotate 1.1s cubic-bezier(.2,.8,.15,1), opacity .6s ease; transition-delay: .55s; }
+.m .hero:not(.in) .fan .p-rest { translate: 38% 2%; rotate: 9deg; opacity: 0; }
+.m .hero:not(.in) .fan .p-round { translate: -38% 2%; rotate: -9deg; opacity: 0; }
+.m .hero:not(.in) .fan .p-work { translate: 0 14%; opacity: 0; }
+.m .hero .fan .p-work { transition-delay: .35s; }
+.m .hero .fan { transition: translate .2s linear; translate: 0 var(--py, 0px); }
+
+/* Sound: the cues arrive one at a time, like they do mid-workout */
+.m .heard li.rv { translate: -28px 0; }
+.m .heard li.rv.in { translate: 0 0; }
+
+/* Import: the four ways build in one at a time. On wide screens the row pins
+   and each phone lands as you scroll; elsewhere each lands as it scrolls in. */
+.ways-steps { display: none; }
+.m .w4 > .mini { transition: opacity .7s ease, translate .9s cubic-bezier(.2,.75,.15,1), scale .9s cubic-bezier(.2,.75,.15,1); }
+.m .w4 > h3, .m .w4 > p { transition: opacity .6s ease .15s, translate .8s cubic-bezier(.2,.75,.15,1) .15s; }
+.m .w4:not(.in) > .mini { opacity: 0.07; translate: 0 56px; scale: .94; }
+.m .w4:not(.in) > h3, .m .w4:not(.in) > p { opacity: 0; translate: 0 24px; }
+.m .w4.in > .mini { box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7), 0 0 0 0 rgba(125,211,160,0); animation: land 1.2s ease-out; }
+@keyframes land { 0% { box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7), 0 0 0 0 rgba(125,211,160,.55); } 100% { box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7), 0 0 0 22px rgba(125,211,160,0); } }
+.m .pinned .ways-stage { position: sticky; top: var(--stick, 24px); }
+.m .pinned { height: calc(var(--stageh, 900px) + 230vh); }
+.m .pinned .ways-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; list-style: none; padding: 0; margin: 0 0 28px; }
+.ways-steps li { font: 700 0.8rem/1 var(--display); font-stretch: 125%; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(243,245,250,0.35); padding-top: 14px; position: relative; transition: color .4s ease; }
+.ways-steps li b { color: inherit; margin-right: 6px; }
+.ways-steps li::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; border-radius: 4px; background: rgba(243,245,250,0.14); }
+.ways-steps li::after { content: ""; position: absolute; left: 0; top: 0; height: 4px; width: 100%; border-radius: 4px; background: var(--work); transform-origin: left; transform: scaleX(0); transition: transform .6s cubic-bezier(.2,.75,.15,1); }
+.ways-steps li.on { color: var(--work); }
+.ways-steps li.on::after { transform: scaleX(1); }
+.m .pinned .ways4 { margin-top: 0; }
+
+/* Pause control for the looping previews (WCAG 2.2.2) */
+.motion { margin-top: 18px; background: none; border: 1.5px solid rgba(243,245,250,0.22); color: var(--muted); font: 600 0.85rem/1 var(--body); padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+.motion:hover { color: var(--paper); border-color: var(--paper); }
+body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-state: paused !important; }
+
+/* Top nav */
+.topnav { display: flex; align-items: center; gap: 22px; }
+.topnav a { font: 700 0.95rem/1 var(--display); text-decoration: none; padding-bottom: 3px; border-bottom: 2px solid transparent; }
+.topnav a.dl { border-bottom-color: currentColor; }
+.topnav a:hover { border-bottom-color: currentColor; }
+@media (max-width: 480px) { .topnav { gap: 16px; } .topnav a[href="/contact"] { display: none; } }
+
+/* Guides: navy-2 */
+.guides { background: var(--navy-2); }
+.guides h2 { font-size: clamp(2.4rem, 5.6vw, 4.6rem); }
+.guides .intro { color: var(--muted); max-width: 40em; margin-top: 18px; font-size: 1.1rem; }
+.topics { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+.topics a { text-decoration: none; padding: 9px 16px; border-radius: 999px; border: 1.5px solid rgba(243,245,250,0.22); font-weight: 600; font-size: 0.95rem; }
+.topics a:hover { border-color: var(--work); color: var(--work); }
+.recent { list-style: none; padding: 0; margin: 36px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+.recent li { border-top: 1px solid rgba(243,245,250,0.14); }
+.recent a { display: block; padding: 16px 0; text-decoration: none; font-weight: 600; line-height: 1.35; }
+.recent a:hover { color: var(--work); }
+.guides .all { display: inline-block; margin-top: 28px; color: var(--work); font-weight: 700; text-decoration: none; }
+@media (max-width: 760px) { .recent { grid-template-columns: 1fr; } }
+</style>
+    <script>try{if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window)document.documentElement.classList.add("m")}catch(e){}</script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-inner">
-            <a href="/" class="logo">
-                <img src="/assets/app_icon.png" alt="Peak Interval" class="app-icon">
-                <span class="logo-text">Peak Interval</span>
-            </a>
-            <nav class="nav">
-                <a href="/" class="active">Home</a>
-                <a href="/blog">Blog</a>
-                <a href="/contact">Contact</a>
-            </nav>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="/" id="top"><img src="/assets/app_icon.png" alt="">Peak Interval</a>
+      <nav class="topnav"><a href="/blog">Blog</a><a href="/contact">Contact</a><a class="dl" href="#download">Download</a></nav>
+    </div>
+    <div class="hero-grid">
+      <div class="copy">
+        <h1>Readable from across the gym.</h1>
+        <p>Peak Interval is an interval timer for iPhone, Apple Watch and Android. Prop the phone up against your water bottle and read it from the mat: the whole screen tells you what to do next.</p>
+        <div class="stores"><a class="store" href="https://apps.apple.com/app/id6741055716">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.4 2.1 3.2 2.13 3.21-.02.06-.33 1.14-1.1 2.26-.66.97-1.35 1.93-2.43 1.95-1.06.02-1.4-.63-2.62-.63-1.21 0-1.6.61-2.6.65-1.05.04-1.84-1.05-2.5-2.01-1.37-1.97-2.41-5.57-1.01-8 .7-1.2 1.94-1.97 3.29-1.99 1.03-.02 2 .69 2.62.69.63 0 1.81-.85 3.05-.73.52.02 1.98.21 2.92 1.58-.08.05-1.74 1.02-1.75 3.02M14.37 5.7c.56-.68.93-1.62.83-2.56-.8.03-1.77.53-2.35 1.21-.51.6-.97 1.56-.85 2.48.9.07 1.81-.46 2.37-1.13"/></svg>
+            <span><small>Download on the</small><b>App Store</b></span>
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.roli.intervals">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l.1.1 9.7-9.7v-.2L3.7 2.2zM16.6 15.2l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.8 2.2zM16.7 15.1 13.4 11.8 3.6 21.6c.4.4.9.4 1.6.1l11.5-6.6M16.7 8.5 5.2 1.9c-.7-.4-1.2-.3-1.6.1l9.8 9.8z"/></svg>
+            <span><small>Get it on</small><b>Google Play</b></span>
+          </a></div>
+      </div>
+      <div class="fan" aria-label="The three timer screens: rest, work and rest between rounds"><span class="phone p-rest"><img src="/assets/landing/timer-rest.webp" alt="Rest screen: 00:20 left, next exercise Renegade Rows" width="420" height="913"></span><span class="phone p-round"><img src="/assets/landing/timer-round.webp" alt="Rest between rounds screen: 01:00 left, next Dumbbell Thrusters" width="420" height="913"></span><span class="phone p-work"><img src="/assets/landing/timer-work.webp" alt="Work screen: Dumbbell Thrusters, 00:50 left, round 1 of 5, heart rate 55" width="520" height="1130"></span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="band import">
+    <div class="wrap">
+      <h2>Don't type the workout in.</h2>
+      <p class="intro">Workouts live on whiteboards, in Reels and in your head. Peak Interval reads them from wherever they are and builds the rounds, the times and the exercise names for you.</p>
+      <button type="button" class="motion" aria-pressed="false">Pause animations</button>
+      <div class="ways-track"><div class="ways-stage">
+        <ol class="ways-steps" aria-hidden="true"><li><b>01</b> Photograph</li><li><b>02</b> Import</li><li><b>03</b> Say</li><li><b>04</b> Ask</li></ol>
+        <div class="ways4">
+        <article class="w4">
+          <div class="mini" aria-hidden="true">
+            <div class="scr cam"><div class="sbar"><b>9:41</b><span>▂▄▆ ◠ ▭</span></div>
+              <div class="vf">
+                <div class="wb"><b>WOD</b><span>3 rounds</span><span>40 on / 20 off</span><span>Thrusters</span><span>Renegade rows</span><span>Goblet squats</span><span>1 min btw rounds</span></div>
+                <i class="br tl"></i><i class="br tr"></i><i class="br bl"></i><i class="br bm"></i>
+                <i class="scanl"></i>
+              </div>
+              <div class="shutter"></div>
+              <div class="sheet">
+                <i class="grab"></i>
+                <div class="shead"><span>Cancel</span><b>Peak Intervals</b><span></span></div>
+                <div class="field">Whiteboard WOD</div>
+                <div class="lbl">Choose a color</div>
+                <div class="dots"><i style="background:#ef8fbf"></i><i style="background:#3f8cff"></i><i style="background:#6fcaa6"></i><i style="background:#a58ce6"></i><i class="on" style="background:#f6b93b"></i><i style="background:#3fb0b5"></i></div>
+                <div class="wstats">◷ 10:00 &nbsp; 3 exercises &nbsp; ⇄ 3 rounds</div>
+                <div class="lbl w">Exercises</div>
+                <div class="wrows">
+                  <div class="wr"><span>Thrusters</span><em>00:40</em><u>00:20</u></div>
+                  <div class="wr"><span>Renegade rows</span><em>00:40</em><u>00:20</u></div>
+                  <div class="wr"><span>Goblet squats</span><em>00:40</em><u class="y">01:00</u></div>
+                </div>
+                <div class="rep">⇄ Repeat 3 rounds</div>
+                <div class="savebtn">Save Workout</div>
+              </div>
+            </div>
+          </div>
+          <h3>Photograph it.</h3>
+          <p>The whiteboard at your box, a class board, a coach's slide or a screenshot. Point the camera and the rounds are ready. <a href="/blog/posts/import-workout-from-screenshot">How it works</a></p>
+        </article>
+        <article class="w4">
+          <div class="mini"><div class="scr"><video autoplay muted loop playsinline preload="auto" width="328" height="720" aria-label="Recording: sharing an Instagram workout post to Peak Interval, which extracts and saves the workout" src="/assets/landing/import-instagram.mp4"></video></div></div>
+          <h3>Import it.</h3>
+          <p>Share an Instagram or TikTok workout to Peak Interval. Each move plays a short muted clip from the creator's video. <a href="/blog/posts/import-instagram-tiktok-workout">How it works</a></p>
+        </article>
+        <article class="w4">
+          <div class="mini" aria-hidden="true">
+            <div class="scr voice"><div class="sbar"><b>9:41</b><span>▂▄▆ ◠ ▭</span></div>
+              <i class="xbtn">✕</i>
+              <div class="vex"><span class="try">Try saying</span><span class="big">“5 rounds, 4 exercises, 30 seconds on, 20 off”</span></div>
+              <div class="vprev">
+                <div class="wname">Swings and Squats</div>
+                <div class="wstats">09:40 · 2 exercises · 4 rounds</div>
+                <div class="wrows">
+                  <div class="wr hl1"><span>Kettlebell swings</span><em>00:40</em><u>00:20</u></div>
+                  <div class="wr hl2"><span>Goblet squats</span><em>00:40</em><u class="y">01:00</u></div>
+                </div>
+                <div class="rep">↻ Repeat 4 rounds</div>
+              </div>
+              <div class="vstatus"><b>Listening…</b><span class="g g1">Keep talking to change anything.</span><span class="g g2">Now name your exercises.</span><span class="g g3">Say “that’s all” when you’re done.</span></div>
+              <div class="vctl"><i class="pbtn">❚❚</i><span class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><i class="cbtn">✓</i></div>
+            </div>
+          </div>
+          <h3>Say it.</h3>
+          <p>“Four rounds, forty on, twenty off, swings and goblet squats.” The workout builds while you talk, and you fix it the same way. <a href="/blog/posts/speak-your-workout">How it works</a></p>
+        </article>
+        <article class="w4">
+          <div class="mini"><div class="scr"><video autoplay muted loop playsinline preload="auto" width="348" height="720" aria-label="Recording: asking AI Coach for a 20 minute full body HIIT workout with dumbbells" src="/assets/landing/ai-coach.mp4"></video></div></div>
+          <h3>Ask for it.</h3>
+          <p>Tell AI Coach what you have and how long. It writes the workout, and remixes any other one harder, easier, equipment-free or low impact.</p>
+        </article>
+      </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="band sound">
+    <div class="wrap sound-grid">
+      <div>
+        <h2>Your music keeps playing.</h2>
+        <div class="body">
+          <p>Voice cues duck whatever you're listening to and hand it straight back. Spotify, YouTube Music, a podcast. Who are we to judge.</p>
+          <p>Pick from seven cue packs, from a clean chime to AI coaching voices. Lock the phone and put it in your pocket: the timer keeps running and the cues keep firing.</p>
         </div>
-    </header>
+      </div>
+      <div>
+        <ul class="heard" aria-label="What the voice cues sound like">
+          <li><span class="when">Last 3 seconds</span><span class="say">Three. Two. One.</span></li>
+          <li><span class="when">Work ends</span><span class="say">Switch.</span></li>
+          <li><span class="when">Halfway</span><span class="say">Halfway.</span></li>
+          <li><span class="when">During rest</span><span class="say">Next up: plank jacks.</span></li>
+        </ul>
+        <p class="heard-cap">The moments you hear a cue. Exact wording depends on the cue pack.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">Now with AI Coach</div>
-                <h1>Train Smarter with <span class="accent">Peak Interval</span></h1>
-                <p class="subtitle">
-                    The smartest interval training timer for iPhone, Apple Watch, and Android. Snap a photo, share an Instagram or TikTok workout, or speak the session out loud. Track heart rate zones, sync across devices, and review your progress.
-                </p>
-                <div class="cta-group">
-                    <a href="/get" class="cta-button">
-                        <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <span class="store-label">Download on App Store</span>
-                    </a>
-                    <a href="#features" class="cta-secondary">
-                        See Features
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <img src="/assets/app_screen.jpeg" alt="Peak Interval App Screenshot">
-                    </div>
-                </div>
-            </div>
+  <section class="band modes">
+    <div class="wrap">
+      <h2>Simple when every round is the same. Advanced when it isn't.</h2>
+      <div class="mode-grid">
+        <div class="mode">
+          <span class="phone"><video autoplay muted loop playsinline preload="auto" width="332" height="720" aria-label="Recording: setting the work time in Simple mode and starting a 21 minute workout" src="/assets/landing/simple-mode.mp4"></video></span>
+          <div>
+            <h3><span>Simple.</span> Five numbers.</h3>
+            <p>Work, rest, exercises, rounds, and rest between rounds. Set them and the total time is right there. Tabata, circuits, boxing rounds, interval runs.</p>
+          </div>
         </div>
-    </section>
-
-    <section class="features" id="features">
-        <div class="features-container">
-            <div class="section-header fade-in">
-                <h2>Everything You Need to Train</h2>
-                <p>Import a photo, an Instagram or TikTok post, or a workout you speak — then train with heart rate, history, and a workout builder.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></div>
-                    <h3>AI Coach</h3>
-                    <p>Let AI remix your workouts instantly. Make them harder, easier, swap exercises, go equipment-free, or switch to low-impact — all with a single tap.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/><line x1="16" x2="22" y1="5" y2="5"/><line x1="19" x2="19" y1="2" y2="8"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></div>
-                    <h3>Import from Photos</h3>
-                    <p>Snap a photo of a whiteboard, a class board, or a workout slide, and the app builds the interval timer. <a href="/blog/posts/import-workout-from-screenshot">How screenshot import works</a></p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div>
-                    <h3>Instagram and TikTok</h3>
-                    <p>Share a workout post, or paste the link. Each move plays a short muted clip from the creator's video. <a href="/blog/posts/import-instagram-tiktok-workout">How follow-along import works</a></p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div>
-                    <h3>Speak Your Workout</h3>
-                    <p>Say the rounds, the rest, and the exercise names. The timer builds on screen as you talk, and you can correct it out loud. <a href="/blog/posts/speak-your-workout">How speaking a workout works</a></p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="1" width="12" height="22" rx="4"/><path d="M12 18h.01"/><path d="M10 5h4"/></svg></div>
-                    <h3>Apple Watch</h3>
-                    <p>Your Watch app launches automatically when you start a workout. Run timers independently on your wrist with real-time heart rate streaming back to iPhone.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 9.5 15 10l-3 4.5"/></svg></div>
-                    <h3>Heart Rate Zones</h3>
-                    <p>Monitor your heart rate in real time with 5-zone classification. See zone distribution breakdowns after every workout to track your intensity.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
-                    <h3>History & Analytics</h3>
-                    <p>Track every session with a calendar view, workout streaks, and detailed stats including heart rate, calories burned, and zone time breakdowns.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-                    <h3>Simple & Advanced Modes</h3>
-                    <p>Quick uniform workouts in Simple mode, or complex training patterns with variable durations, custom rest periods, and round management in Advanced mode.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v7"/></svg></div>
-                    <h3>Workout Builder</h3>
-                    <p>Create workouts with multiple exercises and rounds. Drag-and-drop reordering, round duplication, and real-time total duration calculation.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div>
-                    <h3>iCloud Sync</h3>
-                    <p>Your saved workouts sync seamlessly across all your devices via iCloud. Never lose a workout, and pick up right where you left off.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/></svg></div>
-                    <h3>HealthKit Integration</h3>
-                    <p>Workouts automatically save to Apple Health with heart rate data, active and total calories, and proper activity type categorization.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg></div>
-                    <h3>Share Workouts</h3>
-                    <p>Share your custom workouts with friends and training partners via shareable links. Import shared routines and discover new training patterns.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                    <h3>Precision Timer</h3>
-                    <p>Interactive countdown with play/pause/resume, configurable sound packs, voice announcements, and haptic feedback for every transition.</p>
-                </div>
-                <div class="feature-item fade-in">
-                    <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
-                    <h3>25+ Languages</h3>
-                    <p>Fully localized in over 25 languages including English, Spanish, French, German, Japanese, Chinese, Arabic, Hindi, Korean, and many more.</p>
-                </div>
-            </div>
+        <div class="mode">
+          <span class="phone"><video autoplay muted loop playsinline preload="auto" width="328" height="720" aria-label="Recording: naming exercises and setting times in Advanced mode" src="/assets/landing/advanced-mode.mp4"></video></span>
+          <div>
+            <h3><span>Advanced.</span> Every interval.</h3>
+            <p>Each exercise gets its own work and rest. Duplicate a round, drag one into place, name it. Diamond push-ups get a full minute of rest. They earned it.</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    {%- comment -%}
-      The homepage is the most frequently recrawled page on the site, and until
-      now it linked to /blog and nothing beneath it. These links give Googlebot a
-      path from the homepage straight into the topic hubs and recent posts
-      instead of making it rediscover them through a blog index it rarely revisits.
-    {%- endcomment -%}
-    <section class="blog-teaser">
-        <div class="blog-teaser-container">
-            <div class="section-header fade-in">
-                <h2>Train with intent</h2>
-                <p>Guides on interval structure, recovery, and programming from the Peak Interval blog.</p>
-            </div>
-            <div class="topic-links fade-in">
-                {%- for categoryPage in collections.categoryPages -%}
-                <a href="/blog/{{ categoryPage.slug }}">{{ categoryPage.category }}</a>
-                {%- endfor -%}
-            </div>
-            <ul class="recent-posts fade-in">
-                {%- assign recentPosts = collections.posts | reverse -%}
-                {%- for post in recentPosts limit: 8 -%}
-                <li><a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a></li>
-                {%- endfor -%}
-            </ul>
-            <div class="blog-teaser-all fade-in">
-                <a href="/blog">Browse all articles →</a>
-            </div>
-        </div>
-    </section>
+  <section class="band history">
+    <div class="wrap history-grid">
+      <div class="duo"><span class="phone"><img src="/assets/landing/workout-complete.webp" alt="Workout complete: average and max heart rate, calories, and time in each heart rate zone" width="460" height="1000" loading="lazy"></span><span class="watch"><img src="/assets/landing/apple-watch.webp" alt="Apple Watch running the timer: Work, Dumbbell Thrusters, 50 seconds, heart rate 58" width="420" height="683"></span></div>
+      <div>
+        <h2>See what you actually did, not what you meant to do.</h2>
+        <ul class="facts">
+          <li><b>Every session, on a calendar.</b><span>Your streak, total time, and the workouts behind each day.</span></li>
+          <li><b>Apple Watch runs the timer on your wrist.</b><span>It opens when the workout starts, taps you at every change, and streams your heart rate zones live.</span></li>
+          <li><b>Saved to Apple Health.</b><span>Heart rate, active and total calories, and the activity type.</span></li>
+          <li><b>Share a workout as a link.</b><span>Your client opens it and the same timer is ready. Perfect for coaches.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section class="bottom-cta">
-        <div class="bottom-cta-inner fade-in">
-            <h2>Ready to Train Smarter?</h2>
-            <p>Join thousands of athletes using Peak Interval to push their limits. Free to download.</p>
-            <a href="/get" class="cta-button">
-                <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <span class="store-label">Download on App Store</span>
-            </a>
-        </div>
-    </section>
+  <section class="band guides">
+    <div class="wrap">
+      <h2>Training guides.</h2>
+      <p class="intro">Work-to-rest ratios, named protocols, Apple Watch setups and how to structure a session, from the Peak Interval blog.</p>
+      <div class="topics">
+        {%- for categoryPage in collections.categoryPages -%}
+        <a href="/blog/{{ categoryPage.slug }}">{{ categoryPage.category }}</a>
+        {%- endfor -%}
+      </div>
+      <ul class="recent">
+        {%- assign recentPosts = collections.posts | reverse -%}
+        {%- for post in recentPosts limit: 8 -%}
+        <li><a href="{{ post.url | stripTrailingSlash }}">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+      <a class="all" href="/blog">Browse all articles →</a>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-links">
-                <a href="/terms">Terms & Conditions</a>
-                <a href="/privacy">Privacy Policy</a>
-                <a href="/contact">Contact</a>
-                <a href="/blog">Blog</a>
-            </div>
-            <div class="copyright">
-                &copy; 2023-2026 Peak Interval. All rights reserved.
-            </div>
-        </div>
-    </footer>
+  <section class="band close" id="download">
+    <div class="wrap">
+      <h2>Still reading? Just download it.</h2>
+      <p class="price">Free to download. <b>Peak Pro</b> unlocks unlimited saved workouts and plays, monthly or annual.</p>
+      <div class="stores"><a class="store" href="https://apps.apple.com/app/id6741055716">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.4 2.1 3.2 2.13 3.21-.02.06-.33 1.14-1.1 2.26-.66.97-1.35 1.93-2.43 1.95-1.06.02-1.4-.63-2.62-.63-1.21 0-1.6.61-2.6.65-1.05.04-1.84-1.05-2.5-2.01-1.37-1.97-2.41-5.57-1.01-8 .7-1.2 1.94-1.97 3.29-1.99 1.03-.02 2 .69 2.62.69.63 0 1.81-.85 3.05-.73.52.02 1.98.21 2.92 1.58-.08.05-1.74 1.02-1.75 3.02M14.37 5.7c.56-.68.93-1.62.83-2.56-.8.03-1.77.53-2.35 1.21-.51.6-.97 1.56-.85 2.48.9.07 1.81-.46 2.37-1.13"/></svg>
+            <span><small>Download on the</small><b>App Store</b></span>
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.roli.intervals">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l.1.1 9.7-9.7v-.2L3.7 2.2zM16.6 15.2l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.8 2.2zM16.7 15.1 13.4 11.8 3.6 21.6c.4.4.9.4 1.6.1l11.5-6.6M16.7 8.5 5.2 1.9c-.7-.4-1.2-.3-1.6.1l9.8 9.8z"/></svg>
+            <span><small>Get it on</small><b>Google Play</b></span>
+          </a></div>
+    </div>
+  </section>
+</main>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, index * 80);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+<footer>
+  <div class="wrap">
+    <span>© 2023–2026 Peak Interval · In 25+ languages</span>
+    <nav>
+      <a href="/blog">Training guides</a>
+      <a href="/contact">Contact</a>
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </div>
+</footer>
 
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+<script>
+(function () {
+  try {
+    var vids = document.querySelectorAll("video");
+    var btn = document.querySelector(".motion");
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function setStill(still) {
+      document.body.classList.toggle("still", still);
+      vids.forEach(function (v) { if (still) { v.pause(); } else { var p = v.play(); if (p && p.catch) p.catch(function () {}); } });
+      if (btn) { btn.setAttribute("aria-pressed", still ? "true" : "false"); btn.textContent = still ? "Play animations" : "Pause animations"; }
+    }
+    if (reduced) {
+      vids.forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); v.controls = true; });
+      if (btn) btn.hidden = true;
+    } else if (btn) {
+      btn.addEventListener("click", function () { setStill(!document.body.classList.contains("still")); });
+    }
+  } catch (e) {}
+})();
+</script>
 
-        // The buttons link to /get, which picks the store per device; relabel
-        // them on Android so they don't promise the App Store.
-        if (/android/i.test(navigator.userAgent)) {
-            document.querySelectorAll('.store-icon').forEach(el => el.remove());
-            document.querySelectorAll('.store-label').forEach(el => {
-                el.textContent = 'Get it on Google Play';
-            });
-        }
-    </script>
+<script>
+(function () {
+  var root = document.documentElement;
+  if (!root.classList.contains("m")) return;
+  try {
+    var $ = function (q, c) { return Array.prototype.slice.call((c || document).querySelectorAll(q)); };
+
+    // Headlines: wrap each word so it can rise out of its own line box.
+    $(".hero h1, main h2").forEach(function (h) {
+      if (h.children.length) return;
+      var words = h.textContent.trim().split(/\s+/);
+      h.setAttribute("aria-label", h.textContent.trim());
+      h.innerHTML = words.map(function (w, i) { return '<span class="w" aria-hidden="true"><span style="--i:' + i + '">' + w + '</span></span>'; }).join(" ");
+      h.classList.add("split");
+    });
+
+    // Everything else fades up, staggered within its group.
+    function mark(sel, step, extra) {
+      $(sel).forEach(function (el, i) { el.classList.add("rv"); if (extra) el.classList.add(extra); el.style.setProperty("--d", String((i % 8) * step)); });
+    }
+    mark(".hero .copy > p, .hero .stores", 140);
+    mark("main .intro", 0); mark(".import .motion", 0);
+    mark(".sound .body > *", 120);
+    mark(".heard li", 420); mark(".heard-cap", 0);
+    $(".mode").forEach(function (m, i) { m.classList.add("rv", i ? "from-r" : "from-l"); });
+    mark(".facts li", 110);
+    $(".duo .watch").forEach(function (w) { w.classList.add("rv", "pop"); w.style.setProperty("--d", "450"); });
+    mark(".duo > .phone", 0);
+    mark(".topics a", 40); mark(".recent li", 60); mark(".guides .all", 0);
+    mark(".close .price, .close .stores", 140);
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.01 });
+    $(".rv, .split").forEach(function (el) { if (!el.closest(".hero")) io.observe(el); });
+
+    // Hero plays on load; the phones drift a little as you scroll past.
+    var hero = document.querySelector(".hero"), fan = document.querySelector(".hero .fan");
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      hero.classList.add("in");
+      $(".hero .rv, .hero .split").forEach(function (el) { el.classList.add("in"); });
+    }); });
+
+    // Import: reveal one way at a time, restarting its animation as it lands.
+    var track = document.querySelector(".ways-track"), stage = document.querySelector(".ways-stage");
+    var cards = $(".w4"), steps = $(".ways-steps li"), shown = 0;
+    function land(card) {
+      if (card.classList.contains("in")) return;
+      card.classList.add("in");
+      if (card.getAnimations) card.getAnimations({ subtree: true }).forEach(function (a) { try { a.currentTime = 0; } catch (e) {} });
+      $("video", card).forEach(function (v) { try { v.currentTime = 0; if (!document.body.classList.contains("still")) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } } catch (e) {} });
+    }
+    function show(n) {
+      if (n === shown) return;
+      shown = n;
+      cards.forEach(function (c, i) { if (i < n) land(c); else c.classList.remove("in"); });
+      steps.forEach(function (s, i) { s.classList.toggle("on", i < n); });
+    }
+    var wide = window.matchMedia("(min-width: 1001px) and (min-height: 640px)");
+    var pinned = false, cardIO = null;
+    function layout() {
+      track.classList.remove("pinned");
+      pinned = false;
+      if (wide.matches) {
+        track.classList.add("pinned");
+        var h = stage.offsetHeight;
+        if (h < window.innerHeight - 40) {
+          pinned = true;
+          track.style.setProperty("--stageh", h + "px");
+          track.style.setProperty("--stick", Math.max(24, (window.innerHeight - h) / 2) + "px");
+        } else track.classList.remove("pinned");
+      }
+      if (cardIO) { cardIO.disconnect(); cardIO = null; }
+      if (!pinned) {
+        steps.forEach(function (s) { s.classList.remove("on"); });
+        cardIO = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { land(e.target); cardIO.unobserve(e.target); } });
+        }, { rootMargin: "0px 0px -18% 0px" });
+        cards.forEach(function (c) { if (!c.classList.contains("in")) cardIO.observe(c); });
+      }
+      tick();
+    }
+    var ticking = false;
+    function tick() {
+      ticking = false;
+      if (pinned) {
+        var r = track.getBoundingClientRect(), vh = window.innerHeight;
+        var stick = parseFloat(track.style.getPropertyValue("--stick")) || 24;
+        var span = r.height - stage.offsetHeight, p = Math.min(1, Math.max(0, (stick - r.top) / span));
+        var n = r.top < vh * 0.55 ? Math.min(4, 1 + Math.floor(p / 0.2)) : 0;
+        show(n);
+      }
+      if (fan) { var hr = hero.getBoundingClientRect(); if (hr.bottom > 0) fan.style.setProperty("--py", Math.round(Math.max(0, -hr.top) * 0.12) + "px"); }
+    }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(tick); } }, { passive: true });
+    window.addEventListener("resize", function () { clearTimeout(layout.t); layout.t = setTimeout(layout, 150); });
+    layout();
+  } catch (err) {
+    root.classList.remove("m");
+  }
+})();
+</script>
 </body>
 </html>
