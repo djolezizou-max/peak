@@ -450,26 +450,60 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
 .follow .stage::before { content: ""; position: absolute; inset: 12% -30% 8%; background: radial-gradient(closest-side, rgba(125,211,160,0.28), transparent); z-index: 0; }
 .follow .mini { max-width: none; position: relative; z-index: 1; }
 @media (max-width: 860px) { .follow-grid { grid-template-columns: 1fr; gap: 48px; } .follow .stage { max-width: 280px; } }
-.scr.fa { background: var(--work); color: #000; padding: 26% 4.5% 0; display: flex; flex-direction: column; transition: background-color .35s; }
-.scr.fa.rest { background: var(--rest); }
-.scr.fa .sbar { color: #000; }
-.scr.fa > .fa-clip, .scr.fa > .fa-time { margin-top: 3.4cqw; }
-.fa-prog { background: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.5); border-radius: 4cqw; padding: 3.2cqw; display: grid; gap: 2.4cqw; }
-.fa-prog div { display: flex; align-items: center; gap: 1.8cqw; }
-.fa-prog b { font: 700 3.2cqw/1 "Inter", system-ui, sans-serif; width: 27cqw; flex: none; }
-.fa-prog i { flex: 1; height: 1.9cqw; border-radius: 9px; background: rgba(0,0,0,0.25); }
+.scr.fa { background: #000; perspective: 900px; }
+.scr.fa .app { position: absolute; inset: 0; overflow: hidden; transform-origin: 50% 50%; will-change: transform; }
+.scr.fa .sbar { color: #fff; }
+.scr.fa .pk .sbar { color: #000; }
+.ig { background: #000; color: #fff; }
+.ig .ln { display: block; height: 3.2cqw; border-radius: 9px; background: rgba(255,255,255,0.75); }
+.ig .ln.dim { background: rgba(255,255,255,0.3); margin-top: 2.4cqw; }
+.ig-head { display: flex; align-items: center; gap: 3cqw; padding: 26% 5cqw 3.5cqw; }
+.ig-head .av { width: 10cqw; height: 10cqw; border-radius: 50%; background: linear-gradient(135deg, var(--work), var(--rest)); flex: none; }
+.ig-head span { margin-left: auto; opacity: .6; font-size: 4cqw; }
+.ig-media { position: relative; height: 105cqw; background: #e9e9e6; }
+.ig-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ig-media .pl { position: absolute; top: 4cqw; right: 4cqw; font-size: 5cqw; color: rgba(255,255,255,0.8); }
+.ig-acts { display: flex; gap: 6cqw; padding: 3.5cqw 5cqw; font-size: 6.4cqw; line-height: 1; }
+.ig-acts .bm { margin-left: auto; }
+.ig-acts .send { position: relative; display: inline-block; transform: rotate(-20deg); }
+.ig-cap { padding: 0 5cqw; }
+.scr.fa .tap { position: absolute; left: 50%; top: 50%; width: 16cqw; height: 16cqw; margin: -8cqw 0 0 -8cqw; border-radius: 50%; background: rgba(255,255,255,0.25); border: 2px solid rgba(255,255,255,0.8); opacity: 0; transform: scale(.6); transition: opacity .15s, transform .25s; pointer-events: none; }
+.fa.b-tapShare .send .tap, .fa.b-tapPeak .peak .tap { opacity: 1; transform: scale(1); }
+.ig-sheet { position: absolute; left: 0; right: 0; bottom: 0; height: 62cqw; background: #2a2a2e; border-radius: 7cqw 7cqw 0 0; display: flex; flex-direction: column; align-items: center; gap: 4cqw; padding-top: 3cqw; transform: translateY(105%); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.ig-sheet .grab { width: 14cqw; height: 1.8cqw; border-radius: 9px; background: rgba(255,255,255,0.3); }
+.ig-sheet b { font: 600 5.5cqw/1 "Inter", system-ui, sans-serif; }
+.ig-sheet .row { display: flex; gap: 4.5cqw; }
+.ig-sheet .row > span { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2cqw; width: 15cqw; }
+.ig-sheet img { width: 15cqw; height: 15cqw; border-radius: 3.5cqw; display: block; }
+.ig-sheet small { font: 500 3.5cqw/1 "Inter", system-ui, sans-serif; }
+.ig-sheet .c { width: 15cqw; height: 15cqw; border-radius: 50%; background: rgba(255,255,255,0.14); }
+.ig-sheet .row .ln { width: 12cqw; height: 2cqw; background: rgba(255,255,255,0.2); }
+.ig-sheet .peak .tap { top: 7.5cqw; width: 20cqw; height: 20cqw; margin: -10cqw 0 0 -10cqw; }
+.fa.b-sheet .ig-sheet, .fa.b-tapPeak .ig-sheet { transform: none; }
+.ig-saved { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4cqw; opacity: 0; transform: scale(.9); transition: opacity .25s, transform .35s; }
+.ig-saved .ck { width: 28cqw; height: 28cqw; border-radius: 50%; display: grid; place-items: center; background: rgba(125,211,160,0.25); color: var(--work); font: 700 12cqw/1 system-ui, sans-serif; }
+.ig-saved b { font: 700 6cqw/1.2 "Inter", system-ui, sans-serif; text-align: center; padding: 0 6cqw; }
+.fa.b-saved .ig-saved, .fa.b-player .ig-saved { opacity: 1; transform: none; }
+.ig > :not(.ig-sheet):not(.ig-saved):not(.sbar) { transition: opacity .25s; }
+.fa.b-saved .ig > :not(.ig-sheet):not(.ig-saved):not(.sbar), .fa.b-player .ig > :not(.ig-sheet):not(.ig-saved):not(.sbar) { opacity: .35; }
+.pk { background: var(--work); color: #000; padding: 26% 5% 0; display: flex; flex-direction: column; }
+.fa-prog { background: rgba(255,255,255,0.3); border-radius: 4cqw; padding: 3.5cqw; display: grid; gap: 2.5cqw; }
+.fa-prog div { display: flex; align-items: center; gap: 2cqw; }
+.fa-prog b { font: 700 3.2cqw/1 "Inter", system-ui, sans-serif; width: 30cqw; flex: none; }
+.fa-prog i { flex: 1; height: 1.8cqw; border-radius: 9px; background: rgba(0,0,0,0.25); }
 .fa-prog i.on { background: rgba(0,0,0,0.85); }
-.fa-clip { position: relative; aspect-ratio: 4 / 5; border-radius: 5cqw; overflow: hidden; border: 1px solid rgba(255,255,255,0.5); background: #e9e9e6; }
-.fa-clip video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
-.fa-clip video.on { opacity: 1; }
+.fa-clip { position: relative; margin-top: 4cqw; aspect-ratio: 4 / 5; border-radius: 5cqw; overflow: hidden; border: 1px solid rgba(255,255,255,0.5); background: #e9e9e6; }
+.fa-clip video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .fa-clip::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 60%, rgba(0,0,0,0.6)); }
-.fa-name { position: absolute; left: 4cqw; bottom: 3.6cqw; z-index: 1; color: #fff; font: 700 4.4cqw/1.1 "Inter", system-ui, sans-serif; }
-.fa-time { display: flex; justify-content: space-between; align-items: baseline; }
-.fa-ph { font: 400 4.8cqw/1 "Inter", system-ui, sans-serif; }
-.fa-sec { font: 500 13.5cqw/1 "Inter", system-ui, sans-serif; font-variant-numeric: tabular-nums; }
-.fa-ctl { margin-top: auto; padding-bottom: 8cqw; display: flex; justify-content: center; align-items: center; gap: 8cqw; }
-.fa-ctl i { font-style: normal; display: grid; place-items: center; width: 14cqw; height: 14cqw; border-radius: 50%; background: rgba(255,255,255,0.25); font-size: 3.6cqw; letter-spacing: -0.15em; }
-.fa-ctl i.big { width: 19cqw; height: 19cqw; background: rgba(255,255,255,0.35); font-size: 5cqw; letter-spacing: 0; }
+.fa-name { position: absolute; left: 4cqw; bottom: 3.6cqw; z-index: 1; color: #fff; font: 700 4cqw/1 "Inter", system-ui, sans-serif; }
+.fa-name em { font-style: normal; font-size: 7cqw; margin-right: 1cqw; }
+.fa-time { display: flex; justify-content: space-between; align-items: baseline; margin-top: 4cqw; font: 400 5cqw/1 "Inter", system-ui, sans-serif; }
+.fa-sec { font: 500 14cqw/1 "Inter", system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+.fa-bar { margin-top: 3cqw; height: 1.5cqw; border-radius: 9px; background: rgba(255,255,255,0.35); overflow: hidden; }
+.fa-bar i { display: block; height: 100%; width: 0; background: rgba(0,0,0,0.85); }
+.fa-ctl { margin-top: auto; padding-bottom: 9cqw; display: flex; justify-content: center; align-items: center; gap: 8cqw; }
+.fa-ctl i { font-style: normal; display: grid; place-items: center; width: 15cqw; height: 15cqw; border-radius: 50%; background: rgba(255,255,255,0.3); font-size: 3.6cqw; letter-spacing: -0.15em; }
+.fa-ctl i.big { width: 20cqw; height: 20cqw; font-size: 5cqw; letter-spacing: 0; }
 </style>
     <script>try{if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window)document.documentElement.classList.add("m")}catch(e){}</script>
 </head>
@@ -515,18 +549,24 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
         <a class="more" href="/blog/posts/import-instagram-tiktok-workout">How importing works →</a>
       </div>
       <div class="stage">
-        <div class="mini"><div class="scr fa" role="img" aria-label="The follow-along player: each exercise plays the creator's clip above the work countdown, then moves to the next">
-          <div class="sbar"><b>9:41</b><span>▂▄▆ ◠ ▭</span></div>
-          <div class="fa-prog"><div><b>ROUND 1/3</b><i class="on"></i><i></i><i></i></div><div><b>EXERCISE <span class="fa-n">1</span>/4</b><i class="on"></i><i></i><i></i><i></i></div></div>
-          <div class="fa-clip">
-            <video muted loop playsinline preload="auto" src="/assets/landing/fa-0.mp4" poster="/assets/landing/fa-0.webp" class="on"></video>
-            <video muted loop playsinline preload="none" src="/assets/landing/fa-1.mp4"></video>
-            <video muted loop playsinline preload="none" src="/assets/landing/fa-2.mp4"></video>
-            <video muted loop playsinline preload="none" src="/assets/landing/fa-3.mp4"></video>
-            <span class="fa-name">MOUNTAIN CLIMBERS</span>
+        <div class="mini"><div class="scr fa" role="img" aria-label="Demo: on a workout post in Instagram, tap Share and choose Peak Interval. Switch to Peak Interval and the workout plays with the creator's clip above the timer.">
+          <div class="app ig">
+            <div class="sbar"><b>9:41</b><span>▂▄▆ ◠ ▭</span></div>
+            <div class="ig-head"><i class="av"></i><i class="ln" style="width:30%"></i><span>•••</span></div>
+            <div class="ig-media"><video muted loop playsinline preload="auto" src="/assets/landing/fa-0.mp4" poster="/assets/landing/fa-0.webp"></video><span class="pl">▶</span></div>
+            <div class="ig-acts"><span>♡</span><span>◯</span><span class="send">➤<i class="tap"></i></span><span class="bm">⌑</span></div>
+            <div class="ig-cap"><i class="ln" style="width:70%"></i><i class="ln dim" style="width:50%"></i></div>
+            <div class="ig-sheet"><i class="grab"></i><b>Share</b><div class="row"><span class="peak"><img src="/assets/app_icon.png" alt="" width="40" height="40"><i class="tap"></i><small>Peak</small></span><span><i class="c"></i><i class="ln"></i></span><span><i class="c"></i><i class="ln"></i></span><span><i class="c"></i><i class="ln"></i></span></div></div>
+            <div class="ig-saved"><span class="ck">✓</span><b>Saved to Peak Interval</b></div>
           </div>
-          <div class="fa-time"><span class="fa-ph">WORK</span><b class="fa-sec">00:30</b></div>
-          <div class="fa-ctl"><i>◀︎◀︎</i><i class="big">❚❚</i><i>▶︎▶︎</i></div>
+          <div class="app pk">
+            <div class="sbar"><b>9:41</b><span>▂▄▆ ◠ ▭</span></div>
+            <div class="fa-prog"><div><b>ROUND 1/3</b><i class="on"></i><i></i><i></i></div><div><b>EXERCISE 1/4</b><i class="on"></i><i></i><i></i><i></i></div></div>
+            <div class="fa-clip"><video muted loop playsinline preload="auto" src="/assets/landing/fa-0.mp4" poster="/assets/landing/fa-0.webp"></video><span class="fa-name"><em>10×</em> MOUNTAIN CLIMBERS</span></div>
+            <div class="fa-time"><span>WORK</span><b class="fa-sec">00:30</b></div>
+            <div class="fa-bar"><i></i></div>
+            <div class="fa-ctl"><i>◀︎◀︎</i><i class="big">❚❚</i><i>▶︎▶︎</i></div>
+          </div>
         </div></div>
       </div>
     </div>
@@ -838,37 +878,40 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
 })();
 
   (function () {
+    // Mirrors the app's onboarding InstagramShareDemo: post, tap Share, share sheet, tap Peak,
+    // "Saved", swipe to Peak Interval playing the workout, swipe back.
     var scr = document.querySelector(".scr.fa"); if (!scr) return;
-    var vids = scr.querySelectorAll("video"), name = scr.querySelector(".fa-name"), sec = scr.querySelector(".fa-sec"),
-        ph = scr.querySelector(".fa-ph"), n = scr.querySelector(".fa-n"), bars = scr.querySelectorAll(".fa-prog div:last-child i");
-    var moves = ["MOUNTAIN CLIMBERS", "SUMO SQUATS", "CRUNCHES", "GLUTE BRIDGES"];
-    var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var WORK = 6, REST = 2, i = 0, left = WORK, resting = false, seen = false, timer = null;
-    function pad(x) { return "00:" + (x < 10 ? "0" : "") + x; }
-    function show(k) {
-      vids.forEach(function (v, j) { v.classList.toggle("on", j === k); if (j === k) { v.preload = "auto"; try { v.currentTime = 0; v.play(); } catch (e) {} } else v.pause(); });
-      name.textContent = moves[k]; n.textContent = k + 1;
-      bars.forEach(function (b, j) { b.classList.toggle("on", j <= k); });
+    var ig = scr.querySelector(".ig"), pk = scr.querySelector(".pk"), vids = scr.querySelectorAll("video"),
+        sec = scr.querySelector(".fa-sec"), bar = scr.querySelector(".fa-bar i");
+    var beats = [["post", 0], ["tapShare", 1.2], ["sheet", 1.9], ["tapPeak", 3.0], ["saved", 3.7], ["player", 5.0], ["back", 8.8]], LOOP = 9.5, SW = 0.6;
+    var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var start = 0, offset = 0, raf = 0, last = "";
+    function ease(x) { x = Math.min(Math.max(x, 0), 1); return x * x * (3 - 2 * x); }
+    function card(el, pos, lift, w) {
+      if (pos <= -1 || pos >= 1) { el.style.visibility = "hidden"; return; }
+      el.style.visibility = "visible";
+      el.style.borderRadius = (Math.min(1, lift * 3) * 12) + "%/" + (Math.min(1, lift * 3) * 5.6) + "%";
+      el.style.transform = "translateX(" + (pos * w * 1.08) + "px) rotateY(" + (pos * 28) + "deg) scale(" + (1 - 0.14 * lift) + ")";
     }
-    function tick() {
-      if (document.body.classList.contains("still")) { vids[i].pause(); return; }
-      if (vids[i].paused) vids[i].play();
-      left--;
-      if (left <= 0) {
-        if (!resting) { resting = true; left = REST; scr.classList.add("rest"); ph.textContent = "REST"; name.textContent = "NEXT: " + moves[(i + 1) % 4]; }
-        else { resting = false; left = WORK; i = (i + 1) % 4; scr.classList.remove("rest"); ph.textContent = "WORK"; show(i); }
-      }
-      sec.textContent = pad(left);
+    function draw(t) {
+      var b = "post"; beats.forEach(function (x) { if (t >= x[1]) b = x[0]; });
+      if (b !== last) { scr.className = "scr fa b-" + b; last = b; }
+      var shown = ease((t - 5.0) / SW) - ease((t - 8.8) / SW), lift = Math.sin(Math.PI * shown), w = scr.clientWidth;
+      card(ig, -shown, lift, w); card(pk, 1 - shown, lift, w);
+      var rem = Math.max(0, 30 - Math.floor(Math.max(0, t - 5.0) * 2));
+      sec.textContent = "00:" + (rem < 10 ? "0" : "") + rem; bar.style.width = (100 * (1 - rem / 30)) + "%";
     }
-    sec.textContent = pad(WORK);
-    if (still) return;
-    if (!("IntersectionObserver" in window)) { show(0); timer = setInterval(tick, 1000); return; }
-    new IntersectionObserver(function (es) {
-      es.forEach(function (e) {
-        if (e.isIntersecting && !timer) { if (!seen) { seen = true; show(0); } else vids[i].play(); timer = setInterval(tick, 1000); }
-        else if (!e.isIntersecting && timer) { clearInterval(timer); timer = null; vids.forEach(function (v) { v.pause(); }); }
-      });
-    }, { threshold: 0.3 }).observe(scr);
+    if (reduce) { draw(6.0); return; }
+    function frame(now) {
+      if (document.body.classList.contains("still")) { offset = (now - start) / 1000; vids.forEach(function (v) { v.pause(); }); raf = requestAnimationFrame(function (n) { start = n - offset * 1000; frame(n); }); return; }
+      vids.forEach(function (v) { if (v.paused) v.play().catch(function () {}); });
+      draw(((now - start) / 1000) % LOOP); raf = requestAnimationFrame(frame);
+    }
+    draw(0);
+    function run() { if (raf) return; raf = requestAnimationFrame(function (n) { start = n; frame(n); }); }
+    function stop() { cancelAnimationFrame(raf); raf = 0; vids.forEach(function (v) { v.pause(); }); }
+    if (!("IntersectionObserver" in window)) { run(); return; }
+    new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) run(); else stop(); }); }, { threshold: 0.3 }).observe(scr);
   })();
 </script>
 </body>
