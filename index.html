@@ -129,7 +129,7 @@
   --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--navy); color: var(--paper); font: 400 1.0625rem/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+body { margin: 0; overflow-x: clip; background: var(--navy); color: var(--paper); font: 400 1.0625rem/1.6 var(--body); -webkit-font-smoothing: antialiased; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--work); }
 a { color: inherit; }
 :focus-visible { outline: 3px solid currentColor; outline-offset: 3px; border-radius: 4px; }
@@ -259,6 +259,7 @@ footer a:hover { color: var(--paper); }
 .w4 { display: grid; grid-template-rows: auto auto 1fr; gap: 12px; align-content: start; }
 .w4 h3 { font-size: 1.7rem; color: var(--work); margin-top: 14px; }
 .w4 p { color: var(--muted); font-size: 0.98rem; }
+.wt { display: grid; gap: 12px; align-content: start; }
 .w4 a { color: var(--paper); font-weight: 600; text-underline-offset: 3px; }
 .mini { width: 100%; max-width: 250px; background: #0b0f1f; padding: 7px; border-radius: 15% / 7%; box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7); }
 .scr { position: relative; aspect-ratio: 1206 / 2622; border-radius: 12% / 5.6%; overflow: hidden; background: linear-gradient(#1a1a2e, #16213e); font-family: "Inter", system-ui, sans-serif; color: #fff; container-type: inline-size; }
@@ -383,25 +384,31 @@ footer a:hover { color: var(--paper); }
 .m .heard li.rv { translate: -28px 0; }
 .m .heard li.rv.in { translate: 0 0; }
 
-/* Import: the four ways build in one at a time. On wide screens the row pins
-   and each phone lands as you scroll; elsewhere each lands as it scrolls in. */
-.ways-steps { display: none; }
-.m .w4 > .mini { transition: opacity .7s ease, translate .9s cubic-bezier(.2,.75,.15,1), scale .9s cubic-bezier(.2,.75,.15,1); }
-.m .w4 > h3, .m .w4 > p { transition: opacity .6s ease .15s, translate .8s cubic-bezier(.2,.75,.15,1) .15s; }
-.m .w4:not(.in) > .mini { opacity: 0.07; translate: 0 56px; scale: .94; }
-.m .w4:not(.in) > h3, .m .w4:not(.in) > p { opacity: 0; translate: 0 24px; }
-.m .w4.in > .mini { box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7), 0 0 0 0 rgba(125,211,160,0); animation: land 1.2s ease-out; }
-@keyframes land { 0% { box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7), 0 0 0 0 rgba(125,211,160,.55); } 100% { box-shadow: 0 0 0 1.5px rgba(255,255,255,0.10) inset, 0 30px 50px -24px rgba(0,0,0,0.7), 0 0 0 22px rgba(125,211,160,0); } }
-.m .pinned .ways-stage { position: sticky; top: var(--stick, 24px); }
-.m .pinned { height: calc(var(--stageh, 900px) + 230vh); }
-.m .pinned .ways-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; list-style: none; padding: 0; margin: 0 0 28px; }
-.ways-steps li { font: 700 0.8rem/1 var(--display); font-stretch: 125%; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(243,245,250,0.35); padding-top: 14px; position: relative; transition: color .4s ease; }
-.ways-steps li b { color: inherit; margin-right: 6px; }
-.ways-steps li::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; border-radius: 4px; background: rgba(243,245,250,0.14); }
-.ways-steps li::after { content: ""; position: absolute; left: 0; top: 0; height: 4px; width: 100%; border-radius: 4px; background: var(--work); transform-origin: left; transform: scaleX(0); transition: transform .6s cubic-bezier(.2,.75,.15,1); }
-.ways-steps li.on { color: var(--work); }
-.ways-steps li.on::after { transform: scaleX(1); }
-.m .pinned .ways4 { margin-top: 0; }
+/* Import, Manychat-style: on wide screens one phone stays pinned beside the
+   copy, and as each way's text scrolls to the middle of the screen the phone
+   swaps to that way's demo and plays it from the start. On one-column phones
+   the cards stack and the one in the middle of the screen plays. Without
+   html.m (reduced motion, no JS) the plain four-across grid is used. */
+.wn { display: none; }
+@media (min-width: 761px) {
+  .m .ways4 { grid-template-columns: minmax(0, 1fr) auto; column-gap: clamp(40px, 8vw, 120px); row-gap: 0; margin-top: 24px; }
+  .m .w4 { display: contents; }
+  .m .w4 > .wt { grid-column: 1; min-height: 78vh; display: flex; flex-direction: column; justify-content: center; gap: 14px; max-width: 34rem; opacity: .28; transition: opacity .5s ease; }
+  .m .w4.on > .wt { opacity: 1; }
+  .m .w4:nth-child(1) > .wt { grid-row: 1; } .m .w4:nth-child(2) > .wt { grid-row: 2; } .m .w4:nth-child(3) > .wt { grid-row: 3; } .m .w4:nth-child(4) > .wt { grid-row: 4; }
+  .m .w4 > .mini { grid-column: 2; grid-row: 1 / span 4; align-self: start; position: sticky; top: calc(50vh - var(--ph) / 2); --ph: min(720px, calc(100vh - 96px)); width: calc(var(--ph) * 0.46); max-width: none; opacity: 0; translate: 0 40px; scale: .96; transition: opacity .45s ease, translate .6s cubic-bezier(.2,.75,.15,1), scale .6s cubic-bezier(.2,.75,.15,1); pointer-events: none; }
+  .m .w4.on > .mini { opacity: 1; translate: 0 0; scale: 1; pointer-events: auto; }
+  .m .w4.past > .mini { translate: 0 -40px; }
+  .m .wn { display: block; font: 800 0.85rem/1 var(--display); font-stretch: 125%; letter-spacing: 0.1em; color: var(--work); }
+  .m .w4 > .wt h3 { font-size: clamp(2.6rem, 5vw, 4.2rem); margin: 0; }
+  .m .w4 > .wt p { font-size: 1.15rem; max-width: 30em; }
+}
+@media (max-width: 760px) {
+  .m .ways4 { grid-template-columns: 1fr; }
+  .m .w4 > .mini { transition: opacity .5s ease, scale .6s ease; }
+  .m .w4:not(.on) > .mini { opacity: .35; scale: .96; }
+}
+.m .w4.on > .mini { animation: land 1.2s ease-out; }
 
 /* Pause control for the looping previews (WCAG 2.2.2) */
 .motion { margin-top: 18px; background: none; border: 1.5px solid rgba(243,245,250,0.22); color: var(--muted); font: 600 0.85rem/1 var(--body); padding: 8px 14px; border-radius: 999px; cursor: pointer; }
@@ -464,8 +471,7 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
       <h2>Don't type the workout in.</h2>
       <p class="intro">Workouts live on whiteboards, in Reels and in your head. Peak Interval reads them from wherever they are and builds the rounds, the times and the exercise names for you.</p>
       <button type="button" class="motion" aria-pressed="false">Pause animations</button>
-      <div class="ways-track"><div class="ways-stage">
-        <ol class="ways-steps" aria-hidden="true"><li><b>01</b> Photograph</li><li><b>02</b> Import</li><li><b>03</b> Say</li><li><b>04</b> Ask</li></ol>
+      <div class="ways-stage">
         <div class="ways4">
         <article class="w4">
           <div class="mini" aria-hidden="true">
@@ -494,13 +500,17 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
               </div>
             </div>
           </div>
+          <div class="wt"><span class="wn">01</span>
           <h3>Photograph it.</h3>
           <p>The whiteboard at your box, a class board, a coach's slide or a screenshot. Point the camera and the rounds are ready. <a href="/blog/posts/import-workout-from-screenshot">How it works</a></p>
+          </div>
         </article>
         <article class="w4">
           <div class="mini"><div class="scr"><video autoplay muted loop playsinline preload="auto" width="328" height="720" aria-label="Recording: sharing an Instagram workout post to Peak Interval, which extracts and saves the workout" src="/assets/landing/import-instagram.mp4"></video></div></div>
+          <div class="wt"><span class="wn">02</span>
           <h3>Import it.</h3>
           <p>Share an Instagram or TikTok workout to Peak Interval. Each move plays a short muted clip from the creator's video. <a href="/blog/posts/import-instagram-tiktok-workout">How it works</a></p>
+          </div>
         </article>
         <article class="w4">
           <div class="mini" aria-hidden="true">
@@ -520,16 +530,21 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
               <div class="vctl"><i class="pbtn">❚❚</i><span class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><i class="cbtn">✓</i></div>
             </div>
           </div>
+          <div class="wt"><span class="wn">03</span>
           <h3>Say it.</h3>
           <p>“Four rounds, forty on, twenty off, swings and goblet squats.” The workout builds while you talk, and you fix it the same way. <a href="/blog/posts/speak-your-workout">How it works</a></p>
+          </div>
         </article>
         <article class="w4">
           <div class="mini"><div class="scr"><video autoplay muted loop playsinline preload="auto" width="348" height="720" aria-label="Recording: asking AI Coach for a 20 minute full body HIIT workout with dumbbells" src="/assets/landing/ai-coach.mp4"></video></div></div>
+          <div class="wt"><span class="wn">04</span>
           <h3>Ask for it.</h3>
           <p>Tell AI Coach what you have and how long. It writes the workout, and remixes any other one harder, easier, equipment-free or low impact.</p>
+          </div>
         </article>
       </div>
-      </div></div>
+      </div>
+      </div>
     </div>
   </section>
 
@@ -702,60 +717,45 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
       $(".hero .rv, .hero .split").forEach(function (el) { el.classList.add("in"); });
     }); });
 
-    // Import: reveal one way at a time, restarting its animation as it lands.
-    var track = document.querySelector(".ways-track"), stage = document.querySelector(".ways-stage");
-    var cards = $(".w4"), steps = $(".ways-steps li"), shown = 0;
-    function land(card) {
-      if (card.classList.contains("in")) return;
-      card.classList.add("in");
-      if (card.getAnimations) card.getAnimations({ subtree: true }).forEach(function (a) { try { a.currentTime = 0; } catch (e) {} });
-      $("video", card).forEach(function (v) { try { v.currentTime = 0; if (!document.body.classList.contains("still")) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } } catch (e) {} });
+    // Import: one live phone. Wide screens pin it and swap demos as each way's
+    // text reaches the middle of the screen; one column plays the centred card.
+    var cards = $(".w4"), cur = -1;
+    function freeze(card) {
+      if (card.getAnimations) card.getAnimations({ subtree: true }).forEach(function (a) { if (a.animationName !== "land") { try { a.currentTime = 0; a.pause(); } catch (e) {} } });
+      $("video", card).forEach(function (v) { try { v.pause(); v.currentTime = 0; } catch (e) {} });
     }
-    function show(n) {
-      if (n === shown) return;
-      shown = n;
-      cards.forEach(function (c, i) { if (i < n) land(c); else c.classList.remove("in"); });
-      steps.forEach(function (s, i) { s.classList.toggle("on", i < n); });
+    function go(i) {
+      if (i === cur) return;
+      cur = i;
+      cards.forEach(function (c, j) { c.classList.toggle("on", j === i); c.classList.toggle("past", j < i); if (j !== i) freeze(c); });
+      if (document.body.classList.contains("still")) { freeze(cards[i]); return; }
+      var card = cards[i];
+      if (card.getAnimations) card.getAnimations({ subtree: true }).forEach(function (a) { try { a.currentTime = 0; a.play(); } catch (e) {} });
+      $("video", card).forEach(function (v) { try { v.loop = true; v.currentTime = 0; var p = v.play(); if (p && p.catch) p.catch(function () {}); } catch (e) {} });
     }
-    var wide = window.matchMedia("(min-width: 1001px) and (min-height: 640px)");
-    var pinned = false, cardIO = null;
-    function layout() {
-      track.classList.remove("pinned");
-      pinned = false;
-      if (wide.matches) {
-        track.classList.add("pinned");
-        var h = stage.offsetHeight;
-        if (h < window.innerHeight - 40) {
-          pinned = true;
-          track.style.setProperty("--stageh", h + "px");
-          track.style.setProperty("--stick", Math.max(24, (window.innerHeight - h) / 2) + "px");
-        } else track.classList.remove("pinned");
-      }
-      if (cardIO) { cardIO.disconnect(); cardIO = null; }
-      if (!pinned) {
-        steps.forEach(function (s) { s.classList.remove("on"); });
-        cardIO = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) { if (e.isIntersecting) { land(e.target); cardIO.unobserve(e.target); } });
-        }, { rootMargin: "0px 0px -18% 0px" });
-        cards.forEach(function (c) { if (!c.classList.contains("in")) cardIO.observe(c); });
-      }
-      tick();
-    }
+    cards.forEach(freeze);
+    var wideQ = window.matchMedia("(min-width: 761px)");
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var card = e.target.classList.contains("w4") ? e.target : e.target.closest(".w4");
+        var wantText = wideQ.matches;
+        if (wantText !== e.target.classList.contains("wt")) return;
+        go(cards.indexOf(card));
+      });
+    }, { rootMargin: "-45% 0px -45% 0px" });
+    cards.forEach(function (c) { spy.observe(c); spy.observe(c.querySelector(".wt")); });
+    if (wideQ.addEventListener) wideQ.addEventListener("change", function () { var i = cur < 0 ? 0 : cur; cur = -1; go(i); });
+    go(0);
+    var btn = document.querySelector(".motion");
+    if (btn) btn.addEventListener("click", function () { setTimeout(function () { var i = cur < 0 ? 0 : cur; cur = -1; go(i); }, 0); });
+
     var ticking = false;
     function tick() {
       ticking = false;
-      if (pinned) {
-        var r = track.getBoundingClientRect(), vh = window.innerHeight;
-        var stick = parseFloat(track.style.getPropertyValue("--stick")) || 24;
-        var span = r.height - stage.offsetHeight, p = Math.min(1, Math.max(0, (stick - r.top) / span));
-        var n = r.top < vh * 0.55 ? Math.min(4, 1 + Math.floor(p / 0.2)) : 0;
-        show(n);
-      }
       if (fan) { var hr = hero.getBoundingClientRect(); if (hr.bottom > 0) fan.style.setProperty("--py", Math.round(Math.max(0, -hr.top) * 0.12) + "px"); }
     }
     window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(tick); } }, { passive: true });
-    window.addEventListener("resize", function () { clearTimeout(layout.t); layout.t = setTimeout(layout, 150); });
-    layout();
   } catch (err) {
     root.classList.remove("m");
   }
