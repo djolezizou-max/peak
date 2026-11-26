@@ -38,7 +38,8 @@ h1, h2, h3 { font-family: var(--display); font-stretch: 112%; font-weight: 800; 
 .site-top nav a.get:hover { background: #1d2747; }
 .site-top .brand, .site-top nav a { white-space: nowrap; }
 @media (max-width: 480px) { .site-top .in { padding-block: 14px; } .site-top nav { gap: 14px; } .site-top nav a.home { display: none; } .site-top nav a.get { padding: 9px 13px; } }
-@media (max-width: 400px) { .site-top nav a[href="/contact"]:not(.active) { display: none; } .site-top .brand img { width: 32px; height: 32px; } }
+@media (max-width: 400px) { .site-top nav a[href="/contact"] { display: none; } .site-top .brand img { width: 32px; height: 32px; } }
+@media (max-width: 350px) { .site-top .in { flex-wrap: wrap; row-gap: 10px; } .site-top .brand { font-size: 1rem; } }
 
 /* Footer: same as the landing page */
 .site-foot { margin-top: 96px; padding: 36px 0 44px; border-top: 1px solid rgba(243, 245, 250, 0.12); color: var(--muted); font-size: 0.9rem; }

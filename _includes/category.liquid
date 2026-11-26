@@ -121,6 +121,7 @@
 
     document.addEventListener('DOMContentLoaded', function() {
         const isAppMode = getQueryParam('app') === 'true';
+        if (isAppMode) document.body.classList.add('in-app');
 
         if (isAppMode) {
             // Hide header, nav and footer
