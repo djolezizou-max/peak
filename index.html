@@ -720,8 +720,17 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
     // Import: one live phone. Wide screens pin it and swap demos as each way's
     // text reaches the middle of the screen; one column plays the centred card.
     var cards = $(".w4"), cur = -1;
+    // Only the demo keyframe loops inside the phone. Transitions (the fade and
+    // slide between phones) must be left alone, or pausing them freezes a
+    // phone half-visible on top of the next one.
+    function demos(card) {
+      if (!card.getAnimations) return [];
+      return card.getAnimations({ subtree: true }).filter(function (a) {
+        return a.animationName && a.animationName !== "land" && !(window.CSSTransition && a instanceof CSSTransition);
+      });
+    }
     function freeze(card) {
-      if (card.getAnimations) card.getAnimations({ subtree: true }).forEach(function (a) { if (a.animationName !== "land") { try { a.currentTime = 0; a.pause(); } catch (e) {} } });
+      demos(card).forEach(function (a) { try { a.currentTime = 0; a.pause(); } catch (e) {} });
       $("video", card).forEach(function (v) { try { v.pause(); v.currentTime = 0; } catch (e) {} });
     }
     function go(i) {
@@ -730,7 +739,7 @@ body.still .scr, body.still .scr *, body.still .duo .watch { animation-play-stat
       cards.forEach(function (c, j) { c.classList.toggle("on", j === i); c.classList.toggle("past", j < i); if (j !== i) freeze(c); });
       if (document.body.classList.contains("still")) { freeze(cards[i]); return; }
       var card = cards[i];
-      if (card.getAnimations) card.getAnimations({ subtree: true }).forEach(function (a) { try { a.currentTime = 0; a.play(); } catch (e) {} });
+      demos(card).forEach(function (a) { try { a.currentTime = 0; a.play(); } catch (e) {} });
       $("video", card).forEach(function (v) { try { v.loop = true; v.currentTime = 0; var p = v.play(); if (p && p.catch) p.catch(function () {}); } catch (e) {} });
     }
     cards.forEach(freeze);
