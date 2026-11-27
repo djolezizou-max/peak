@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "yasso-800s-timer",
-      "theme": "Yasso 800s timer: the rest has to match the 800 you just ran",
-      "hook": "Ten 800s only work if the recovery lasts as long as that 800 took, so a preset work/rest pair starts the next rep early or late.",
-      "query": "yasso 800s",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Runner's World and Runstreet describe ten 800-meter repeats with a recovery equal to the time of the 800; Middle Age Marathoner says the rest between each 800 matches the length of that 800. A preset rest typed in before the first rep is wrong as soon as the rep time drifts.",
-      "pain_quotes": [
-        "I set the rest to three minutes, ran the 800 in 3:20, and the next one started before I had recovered",
-        "I do the rest maths while I am jogging and lose count of the repeat",
-        "The timer wants both sides filled in before I start, and I do not know the rest until the 800 is done"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "Closest scored neighbour is emom-meaning at 0.06, which explains a one-minute window. interval-running-workout-timer builds a run as warm-up, equal hard/easy repeats and a cool-down with both sides preset; this answers Yasso 800s, where the jog lasts as long as the 800 you just ran, so the rest cannot be typed in until that rep finishes. swim-interval-timer is a fixed leave interval, and the rest is whatever time is left.",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from runnersworld.com, runstreet.com, middleagemarathoner.com and rundida.com.",
-      "imagePrompt": "A runner on an outdoor track bent forward with hands on knees after a hard repeat, empty lanes curving away, early morning light, a watch on the wrist turned so the face is hidden, no readable screens"
-    },
-    {
       "slug": "mona-fartlek-timer",
       "theme": "Mona fartlek timer: 90, 60, 30 and 15 second efforts with a matching float",
       "hook": "The Mona fartlek is twenty minutes of four different effort lengths, each with a float of the same length, and one repeating interval cannot descend through them.",
