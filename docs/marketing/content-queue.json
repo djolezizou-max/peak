@@ -1,22 +1,6 @@
 {
   "themes": [
     {
-      "slug": "mona-fartlek-timer",
-      "theme": "Mona fartlek timer: 90, 60, 30 and 15 second efforts with a matching float",
-      "hook": "The Mona fartlek is twenty minutes of four different effort lengths, each with a float of the same length, and one repeating interval cannot descend through them.",
-      "query": "mona fartlek",
-      "evidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). Runner's World UK, the morning shakeout and Runlovers give the same script: 2 x 90 seconds hard with a 90-second float, then 4 x 60, 4 x 30 and 4 x 15, exactly 20 minutes. Runlovers says to set a timer or memorize the sequence, because the 15-second reps leave no time to think.",
-      "pain_quotes": [
-        "By the 15-second reps I cannot remember whether I am on the third or the fourth",
-        "One repeating interval cannot step down from 90 seconds to 15",
-        "I slow the float to a walk because nothing tells me the recovery is supposed to stay quick"
-      ],
-      "category": "Workout Guides",
-      "distinctFrom": "Closest scored neighbour is random-interval-timer at 0.12, which is for cues you must not be able to predict. This answers the Mona fartlek, a fixed 20-minute script of 2x90, 4x60, 4x30 and 4x15 with a float equal to the effort. interval-running-workout-timer is equal repeats. The queued 10-20-30 run is three paces inside one repeating minute, not four effort lengths that get shorter.",
-      "searchEvidence": "Reddit OAuth, xpoz, Google Search Console and Keyword Planner skipped (cloud run, web search only). No impressions or keyword volume. Pain signal from runnersworld.com/uk, themorningshakeout.com, runlovers.it and rogues.run.",
-      "imagePrompt": "A runner accelerating on a flat park path at sunrise, a second runner a few strides behind settling into a slower float, long shadows, earbuds in, no clocks or readable screens"
-    },
-    {
       "slug": "kettlebell-snatch-test-timer",
       "theme": "Kettlebell snatch test timer: five or ten minutes, and a cue to switch hands",
       "hook": "The snatch test is a rep race against a fixed clock, and the hand switch has to land on a minute or the pace you were counting is gone.",
